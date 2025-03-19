@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<UIConfig>
+	<Script File="./UI/XML/AutoFight.lua" Help=""/>
+
+	<AutoFightWindow Template="T_NormalWindow" Rectangle="120,138,840,538" OnUpdate="AutoFight_OnUpdate();" OnLoad="AutoFight_OnLoad();" Visible="0" MoveRect="0,0,1024,768">
+	<!--按钮-->
+		<close Template="T_CloseButton" Rectangle="653,13,690,50" OnClick="this:GetParent():Visible(false);"/>
+	<!--窗口背景-->
+		<beginback Template="T_BgWindow" ID="-1" Rectangle="25,80,415,120" />
+		<!--<getback Template="T_BgWindow" ID="-1" Rectangle="365,80,695,120" />-->
+		<fightback Template="T_BgWindow" ID="-1" Rectangle="25,125,415,215" />
+		<healthback Template="T_BgWindow" ID="-1" Rectangle="25,220,355,325" />
+		<returnback Template="T_BgWindow" ID="-1" Rectangle="365,220,695,325" />
+		<saveback Template="T_BgWindow" ID="-1" Rectangle="25,330,695,375" />
+                <num1back Template="T_BgWindow" ID="-1" Rectangle="157,248,175,272" />
+                <num2back Template="T_BgWindow" ID="-1" Rectangle="157,272,175,296" />
+    <!--挂机界面说明文字-->
+        <autotext Type="Text" Font="MainMap" Rectangle="420,80,695,200" FontColor="YELLOW_TEXTCOLOR" TextFormat="16" SText="AF_X0_15" />
+	<!--编辑框-->
+		<edithp Template="T_ChatEdit" MaxText="1" Number="1" OnEnter="AutoFight_OnEnterHp();" Rectangle="162,250,173,270" Text="6" Texture="./UI/Texture/main.gwo" TexturePos="1000,200" />
+		<editmp Template="T_ChatEdit" MaxText="1" Number="1" OnEnter="AutoFight_OnEnterMp();" Rectangle="162,274,173,294" Text="4" Texture="./UI/Texture/main.gwo" TexturePos="1000,200" />
+	<!--复选按钮和文本说明-->
+		<!--开启挂机分支-->
+		<!--<checkboxautorun Template="T_NormalCheckBox" TexturePos="222,189" OnChecked="AutoRun_OnClick();" Rectangle="50,91,67,109" />-->
+		<textopenauto Type="Text" Font="MainFonts" Rectangle="75,89,230,109" FontColor="YELLOW_TEXTCOLOR" TextFormat="16" SText="AF_X0_12" />
+		<!--物品过滤分支
+		<checkboxopenauto Template="T_NormalCheckBox" TexturePos="222,189" Rectangle="390,91,407,109" />
+		<textopenauto Type="Text" Font="MainFonts" Rectangle="415,89,500,109" FontColor="YELLOW_TEXTCOLOR" TextFormat="16" Text="自动拾取" />
+		-->
+		<!--攻击方式分支-->
+		<checkboxuseskill Template="T_NormalCheckBox" TexturePos="222,189" OnChecked="AutoSkill_OnClick();" Rectangle="50,136,67,154" />
+		<textuseskill Type="Text" Font="MainFonts" Rectangle="75,134,180,154" FontColor="YELLOW_TEXTCOLOR" TextFormat="16" SText="AF_X0_1" />
+		<checkboxautofight Template="T_NormalCheckBox" TexturePos="222,189" OnChecked="AutoAttack_OnClick();" Rectangle="190,136,207,154" />
+		<textautofight Type="Text" Font="MainFonts" Rectangle="215,134,300,154" FontColor="YELLOW_TEXTCOLOR" TextFormat="16" SText="AF_X0_2" />
+		<!--打怪保护分支-->
+		<textautofight Type="Text" Font="MainFonts" Rectangle="30,225,160,245" FontColor="YELLOW_TEXTCOLOR" TextFormat="16" SText="AF_X0_3" />
+		<checkboxhp Template="T_NormalCheckBox" TexturePos="222,189" OnChecked="RedRemedy_OnClick();" Rectangle="50,251,67,269" />
+		<textautofight Type="Text" Font="MainFonts" Rectangle="75,250,160,270" FontColor="YELLOW_TEXTCOLOR" TextFormat="16" SText="AF_X0_4" />
+		<textautofight Type="Text" Font="MainFonts" Rectangle="175,250,320,270" FontColor="YELLOW_TEXTCOLOR" TextFormat="16" SText="AF_X0_5" />
+		<checkboxmp Template="T_NormalCheckBox" TexturePos="222,189" OnChecked="BlueRemedy_OnClick();" Rectangle="50,276,67,294" />
+		<textautofight Type="Text" Font="MainFonts" Rectangle="75,274,160,294" FontColor="YELLOW_TEXTCOLOR" TextFormat="16" SText="AF_X0_6" />
+		<textautofight Type="Text" Font="MainFonts" Rectangle="175,274,320,294" FontColor="YELLOW_TEXTCOLOR" TextFormat="16" SText="AF_X0_7" />
+		<!--自动回城分支-->
+		<textautofight Type="Text" Font="MainFonts" Rectangle="370,225,540,245" FontColor="YELLOW_TEXTCOLOR" TextFormat="16" SText="AF_X0_8" />
+		<checkboxred Template="T_NormalCheckBox" TexturePos="222,189" OnChecked="RedLeave_OnClick();" Rectangle="390,252,407,270" />
+		<textautofight Type="Text" Font="MainFonts" Rectangle="415,250,540,270" FontColor="YELLOW_TEXTCOLOR" TextFormat="16" SText="AF_X0_9" />
+		<checkboxblue Template="T_NormalCheckBox" TexturePos="222,189" OnChecked="BlueLeave_OnClick();" Rectangle="540,252,557,270" />
+		<textautofight Type="Text" Font="MainFonts" Rectangle="560,250,695,270" FontColor="YELLOW_TEXTCOLOR" TextFormat="16" SText="AF_X0_10" />
+		<textautofight Type="Text" Font="MainFonts" Rectangle="393,283,563,303" FontColor="YELLOW_TEXTCOLOR" TextFormat="16" SText="AF_X0_11" />
+		<!--临时测试-->
+		<!--texttest Type="Text" Font="MainFonts" Rectangle="30,350,160,370" FontColor="YELLOW_TEXTCOLOR" TextFormat="16" Text="临时字体：" /-->
+		
+		
+	<!--自动技能表-->
+		<Skill1Bk Type="Text" Rectangle="48,162,92,207" Texture="./UI/Texture/main.gwo" TexturePos="166,962"/>
+		<Skill2Bk Type="Text" Rectangle="91,162,135,207"  Texture="./UI/Texture/main.gwo" TexturePos="166,962"/>
+		<Skill3Bk Type="Text" Rectangle="134,162,178,207" Texture="./UI/Texture/main.gwo" TexturePos="166,962"/>
+		<Skill4Bk Type="Text" Rectangle="177,162,222,207" Texture="./UI/Texture/main.gwo" TexturePos="166,962"/>
+		<Skill5Bk Type="Text" Rectangle="221,162,264,207" Texture="./UI/Texture/main.gwo" TexturePos="166,962"/>
+		<Skill6Bk Type="Text" Rectangle="263,162,307,207" Texture="./UI/Texture/main.gwo" TexturePos="166,962"/>
+		<Skill7Bk Type="Text" Rectangle="306,162,350,207" Texture="./UI/Texture/main.gwo" TexturePos="166,962"/>
+		<Skill8Bk Type="Text" Rectangle="349,162,393,207" Texture="./UI/Texture/main.gwo" TexturePos="166,962"/>
+		<Skill9Bk Type="Text" Rectangle="570,275,614,320" Texture="./UI/Texture/main.gwo" TexturePos="166,962"/>
+		
+		<Skill1 Type="Button" ID="122001" Rectangle="49,164,90,206"   Texture="./UI/Texture/main.gwo" TexturePos="0,540" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+		<Skill2 Type="Button" ID="122002" Rectangle="91,164,133,206"  Texture="./UI/Texture/main.gwo" TexturePos="0,540" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+		<Skill3 Type="Button" ID="122003" Rectangle="134,164,176,206" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+		<Skill4 Type="Button" ID="122004" Rectangle="177,164,220,206" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+		<Skill5 Type="Button" ID="122005" Rectangle="221,164,262,206" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+		<Skill6 Type="Button" ID="122006" Rectangle="263,164,305,206" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+		<Skill7 Type="Button" ID="122007" Rectangle="306,164,348,206" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+		<Skill8 Type="Button" ID="122008" Rectangle="349,164,391,206" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+		<Skill9 Type="Button" ID="122009" Rectangle="572,277,612,319" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+		
+	<!--结束相关-->
+		<save_button Template="T_Button4" Rectangle="415,340,497,367" OnClick="SaveSetting_OnClick();" SText="AF_X0_13" Texture="./UI/Texture/main.gwo" TexturePos="42,540" />
+		<shut_button Template="T_Button4" OnClick="AutoRun_OnClick()" Rectangle="555,340,637,367" SText="AF_X0_14" Texture="./UI/Texture/main.gwo" TexturePos="42,540" />
+	<!--物品过滤按钮
+		<fitration_button Template="T_CloseButton"  OnClick="Filtration_OnClick();" Rectangle="520,85,640,115" Text="物品过滤类别设置" />
+		-->
+
+	</AutoFightWindow>
+	<!-- <XML File="./UI/XML/Filtration.xml" /> -->
+
+</UIConfig>

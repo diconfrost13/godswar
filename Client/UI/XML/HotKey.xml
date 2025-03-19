@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2007 sp1 (http://www.altova.com) by fox (EMBRACE) -->
+<!--对应KeyCodes.h-->
+<HotKey>
+  <!--对应KeyCodes.h-->
+  <!--对应Alt+Z-->
+  <GUIManager Key="90" Ctrl="0" Shift="0" Alt="1"/>
+  <!--系统对应Esc-->
+  <SystemSetup Key="27"/>
+  <!--包裹对应B-->
+  <ItemBags Key="66"/>
+  <!--技能对应S-->
+  <SkillView Key="83"/>
+  <!--属性对应C-->
+  <PersonalInfo Key="67"/>
+  <!--任务对应Q-->
+  <Quest Key="81"/>
+  <!--交际对应F-->
+  <Relation Key="70"/>
+  <!--工会对应G-->
+  <Consortia Key="71"/>
+  <!--挂机对应F12-->
+  <Help Key="123"/>
+  <!--世界对应M-->
+  <WorldMap Key="77"/>
+  <!--打造装备对应D-->
+  <EquipForge Key="68"/>
+  
+  <!--对应F1,依次类推-->
+  <SkillF1 Key="112"/>
+  <SkillF2 Key="113"/>
+  <SkillF3 Key="114"/>
+	<SkillF4 Key="115"/>
+	<SkillF5 Key="116"/>
+	<SkillF6 Key="117"/>
+	<SkillF7 Key="118"/>
+	<SkillF8 Key="119"/>
+  <!--对应1,依次类推-->
+  <Skill1 Key="49"/>
+  <Skill2 Key="50"/>
+  <Skill3 Key="51"/>
+	<Skill4 Key="52"/>
+	<Skill5 Key="53"/>
+	<Skill6 Key="54"/>
+	<Skill7 Key="55"/>
+	<Skill8 Key="56"/>
+  <!--对应Tab-->
+  <TabKey Key="9"/>
+</HotKey>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：
+		摘    要：装备合成框
+
+		当前版本：1.00
+		作    者：赖滔
+		完成日期：2008-03-18  
+ 
+-->
+<UIConfig>
+ <!--背景-->
+ <EquipForge Template="T_NormalWindow" ID="370000" Modal="0" Rectangle="300,188,602,740" BtnRect="235,13,273,50" BtnPos="0,80">
+    
+   <!--装备字-->
+   <EquipText Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="225,402" Text="" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+   
+   <!--成功机率-->
+   <ProText Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="成功机率:" Font="MainFonts" TextFormat="5"/>
+   <!--成功%-->
+   <ProText2 Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="%" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+   <!--成功机率值-->
+   <ProVText Type="Text" Rectangle="136,69,289,103" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+
+   <!--打造失败无惩罚-->
+    <NoLoseText Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="打造失败无惩罚" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+
+   <!--打造说明-->
+   <MaterialText Type="Text" Rectangle="2,337,90,367" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="打造说明" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  
+   <!--打造的说明.....-->
+   <ReadmeText1 Type="Text" Rectangle="30,377,260,401" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="1、放入装备和相应宝石,就可开始打造装备" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   <!--打造的说明.....-->
+   <ReadmeText2 Type="Text" Rectangle="30,397,260,421" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="2、宝石分3种类型,决定了装备的打造方向" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   <!--打造的说明.....-->
+   <ReadmeText3 Type="Text" Rectangle="30,417,260,441" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="3、窗口的右上方,显示了本次打造的成功率" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   <!--打造的说明.....-->
+   <ReadmeText4 Type="Text" Rectangle="30,437,260,461" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="4、若不幸打造失败,装备将不受到惩罚" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   <!--打造的说明.....-->
+   <ReadmeText5 Type="Text" Rectangle="30,457,260,481" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="5、放入水晶,可以提升本次打造的成功率" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   <!--打造的说明.....-->
+   <ReadmeText6 Type="Text" Rectangle="30,477,260,501" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="6、水晶最大可以放入25個" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   
+   <!--宝石合成说明.....-->
+   <ReadmeText7 Type="Text" Rectangle="30,377,260,401" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="1、6个禁锢之颅合成1个被禁锢的战场亡灵" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   <!--宝石合成说明.....-->
+   <ReadmeText8 Type="Text" Rectangle="30,397,260,421" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="2、6个生命符记合成1个祈祷之光" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   <!--宝石合成说明.....-->
+   <ReadmeText9 Type="Text" Rectangle="30,417,260,441" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="3、必须集齐任意一种材料6个， 才能进行" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   <!--宝石合成说明.....-->
+   <ReadmeText10 Type="Text" Rectangle="30,437,260,461" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="合成" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   <!--宝石合成说明.....-->
+   <ReadmeText11 Type="Text" Rectangle="30,457,260,481" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="4、可装入任意一种材料1个， 点“填满材" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   <!--宝石合成说明.....-->
+   <ReadmeText12 Type="Text" Rectangle="30,477,260,501" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="料”填满格子方便合成" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+
+   <!--装备合成说明.....-->
+   <ReadmeText13 Type="Text" Rectangle="30,377,260,401" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="1、该功能用来重新生成装备的各项属性" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   <!--装备合成说明.....-->
+   <ReadmeText14 Type="Text" Rectangle="30,397,260,421" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="2、启动装备合成,需要放入4件装备" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   <!--装备合成说明.....-->
+   <ReadmeText15 Type="Text" Rectangle="30,417,260,441" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="3、辅装备等级不能低于主装备5级" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   <!--装备合成说明.....--> 
+   <ReadmeText16 Type="Text" Rectangle="30,437,260,461" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="4、新生成装备的类型和主装备相同" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   <!--装备合成说明.....-->
+   <ReadmeText17 Type="Text" Rectangle="30,457,260,481" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="5、新装备的附加属性是随机产生的" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+   <!--装备合成说明.....-->
+   <ReadmeText18 Type="Text" Rectangle="30,477,260,501" Texture="./UI/Texture/main.gwo" TexturePos="325,200" Text="6、参与合成的装备越好,新装备越好" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+
+   <!--合成提示-->
+   <Rt1 Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="放入需要打造的主装备" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+   <Rt2 Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="放入打造用的宝石" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+   <Rt3 Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="放入打造用的幸运金币" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+   <Rt4 Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="放入打造用的水晶石" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+   <Rt5 Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="放入需要合成的主装备" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+   <Rt6 Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="放入辅助合成的装备" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+   <Rt7 Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="放入合成用的材料" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+   <Rt8 Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+   <Rt9 Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+   <Rt10 Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+
+   <!--合成提示-->
+   <!--Error1 Type="Text" Rectangle="0,69,153,103" Texture="./UI/Texture/main.gwo" TexturePos="313,200" Text="条件提示提示1" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/-->
+   <!--Error1a Type="Text" Rectangle="0,89,153,123" Texture="./UI/Texture/main.gwo" TexturePos="313,200" Text="条件提示提示2" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/-->
+   
+   <!--打造成本:-->
+   <GoldText Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="打造成本:" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+   <!--成本数值-->
+   <GoldVText Type="Text" Rectangle="145,306,295,340" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+   <!--银币-->
+   <GoldNText Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="323,200" Text="银币" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+
+   <!--圆图-->
+   <ForgeText Type="Text" Rectangle="21,67,140,190" Texture="./UI/Texture/main.gwo" TexturePos="315,76"/>
+
+   <!--帮助-->
+   <Help Type="Button" ID="370001" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="178,431"/>
+
+   <!--装备按钮背景-->
+   <EquipBk Type="Text" Rectangle="0,0,0,1" Texture="./UI/Texture/main.gwo" TexturePos="42,671"/>
+   <!--装备按钮图示-->
+   <Equip Type="Button" ID="370002" Rectangle="0,0,0,1" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39"/>
+
+   <!--素材按钮背景-->
+   <EquipBk Type="Text" Rectangle="0,0,0,1" Texture="./UI/Texture/main.gwo" TexturePos="42,671"/>
+   <!--素材按钮图示-->
+   <Material Type="Button" ID="370003" Rectangle="0,0,0,1" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39"/>
+
+    <!--空最终合成图?号图-->
+   <Unknowbk Type="Text" Rectangle="132,189,169,226" Texture="./UI/Texture/main.gwo" TexturePos="206,505"/>
+   <!--ok最终合成图-->
+   <UnknowItem Type="Text" ID="370004" Rectangle="130,187,167,224" Texture="./UI/Texture/icon.gwo" TexturePos="983,983"/>
+
+   <!--3个包表-->
+   <Bags Type="TabBar" ID="110040" Rectangle="42,76,43,76" Texture="./UI/Texture/main.gwo" TexturePos="592,31">
+     <Bag0 Type="Tab" Rectangle="11,-28,71,-5" Texture="./UI/Texture/main.gwo" TexturePos="244,450"  Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="装备打造">
+       <!--按钮-->
+       <Item0 Type="Button" ID="310100" Rectangle="87,21,129,63" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item1 Type="Button" ID="310101" Rectangle="0,150,42,192" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item2 Type="Button" ID="310102" Rectangle="166,65,208,107" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item3 Type="Button" ID="310103" Rectangle="10,144,52,186" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item4 Type="Button" ID="310104" Rectangle="166,144,208,186" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item5 Type="Button" ID="310105" Rectangle="176,151,218,192" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item6 Type="Button" ID="310106" Rectangle="86,108,128,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+     </Bag0>
+     <Bag1 Type="Tab" Rectangle="74,-28,134,-5" Texture="./UI/Texture/main.gwo" TexturePos="244,450"   Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"  Text="材料合成">
+       <!--按钮-->
+       <Item0 Type="Button" ID="310107" Rectangle="87,21,129,63" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item1 Type="Button" ID="310108" Rectangle="10,65,52,107" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item2 Type="Button" ID="310109" Rectangle="166,65,208,107" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item3 Type="Button" ID="310110" Rectangle="10,144,52,186" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item4 Type="Button" ID="310111" Rectangle="166,144,208,186" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item5 Type="Button" ID="310112" Rectangle="86,191,128,233" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item6 Type="Button" ID="310113" Rectangle="86,108,128,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+     </Bag1>
+     <Bag2 Type="Tab" Rectangle="136,-28,197,-5" Texture="./UI/Texture/main.gwo" TexturePos="244,450"   Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"  Text="装备合成">
+       <!--按钮-->
+       <Item0 Type="Button" ID="310114" Rectangle="87,21,129,63" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item1 Type="Button" ID="310115" Rectangle="10,65,52,107" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item2 Type="Button" ID="310116" Rectangle="166,65,208,107" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item3 Type="Button" ID="310117" Rectangle="10,144,52,186" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item4 Type="Button" ID="310118" Rectangle="166,144,208,186" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item5 Type="Button" ID="310119" Rectangle="86,191,128,233" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+       <Item6 Type="Button" ID="310120" Rectangle="86,108,128,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+     </Bag2>
+   </Bags>
+   
+   <!--tabbar点-->
+   <Tp1 Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" TexturePos="161,179" Rectangle="106,67,122,73" Text=""/>
+   <Tp1 Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" TexturePos="161,179" Rectangle="169,67,185,73" Text=""/>
+   <Tp1 Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" TexturePos="161,179" Rectangle="232,67,248,73" Text=""/>
+   
+   <!--中间分隔条左手方-->
+   <MIDdle Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" TexturePos="146,174" Rectangle="14,334,28,347" Text=""/>
+   <!--中间分隔条中间缩放-->
+   <MIDdle2 Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" TexturePos="151,173" Rectangle="28,333,29,346" Text=""/>
+   <!--中间分隔条右手方-->
+   <MIDdle3 Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" TexturePos="146,189" Rectangle="273,334,289,347" Text=""/>
+
+   <!--说明框-->
+   <BackWin Template="T_BgWindow" ID="-1" Rectangle="26,366,277,498" />
+
+   <!--alpha背景-->
+   <CounterBkText7 Type="Text" Rectangle="0,0,1,1" Texture="./UI/Texture/main.gwo" TexturePos="119,207"/>
+
+   <!--装备打造按钮-->
+   <Forge1 Type="Button" ID="370005" Rectangle="146,508,214,535" Texture="./UI/Texture/main.gwo" TexturePos="197,81" Text="开始打造" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+
+   <!--宝石 装备合成按钮-->
+   <Forge2 Type="Button" ID="370006" Rectangle="146,508,214,535" Texture="./UI/Texture/main.gwo" TexturePos="197,81" Text="开始合成" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+   
+   <!--填满宝石-->
+    <Forge Type="Button" ID="370007" Rectangle="78,508,146,535" Texture="./UI/Texture/main.gwo" TexturePos="197,81" Text="填满材料" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+   
+    <!--撤下物品-->
+    <ResetForge Type="Button" ID="370008" Rectangle="214,508,282,535" Texture="./UI/Texture/main.gwo" TexturePos="197,81" Text="撤下物品" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+ </EquipForge>
+</UIConfig>

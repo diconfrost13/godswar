@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：
+		摘    要：技能条中间的神恩
+
+		当前版本：1.00
+		作    者：赖滔
+		完成日期：2008-03-18  
+ 
+-->
+<UIConfig>
+  <!--神背景-->
+	<GodSkillUI Type="Window" ID="120100" Layer="1" Rectangle="392,663,657,762" TexturePos="367,910" Texture="./UI/Texture/main.gwo" Text="" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR">
+    <!--神hp-->
+    <GodText3 Type="Text" ID="120103" Rectangle="0,0,265,52" TexturePos="633,957" Texture="./UI/Texture/main.gwo" Text="" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR"/>
+    <!--神小图标-->
+    <GodText1 Type="Text" ID="120101" Rectangle="0,0,1,1" TexturePos="0,0" Texture="./UI/Texture/main.gwo" Text="" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR"/>
+    <!--满神小图标-->
+    <GodText2 Type="Text" ID="120102" Rectangle="0,0,1,1" TexturePos="0,0" Texture="./UI/Texture/main.gwo" Text="" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR"/>
+    <!--3个响应按钮-->
+    <Skill0 Type="Button" ID="120104" Rectangle="83,17,152,86" Texture="./UI/Texture/main.gwo" Text="" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" />
+    <Skill1 Type="Button" ID="120059" Rectangle="73,75,110,112" Texture="./UI/Texture/main.gwo" Text="" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="35,36" BtnTopRect="3,3,39,39"/>
+    <Skill2 Type="Button" ID="120078" Rectangle="180,57,220,100" Texture="./UI/Texture/main.gwo" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="504,468" BtnTopRect="3,3,39,39" TextFormat="10"/>
+   
+  </GodSkillUI>
+</UIConfig>

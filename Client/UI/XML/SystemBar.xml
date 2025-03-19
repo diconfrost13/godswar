@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+  <SystemBar Type="Window" ID="211000" Layer="1" Rectangle="957,190,1023,432" TexturePos="242,846" Texture="./UI/Texture/Main.gwo" Visible="0" Text="">
+    <SystemBarText1 Type="Text" ID="-1" Rectangle="0,0,67,69" TexturePos="242,846" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText2 Type="Text" ID="-1" Rectangle="0,60,66,90" TexturePos="242,906" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText3 Type="Text" ID="-1" Rectangle="0,87,66,117" TexturePos="242,906" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText4 Type="Text" ID="-1" Rectangle="0,114,66,144" TexturePos="242,906" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText5 Type="Text" ID="-1" Rectangle="0,141,66,171" TexturePos="242,906" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText6 Type="Text" ID="-1" Rectangle="0,168,66,198" TexturePos="242,906" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText7 Type="Text" ID="-1" Rectangle="0,195,66,225" TexturePos="242,906" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText8 Type="Text" ID="-1" Rectangle="0,222,66,252" TexturePos="242,906" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText9 Type="Text" ID="-1" Rectangle="0,249,66,279" TexturePos="242,906" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText10 Type="Text" ID="-1" Rectangle="0,270,66,295" TexturePos="242,930" Texture="./UI/Texture/Main.gwo" Text=""/>
+
+    <state   Type="Button" ID="211002" Rectangle="3,51,63,78" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="Settings" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR"  TextFormat="5" TextWeight="1"/>
+    <item    Type="Button" ID="211003" Rectangle="3,78,63,105" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="Equip" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" TextWeight="1"/>
+    <skill   Type="Button" ID="211004" Rectangle="3,105,63,133" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="Skill" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" TextWeight="1"/>
+    <quest 	 Type="Button" ID="211005" Rectangle="3,132,63,160" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="Quest" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" TextWeight="1"/>
+    <meet  	 Type="Button" ID="211006" Rectangle="3,160,63,187" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="Chat" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" TextWeight="1"/>
+    <Consortia  	 Type="Button" ID="211007" Rectangle="3,187,63,215" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="Guild" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" TextWeight="1"/>
+    <system  Type="Button" ID="211008" Rectangle="3,214,63,241" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="System" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" TextWeight="1"/>
+    <help    Type="Button" ID="211009" Rectangle="3,241,63,267" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="Attack" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" TextWeight="1"/>
+    <Equip    Type="Button" ID="211010" Rectangle="3,267,63,292" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="Forge" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" TextWeight="1"/>
+
+    <Msg  Type="Button" ID="211020" Rectangle="20,301,49,322" Texture="./UI/Texture/Main.gwo" TexturePos="993,532" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" TextWeight="1"/>
+    <EnterMallBtn Type="Button" ID="211021"  Texture="./UI/Texture/Main.gwo" Rectangle="15,341,78,377" TexturePos="346,566" Visible="1"/>
+  </SystemBar>
+</UIConfig>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--this is ItemColor config-->
+<Altar>
+  <AltarInfo>
+    <AltarID1 ID="1" Name="阿波罗" Description="阿波罗能够提升供奉者HP和MP的最大上限。" ImagePos="720,36"/>
+    <AltarID2 ID="2" Name="德墨忒耳" Description="德墨忒耳能够提升供奉者的HP回复能力和伤害吸收能力。" ImagePos="756,36"/>
+    <AltarID3 ID="3" Name="赫耳墨斯" Description="赫耳墨斯能够提升供奉者的MP回复能力和MP最大上限。" ImagePos="864,36"/>
+    <AltarID4 ID="4" Name="赫淮斯托斯" Description="赫淮斯托斯能够提升供奉者的物理攻击力和命中。" ImagePos="792,36"/>
+    <AltarID5 ID="5" Name="哈迪斯" Description="哈迪斯能够提升供奉者的魔法攻击力和物理攻击力。" ImagePos="648,36"/>
+    <AltarID6 ID="6" Name="狄俄尼索斯" Description="狄俄尼索斯能够提升供奉者的物理防御力和魔法防御力。" ImagePos="972,36"/>
+    <AltarID7 ID="7" Name="阿芙洛狄忒" Description="阿芙洛狄忒能够提升供奉者的魔法防御力和伤害吸收能力。" ImagePos="900,36"/>
+    <AltarID8 ID="8" Name="赫斯提亚" Description="赫斯提亚能够提升供奉者的伤害吸收能力和闪避。" ImagePos="828,36"/>
+    <AltarID8 ID="9" Name="波塞冬" Description="波塞冬能够提升供奉者的命中和魔法攻击力。" ImagePos="612,36"/>
+    <AltarID8 ID="10" Name="阿尔忒弥斯" Description="阿尔忒弥斯能够提升供奉者的闪避和HP回复能力。" ImagePos="936,36"/>
+  </AltarInfo>
+  <!--根据公会等级动态显示祭坛个数-->
+  <AltarNum>
+    <ConLevel1 Level="1" AltarNum="3"/>
+    <ConLevel2 Level="2" AltarNum="3"/>
+    <ConLevel3 Level="3" AltarNum="4"/>
+    <ConLevel4 Level="4" AltarNum="4"/>
+    <ConLevel5 Level="5" AltarNum="5"/>
+    <ConLevel6 Level="6" AltarNum="5"/>
+    <ConLevel7 Level="7" AltarNum="6"/>
+    <ConLevel8 Level="8" AltarNum="6"/>
+    <ConLevel9 Level="9" AltarNum="7"/>
+    <ConLevel10 Level="10" AltarNum="7"/>
+    <ConLevel11 Level="11" AltarNum="8"/>
+    <ConLevel12 Level="12" AltarNum="8"/>
+  </AltarNum>
+</Altar>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：ItemCounter.xml
+		摘    要：物品计算器配置表
+      
+		当前版本：Ver1.00
+		作    者：Tavia
+		完成日期：2008-5-16-->
+<UIConfig>  
+  <ItemCounter Template="T_SimpleWindow" ID="330100" Layer="1" Rectangle="490,371,675,571" Visible="0">
+
+    <Edit Type="EditBox" ID="330105" Rectangle="19,30,157,49" TexturePos="0,0" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" ResponseMouse="0" Number="1" Right="1" MaxText="10" TextFormat="6"/>
+    <EditNameLeft  Type="Text"  ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="14,27,36,49"   TexturePos="38,188"  Text=""/>
+    <EditNameRight Type="Text"  ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="140,27,162,49" TexturePos="60,188"  Text=""/>
+    <EditNameMid  Type="Text"  ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="36,27,37,49"   TexturePos="61,188"  Text="" />
+
+    <Max Type="Button" ID="330101" Rectangle="110,65,161,93" Texture="./UI/Texture/main.gwo" TexturePos="145,540" Font="MainMap" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="最大"/>
+    <Back Type="Button" ID="330102" Rectangle="110,93,161,121" Texture="./UI/Texture/main.gwo" TexturePos="145,540" Font="MainMap" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="去位"/>
+    <Confirm Type="Button" ID="330103" Rectangle="110,121,161,149" Texture="./UI/Texture/main.gwo" TexturePos="145,540" Font="MainMap" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="确定" />
+    <Cancel Type="Button" ID="330104" Rectangle="110,149,161,177" Texture="./UI/Texture/main.gwo" TexturePos="145,540" Font="MainMap" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="取消" />
+
+    <C0 Type="Button" ID="330120" Rectangle="23,149,70,177" Texture="./UI/Texture/main.gwo" TexturePos="145,540" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="00"/>
+    <C1 Type="Button" ID="330111" Rectangle="23,121,47,149" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="1"/>
+    <C2 Type="Button" ID="330112" Rectangle="54,121,78,149" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="2"/>
+    <C3 Type="Button" ID="330113" Rectangle="85,121,109,149" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="3"/>
+    <C4 Type="Button" ID="330114" Rectangle="23,93,47,121" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="4"/>
+    <C5 Type="Button" ID="330115" Rectangle="54,93,78,121" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="5"/>
+    <C6 Type="Button" ID="330116" Rectangle="85,93,109,121" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="6"/>
+    <C7 Type="Button" ID="330117" Rectangle="23,65,47,93" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="7" />
+    <C8 Type="Button" ID="330118" Rectangle="54,65,78,93" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="8"/>
+    <C9 Type="Button" ID="330119" Rectangle="85,65,109,93" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="9"/>
+    <C00 Type="Button" ID="330110" Rectangle="85,149,109,177" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="0"/>
+
+  </ItemCounter>
+
+</UIConfig>

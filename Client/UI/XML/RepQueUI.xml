@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<UIConfig>
+  <RepQueUI Type="Window" ID="450000" Layer="1"  Rectangle="580,2,760,52" TexturePos="176,180" Texture="./UI/Texture/main.gwo" Visible="0" Text="" >
+    <InQue Template="T_NormalText" ID="450001" 	Rectangle="0,0,150,30 "    TexturePos="1,816"  Text="正在排队" />
+    <QueBtn Template="T_Button9" ID="450002"   Rectangle="0,40,130,70" TexturePos="50,50"  Text="正在排队" Visible="1"/>
+  </RepQueUI>
+
+  <RepQueMenu Template="T_SimpleWindow" ID="451000"  Rectangle="580,2,675,42" >
+    <CancelQue Template="T_Button4" ID="451001" Rectangle="6,10,90,37"     Text="取消排队" />
+  </RepQueMenu>
+</UIConfig>

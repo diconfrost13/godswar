@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：StallSellUIConfig.xml
+		摘    要：摆摊UI配置表
+      
+		当前版本：Ver1.00
+		作    者：Tavia
+		完成日期：2008-3-23-->
+<UIConfig>  
+  <StorageCounter Type="Window" ID="330000" Modal="0" Rectangle="490,346,675,571" Visible="0"  BtnRect="74,0,94,95" BtnPos="124,540">
+   
+    <CounterHead Type="Text" ID="-1" Rectangle="46,0,136,25" TexturePos="932,896" Texture="./UI/Texture/main.gwo" />
+    <CounterWin Template="TAutoSeekWin" Enable="0" ID="-1" Rectangle="0,25,182,225">
+    </CounterWin>
+
+    <MCheckBox    Type="CheckBox"  ID="330006"  Texture="./UI/Texture/main.gwo" TexturePos="210,784" Rectangle="14,46,36,68"/>
+    <MText Type="Text" ID="-1" Rectangle="40,48,55,64" Texture="./UI/Texture/main.gwo" TexturePos="57,213" />
+
+    <BCheckBox    Type="CheckBox"  ID="330007"    Texture="./UI/Texture/main.gwo" TexturePos="210,784" Rectangle="87,46,109,68"/>
+    <BText Type="Text" ID="-1" Rectangle="113,48,130,65" Texture="./UI/Texture/main.gwo" TexturePos="39,211" />
+
+    <Max Type="Button" ID="330001" Rectangle="110,95,161,123" Texture="./UI/Texture/main.gwo" TexturePos="145,540" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="最大"/>
+    <Back Type="Button" ID="330002" Rectangle="110,123,161,151" Texture="./UI/Texture/main.gwo" TexturePos="145,540" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="去位"/>
+    <Confirm Type="Button" ID="330003" Rectangle="110,151,161,179" Texture="./UI/Texture/main.gwo" TexturePos="145,540" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="确定" />
+    <Cancel Type="Button" ID="330004" Rectangle="110,179,161,207" Texture="./UI/Texture/main.gwo" TexturePos="145,540" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="取消" />
+
+    <Edit Type="EditBox" ID="330005" Rectangle="10,42,151,67" Texture="./UI/Texture/main.gwo" TexturePos="842,321" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextOffset="-6,3,0,0" ResponseMouse="0" Number="1" Right="1" MaxText="10"/>
+    <EditNameMid  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="22,67,23,89" TexturePos="137,173"  Text=""/>
+    <EditNameLeft  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="15,67,22,89" TexturePos="131,173"  Text=""/>
+    <EditNameRight Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="149,67,156,89" TexturePos="138,173"  Text=""/>
+
+    <C0 Type="Button" ID="330010" Rectangle="23,179,74,207" Texture="./UI/Texture/main.gwo" TexturePos="145,540" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="0"/>
+    <C1 Type="Button" ID="330011" Rectangle="23,151,51,179" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="1"/>
+    <C2 Type="Button" ID="330012" Rectangle="54,151,82,179" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="2"/>
+    <C3 Type="Button" ID="330013" Rectangle="85,151,113,179" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="3"/>
+    <C4 Type="Button" ID="330014" Rectangle="23,123,51,151" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="4"/>
+    <C5 Type="Button" ID="330015" Rectangle="54,123,82,151" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="5"/>
+    <C6 Type="Button" ID="330016" Rectangle="85,123,113,151" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="6"/>
+    <C7 Type="Button" ID="330017" Rectangle="23,95,51,123" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="7" />
+    <C8 Type="Button" ID="330018" Rectangle="54,95,82,123" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="8"/>
+    <C9 Type="Button" ID="330019" Rectangle="85,95,113,123" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="9"/>
+    <C00 Type="Button" ID="330020" Rectangle="85,179,113,207" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="COUNT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="00"/>
+    </StorageCounter>
+    
+  </UIConfig>

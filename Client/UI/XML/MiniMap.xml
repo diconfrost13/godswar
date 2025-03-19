@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：MiniMap.xml
+		摘    要：小地图配置表
+
+		当前版本：1.00
+		作    者：C.D
+		完成日期：2008-03-20  
+ 
+-->
+<UIConfig>
+  <!--用语改变贴图绘制顺序-->
+
+  <MapWinBack         Template="T_MiniMapWindow" ID="120700" Layer="1"  Visable="0"  Rectangle="845,0,1023,189">
+    <NetStatusText  Type="Text" ID="120802" Rectangle="7,6,23,18" TexturePos="241,189" Texture="./UI/Texture/main.gwo" text="127,300" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    <CityText     Type="Text" ID="120701" Rectangle="34,0,160,25 " TexturePos="850,423" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    <!--<MapText      Type="Text" ID="120702" Rectangle="3,26,163,186" TexturePos="100,200" Texture="./UI/Texture/MinMap/Athens.gwo" Font="MainFont12" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>-->
+    <MapText      Type="Text" ID="120702" Rectangle="3,26,163,186" TexturePos="100,200" Texture="" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+
+  </MapWinBack>
+  <MapWinFront      Type="Window"  ID="120705" Layer="1" Rectangle="845,0,1023,189"  >
+    <PositionText Type="Text" ID="120801" Rectangle="42,26,125,40" TexturePos="939,924" Texture="./UI/Texture/main.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"  TextFormat="5"/>
+    <Mapbutton Type="Button" ID="120803" Rectangle="139,160,166,187" TexturePos="221,261" Texture="./UI/Texture/main.gwo" Text=""/>
+  </MapWinFront>
+  <!--MapShaderWin      Type="Window" ID="120800" Layer="1"  Rectangle="889,0,1024,169" TexturePos="0,686,1023,855" Texture="./UI/Texture/main.gwo" Visable="0" /-->
+  <!--<Mapbutton    Template="T_Button2" ID="120803" Rectangle="139,160,200,187" />-->
+  <!-- background     Template="GWOText" ID="120709" Rectangle="13,42,171,200" TexturePos="100,200,876,432" Texture="./UI/Texture/MinMap/Athens.gwo" Visible="0"/-->
+
+</UIConfig>
+

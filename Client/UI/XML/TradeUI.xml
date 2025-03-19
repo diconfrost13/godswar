@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：TradeUI.xml
+		摘    要：状态显示图标配置表
+
+		当前版本：1.00
+		作    者：C.D
+		完成日期：2008-03-23 
+ 
+-->
+<UIConfig>
+  <Trade Type="Window" ID="115000" Layer="1" Rectangle="288,168,700,600" Texture="./UI/Texture/main.gwo" TexturePos="199,592" BtnRect="304,13,342,50" BtnPos="0,80" visible="0">
+    <TradeWnd_L Template="T_NormalWindow" Rectangle="0,0,185,378" Enable="0"/>
+    <TradeWnd_R Template="T_NormalWindow" Rectangle="186,0,371,378" Enable="0"/>
+    
+    <CloseBtn Template="T_CloseButton" ID="115001" Rectangle="304,13,342,50" />
+    <!--tavia修改-->
+    <Item0 Type="Button" ID="115010" Rectangle="31,85,73,127" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <Item1 Type="Button" ID="115011" Rectangle="73,85,115,127" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <Item2 Type="Button" ID="115012" Rectangle="115,85,157,127" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <Item3 Type="Button" ID="115013" Rectangle="31,129,73,171" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <Item4 Type="Button" ID="115014" Rectangle="73,129,115,171" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <Item5 Type="Button" ID="115015" Rectangle="115,129,157,171" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <Item6 Type="Button" ID="115016" Rectangle="31,173,73,215" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <Item7 Type="Button" ID="115017" Rectangle="73,173,115,215" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <Item8 Type="Button" ID="115018" Rectangle="115,173,157,215" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <Item9 Type="Button" ID="115019" Rectangle="31,217,73,259" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <Item10 Type="Button" ID="115020" Rectangle="73,217,115,259" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <Item11 Type="Button" ID="115021" Rectangle="115,217,157,259" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    
+    <Item12 Template="T_ChatEdit" ID="115022" Rectangle="32,259,138,281"  TexturePos="16,515" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" ResponseMouse="1" Number="1" MaxText="10" />
+    <Item13 Template="T_ChatEdit" ID="115023" Rectangle="32,284,138,306"  TexturePos="16,515" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" ResponseMouse="1" Number="1" MaxText="10" />
+    <OK_Btn Template="T_Button2"      ID="115024" Rectangle="17,343,76,368"     Text="确定"/>
+    <Cancle_Btn Template="T_Button2"  ID="115025" Rectangle="109,343,168,369"   Text="取消"/>
+
+    <!--银币-->
+    <Item16 Template="T_NormalText" Rectangle="140,264,155,279" TexturePos="57,213"/>
+    <!--宝石-->
+    <Item17 Template="T_NormalText" Rectangle="140,287,157,303" TexturePos="241,226"/>
+
+    <TraderItem0 Type="Button" ID="115050" Rectangle="216,85,258,127 " Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <TraderItem1 Type="Button" ID="115051" Rectangle="258,85,300,127 " Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <TraderItem2 Type="Button" ID="115052" Rectangle="300,85,342,127 " Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <TraderItem3 Type="Button" ID="115053" Rectangle="216,129,258,171" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <TraderItem4 Type="Button" ID="115054" Rectangle="258,129,300,171" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <TraderItem5 Type="Button" ID="115055" Rectangle="300,129,342,171" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <TraderItem6 Type="Button" ID="115056" Rectangle="216,173,258,215" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <TraderItem7 Type="Button" ID="115057" Rectangle="258,173,300,215" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <TraderItem8 Type="Button" ID="115058" Rectangle="300,173,342,215" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <TraderItem9 Type="Button" ID="115059" Rectangle="216,217,258,259" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <TraderItem10 Type="Button" ID="115060" Rectangle="258,217,300,259" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <TraderItem11 Type="Button" ID="115061" Rectangle="300,217,342,259" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+
+
+    <TraderItem12 Type="EditBox" ID="115062" Rectangle="217,259,323,281" Texture="./UI/Texture/main.gwo" TexturePos="16,515" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" ResponseMouse="0" Number="1" Maxtext="10"/>
+    <TraderItem13 Type="EditBox" ID="115063" Rectangle="217,284,323,306" Texture="./UI/Texture/main.gwo" TexturePos="16,515" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" ResponseMouse="0" Number="1" Maxtext="10"/>
+    <!--银币-->
+    <TraderItem14 Template="T_NormalText"  Rectangle="324,264,339,279" TexturePos="57,213"/>
+    <!--宝石-->
+    <TraderItem15 Template="T_NormalText" Rectangle="324,287,339,303"  TexturePos="241,226"/>
+ 
+    <Lock_L Template="T_EffectWindow"  ID="115100" Rectangle="24,82,161,313" />
+    <Lock_R Template="T_EffectWindow"  ID="115101" Rectangle="209,82,346,313" />
+    <Name1 Type="Text" ID="115102" Rectangle="30,51,158,68" Texture="./UI/Texture/main.gwo" TexturePos="0,385" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text=""/>
+    <Name2 Type="Text" ID="115103" Rectangle="215,51,345,68" Texture="./UI/Texture/main.gwo" TexturePos="0,385" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text=""/>
+  </Trade>
+
+</UIConfig>

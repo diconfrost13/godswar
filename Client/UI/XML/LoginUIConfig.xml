@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2007 sp1 (http://www.altova.com) by fox (EMBRACE) -->
+<UIConfig>
+	<!--登陆界面相关-->
+	<BillboardBackground type="Window" Stretch="0" id="189999" modal="0" rectangle="0,0,1024,768" image="./UI/Texture/loginui/loginpage.gwo" text="" closebuttonimage="./UI/Texture/loginui/loginpage.gwo" closebuttonrectangle="224,16,240,32" font="宋体,16" color="0,0,0,255">
+		<button1 type="Button" id="190003" rectangle="418,479,605,506" image="./UI/Texture/loginui/loginpage.gwo" imageposition="0,768" text="" font="宋体,16" color="0,0,0,255"/>
+		<title1 type="Text" id="190006" image="./UI/Texture/loginui/loginpage.gwo" imageposition="347,414" rectangle="480,307,545,331" text="" font="宋体,16" color="0,0,0,255"/>
+		<edit1 type="EditBox" id="190008" rectangle="415,343,610,375" image="./UI/Texture/loginui/loginpage.gwo" imageposition="828,991" maxtext="16" maxscroll="16" font="宋体,16" color="255,255,255,255" responsemouse="1" password="0"/>
+		<title2 type="Text" id="190007" image="./UI/Texture/loginui/loginpage.gwo" imageposition="419,414" rectangle="479,387,544,411" text="" font="宋体,16" color="0,0,0,255"/>
+		<edit2 type="EditBox" id="190009" rectangle="415,420,610,452" image="./UI/Texture/loginui/loginpage.gwo" imageposition="828,991" maxtext="16" maxscroll="16" font="宋体,16" color="255,255,255,255" responsemouse="1" password="1"/>
+		<checkbox1 type="CheckBox" id="190010" visible="0" rectangle="610,342,647,375" image="./UI/Texture/loginui/loginpage.gwo" imageposition="762,132" text="" font="宋体,16" color="0,0,0,255"/>
+		<button2 type="Button" id="190011" rectangle="828,703,1015,730" image="./UI/Texture/loginui/loginpage.gwo" imageposition="837,728" text="" font="宋体,16" color="0,0,0,255"/>
+	</BillboardBackground>
+	<BillboardWin type="Window" id="190000" modal="0" rectangle="0,96,252,671" image="./UI/Texture/loginui/loginpage.gwo" imageposition="0,0,252,575" closebuttonimage="./UI/Texture/loginui/loginpage.gwo" closebuttonrectangle="224,16,240,32" font="宋体,20" color="255,255,0,255">
+		<title type="Text" id="190001" visible="0" image="./UI/Texture/loginui/loginpage.gwo" imageposition="449,0,521,16" rectangle="146,20,218,36" text="" font="宋体,16" color="0,0,0,255"/>
+		<content type="Text" id="190002" image="./UI/Texture/loginui/loginpage.gwo" imageposition="0,0" rectangle="26,80,220,500" text="" imagescroll="./UI/Texture/loginui/loginpage.gwo" imagescrollpos="0,0" scrollrectangle="227,10,259,342" imagebutton="./UI/Texture/loginui/loginpage.gwo" imagebtnrectangle="765,0" font="宋体,14" color="255,255,255,255" height="16"/>
+		<downbutton2 type="Button" id="190004" rectangle="225,525,246,547" image="./UI/Texture/loginui/loginpage.gwo" imageposition="790,610" text="" font="宋体,16" color="0,0,0,255"/>
+		<topbutton3 type="Button" id="190005" rectangle="225,56,246,78" image="./UI/Texture/loginui/loginpage.gwo" imageposition="812,610" text="" font="宋体,16" color="0,0,0,255"/>
+	</BillboardWin>
+	<WaitLoginBackground type="Window" Stretch="0" id="190100" modal="0" rectangle="0,0,1024,768" image="./UI/Texture/loginui/loginpage.gwo" text="" closebuttonimage="./UI/Texture/loginui/loginpage.gwo" closebuttonrectangle="224,16,240,32" font="宋体,16" color="0,0,0,255">
+        </WaitLoginBackground>
+	<SelectServerBackground type="Window" id="190016" modal="0" rectangle="0,0,1024,768" image="./UI/Texture/loginui/loginpage.gwo" text="" closebuttonimage="./UI/Texture/loginui/loginpage.gwo" closebuttonrectangle="224,16,240,32" font="宋体,16" color="0,0,0,255">
+		<button1 type="Button" id="190022" rectangle="419,623,605,650"  image="./UI/Texture/loginui/loginpage.gwo" imageposition="0,768" text="" font="宋体,16" color="0,0,0,255"/>
+		<button2 type="Button" id="190023" rectangle="829,703,1015,730"  image="./UI/Texture/loginui/loginpage.gwo" imageposition="837,620" text="" font="宋体,16" color="0,0,0,255"/>
+	</SelectServerBackground>
+	<SelectServerWin type="Window" id="190017" modal="0" rectangle="258,237,765,623" image="./UI/Texture/loginui/loginpage.gwo" imageposition="253,0" closebuttonimage="./UI/Texture/loginui/loginpage.gwo" closebuttonrectangle="224,16,240,32" font="宋体,20" color="255,255,0,255">
+		<title type="Text" id="190018" visible="0" image="./UI/Texture/loginui/loginpage.gwo" imageposition="523,0,613,15" rectangle="146,20,236,35" text="" font="宋体,16" color="0,0,0,255"/>
+		<content2 type="ListBox" id="190019" image="./UI/Texture/loginui/loginpage.gwo" imageposition="0,0" rectangle="0,60,486,340" text="" imagescroll="./UI/Texture/loginui/loginpage.gwo" imagescrollpos="0,0" scrollrectangle="380,0,412,290" imagebutton="./UI/Texture/loginui/loginpage.gwo" imagebtnrectangle="765,0" font="宋体,16" color="0,0,0,255" height="21"/>
+		<downbutton2 type="Button" id="190020" rectangle="412,325,433,347" image="./UI/Texture/loginui/loginpage.gwo" imageposition="790,610" text="" font="宋体,16" color="0,0,0,255"/>
+		<topbutton3 type="Button" id="190021" rectangle="412,57,433,78" image="./UI/Texture/loginui/loginpage.gwo" imageposition="812,610" text="" font="宋体,16" color="0,0,0,255"/>
+	</SelectServerWin>
+	<SelectRoleBackground type="Window" id="190024" Stretch="0" modal="0" rectangle="0,0,1024,768" image="./UI/Texture/loginui/loginpage.gwo" text="" closebuttonimage="./UI/Texture/loginui/loginpage.gwo" closebuttonrectangle="224,16,240,32" font="宋体,16" color="0,0,0,255">
+		<returnbutton type="Button" id="190025" rectangle="829,703,1015,730"  image="./UI/Texture/loginui/loginpage.gwo" imageposition="837,620" text="" font="宋体,16" color="0,0,0,255"/>
+		<entergamebutton type="Button" id="190026" rectangle="419,620,605,647"  image="./UI/Texture/loginui/loginpage.gwo" imageposition="837,836" text="" font="宋体,16" color="0,0,0,255"/>
+	</SelectRoleBackground>
+	<SelectRoleWin type="Window" id="190027" modal="0" rectangle="0,96,223,635" image="./UI/Texture/loginui/loginpage.gwo" imageposition="800,0" closebuttonimage="./UI/Texture/loginui/loginpage.gwo" closebuttonrectangle="224,16,240,32" font="宋体,20" color="255,255,0,255">
+		<title type="Text" id="-1" visible="0" image="./UI/Texture/loginui/loginpage.gwo" imageposition="32,983,111,1002" rectangle="68,17,147,36" text="" font="宋体,16" color="0,0,0,255"/>
+		<content2 type="ListBox" id="190028" image="./UI/Texture/loginui/loginpage.gwo" imageposition="0,0" rectangle="15,72,212,444" text="" imagescroll="./UI/Texture/loginui/loginpage.gwo" imagescrollpos="0,0" scrollrectangle="0,0,0,0" imagebutton="./UI/Texture/loginui/loginpage.gwo" imagebtnrectangle="49,473,81,601" font="宋体,16" color="0,0,0,255" height="90"/>
+		<deletebutton type="Button" id="190029" rectangle="18,511,204,538" image="./UI/Texture/loginui/loginpage.gwo" imageposition="621,916" text="" font="宋体,16" color="0,0,0,255"/>
+		<createbutton type="Button" id="190030" rectangle="19,480,204,507" image="./UI/Texture/loginui/loginpage.gwo" imageposition="621,808" text="" font="宋体,16" color="0,0,0,255"/>
+	</SelectRoleWin>
+	<ReadResourceBackground type="Window" id="190039" Stretch="0" modal="0" rectangle="0,0,1024,768" image="./UI/Texture/loginui/loginpage.gwo" text="" closebuttonimage="./UI/Texture/loginui/loginpage.gwo" closebuttonrectangle="224,16,240,32" font="宋体,16" color="0,0,0,255">
+	        <Background1 type="Text" id="190140" image="./UI/Texture/loginui/Sparta.gwo" imageposition="0,0" rectangle="0,0,1023,700" text="" font="宋体,16" color="0,0,0,255"/>
+	        <Background2 type="Text" id="190141" image="./UI/Texture/loginui/Athens.gwo" imageposition="0,0" rectangle="0,0,1023,700" text="" font="宋体,16" color="0,0,0,255"/>
+		<ProcessBarBack type="Text" id="190040" image="./UI/Texture/MinMap/Worldmap.gwo" imageposition="0,962,761,1023" rectangle="134,710,895,771" text="" font="宋体,16" color="0,0,0,255"/>
+		<ProcessBar type="Text" id="190041" image="./UI/Texture/MinMap/Worldmap.gwo" imageposition="0,944,633,961" rectangle="196,710,829,727" text="" font="宋体,16" color="0,0,0,255"/>
+	</ReadResourceBackground>
+	<RoleAppearanceBackground type="Window" id="190042" Stretch="0" modal="0" rectangle="0,0,1024,768" image="./UI/Texture/loginui/loginpage.gwo" text="" closebuttonimage="./UI/Texture/loginui/loginpage.gwo" closebuttonrectangle="224,16,240,32" font="宋体,16" color="0,0,0,255">
+		<returnbutton type="Button" id="190043" rectangle="829,703,1015,730" padding="0,0" image="./UI/Texture/loginui/loginpage.gwo" imageposition="837,620" text="" font="宋体,16" color="0,0,0,255"/>
+		<continutebutton type="Button" id="190044" rectangle="419,620,605,647" image="./UI/Texture/loginui/loginpage.gwo" imageposition="622,700" text="" font="宋体,16" color="0,0,0,255"/>
+		<nameedit type="EditBox" id="190045" rectangle="415,571,610,603" image="./UI/Texture/loginui/loginpage.gwo" imageposition="828,991" maxtext="16" maxscroll="16" font="宋体,16" color="255,255,255,255" responsemouse="1" password="0"/>
+		<name type="Text" id="190046" image="./UI/Texture/loginui/loginpage.gwo" imageposition="488,416" rectangle="479,537,544,561" text="" font="宋体,16" color="0,0,0,255"/>
+	</RoleAppearanceBackground>
+	<RoleAppearanceWin type="Window" id="190055" modal="0" rectangle="0,96,270,671" image="./UI/Texture/loginui/loginpage.gwo" imageposition="350,448" closebuttonimage="./UI/Texture/loginui/loginpage.gwo" closebuttonrectangle="224,16,240,32" font="宋体,20" color="255,255,0,255">
+		<Camp1check type="CheckBox" id="190056" rectangle="9,88,50,130" image="./UI/Texture/loginui/loginpage.gwo" imageposition="747,532"  text="" font="宋体,16" color="0,0,0,255"/>
+		<Camp2check type="CheckBox" id="190057" rectangle="9,142,50,184" image="./UI/Texture/loginui/loginpage.gwo" imageposition="705,532" text="" font="宋体,16" color="0,0,0,255"/>
+		<CameInfoContent type="Text" id="190058" image="./UI/Texture/loginui/loginpage.gwo" imageposition="0,0" rectangle="58,73,250,200" text="" font="宋体,14" color="255,255,255,255"/>
+		<Metier1check type="CheckBox" id="190060" rectangle="9,259,50,301" image="./UI/Texture/loginui/loginpage.gwo" imageposition="621,532" text="" font="宋体,16" color="0,0,0,255"/>
+		<Metier2check type="CheckBox" id="190061" rectangle="9,313,50,355" image="./UI/Texture/loginui/loginpage.gwo" imageposition="663,532" text="" font="宋体,16" color="0,0,0,255"/>
+		<MetierInfoContent type="Text" id="190062" image="./UI/Texture/loginui/loginpage.gwo" imageposition="0,0" rectangle="58,245,250,387" text="" font="宋体,14" color="255,255,255,255"/>
+		<malecheck type="CheckBox" id="190048" rectangle="81,422,122,464" image="./UI/Texture/loginui/loginpage.gwo" imageposition="259,409" text="" font="宋体,16" color="0,0,0,255"/>
+		<femalecheck type="CheckBox" id="190049" rectangle="149,422,190,464" image="./UI/Texture/loginui/loginpage.gwo" imageposition="301,409" text="" font="宋体,16" color="0,0,0,255"/>
+		<HairScale type="Text" id="-1" image="./UI/Texture/loginui/loginpage.gwo" imageposition="878,970" rectangle="63,518,208,538" text="" font="宋体,16" color="255,255,255,255"/>
+		<leftbutton type="Button" id="190051" rectangle="14,527,51,549" padding="0,0" image="./UI/Texture/loginui/loginpage.gwo" imageposition="761,352" text="" font="宋体,16" color="0,0,0,255"/>
+		<rightbutton type="Button" id="190052" rectangle="220,527,257,549" padding="0,0" image="./UI/Texture/loginui/loginpage.gwo" imageposition="761,264" text="" font="宋体,16" color="0,0,0,255"/>
+		<ScrollBar1 type="ScrollBar" id="190050" rectangle="48,519,225,552" image="./UI/Texture/trade.gwo" imageposition="0,0" horizontal="1" imagebutton="./UI/Texture/loginui/loginpage.gwo" imagebtnrectangle="765,0"/>
+	</RoleAppearanceWin>
+	
+	<!--登陆界面相关 宋体-->
+</UIConfig>

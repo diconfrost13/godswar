@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：QuestViewUIConfig.xml
+		摘    要：任务信息描述UI配置表
+      
+		当前版本：Ver1.00
+		作    者：Tavia
+		完成日期：2008-3-22-->
+<UIConfig>
+  <QuestView Template="TestWindow" ID="350000" Rectangle="79,112,342,638" Visible="0">
+    <QuestContainer Type="Container" ID="350001" Rectangle="14,72,245,520" Texture="./UI/Texture/main.gwo" TexturePos="0,0" ScrollTexture="./UI/Texture/main.gwo" ScrollRect="212,22,229,397" ScrollPos="0,0" BtnPos="133,203" BtnRect="0,0,17,27" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+      <QuestTitle Type="Text" ID="350020" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,30" Text=""/>
+      <QuestDetails Type="Text" ID="350021" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,202,250" Text=""/>
+      <QuestObjective Type="Text" ID="350022" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,202,30" Text=""/>
+      <QuestObjectives Type="Text" ID="350023" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,202,250" Text=""/>
+      <QuestReward Type="Text" ID="350024" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,360,30" Text=""/>
+      <QuestRewards Type="Text" ID="350025" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,202,250" Text=""/>
+      <QuestAppend Type="Text" ID="350026" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,202,250" Text=""/>
+
+      <ItemList Type="ListBox" ID="350028" Rectangle="5,365,200,495" ScrollRect="0,0,0,0" Texture="./UI/Texture/main.gwo" TexturePos="0,0" ScrollPos="0,0" BtnPos="133,122" BtnRect="0,0,17,27" Height="15" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+        <list1 Type="ListItem" Texture="./UI/Texture/main.gwo" TexturePos="0,0">
+          <Text Type="Text" ID="350101" Rectangle="0,0,100,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <Count Type="Text" ID="350111" Rectangle="100,0,200,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        </list1>
+        <list2 Type="ListItem" Texture="./UI/Texture/main.gwo" TexturePos="0,0">
+          <Text Type="Text" ID="350102" Rectangle="0,0,100,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <Count Type="Text" ID="350112" Rectangle="100,0,200,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        </list2>
+        <list3 Type="ListItem" Texture="./UI/Texture/main.gwo" TexturePos="0,0">
+          <Text Type="Text" ID="350103" Rectangle="0,0,100,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <Count Type="Text" ID="350113" Rectangle="100,0,200,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        </list3>
+        <list4 Type="ListItem" Texture="./UI/Texture/main.gwo" TexturePos="0,0">
+          <Text Type="Text" ID="350104" Rectangle="0,0,100,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <Count Type="Text" ID="350114" Rectangle="100,0,200,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        </list4>
+      </ItemList>
+      <CreatureList Type="ListBox" ID="350029" Rectangle="5,365,220,495" ScrollRect="0,0,0,0" Texture="./UI/Texture/main.gwo" TexturePos="0,0" ScrollPos="0,0" BtnPos="133,122" BtnRect="0,0,17,27" Height="15" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+        <list1 Type="ListItem" Texture="./UI/Texture/main.gwo" TexturePos="0,0">
+          <Name Type="Text" ID="350201" Rectangle="0,0,100,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <Count Type="Text" ID="350211" Rectangle="100,0,200,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        </list1>
+        <list2 Type="ListItem" Texture="./UI/Texture/main.gwo" TexturePos="0,0">
+          <Name Type="Text" ID="350202" Rectangle="0,0,100,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <Count Type="Text" ID="350212" Rectangle="100,0,200,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        </list2>
+        <list3 Type="ListItem" Texture="./UI/Texture/main.gwo" TexturePos="0,0">
+          <Name Type="Text" ID="350203" Rectangle="0,0,100,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <Count Type="Text" ID="350213" Rectangle="100,0,200,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        </list3>
+        <list4 Type="ListItem" Texture="./UI/Texture/main.gwo" TexturePos="0,0">
+          <Name Type="Text" ID="350204" Rectangle="0,0,100,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <Count Type="Text" ID="350214" Rectangle="100,0,200,14" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        </list4>
+      </CreatureList>
+      <Incomplete Type="Text" ID="350030" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="0,0,202,250" Text=""/>
+      <Completion Type="Text" ID="350031" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="0,0,202,250" Text=""/>
+      <RewardItem1 Type="CheckBox" ID="350032" Rectangle="5,53,47,95" Texture="./UI/Texture/main.gwo" TexturePos="566,0" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <RewardItem2 Type="CheckBox" ID="350033" Rectangle="51,53,93,95" Texture="./UI/Texture/main.gwo" TexturePos="566,0" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <RewardItem3 Type="CheckBox" ID="350034" Rectangle="97,53,139,95" Texture="./UI/Texture/main.gwo" TexturePos="566,0" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+
+    </QuestContainer>
+    <Up Template="TestButton" ID="350006" Rectangle="220,72,248,93" TexturePos="0,228" Text="" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <Down Template="TestButton" ID="350007" Rectangle="220,469,248,490" TexturePos="29,228" Text="" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <Texttop Template="TestText" ID="-1" Rectangle="222,94,246,118" TexturePos="929,940" Text="" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <Textbtm Template="TestText" ID="-1" Rectangle="222,452,246,469" TexturePos="929,970" Text="" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <Textmid Template="TestText" ID="-1" Rectangle="222,118,246,119" TexturePos="929,967" Text="" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+
+    <ClosetBtn Template="TestButton" ID="350008" Rectangle="196,13,233,50" TexturePos="0,80" Text="" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <Accept Template="TestButton" ID="350002" Rectangle="125,490,185,517" TexturePos="38,80" Text="接受" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <Refuse Template="TestButton" ID="350003" Rectangle="185,490,245,517" TexturePos="38,80" Text="拒绝" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <Complete Template="TestButton" ID="350004" Rectangle="125,490,185,517" TexturePos="38,80" Text="完成" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <Cancel Template="TestButton" ID="350005" Rectangle="185,490,245,517" TexturePos="38,80" Text="取消" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+  </QuestView>
+</UIConfig>

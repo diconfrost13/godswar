@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：MiniMap_Template.xml
+		摘    要：小地图配置表
+
+		当前版本：1.00
+		作    者：C.D
+		完成日期：2008-03-22  
+ 
+-->
+<UITemplate>
+
+  <!--斯巴达0-->
+  <Sparta      Texture="./UI/Texture/MinMap/Sparta.gwo" />
+  
+  <!--雅典1-->
+  <Athens      Texture="./UI/Texture/MinMap/Athens.gwo" />
+    
+  <!--雅典近郊2-->
+  <Athens_Newbie    Texture="./UI/Texture/MinMap/Athens_Newbie.gwo" />
+    
+  <!--帕尼萨3-->
+  <Parnitha_1    Texture="./UI/Texture/MinMap/Parnitha_1.gwo" />
+    
+  <!--斯巴达郊外4-->
+  <Sparta_Newbie    Texture="./UI/Texture/MinMap/Sparta_Newbie.gwo" />
+    
+  <!--尼米亚5-->
+  <Nemea_1    Texture="./UI/Texture/MinMap/Nemea_1.gwo" />
+    
+  <!--迈锡尼6-->
+  <Mycenae_All    Texture="./UI/Texture/MinMap/Mycenae_All.gwo" />
+    
+  <!--奥林匹亚7-->
+  <Olympia_All    Texture="./UI/Texture/MinMap/Olympia_All.gwo" />
+    
+  <!--温泉关8-->
+  <Thermopylae    Texture="./UI/Texture/MinMap/Thermopylae_All.gwo" />
+    
+  <!--底比斯9-->
+  <Thebes_All    Texture="./UI/Texture/MinMap/Thebes_All.gwo" />
+    
+  <!--拉里萨10-->
+  <Larissa_All   Texture="./UI/Texture/MinMap/Larissa_All.gwo" />
+    
+  <!--马拉松11-->
+  <Marathon_All    Texture="./UI/Texture/MinMap/Marathon_All.gwo" />
+    
+  <!--帕尼萨港口12-->
+  <Parnitha_2    Texture="./UI/Texture/MinMap/Parnitha_2.gwo" />
+    
+  <!--伯罗奔尼撒13-->
+  <Peloponnese_All    Texture="./UI/Texture/MinMap/Peloponnese_All.gwo" />
+    
+  <!--尼米亚森林14-->
+  <Nemea_2   Texture="./UI/Texture/MinMap/Nemea_2.gwo" />
+    
+  <!--德尔韦尼15-->
+  <Argolis_All    Texture="./UI/Texture/MinMap/Derveni_All.gwo" />
+    
+  <!--阿格利司16-->
+  <Isthmus_of_Corinth_1    Texture="./UI/Texture/MinMap/Argolis_All.gwo" />
+    
+  <!--科林斯地峡17-->
+  <Isthmus_of_Corinth_2    Texture="./UI/Texture/MinMap/Isthmus_of_Corinth_All.gwo" />
+
+  <!--迈加拉海岸18-->
+  <Isthmus_of_Corinth_3    Texture="./UI/Texture/MinMap/Megara_All.gwo" />
+    
+  <!--布拉底亚19-->
+  <Plataea_All    Texture="./UI/Texture/MinMap/Plataea_All.gwo" />
+    
+  <!--德尔斐圣林20-->
+  <Oracle_of_Delphi_All    Texture="./UI/Texture/MinMap/Oracle_of_Delphi_All.gwo" />
+    
+  <!--奥林匹斯圣山21-->
+  <Olympus_All    Texture="./UI/Texture/MinMap/Olympus_All.gwo" />
+
+  <!--埃拉松22-->
+  <Elasson_All    Texture="./UI/Texture/MinMap/Elasson_All.gwo" />
+
+  <!--世界地图-->
+  <WorldMap    Texture="./UI/Texture/MinMap/Worldmap.gwo" />
+
+  <!--GM地图-->
+  <GMMap    Texture="./UI/Texture/MinMap/GM.gwo" />
+
+  <!--诅咒之地地图-->
+  <Execrativelys    Texture="./UI/Texture/MinMap/Execrativelys.gwo" />
+
+  <!--商旅宝库地图-->
+  <Agate    Texture="./UI/Texture/MinMap/Agate.gwo" />
+
+  <!--封印之地地图-->
+  <Sealbox    Texture="./UI/Texture/MinMap/Sealbox.gwo" />
+  
+   <!--曼提尼亚地地图-->
+  <Guardwar    Texture="./UI/Texture/MinMap/Guardwar.gwo" />
+  
+</UITemplate>
+

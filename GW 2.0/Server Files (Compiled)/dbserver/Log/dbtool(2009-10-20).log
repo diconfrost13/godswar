@@ -1,0 +1,24 @@
+ERROR: Database ExecuteSQL(You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'aaaa' at line 1) occur mysql error(CALL SP_UPDATE_CONSORTIA_INFO(1162,'Èöµ©·¶µÂÈø·¢´óË®','','»á³¤','¸±»á³¤','ÀíÊÂ','¾«Ó¢','»áÔ±','¼ûÏ°»SORTIA_INFO(1119,'aaaa). -- Tue Oct 20 01:30:50 2009
+
+ERROR: Database ExecuteSQL(You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1) occur mysql error(CALL SP_UPDATE_CONSORTIA_INFO(1151,'fsfse','',r). -- Tue Oct 20 11:02:29 2009
+
+ERROR: Database ExecuteSQL(PROCEDURE godswar.SP_UPDATE_CONSORTIA_IN?? does not exist) occur mysql error(CALL SP_UPDATE_CONSORTIA_INýýýý). -- Tue Oct 20 11:22:53 2009
+
+ERROR: Database ExecuteSQL(You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1) occur mysql error(CALL SP_UPDATE_CONSORTIA_INFO(1160,'±¦±¦±§±§','','»á³¤','¸±»á³¤','ÀíÊÂ','¾«Ó¢','»áÔ±','¼ûÏ°»áÔ±',11r). -- Tue Oct 20 11:27:43 2009
+
+ERROR: Database ExecuteSQL(PROCEDURE godswar.SP_UPDATE_CONSORTIA_IN?? does not exist) occur mysql error(CALL SP_UPDATE_CONSORTIA_INýýýý). -- Tue Oct 20 12:45:56 2009
+
+ERROR: Database ExecuteSQL(You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '','','»á³' at line 1) occur mysql error(CALL SP_UPDATE_CONSORTIA_INFO(1160,'±¦±¦±§±§','','»á³¤','¸±»á³¤','ÀíÊÂ','¾«Ó¢','»áÔ±','¼ûÏ°»áÔ±',11dfasdfa','','»á³). -- Tue Oct 20 12:45:57 2009
+
+ERROR: Database ExecuteSQL(You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''¼ûÏ°»áÔ±' at line 1) occur mysql error(CALL SP_UPDATE_CONSORTIA_INFO(1151,'fsfse','',228,'456jhkg','','»á³¤','¸±»á³¤','ÀíÊÂ','¾«Ó¢','»áÔ±','¼ûÏ°»áÔ±). -- Tue Oct 20 13:01:11 2009
+
+ERROR: Database ExecuteSQL(You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''');x' at line 1) occur mysql error(CALL'');x). -- Tue Oct 20 13:39:46 2009
+
+ERROR: Database ExecuteSQL(You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''');x' at line 1) occur mysql error(CALL'');x). -- Tue Oct 20 13:46:55 2009
+
+ERROR: Database ExecuteSQL(You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'CALL¾«Ó¢','»áÔ±','¼ûÏ°»áÔ±',0, 0, 1, 0,'');q' at line 1) occur mysql error(CALL¾«Ó¢','»áÔ±','¼ûÏ°»áÔ±',0, 0, 1, 0,'');q). -- Tue Oct 20 13:57:27 2009
+
+ERROR: Database ExecuteSQL(You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''¼ûÏ°»áÔýýýý' at line 1) occur mysql error(CALL SP_UPDATE_CONSORTIA_INFO(1288,'adfasdf','','»á³¤','¸±»á³¤','ÀíÊÂ','¾«Ó¢','»áÔ±','¼ûÏ°»áÔýýýý). -- Tue Oct 20 14:32:56 2009
+
+ERROR: Database ExecuteSQL(You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'd','','»á³¤','¸±»á³¤','ÀíÊÂ','¾«Ó¢','»áÔ±','¼ûÏ°»áÔ±',0, 0, 1, 0' at line 1) occur mysql error(CALL SP_UPDATE_CONSORTIA_INFO(1088,'rgrg',''d','','»á³¤','¸±»á³¤','ÀíÊÂ','¾«Ó¢','»áÔ±','¼ûÏ°»áÔ±',0, 0, 1, 0). -- Tue Oct 20 14:33:01 2009
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：DesignateUI.xml
+		摘    要：称号系统配置表
+
+		当前版本：1.00
+		作    者：cdx
+		完成日期：2008-08-20 
+ 
+-->
+<UIConfig>
+  <DesignateUI    Template="T_NormalWindow" ID="430000" Rectangle="100,100,363,626" BtnRect="196,13,233,50" BtnPos="0,80" MoveRect="0,0,1024,768">
+
+    <Des_BgWindow1    Template="T_BgWindow" ID="-1" Rectangle="19,78,109,104" />
+    <Des_BgWindow2    Template="T_BgWindow" ID="-1" Rectangle="112,78,243,104" />
+    <Des_BgWindow3    Template="T_BgWindow" ID="-1" Rectangle="19,109,109,310" />
+    <Des_BgWindow4    Template="T_BgWindow" ID="-1" Rectangle="112,109,243,310" />
+    <Des_BgWindow5    Template="T_BgWindow" ID="-1" Rectangle="19,316,247,475" />
+
+    <ChangeDesBtn   Template="T_Button3" ID="430001" Rectangle="106,489,175,516" SText="D_X0_1"/>
+    <HideDesBtn     Template="T_Button3" ID="430002" Rectangle="176,489,245,516" SText="D_X0_2"/>
+    <SelectListBtn  Type="Button" ID="430003" Rectangle="82,78,109,105" TexturePos="220,260" Texture="./UI/Texture/main.gwo"  Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="" Visible="0"/>
+
+    <DesTypeText Template="T_NoBackgroundText" ID="-1" Rectangle="24,78,109,104"   SText="D_X0_3"  TextFormat="4"/>
+    <DesNameText Template="T_NoBackgroundText" ID="-1" Rectangle="117,78,243,104"  SText="D_X0_4"  TextFormat="4"/>
+    <DesInfoText Template="T_NoBackgroundText" ID="-1" Rectangle="26,319,245,475"  SText="D_X0_5"  TextFormat="16"/>
+
+    <ListBoxType Type="ListBox" ID="-1" Rectangle="23,113,109,310" TexturePos="0,0" ScrollTexture="./UI/Texture/main.gwo"  ScrollRect="91,2,108,202" ScrollPos="0,0" BtnPos="765,0" BtnRect="0,0,32,32" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Height="20"/>
+
+    <ListBox1Btm Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="217,289,243,311" TexturePos="929,970" Text=""/>
+    <ListBox1Top Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="217,109,243,133" TexturePos="929,940" Text=""/>
+    <ListBoxScrollMID Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="217,133,243,134" TexturePos="929,967" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    
+    <UpBtn    Template="T_UpListBoxBtn"   ID="-1"   Rectangle="215,109,243,131" Text=""/>
+    <DownBtn  Template="T_DownListBoxtn"  ID="-1"   Rectangle="215,289,243,311" Text=""/>
+    <ListBox  Type="ListBox" ID="-1"  Rectangle="116,113,233,310" TexturePos="0,0" ScrollTexture="./UI/Texture/main.gwo"  ScrollRect="104,18,121,177" ScrollPos="0,0" BtnPos="133,122" BtnRect="0,0,17,27" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Height="20"/>
+  </DesignateUI>
+</UIConfig>

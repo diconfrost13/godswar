@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UITemplate>
+
+  <LoginTitle Type="Text" Texture="./UI/Texture/main.gwo" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <LoginText Type="Text" Texture="./UI/Texture/main.gwo" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+  <LoginList Type="ListBox" Texture="./UI/Texture/loginui/loginpage.gwo" Height="32"/>
+  <LoginListItem Texture="./UI/Texture/loginui/loginpage.gwo" TexturePos="0,221"/>
+  <LoginButton Type="Button" Texture="./UI/Texture/main.gwo" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <LoginCheckBox Type="CheckBox" Texture="./UI/Texture/loginui/loginpage.gwo" />
+  <LoginEdit Type="EditBox" MaxText="32" Texture="./UI/Texture/loginui/loginpage.gwo"  Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+  <LoginBackWin Type="Window" Rectangle="0,0,1024,768" Modal="0" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+  <TBillboardWin Type="Window" Texture="./UI/Texture/main.gwo" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"
+                WinRect="80" WinPixel="80" WinBody="70,76" WinTop="80,0" WinBottom="240,0" WinLeft="160,0" WinRight="240,0" WinTopLeft="0,0"
+                WinTopRight="80,0" WinBottomLeft="160,0" WinBottomRight="240,0"/>
+
+  <GeneralWin Type="Window" Texture="./UI/Texture/main.gwo" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"
+               WinRect="9" WinPixel="9" WinBody="115 , 209" WinTop="130 , 204" WinBottom="130 , 214" WinLeft="109 , 224" WinRight="120 , 224" WinTopLeft="109 , 203"
+               WinTopRight="119 , 203" WinBottomLeft="109 , 213" WinBottomRight="119 , 213"/>
+
+  <TAutoSeekWin Type="Window" Texture="./UI/Texture/main.gwo" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"
+              WinRect="17" WinPixel="17" WinBody="70 , 76" WinTop="176 , 81" WinBottom="182 , 63" WinLeft="161 , 96" WinRight="179 , 96" WinTopLeft="161 , 81"
+              WinTopRight="179 , 81" WinBottomLeft="167 , 63" WinBottomRight="296 , 63"/>
+
+  <!-- <LoginBackWin Type="Window" Rectangle="0,0,1024,768" Modal="0" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>-->
+
+</UITemplate>

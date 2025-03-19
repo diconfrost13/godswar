@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<UIConfig>
+	<SkillViewUI Template="T_NormalWindow" ID="270000" Modal="0" EventReceive1="1" EventReceive2="1" Rectangle="700,200,963,726" BtnRect="196,13,233,50" BtnPos="0,80" Text="">
+		<SkillTabBar Type="TabBar" ID="270001" Rectangle="14,70,248,517" TexturePos="0,0" Texture="./UI/Texture/main.gwo">
+			<Skill Type="Tab" ID="-1" Rectangle="53,-22,114,1" Texture="./UI/Texture/main.gwo" TexturePos="244,450" Text="技能" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Textweight="3">
+ 
+        <ListBox1Btm Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="208,423,233,447" TexturePos="929,970" Text=""/>
+        <ListBox1Top Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="208,2,233,26" TexturePos="929,940" Text=""/>
+        <ListBoxScrollMID Type="Text" ID="270004" Texture="./UI/Texture/main.gwo" Rectangle="208,26,233,27" TexturePos="929,967" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+
+        <UpBtn Type="Button" ID="270002" Rectangle="206,2,234,24" TexturePos="0,228" Texture="./UI/Texture/main.gwo" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <DownBtn Type="Button" ID="270003" Rectangle="206,425,234,447" TexturePos="29,228" Texture="./UI/Texture/main.gwo" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+
+        <ListBox1 Type="ListBox" ID="270005" Drag="1" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Rectangle="6,2,222,404" ScrollTexture="./UI/Texture/main.gwo" ScrollPos="0,0" ScrollRect="206,20,223,418" BtnPos="133,122" BtnRect="0,0,17,27" Height="56">
+				</ListBox1>
+			</Skill>
+			<Special Type="Tab" ID="-1" Rectangle="114,-22,175,1" Texture="./UI/Texture/main.gwo" TexturePos="244,450" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text="专长" TextFormat="5">
+
+        <DownButtonBtm Template="T_TitleText" ID="-1" Rectangle="208,423,233,447" TexturePos="929,970" Text=""/>
+        <UpButtonTop Template="T_TitleText" ID="-1" Rectangle="208,2,233,26" TexturePos="929,940" Text=""/>
+        <BscrollMid Template="T_TitleText" ID="270042" Rectangle="208,26,233,27" TexturePos="929,967" Text=""/>
+  
+        <UpBtn Type="Button" ID="270040" Rectangle="206,2,234,24" TexturePos="0,228" Texture="./UI/Texture/main.gwo" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text="" OnClick="UpContainerBtn()"/>
+        <DownBtn Type="Button" ID="270041" Rectangle="206,425,234,447" TexturePos="29,228" Texture="./UI/Texture/main.gwo" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text="" OnClick="DownContainerBtn()"/>
+
+        <Container Type="Container" ID="270043" Rectangle="6,6,227,420" TexturePos="0,0" Texture="./UI/Texture/main.gwo" ScrollTexture="./UI/Texture/main.gwo" ScrollRect="206,16,223,418" ScrollPos="0,0" BtnPos="133,122" BtnRect="0,0,17,27" Font="CONTAIN10_TEXTFONT" FontColor="BillBoard_TEXTCOLOR">
+					<Class1>
+						<OneSkillInfo>
+							<Skillinfo1>
+								<SkillFrame Type="Text" ID="270054" Rectangle="81,35,122,77" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270055" Rectangle="84,38,120,76" TexturePos="72,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270056" Rectangle="84,38,120,76" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270058" Rectangle="81,35,122,77" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								
+							</Skillinfo1>
+							<Skillinfo2>
+								<SkillFrame Type="Text" ID="270059" Rectangle="8,108,50,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270060" Rectangle="11,110,47,146" TexturePos="0,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270061" Rectangle="11,110,47,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270063" Rectangle="8,108,50,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								
+							</Skillinfo2>
+							<Skillinfo3>
+								<SkillFrame Type="Text" ID="270064" Rectangle="58,108,100,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270065" Rectangle="61,110,97,146" TexturePos="36,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270066" Rectangle="61,110,97,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270068" Rectangle="58,108,100,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								
+							</Skillinfo3>
+							<Skillinfo4>
+								<SkillFrame Type="Text" ID="270069" Rectangle="107,108,149,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270070" Rectangle="110,110,146,146" TexturePos="216,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270071" Rectangle="110,110,146,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270073" Rectangle="107,108,149,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								
+							</Skillinfo4>
+							<Skillinfo5>
+								<SkillFrame Type="Text" ID="270074" Rectangle="155,108,197,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270075" Rectangle="158,110,194,146" TexturePos="360,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270076" Rectangle="158,110,194,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270078" Rectangle="155,108,197,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								
+							</Skillinfo5>
+							<Skillinfo6>
+								<SkillFrame Type="Text" ID="270079" Rectangle="8,181,50,223" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270080" Rectangle="11,183,47,219" TexturePos="144,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270081" Rectangle="11,183,47,219" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270083" Rectangle="8,181,50,223" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								
+							</Skillinfo6>
+							<Skillinfo7>
+								<SkillFrame Type="Text" ID="270084" Rectangle="58,181,100,223" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270085" Rectangle="61,183,97,219" TexturePos="108,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270086" Rectangle="61,183,97,219" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270088" Rectangle="58,181,100,223" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								
+							</Skillinfo7>
+							<Skillinfo8>
+								<SkillFrame Type="Text" ID="270089" Rectangle="107,181,149,223" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270090" Rectangle="110,183,146,219" TexturePos="324,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270091" Rectangle="110,183,146,219" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270093" Rectangle="107,181,149,223" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							
+							</Skillinfo8>
+							<Skillinfo9>
+								<SkillFrame Type="Text" ID="270094" Rectangle="8,254,50,296" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270095" Rectangle="11,256,47,292" TexturePos="180,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270096" Rectangle="11,256,47,292" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270098" Rectangle="8,254,50,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								
+							</Skillinfo9>
+							<Skillinfo10>
+								<SkillFrame Type="Text" ID="270099" Rectangle="58,254,100,295" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270100" Rectangle="61,256,97,292" TexturePos="72,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270101" Rectangle="61,256,97,292" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270103" Rectangle="58,254,100,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								
+							</Skillinfo10>
+							<Skillinfo11>
+								<SkillFrame Type="Text" ID="270104" Rectangle="107,254,149,296" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270105" Rectangle="110,256,146,292" TexturePos="396,72" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270106" Rectangle="110,256,146,292" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270108" Rectangle="107,254,149,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo11>
+							<Skillinfo12>
+								<SkillFrame Type="Text" ID="270109" Rectangle="8,325,50,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270110" Rectangle="11,327,47,363" TexturePos="936,72" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270111" Rectangle="11,327,47,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270113" Rectangle="8,325,50,366" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo12>
+							<Skillinfo13>
+								<SkillFrame Type="Text" ID="270114" Rectangle="58,325,100,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270115" Rectangle="61,327,97,363" TexturePos="252,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270116" Rectangle="61,327,97,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270118" Rectangle="58,325,100,366" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo13>
+							<Skillinfo14>
+								<SkillFrame Type="Text" ID="270119" Rectangle="107,325,149,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270120" Rectangle="110,327,146,363" TexturePos="288,36" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270121" Rectangle="110,327,146,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270123" Rectangle="107,325,149,366" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo14>
+							<Skillinfo15>
+								<SkillFrame Type="Text" ID="270124" Rectangle="155,325,197,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270125" Rectangle="158,327,194,363" TexturePos="900,72" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270126" Rectangle="158,327,194,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270128" Rectangle="155,325,197,366" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo15>
+							<Skillinfo16>
+								<SkillFrame Type="Text" ID="270129" Rectangle="8,398,50,440" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270130" Rectangle="11,400,47,438" TexturePos="936,72" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270131" Rectangle="11,400,47,436" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270133" Rectangle="8,398,50,439" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo16>
+							<Skillinfo17>
+								<SkillFrame Type="Text" ID="270134" Rectangle="58,398,100,440" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270135" Rectangle="61,400,97,436" TexturePos="504,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270136" Rectangle="61,400,97,436" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270138" Rectangle="58,398,100,439" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo17>
+							<Skillinfo18>
+								<SkillFrame Type="Text" ID="270139" Rectangle="107,398,149,440" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270140" Rectangle="110,400,146,436" TexturePos="324,72" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270141" Rectangle="110,400,146,436" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270143" Rectangle="107,398,149,439" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo18>
+						</OneSkillInfo>
+						<Arrow>
+							<Arrow1 Type="Text" ID="270144" Rectangle="23,77,181,108" TexturePos="94,373" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow2 Type="Text" ID="270145" Rectangle="23,150,35,181" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow3 Type="Text" ID="270146" Rectangle="72,150,84,181" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow4 Type="Text" ID="270147" Rectangle="121,150,133,181" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow5 Type="Text" ID="270148" Rectangle="23,223,35,254" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow6 Type="Text" ID="270149" Rectangle="72,223,84,254" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow7 Type="Text" ID="270150" Rectangle="121,223,133,254" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow8 Type="Text" ID="270151" Rectangle="174,150,178,306" TexturePos="302,192,306,348" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow9 Type="Text" ID="270152" Rectangle="23,306,181,325" TexturePos="94,405,252,423" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow10 Type="Text" ID="270153" Rectangle="23,367,35,398" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow11 Type="Text" ID="270154" Rectangle="72,367,84,398" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow12 Type="Text" ID="270155" Rectangle="121,367,133,398" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+						</Arrow>
+					</Class1>
+					<Class2>
+						<OneSkillInfo>
+							<Skillinfo1>
+								<SkillFrame Type="Text" ID="270201" Rectangle="81,35,122,77" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270202" Rectangle="84,39,120,75" TexturePos="216,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270203" Rectangle="84,39,120,75" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270205" Rectangle="81,35,122,77" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo1>
+							<Skillinfo2>
+								<SkillFrame Type="Text" ID="270206" Rectangle="8,108,50,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270207" Rectangle="11,110,47,146" TexturePos="0,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270208" Rectangle="11,110,47,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270210" Rectangle="8,108,50,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo2>
+							<Skillinfo3>
+								<SkillFrame Type="Text" ID="270211" Rectangle="58,108,100,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270212" Rectangle="61,110,97,146" TexturePos="36,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270213" Rectangle="61,110,97,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270215" Rectangle="58,108,100,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo3>
+							<Skillinfo4>
+								<SkillFrame Type="Text" ID="270216" Rectangle="107,108,149,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270217" Rectangle="110,110,146,146" TexturePos="72,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270218" Rectangle="110,110,146,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270220" Rectangle="107,108,149,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo4>
+							<Skillinfo5>
+								<SkillFrame Type="Text" ID="270221" Rectangle="155,108,197,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270222" Rectangle="158,110,194,146" TexturePos="324,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270223" Rectangle="158,110,194,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270225" Rectangle="155,108,197,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo5>
+							<Skillinfo6>
+								<SkillFrame Type="Text" ID="270226" Rectangle="8,181,50,223" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270227" Rectangle="11,183,47,219" TexturePos="144,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270228" Rectangle="11,183,47,219" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270230" Rectangle="8,181,50,223" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo6>
+							<Skillinfo7>
+								<SkillFrame Type="Text" ID="270231" Rectangle="58,181,100,223" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270232" Rectangle="61,183,97,219" TexturePos="324,108" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270233" Rectangle="61,183,97,219" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270235" Rectangle="58,181,100,223" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo7>
+							<Skillinfo8>
+								<SkillFrame Type="Text" ID="270236" Rectangle="107,181,149,223" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270237" Rectangle="110,183,146,219" TexturePos="252,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270238" Rectangle="110,183,146,219" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270240" Rectangle="107,181,149,223" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo8>
+							<Skillinfo9>
+								<SkillFrame Type="Text" ID="270241" Rectangle="8,254,50,296" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270242" Rectangle="11,256,47,292" TexturePos="180,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270243" Rectangle="11,256,47,292" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270245" Rectangle="8,254,50,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo9>
+							<Skillinfo10>
+								<SkillFrame Type="Text" ID="270246" Rectangle="58,254,100,296" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270247" Rectangle="61,256,97,292" TexturePos="576,108" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270248" Rectangle="61,256,97,292" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270250" Rectangle="58,254,100,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo10>
+							<Skillinfo11>
+								<SkillFrame Type="Text" ID="270251" Rectangle="107,254,149,296" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270252" Rectangle="110,256,146,292" TexturePos="360,72" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270253" Rectangle="110,256,146,292" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270255" Rectangle="107,254,149,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo11>
+							<Skillinfo12>
+								<SkillFrame Type="Text" ID="270256" Rectangle="8,325,50,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270257" Rectangle="11,327,47,363" TexturePos="324,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270258" Rectangle="11,327,47,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270260" Rectangle="8,325,50,366" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo12>
+							<Skillinfo13>
+								<SkillFrame Type="Text" ID="270261" Rectangle="58,325,100,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270262" Rectangle="61,327,97,363" TexturePos="504,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270263" Rectangle="61,327,97,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270265" Rectangle="58,325,100,367" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo13>
+							<Skillinfo14>
+								<SkillFrame Type="Text" ID="270266" Rectangle="107,325,149,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270267" Rectangle="110,327,146,363" TexturePos="360,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270268" Rectangle="110,327,146,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270270" Rectangle="107,325,149,367" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo14>
+							<Skillinfo15>
+								<SkillFrame Type="Text" ID="270271" Rectangle="155,325,197,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270272" Rectangle="158,327,194,363" TexturePos="900,72" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270273" Rectangle="158,327,194,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270275" Rectangle="155,325,197,367" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo15>
+							<Skillinfo16>
+								<SkillFrame Type="Text" ID="270276" Rectangle="8,398,50,440" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270277" Rectangle="11,400,47,436" TexturePos="396,72" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270278" Rectangle="11,400,47,436" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270280" Rectangle="8,398,50,440" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo16>
+							<Skillinfo17>
+								<SkillFrame Type="Text" ID="270281" Rectangle="58,398,100,440" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270282" Rectangle="61,400,97,436" TexturePos="936,72" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270283" Rectangle="61,400,97,436" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270285" Rectangle="58,398,100,440" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo17>
+							<Skillinfo18>
+								<SkillFrame Type="Text" ID="270286" Rectangle="107,398,149,440" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270287" Rectangle="110,400,146,436" TexturePos="72,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270288" Rectangle="110,400,146,436" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270290" Rectangle="107,398,149,440" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo18>
+						</OneSkillInfo>
+						<Arrow>
+							<Arrow1 Type="Text" ID="270291" Rectangle="23,77,181,108" TexturePos="94,373" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow2 Type="Text" ID="270292" Rectangle="23,150,35,181" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow3 Type="Text" ID="270293" Rectangle="72,150,84,181" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow4 Type="Text" ID="270294" Rectangle="121,150,133,181" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow5 Type="Text" ID="270295" Rectangle="23,223,35,254" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow6 Type="Text" ID="270296" Rectangle="72,223,84,254" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow7 Type="Text" ID="270297" Rectangle="121,223,133,254" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow8 Type="Text" ID="270298" Rectangle="174,150,178,306" TexturePos="302,192,306,348" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow9 Type="Text" ID="270299" Rectangle="23,306,181,325" TexturePos="94,405,252,423" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow10 Type="Text" ID="270300" Rectangle="23,367,35,398" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow11 Type="Text" ID="270301" Rectangle="72,367,84,398" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow12 Type="Text" ID="270302" Rectangle="121,367,133,398" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+						</Arrow>
+					</Class2>
+					<Class3>
+						<OneSkillInfo>
+							<Skillinfo1>
+								<SkillFrame Type="Text" ID="270511" Rectangle="81,35,122,77" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270512" Rectangle="84,39,120,75" TexturePos="324,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270513" Rectangle="84,39,120,75" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270515" Rectangle="81,35,122,77" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo1>
+							<Skillinfo2>
+								<SkillFrame Type="Text" ID="270516" Rectangle="8,108,50,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270517" Rectangle="11,110,47,146" TexturePos="504,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270518" Rectangle="11,110,47,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270520" Rectangle="8,108,50,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo2>
+							<Skillinfo3>
+								<SkillFrame Type="Text" ID="270521" Rectangle="58,108,100,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270522" Rectangle="61,110,97,146" TexturePos="36,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270523" Rectangle="61,110,97,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270525" Rectangle="58,108,100,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo3>
+							<Skillinfo4>
+								<SkillFrame Type="Text" ID="270526" Rectangle="107,108,149,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270527" Rectangle="110,110,146,146" TexturePos="288,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270528" Rectangle="110,110,146,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<SkillButton Type="Button" ID="270530" Rectangle="107,108,149,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo4>
+							<Skillinfo5>
+								<SkillFrame Type="Text" ID="270531" Rectangle="155,108,197,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270532" Rectangle="158,110,194,146" TexturePos="360,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270533" Rectangle="158,110,194,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270535" Rectangle="155,108,197,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo5>
+							<Skillinfo6>
+								<SkillFrame Type="Text" ID="270536" Rectangle="8,181,50,223" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270537" Rectangle="11,183,47,219" TexturePos="504,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270538" Rectangle="11,183,47,219" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270540" Rectangle="8,181,50,223" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo6>
+							<Skillinfo7>
+								<SkillFrame Type="Text" ID="270541" Rectangle="58,181,100,223" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270542" Rectangle="61,183,97,219" TexturePos="324,108" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270543" Rectangle="61,183,97,219" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270545" Rectangle="58,181,100,223" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo7>
+							<Skillinfo8>
+								<SkillFrame Type="Text" ID="270546" Rectangle="107,181,149,223" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270547" Rectangle="110,183,146,219" TexturePos="216,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270548" Rectangle="110,183,146,219" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270550" Rectangle="107,181,149,223" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo8>
+							<Skillinfo9>
+								<SkillFrame Type="Text" ID="270551" Rectangle="8,254,50,296" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270552" Rectangle="11,256,47,292" TexturePos="936,72" Texture="./UI/Texture/icon.gwo" Text=" p" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270553" Rectangle="11,256,47,292" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text="s"/>
+								<SkillButton Type="Button" ID="270555" Rectangle="8,254,50,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo9>
+							<Skillinfo10>
+								<SkillFrame Type="Text" ID="270556" Rectangle="58,254,100,296" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270557" Rectangle="61,256,97,292" TexturePos="324,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270558" Rectangle="61,256,97,292" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270560" Rectangle="58,254,100,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo10>
+							<Skillinfo11>
+								<SkillFrame Type="Text" ID="270561" Rectangle="107,254,149,296" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270562" Rectangle="110,256,146,292" TexturePos="288,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270563" Rectangle="110,256,146,292" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270565" Rectangle="107,254,149,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo11>
+							<Skillinfo12>
+								<SkillFrame Type="Text" ID="270566" Rectangle="8,325,50,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270567" Rectangle="11,327,47,363" TexturePos="360,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270568" Rectangle="11,327,47,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270570" Rectangle="8,325,50,367" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo12>
+							<Skillinfo13>
+								<SkillFrame Type="Text" ID="270571" Rectangle="58,325,100,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270572" Rectangle="61,327,97,363" TexturePos="504,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270573" Rectangle="61,327,97,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270575" Rectangle="58,325,100,367" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo13>
+							<Skillinfo14>
+								<SkillFrame Type="Text" ID="270576" Rectangle="107,325,149,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270577" Rectangle="110,327,146,363" TexturePos="252,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270578" Rectangle="110,327,146,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270580" Rectangle="107,325,149,367" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo14>
+							<Skillinfo15>
+								<SkillFrame Type="Text" ID="270581" Rectangle="155,325,197,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270582" Rectangle="158,327,194,363" TexturePos="900,72" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270583" Rectangle="158,327,194,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270585" Rectangle="155,325,197,367" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo15>
+							<Skillinfo16>
+								<SkillFrame Type="Text" ID="270586" Rectangle="8,398,50,440" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270587" Rectangle="11,400,47,436" TexturePos="396,72" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270588" Rectangle="11,400,47,436" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270590" Rectangle="8,398,50,440" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo16>
+							<Skillinfo17>
+								<SkillFrame Type="Text" ID="270591" Rectangle="58,398,100,440" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270592" Rectangle="61,400,97,436" TexturePos="396,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270593" Rectangle="61,400,97,436" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270595" Rectangle="58,398,100,440" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo17>
+							<Skillinfo18>
+								<SkillFrame Type="Text" ID="270596" Rectangle="107,398,149,440" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270597" Rectangle="110,400,146,436" TexturePos="72,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270598" Rectangle="110,400,146,436" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270600" Rectangle="107,398,149,440" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo18>
+						</OneSkillInfo>
+						<Arrow>
+							<Arrow1 Type="Text" ID="270601" Rectangle="23,77,181,108" TexturePos="94,373" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow2 Type="Text" ID="270602" Rectangle="23,150,35,181" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow3 Type="Text" ID="270603" Rectangle="72,150,84,181" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow4 Type="Text" ID="270604" Rectangle="121,150,133,181" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow5 Type="Text" ID="270605" Rectangle="23,223,35,254" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow6 Type="Text" ID="270606" Rectangle="72,223,84,254" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow7 Type="Text" ID="270607" Rectangle="121,223,133,254" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow8 Type="Text" ID="270608" Rectangle="174,150,178,306" TexturePos="302,192,306,348" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow9 Type="Text" ID="270609" Rectangle="23,306,181,325" TexturePos="94,405,252,423" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow10 Type="Text" ID="270610" Rectangle="23,367,35,398" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow11 Type="Text" ID="270611" Rectangle="72,367,84,398" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow12 Type="Text" ID="270612" Rectangle="121,367,133,398" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+						</Arrow>
+					</Class3>
+					<Class4>
+						<OneSkillInfo>
+							<Skillinfo1>
+								<SkillFrame Type="Text" ID="270361" Rectangle="81,35,122,77" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270362" Rectangle="84,39,120,75" TexturePos="360,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270363" Rectangle="84,39,120,75" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270365" Rectangle="81,35,122,77" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo1>
+							<Skillinfo2>
+								<SkillFrame Type="Text" ID="270366" Rectangle="8,108,50,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270367" Rectangle="11,110,47,146" TexturePos="288,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270368" Rectangle="11,110,47,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270370" Rectangle="8,108,50,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo2>
+							<Skillinfo3>
+								<SkillFrame Type="Text" ID="270371" Rectangle="58,108,100,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270372" Rectangle="61,110,97,146" TexturePos="216,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270373" Rectangle="61,110,97,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270375" Rectangle="58,108,100,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo3>
+							<Skillinfo4>
+								<SkillFrame Type="Text" ID="270376" Rectangle="107,108,149,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270377" Rectangle="110,110,146,146" TexturePos="936,72" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270378" Rectangle="110,110,146,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270380" Rectangle="107,108,149,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo4>
+							<Skillinfo5>
+								<SkillFrame Type="Text" ID="270381" Rectangle="155,108,197,150" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270382" Rectangle="158,110,194,146" TexturePos="504,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270383" Rectangle="158,110,194,146" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270385" Rectangle="155,108,197,150" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo5>
+							<Skillinfo6>
+								<SkillFrame Type="Text" ID="270386" Rectangle="8,181,50,223" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270387" Rectangle="11,183,47,219" TexturePos="288,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270388" Rectangle="11,183,47,219" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270390" Rectangle="8,181,50,223" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo6>
+							<Skillinfo7>
+								<SkillFrame Type="Text" ID="270391" Rectangle="58,181,100,223" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270392" Rectangle="61,183,97,219" TexturePos="216,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270393" Rectangle="61,183,97,219" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270395" Rectangle="58,181,100,223" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo7>
+							<Skillinfo8>
+								<SkillFrame Type="Text" ID="270396" Rectangle="107,181,149,223" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270397" Rectangle="110,183,146,219" TexturePos="36,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270398" Rectangle="110,183,146,219" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270400" Rectangle="107,181,149,223" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo8>
+							<Skillinfo9>
+								<SkillFrame Type="Text" ID="270401" Rectangle="8,254,50,296" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270402" Rectangle="11,256,47,292" TexturePos="540,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270403" Rectangle="11,256,47,292" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270405" Rectangle="8,254,50,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo9>
+							<Skillinfo10>
+								<SkillFrame Type="Text" ID="270406" Rectangle="58,254,100,296" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270407" Rectangle="61,256,97,292" TexturePos="432,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270408" Rectangle="61,256,97,292" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270410" Rectangle="58,254,100,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo10>
+							<Skillinfo11>
+								<SkillFrame Type="Text" ID="270411" Rectangle="107,254,149,296" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270412" Rectangle="110,256,146,292" TexturePos="936,72" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270413" Rectangle="110,256,146,292" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270415" Rectangle="107,254,149,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo11>
+							<Skillinfo12>
+								<SkillFrame Type="Text" ID="270416" Rectangle="8,325,50,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270417" Rectangle="11,327,47,363" TexturePos="324,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270418" Rectangle="11,327,47,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270420" Rectangle="8,325,50,367" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo12>
+							<Skillinfo13>
+								<SkillFrame Type="Text" ID="270421" Rectangle="58,325,100,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270422" Rectangle="61,327,97,363" TexturePos="252,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270423" Rectangle="61,327,97,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270425" Rectangle="58,325,100,367" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo13>
+							<Skillinfo14>
+								<SkillFrame Type="Text" ID="270426" Rectangle="107,325,149,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270427" Rectangle="110,327,146,363" TexturePos="360,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270428" Rectangle="110,327,146,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270430" Rectangle="107,325,149,367" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo14>
+							<Skillinfo15>
+								<SkillFrame Type="Text" ID="270431" Rectangle="155,325,197,367" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270432" Rectangle="158,327,194,363" TexturePos="504,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270433" Rectangle="158,327,194,363" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270435" Rectangle="155,325,197,367" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo15>
+							<Skillinfo16>
+								<SkillFrame Type="Text" ID="270436" Rectangle="8,398,50,440" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270437" Rectangle="11,400,47,436" TexturePos="396,72" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270438" Rectangle="11,400,47,436" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270440" Rectangle="8,398,50,440" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo16>
+							<Skillinfo17>
+								<SkillFrame Type="Text" ID="270441" Rectangle="58,398,100,440" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270442" Rectangle="61,400,97,436" TexturePos="72,0" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270443" Rectangle="61,400,97,436" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270445" Rectangle="58,398,100,440" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo17>
+							<Skillinfo18>
+								<SkillFrame Type="Text" ID="270446" Rectangle="107,398,149,440" TexturePos="50,367,91,408" Texture="./UI/Texture/main.gwo" Text=""/>
+								<Picture Type="Text" ID="270447" Rectangle="110,400,146,436" TexturePos="360,72" Texture="./UI/Texture/icon.gwo" Text=" " Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+								<ShadeIcon Type="Text" ID="270448" Rectangle="110,400,146,436" TexturePos="576,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+								<SkillButton Type="Button" ID="270450" Rectangle="107,398,149,440" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" Font="CONTAIN10_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+							</Skillinfo18>
+						</OneSkillInfo>
+						<Arrow>
+							<Arrow1 Type="Text" ID="270451" Rectangle="23,77,181,108" TexturePos="94,373" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow2 Type="Text" ID="270452" Rectangle="23,150,35,181" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow3 Type="Text" ID="270453" Rectangle="72,150,84,181" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow4 Type="Text" ID="270454" Rectangle="121,150,133,181" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow5 Type="Text" ID="270455" Rectangle="23,223,35,254" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow6 Type="Text" ID="270456" Rectangle="72,223,84,254" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow7 Type="Text" ID="270457" Rectangle="121,223,133,254" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow8 Type="Text" ID="270458" Rectangle="174,150,178,306" TexturePos="302,192,306,348" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow9 Type="Text" ID="270459" Rectangle="23,306,181,325" TexturePos="94,405,252,423" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow10 Type="Text" ID="270460" Rectangle="23,367,35,398" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow11 Type="Text" ID="270461" Rectangle="72,367,84,398" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+							<Arrow12 Type="Text" ID="270155" Rectangle="121,367,133,398" TexturePos="265,193,276,223" Texture="./UI/Texture/main.gwo" Text=""/>
+						</Arrow>
+					</Class4>
+				</Container>
+			</Special>
+		</SkillTabBar>
+		<SkillInfo Type="Text" ID="270006" Rectangle="35,74,69,89" TexturePos="0,703" Text=""/>
+		<SpecialInfo Type="Text" ID="270007" Rectangle="95,74,129,89" TexturePos="0,686" Text=""/>
+		<HelpButton Type="Button" ID="270008" Rectangle="16,490,42,517" Texture="./UI/Texture/main.gwo" TexturePos="179,432" Text=""/>
+		<SkillNumInfo Type="Text" ID="-1" Rectangle="52,497,135,515" TexturePos="734,786" Text="专长点数:" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR"/>
+		<SkillNumText Type="Text" ID="270009" Rectangle="135,497,185,515" TexturePos="734,786" Text="13点" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR"/>
+	</SkillViewUI>
+</UIConfig>

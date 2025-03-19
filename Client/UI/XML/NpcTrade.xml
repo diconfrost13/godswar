@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：
+		摘    要：npc交易界面
+
+		当前版本：1.00
+		作    者：赖滔
+		完成日期：2008-03-18  
+ 
+-->
+<UIConfig>
+	<NPCTrade Template="T_NormalWindow" ID="171000" Rectangle="79,112,342,638"   BtnRect="196,13,234,50" BtnPos="0,80"  visible="0">
+	
+    <Bags Type="TabBar" ID="171001" Rectangle="14,71,90,517" Texture="./UI/Texture/main.gwo" TexturePos="656,46">
+			<Bag0 Type="Tab" Rectangle="17,-24,67,-1" Texture="./UI/Texture/main.gwo" TexturePos="171,280" BtnTopTexture="./UI/Texture/main.gwo" BtnTopPos="0,0" BtnTopRect="0,0,1,1" Text="物品" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5">
+        <!--按钮背景-->
+        <Item0Bk Type="Text" Rectangle="13,15,55,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item1Bk Type="Text" Rectangle="55,15,97,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item2Bk Type="Text" Rectangle="97,15,139,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item3Bk Type="Text" Rectangle="139,15,181,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item4Bk Type="Text" Rectangle="181,15,223,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        
+        <Item5Bk Type="Text" Rectangle="13,57,55,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item6Bk Type="Text" Rectangle="55,57,97,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item7Bk Type="Text" Rectangle="97,57,139,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item8Bk Type="Text" Rectangle="139,57,181,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item9Bk Type="Text" Rectangle="181,57,223,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        
+        <Item10Bk Type="Text" Rectangle="13,99,55,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item11Bk Type="Text" Rectangle="55,99,97,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item12Bk Type="Text" Rectangle="97,99,139,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item13Bk Type="Text" Rectangle="139,99,181,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item14Bk Type="Text" Rectangle="181,99,223,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        
+        <Item15Bk Type="Text" Rectangle="13,141,55,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item16Bk Type="Text" Rectangle="55,141,97,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item17Bk Type="Text" Rectangle="97,141,139,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item18Bk Type="Text" Rectangle="139,141,181,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item19Bk Type="Text" Rectangle="181,141,223,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        
+        <Item20Bk Type="Text" Rectangle="13,183,55,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item21Bk Type="Text" Rectangle="55,183,97,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item22Bk Type="Text" Rectangle="97,183,139,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item23Bk Type="Text" Rectangle="139,183,181,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item24Bk Type="Text" Rectangle="181,183,223,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+       
+        <Item25Bk Type="Text" Rectangle="13,225,55,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item26Bk Type="Text" Rectangle="55,225,97,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item27Bk Type="Text" Rectangle="97,225,139,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item28Bk Type="Text" Rectangle="139,225,181,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item29Bk Type="Text" Rectangle="181,225,223,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        
+        <Item30Bk Type="Text" Rectangle="13,267,55,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item31Bk Type="Text" Rectangle="55,267,97,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item32Bk Type="Text" Rectangle="97,267,139,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item33Bk Type="Text" Rectangle="139,267,181,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item34Bk Type="Text" Rectangle="181,267,223,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        
+        <Item35Bk Type="Text" Rectangle="13,309,55,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item36Bk Type="Text" Rectangle="55,309,97,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item37Bk Type="Text" Rectangle="97,309,139,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item38Bk Type="Text" Rectangle="139,309,181,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item39Bk Type="Text" Rectangle="181,309,223,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        
+        <Item40Bk Type="Text" Rectangle="13,351,55,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item41Bk Type="Text" Rectangle="55,351,97,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item42Bk Type="Text" Rectangle="97,351,139,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item43Bk Type="Text" Rectangle="139,351,181,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item44Bk Type="Text" Rectangle="181,351,223,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        
+        <Item45Bk Type="Text" Rectangle="13,393,55,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item46Bk Type="Text" Rectangle="55,393,97,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item47Bk Type="Text" Rectangle="97,393,139,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item48Bk Type="Text" Rectangle="139,393,181,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item49Bk Type="Text" Rectangle="181,393,223,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item0 Template="T_SkillButton" ID="171100" Rectangle="13,15,55,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item1 Template="T_SkillButton" ID="171101" Rectangle="55,15,97,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item2 Template="T_SkillButton" ID="171102" Rectangle="97,15,139,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item3 Template="T_SkillButton" ID="171103" Rectangle="139,15,181,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item4 Template="T_SkillButton" ID="171104" Rectangle="181,15,223,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				
+        <Item5 Template="T_SkillButton" ID="171105" Rectangle="13,57,55,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item6 Template="T_SkillButton" ID="171106" Rectangle="55,57,97,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item7 Template="T_SkillButton" ID="171107" Rectangle="97,57,139,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item8 Template="T_SkillButton" ID="171108" Rectangle="139,57,181,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item9 Template="T_SkillButton" ID="171109" Rectangle="181,57,223,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				
+        <Item10 Template="T_SkillButton" ID="171110" Rectangle="13,99,55,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item11 Template="T_SkillButton" ID="171111" Rectangle="55,99,97,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item12 Template="T_SkillButton" ID="171112" Rectangle="97,99,139,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item13 Template="T_SkillButton" ID="171113" Rectangle="139,99,181,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item14 Template="T_SkillButton" ID="171114" Rectangle="181,99,223,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				
+        <Item15 Template="T_SkillButton" ID="171115" Rectangle="13,141,55,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item16 Template="T_SkillButton" ID="171116" Rectangle="55,141,97,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item17 Template="T_SkillButton" ID="171117" Rectangle="97,141,139,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item18 Template="T_SkillButton" ID="171118" Rectangle="139,141,181,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item19 Template="T_SkillButton" ID="171119" Rectangle="181,141,223,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				
+        <Item20 Template="T_SkillButton" ID="171120" Rectangle="13,183,55,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item21 Template="T_SkillButton" ID="171121" Rectangle="55,183,97,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item22 Template="T_SkillButton" ID="171122" Rectangle="97,183,139,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item23 Template="T_SkillButton" ID="171123" Rectangle="139,183,181,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item24 Template="T_SkillButton" ID="171124" Rectangle="181,183,223,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				
+        <Item25 Template="T_SkillButton" ID="171125" Rectangle="13,225,55,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item26 Template="T_SkillButton" ID="171126" Rectangle="55,225,97,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item27 Template="T_SkillButton" ID="171127" Rectangle="97,225,139,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item28 Template="T_SkillButton" ID="171128" Rectangle="139,225,181,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item29 Template="T_SkillButton" ID="171129" Rectangle="181,225,223,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				
+        <Item30 Template="T_SkillButton" ID="171130" Rectangle="13,267,55,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item31 Template="T_SkillButton" ID="171131" Rectangle="55,267,97,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item32 Template="T_SkillButton" ID="171132" Rectangle="97,267,139,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item33 Template="T_SkillButton" ID="171133" Rectangle="139,267,181,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item34 Template="T_SkillButton" ID="171134" Rectangle="181,267,223,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				
+        <Item35 Template="T_SkillButton" ID="171135" Rectangle="13,309,55,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item36 Template="T_SkillButton" ID="171136" Rectangle="55,309,97,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item37 Template="T_SkillButton" ID="171137" Rectangle="97,309,139,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item38 Template="T_SkillButton" ID="171138" Rectangle="139,309,181,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item39 Template="T_SkillButton" ID="171139" Rectangle="181,309,223,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				
+        <Item40 Template="T_SkillButton" ID="171140" Rectangle="13,351,55,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item41 Template="T_SkillButton" ID="171141" Rectangle="55,351,97,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item42 Template="T_SkillButton" ID="171142" Rectangle="97,351,139,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item43 Template="T_SkillButton" ID="171143" Rectangle="139,351,181,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+				<Item44 Template="T_SkillButton" ID="171144" Rectangle="181,351,223,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item45 Template="T_SkillButton" ID="171145" Rectangle="13,393,55,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item46 Template="T_SkillButton" ID="171146" Rectangle="55,393,97,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item47 Template="T_SkillButton" ID="171147" Rectangle="97,393,139,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item48 Template="T_SkillButton" ID="171148" Rectangle="139,393,181,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item49 Template="T_SkillButton" ID="171149" Rectangle="181,393,223,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+      </Bag0>
+			<Bag1 Type="Tab" Rectangle="67,-24,117,-1" Texture="./UI/Texture/main.gwo" TexturePos="171,280" BtnTopTexture="./UI/Texture/main.gwo" BtnTopPos="0,0" BtnTopRect="0,0,1,1" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5">
+
+        <!--按钮背景-->
+        <Item0Bk Type="Text" Rectangle="13,15,55,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item1Bk Type="Text" Rectangle="55,15,97,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item2Bk Type="Text" Rectangle="97,15,139,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item3Bk Type="Text" Rectangle="139,15,181,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item4Bk Type="Text" Rectangle="181,15,223,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item5Bk Type="Text" Rectangle="13,57,55,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item6Bk Type="Text" Rectangle="55,57,97,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item7Bk Type="Text" Rectangle="97,57,139,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item8Bk Type="Text" Rectangle="139,57,181,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item9Bk Type="Text" Rectangle="181,57,223,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item10Bk Type="Text" Rectangle="13,99,55,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item11Bk Type="Text" Rectangle="55,99,97,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item12Bk Type="Text" Rectangle="97,99,139,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item13Bk Type="Text" Rectangle="139,99,181,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item14Bk Type="Text" Rectangle="181,99,223,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item15Bk Type="Text" Rectangle="13,141,55,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item16Bk Type="Text" Rectangle="55,141,97,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item17Bk Type="Text" Rectangle="97,141,139,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item18Bk Type="Text" Rectangle="139,141,181,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item19Bk Type="Text" Rectangle="181,141,223,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item20Bk Type="Text" Rectangle="13,183,55,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item21Bk Type="Text" Rectangle="55,183,97,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item22Bk Type="Text" Rectangle="97,183,139,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item23Bk Type="Text" Rectangle="139,183,181,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item24Bk Type="Text" Rectangle="181,183,223,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item25Bk Type="Text" Rectangle="13,225,55,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item26Bk Type="Text" Rectangle="55,225,97,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item27Bk Type="Text" Rectangle="97,225,139,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item28Bk Type="Text" Rectangle="139,225,181,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item29Bk Type="Text" Rectangle="181,225,223,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item30Bk Type="Text" Rectangle="13,267,55,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item31Bk Type="Text" Rectangle="55,267,97,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item32Bk Type="Text" Rectangle="97,267,139,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item33Bk Type="Text" Rectangle="139,267,181,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item34Bk Type="Text" Rectangle="181,267,223,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item35Bk Type="Text" Rectangle="13,309,55,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item36Bk Type="Text" Rectangle="55,309,97,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item37Bk Type="Text" Rectangle="97,309,139,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item38Bk Type="Text" Rectangle="139,309,181,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item39Bk Type="Text" Rectangle="181,309,223,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item40Bk Type="Text" Rectangle="13,351,55,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item41Bk Type="Text" Rectangle="55,351,97,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item42Bk Type="Text" Rectangle="97,351,139,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item43Bk Type="Text" Rectangle="139,351,181,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item44Bk Type="Text" Rectangle="181,351,223,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item45Bk Type="Text" Rectangle="13,393,55,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item46Bk Type="Text" Rectangle="55,393,97,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item47Bk Type="Text" Rectangle="97,393,139,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item48Bk Type="Text" Rectangle="139,393,181,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item49Bk Type="Text" Rectangle="181,393,223,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item0 Template="T_SkillButton" ID="171200" Rectangle="13,15,55,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item1 Template="T_SkillButton" ID="171201" Rectangle="55,15,97,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item2 Template="T_SkillButton" ID="171202" Rectangle="97,15,139,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item3 Template="T_SkillButton" ID="171203" Rectangle="139,15,181,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item4 Template="T_SkillButton" ID="171204" Rectangle="181,15,223,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item5 Template="T_SkillButton" ID="171205" Rectangle="13,57,55,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item6 Template="T_SkillButton" ID="171206" Rectangle="55,57,97,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item7 Template="T_SkillButton" ID="171207" Rectangle="97,57,139,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item8 Template="T_SkillButton" ID="171208" Rectangle="139,57,181,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item9 Template="T_SkillButton" ID="171209" Rectangle="181,57,223,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item10 Template="T_SkillButton" ID="171210" Rectangle="13,99,55,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item11 Template="T_SkillButton" ID="171211" Rectangle="55,99,97,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item12 Template="T_SkillButton" ID="171212" Rectangle="97,99,139,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item13 Template="T_SkillButton" ID="171213" Rectangle="139,99,181,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item14 Template="T_SkillButton" ID="171214" Rectangle="181,99,223,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item15 Template="T_SkillButton" ID="171215" Rectangle="13,141,55,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item16 Template="T_SkillButton" ID="171216" Rectangle="55,141,97,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item17 Template="T_SkillButton" ID="171217" Rectangle="97,141,139,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item18 Template="T_SkillButton" ID="171218" Rectangle="139,141,181,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item19 Template="T_SkillButton" ID="171219" Rectangle="181,141,223,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item20 Template="T_SkillButton" ID="171220" Rectangle="13,183,55,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item21 Template="T_SkillButton" ID="171221" Rectangle="55,183,97,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item22 Template="T_SkillButton" ID="171222" Rectangle="97,183,139,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item23 Template="T_SkillButton" ID="171223" Rectangle="139,183,181,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item24 Template="T_SkillButton" ID="171224" Rectangle="181,183,223,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item25 Template="T_SkillButton" ID="171225" Rectangle="13,225,55,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item26 Template="T_SkillButton" ID="171226" Rectangle="55,225,97,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item27 Template="T_SkillButton" ID="171227" Rectangle="97,225,139,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item28 Template="T_SkillButton" ID="171228" Rectangle="139,225,181,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item29 Template="T_SkillButton" ID="171229" Rectangle="181,225,223,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item30 Template="T_SkillButton" ID="171230" Rectangle="13,267,55,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item31 Template="T_SkillButton" ID="171231" Rectangle="55,267,97,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item32 Template="T_SkillButton" ID="171232" Rectangle="97,267,139,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item33 Template="T_SkillButton" ID="171233" Rectangle="139,267,181,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item34 Template="T_SkillButton" ID="171234" Rectangle="181,267,223,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item35 Template="T_SkillButton" ID="171235" Rectangle="13,309,55,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item36 Template="T_SkillButton" ID="171236" Rectangle="55,309,97,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item37 Template="T_SkillButton" ID="171237" Rectangle="97,309,139,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item38 Template="T_SkillButton" ID="171238" Rectangle="139,309,181,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item39 Template="T_SkillButton" ID="171239" Rectangle="181,309,223,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item40 Template="T_SkillButton" ID="171240" Rectangle="13,351,55,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item41 Template="T_SkillButton" ID="171241" Rectangle="55,351,97,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item42 Template="T_SkillButton" ID="171242" Rectangle="97,351,139,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item43 Template="T_SkillButton" ID="171243" Rectangle="139,351,181,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item44 Template="T_SkillButton" ID="171244" Rectangle="181,351,223,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item45 Template="T_SkillButton" ID="171245" Rectangle="13,393,55,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item46 Template="T_SkillButton" ID="171246" Rectangle="55,393,97,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item47 Template="T_SkillButton" ID="171247" Rectangle="97,393,139,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item48 Template="T_SkillButton" ID="171248" Rectangle="139,393,181,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item49 Template="T_SkillButton" ID="171249" Rectangle="181,393,223,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+      </Bag1>
+      <Bag2 Type="Tab" Rectangle="117,-24,167,-1" Texture="./UI/Texture/main.gwo" TexturePos="171,280" BtnTopTexture="./UI/Texture/main.gwo" BtnTopPos="0,0" BtnTopRect="0,0,1,1" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5">
+
+        <!--按钮背景-->
+        <Item0Bk Type="Text" Rectangle="13,15,55,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item1Bk Type="Text" Rectangle="55,15,97,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item2Bk Type="Text" Rectangle="97,15,139,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item3Bk Type="Text" Rectangle="139,15,181,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item4Bk Type="Text" Rectangle="181,15,223,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item5Bk Type="Text" Rectangle="13,57,55,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item6Bk Type="Text" Rectangle="55,57,97,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item7Bk Type="Text" Rectangle="97,57,139,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item8Bk Type="Text" Rectangle="139,57,181,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item9Bk Type="Text" Rectangle="181,57,223,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item10Bk Type="Text" Rectangle="13,99,55,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item11Bk Type="Text" Rectangle="55,99,97,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item12Bk Type="Text" Rectangle="97,99,139,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item13Bk Type="Text" Rectangle="139,99,181,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item14Bk Type="Text" Rectangle="181,99,223,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item15Bk Type="Text" Rectangle="13,141,55,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item16Bk Type="Text" Rectangle="55,141,97,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item17Bk Type="Text" Rectangle="97,141,139,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item18Bk Type="Text" Rectangle="139,141,181,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item19Bk Type="Text" Rectangle="181,141,223,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item20Bk Type="Text" Rectangle="13,183,55,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item21Bk Type="Text" Rectangle="55,183,97,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item22Bk Type="Text" Rectangle="97,183,139,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item23Bk Type="Text" Rectangle="139,183,181,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item24Bk Type="Text" Rectangle="181,183,223,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item25Bk Type="Text" Rectangle="13,225,55,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item26Bk Type="Text" Rectangle="55,225,97,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item27Bk Type="Text" Rectangle="97,225,139,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item28Bk Type="Text" Rectangle="139,225,181,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item29Bk Type="Text" Rectangle="181,225,223,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item30Bk Type="Text" Rectangle="13,267,55,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item31Bk Type="Text" Rectangle="55,267,97,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item32Bk Type="Text" Rectangle="97,267,139,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item33Bk Type="Text" Rectangle="139,267,181,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item34Bk Type="Text" Rectangle="181,267,223,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item35Bk Type="Text" Rectangle="13,309,55,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item36Bk Type="Text" Rectangle="55,309,97,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item37Bk Type="Text" Rectangle="97,309,139,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item38Bk Type="Text" Rectangle="139,309,181,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item39Bk Type="Text" Rectangle="181,309,223,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item40Bk Type="Text" Rectangle="13,351,55,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item41Bk Type="Text" Rectangle="55,351,97,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item42Bk Type="Text" Rectangle="97,351,139,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item43Bk Type="Text" Rectangle="139,351,181,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item44Bk Type="Text" Rectangle="181,351,223,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item45Bk Type="Text" Rectangle="13,393,55,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item46Bk Type="Text" Rectangle="55,393,97,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item47Bk Type="Text" Rectangle="97,393,139,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item48Bk Type="Text" Rectangle="139,393,181,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item49Bk Type="Text" Rectangle="181,393,223,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item0 Template="T_SkillButton" ID="171300" Rectangle="13,15,55,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item1 Template="T_SkillButton" ID="171301" Rectangle="55,15,97,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item2 Template="T_SkillButton" ID="171302" Rectangle="97,15,139,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item3 Template="T_SkillButton" ID="171303" Rectangle="139,15,181,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item4 Template="T_SkillButton" ID="171304" Rectangle="181,15,223,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item5 Template="T_SkillButton" ID="171305" Rectangle="13,57,55,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item6 Template="T_SkillButton" ID="171306" Rectangle="55,57,97,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item7 Template="T_SkillButton" ID="171307" Rectangle="97,57,139,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item8 Template="T_SkillButton" ID="171308" Rectangle="139,57,181,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item9 Template="T_SkillButton" ID="171309" Rectangle="181,57,223,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item10 Template="T_SkillButton" ID="171310" Rectangle="13,99,55,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item11 Template="T_SkillButton" ID="171311" Rectangle="55,99,97,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item12 Template="T_SkillButton" ID="171312" Rectangle="97,99,139,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item13 Template="T_SkillButton" ID="171313" Rectangle="139,99,181,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item14 Template="T_SkillButton" ID="171314" Rectangle="181,99,223,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item15 Template="T_SkillButton" ID="171315" Rectangle="13,141,55,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item16 Template="T_SkillButton" ID="171316" Rectangle="55,141,97,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item17 Template="T_SkillButton" ID="171317" Rectangle="97,141,139,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item18 Template="T_SkillButton" ID="171318" Rectangle="139,141,181,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item19 Template="T_SkillButton" ID="171319" Rectangle="181,141,223,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item20 Template="T_SkillButton" ID="171320" Rectangle="13,183,55,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item21 Template="T_SkillButton" ID="171321" Rectangle="55,183,97,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item22 Template="T_SkillButton" ID="171322" Rectangle="97,183,139,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item23 Template="T_SkillButton" ID="171323" Rectangle="139,183,181,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item24 Template="T_SkillButton" ID="171324" Rectangle="181,183,223,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item25 Template="T_SkillButton" ID="171325" Rectangle="13,225,55,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item26 Template="T_SkillButton" ID="171326" Rectangle="55,225,97,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item27 Template="T_SkillButton" ID="171327" Rectangle="97,225,139,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item28 Template="T_SkillButton" ID="171328" Rectangle="139,225,181,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item29 Template="T_SkillButton" ID="171329" Rectangle="181,225,223,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item30 Template="T_SkillButton" ID="171330" Rectangle="13,267,55,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item31 Template="T_SkillButton" ID="171331" Rectangle="55,267,97,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item32 Template="T_SkillButton" ID="171332" Rectangle="97,267,139,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item33 Template="T_SkillButton" ID="171333" Rectangle="139,267,181,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item34 Template="T_SkillButton" ID="171334" Rectangle="181,267,223,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item35 Template="T_SkillButton" ID="171335" Rectangle="13,309,55,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item36 Template="T_SkillButton" ID="171336" Rectangle="55,309,97,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item37 Template="T_SkillButton" ID="171337" Rectangle="97,309,139,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item38 Template="T_SkillButton" ID="171338" Rectangle="139,309,181,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item39 Template="T_SkillButton" ID="171339" Rectangle="181,309,223,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item40 Template="T_SkillButton" ID="171340" Rectangle="13,351,55,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item41 Template="T_SkillButton" ID="171341" Rectangle="55,351,97,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item42 Template="T_SkillButton" ID="171342" Rectangle="97,351,139,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item43 Template="T_SkillButton" ID="171343" Rectangle="139,351,181,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item44 Template="T_SkillButton" ID="171344" Rectangle="181,351,223,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item45 Template="T_SkillButton" ID="171345" Rectangle="13,393,55,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item46 Template="T_SkillButton" ID="171346" Rectangle="55,393,97,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item47 Template="T_SkillButton" ID="171347" Rectangle="97,393,139,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item48 Template="T_SkillButton" ID="171348" Rectangle="139,393,181,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item49 Template="T_SkillButton" ID="171349" Rectangle="181,393,223,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+      </Bag2>
+      <Bag3 Type="Tab" Rectangle="167,-24,217,-1" Texture="./UI/Texture/main.gwo" TexturePos="171,280"  BtnTopTexture="./UI/Texture/main.gwo" BtnTopPos="0,0" BtnTopRect="0,0,1,1" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5">
+
+        <!--按钮背景-->
+        <Item0Bk Type="Text" Rectangle="13,15,55,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item1Bk Type="Text" Rectangle="55,15,97,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item2Bk Type="Text" Rectangle="97,15,139,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item3Bk Type="Text" Rectangle="139,15,181,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item4Bk Type="Text" Rectangle="181,15,223,57" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item5Bk Type="Text" Rectangle="13,57,55,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item6Bk Type="Text" Rectangle="55,57,97,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item7Bk Type="Text" Rectangle="97,57,139,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item8Bk Type="Text" Rectangle="139,57,181,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item9Bk Type="Text" Rectangle="181,57,223,99" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item10Bk Type="Text" Rectangle="13,99,55,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item11Bk Type="Text" Rectangle="55,99,97,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item12Bk Type="Text" Rectangle="97,99,139,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item13Bk Type="Text" Rectangle="139,99,181,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item14Bk Type="Text" Rectangle="181,99,223,141" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item15Bk Type="Text" Rectangle="13,141,55,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item16Bk Type="Text" Rectangle="55,141,97,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item17Bk Type="Text" Rectangle="97,141,139,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item18Bk Type="Text" Rectangle="139,141,181,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item19Bk Type="Text" Rectangle="181,141,223,183" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item20Bk Type="Text" Rectangle="13,183,55,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item21Bk Type="Text" Rectangle="55,183,97,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item22Bk Type="Text" Rectangle="97,183,139,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item23Bk Type="Text" Rectangle="139,183,181,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item24Bk Type="Text" Rectangle="181,183,223,225" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item25Bk Type="Text" Rectangle="13,225,55,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item26Bk Type="Text" Rectangle="55,225,97,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item27Bk Type="Text" Rectangle="97,225,139,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item28Bk Type="Text" Rectangle="139,225,181,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item29Bk Type="Text" Rectangle="181,225,223,267" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item30Bk Type="Text" Rectangle="13,267,55,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item31Bk Type="Text" Rectangle="55,267,97,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item32Bk Type="Text" Rectangle="97,267,139,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item33Bk Type="Text" Rectangle="139,267,181,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item34Bk Type="Text" Rectangle="181,267,223,309" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item35Bk Type="Text" Rectangle="13,309,55,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item36Bk Type="Text" Rectangle="55,309,97,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item37Bk Type="Text" Rectangle="97,309,139,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item38Bk Type="Text" Rectangle="139,309,181,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item39Bk Type="Text" Rectangle="181,309,223,351" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item40Bk Type="Text" Rectangle="13,351,55,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item41Bk Type="Text" Rectangle="55,351,97,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item42Bk Type="Text" Rectangle="97,351,139,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item43Bk Type="Text" Rectangle="139,351,181,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item44Bk Type="Text" Rectangle="181,351,223,393" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item45Bk Type="Text" Rectangle="13,393,55,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item46Bk Type="Text" Rectangle="55,393,97,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item47Bk Type="Text" Rectangle="97,393,139,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item48Bk Type="Text" Rectangle="139,393,181,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+        <Item49Bk Type="Text" Rectangle="181,393,223,435" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+        <Item0 Template="T_SkillButton" ID="171400" Rectangle="13,15,55,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item1 Template="T_SkillButton" ID="171401" Rectangle="55,15,97,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item2 Template="T_SkillButton" ID="171402" Rectangle="97,15,139,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item3 Template="T_SkillButton" ID="171403" Rectangle="139,15,181,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item4 Template="T_SkillButton" ID="171404" Rectangle="181,15,223,57" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item5 Template="T_SkillButton" ID="171405" Rectangle="13,57,55,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item6 Template="T_SkillButton" ID="171406" Rectangle="55,57,97,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item7 Template="T_SkillButton" ID="171407" Rectangle="97,57,139,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item8 Template="T_SkillButton" ID="171408" Rectangle="139,57,181,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item9 Template="T_SkillButton" ID="171409" Rectangle="181,57,223,99" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item10 Template="T_SkillButton" ID="171410" Rectangle="13,99,55,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item11 Template="T_SkillButton" ID="171411" Rectangle="55,99,97,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item12 Template="T_SkillButton" ID="171412" Rectangle="97,99,139,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item13 Template="T_SkillButton" ID="171413" Rectangle="139,99,181,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item14 Template="T_SkillButton" ID="171414" Rectangle="181,99,223,141" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item15 Template="T_SkillButton" ID="171415" Rectangle="13,141,55,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item16 Template="T_SkillButton" ID="171416" Rectangle="55,141,97,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item17 Template="T_SkillButton" ID="171417" Rectangle="97,141,139,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item18 Template="T_SkillButton" ID="171418" Rectangle="139,141,181,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item19 Template="T_SkillButton" ID="171419" Rectangle="181,141,223,183" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item20 Template="T_SkillButton" ID="171420" Rectangle="13,183,55,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item21 Template="T_SkillButton" ID="171421" Rectangle="55,183,97,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item22 Template="T_SkillButton" ID="171422" Rectangle="97,183,139,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item23 Template="T_SkillButton" ID="171423" Rectangle="139,183,181,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item24 Template="T_SkillButton" ID="171424" Rectangle="181,183,223,225" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item25 Template="T_SkillButton" ID="171425" Rectangle="13,225,55,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item26 Template="T_SkillButton" ID="171426" Rectangle="55,225,97,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item27 Template="T_SkillButton" ID="171427" Rectangle="97,225,139,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item28 Template="T_SkillButton" ID="171428" Rectangle="139,225,181,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item29 Template="T_SkillButton" ID="171429" Rectangle="181,225,223,267" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item30 Template="T_SkillButton" ID="171430" Rectangle="13,267,55,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item31 Template="T_SkillButton" ID="171431" Rectangle="55,267,97,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item32 Template="T_SkillButton" ID="171432" Rectangle="97,267,139,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item33 Template="T_SkillButton" ID="171433" Rectangle="139,267,181,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item34 Template="T_SkillButton" ID="171434" Rectangle="181,267,223,309" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item35 Template="T_SkillButton" ID="171435" Rectangle="13,309,55,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item36 Template="T_SkillButton" ID="171436" Rectangle="55,309,97,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item37 Template="T_SkillButton" ID="171437" Rectangle="97,309,139,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item38 Template="T_SkillButton" ID="171438" Rectangle="139,309,181,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item39 Template="T_SkillButton" ID="171439" Rectangle="181,309,223,351" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item40 Template="T_SkillButton" ID="171440" Rectangle="13,351,55,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item41 Template="T_SkillButton" ID="171441" Rectangle="55,351,97,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item42 Template="T_SkillButton" ID="171442" Rectangle="97,351,139,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item43 Template="T_SkillButton" ID="171443" Rectangle="139,351,181,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item44 Template="T_SkillButton" ID="171444" Rectangle="181,351,223,393" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+        <Item45 Template="T_SkillButton" ID="171545" Rectangle="13,393,55,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item46 Template="T_SkillButton" ID="171546" Rectangle="55,393,97,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item47 Template="T_SkillButton" ID="171547" Rectangle="97,393,139,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item48 Template="T_SkillButton" ID="171548" Rectangle="139,393,181,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+        <Item49 Template="T_SkillButton" ID="171549" Rectangle="181,393,223,435" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+
+      </Bag3>
+		</Bags>
+    
+	</NPCTrade>
+</UIConfig>

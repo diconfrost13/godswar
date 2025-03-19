@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+  <SystemSetupBack Type="Window" ID="240000" Rectangle="424,260,526,479" Visible="0" Enable="1" >
+    <UpTexture Template="TestText" ID="-1" Rectangle="5,0,97,27" TexturePos="932,896" Text=""/>
+    <ClosetBtn Template="TestButton" ID="240008" Rectangle="40,3,61,24" TexturePos="124,540" Text=""/>
+
+    <SystemSetupWin Template="TAutoSeekWin" ID="-1" Rectangle="0,26,102,216" >
+    </SystemSetupWin>
+    
+    <GraphicBtn   Type="Button" ID="240001" Rectangle="10,36,92,63" Texture="./UI/Texture/main.gwo" TexturePos="42,540" Text="显示设置" Font="DEFAULT_TEXTFONT" FontColor="WHITE_TEXTCOLOR"  TextFormat="5"/>
+    <AudioBtn    Type="Button" ID="240002" Rectangle="10,63,92,90" Texture="./UI/Texture/main.gwo" TexturePos="42,540" Text="声音设置" Font="DEFAULT_TEXTFONT" FontColor="WHITE_TEXTCOLOR" TextFormat="5"/>
+    <GameBtn   Type="Button" ID="240003" Rectangle="10,90,92,117" Texture="./UI/Texture/main.gwo" TexturePos="42,540" Text="游戏设置" Font="DEFAULT_TEXTFONT" FontColor="WHITE_TEXTCOLOR" TextFormat="5"/>
+    <KeyBoardBtn 	 Type="Button" ID="240004" Rectangle="10,117,92,144" Texture="./UI/Texture/main.gwo" TexturePos="42,540" Text="热键设置" Font="DEFAULT_TEXTFONT" FontColor="WHITE_TEXTCOLOR" TextFormat="5"/>
+    <!--<ReturntoLoginBtn  	 Type="Button" ID="240005" Rectangle="10,144,92,171" Texture="./UI/Texture/main.gwo" TexturePos="42,540" Text="返回登陆界面" Font="DEFAULT_TEXTFONT" FontColor="WHITE_TEXTCOLOR" TextFormat="5"/>-->
+    <ExitBtn  Type="Button" ID="240006" Rectangle="10,144,92,171" Texture="./UI/Texture/main.gwo" TexturePos="42,540" Text="退出游戏" Font="DEFAULT_TEXTFONT" FontColor="WHITE_TEXTCOLOR" TextFormat="5"/>
+    <ReturnGameBtn    Type="Button" ID="240007" Rectangle="10,179,92,206" Texture="./UI/Texture/main.gwo" TexturePos="42,540" Text="返回游戏" Font="DEFAULT_TEXTFONT" FontColor="WHITE_TEXTCOLOR" TextFormat="5"/>
+
+  </SystemSetupBack>
+
+  <AudioSetupUI Template="TestWindow" ID="240200" CanHovered="1" Enable="1"  Rectangle="366,225,751,594"  Visible="1" >
+    <ok Template="TestButton" ID="240205" Rectangle="246,332,306,358" TexturePos="38,80" Text="确定"/>
+    <cancel Template="TestButton" ID="240206" Rectangle="306,332,366,358" TexturePos="38,80" Text="取消"/>
+    <close Template="TestButton" ID="240207" Rectangle="317,13,355,50" TexturePos="0,80" Text=""/>
+
+    <SoundMid  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="91,119,92,143" TexturePos="151,205"  Text=""/>
+    <MusicMid  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="91,184,92,208" TexturePos="151,205"  Text=""/>
+
+    <MusicText1  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="106,138,121,143" TexturePos="161,179"  Text=""/>
+    <MusicText2  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="136,138,151,143" TexturePos="161,179"  Text=""/>
+    <MusicText3  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="166,138,181,143" TexturePos="161,179"  Text=""/>
+    <MusicText4  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="196,138,211,143" TexturePos="161,179"  Text=""/>
+    <MusicText5  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="226,138,241,143" TexturePos="161,179"  Text=""/>
+    <MusicText6  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="256,138,271,143" TexturePos="161,179"  Text=""/>
+
+    <SoundText1  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="106,203,121,208" TexturePos="161,179"  Text=""/>
+    <SoundText2  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="136,203,151,208" TexturePos="161,179"  Text=""/>
+    <SoundText3  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="166,203,181,208" TexturePos="161,179"  Text=""/>
+    <SoundText4  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="196,203,211,208" TexturePos="161,179"  Text=""/>
+    <SoundText5  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="226,203,241,208" TexturePos="161,179"  Text=""/>
+    <SoundText6  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="256,203,271,208" TexturePos="161,179"  Text=""/>
+
+    <SetSoundText Template="TestText" ID="-1" Rectangle="25,90,200,120" TexturePos="500,500" Text="音乐音量：" Font="EightTEENTHIN_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" />
+    <SetMusicText Template="TestText" ID="-1" Rectangle="25,155,200,185" TexturePos="500,500" Text="音效音量：" Font="EightTEENTHIN_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" />
+    <MinTexttop Template="TestText" ID="-1" Rectangle="25,120,66,146" TexturePos="500,500" Text="最小" Font="EightTEENTHIN_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" />
+    <MaxTexttop Template="TestText" ID="-1" Rectangle="320,123,366,146" TexturePos="500,500" Text="最大" Font="EightTEENTHIN_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" />
+    <MinTextbtm Template="TestText" ID="-1" Rectangle="25,185,120,211" TexturePos="500,500" Text="最小" Font="EightTEENTHIN_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" />
+    <MaxTextbtm Template="TestText" ID="-1" Rectangle="320,185,366,211" TexturePos="500,500" Text="最大" Font="EightTEENTHIN_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" />
+
+
+    <SoundLeft Template="TestButton" ID="-1" Rectangle="66,117,90,146" TexturePos="0,316" Text=""/>
+    <SoundRight Template="TestButton" ID="-1" Rectangle="293,117,317,146" TexturePos="25,316" Text=""/>
+
+    <MusicLeft Template="TestButton" ID="-1" Rectangle="66,182,90,211" TexturePos="0,316" Text=""/>
+    <MusicRight Template="TestButton" ID="-1" Rectangle="293,182,317,211" TexturePos="25,316" Text=""/>
+
+
+    <ScrollBar1 Type="ScrollBar" ID="240208" Texture="./UI/Texture/main.gwo"  Horizontal="1" Rectangle="91,119,293,143"  TexturePos="0,0" BtnRect="0,0,27,24" BtnPos="51,338"/>
+    <ScrollBar2 Type="ScrollBar" ID="240209" Horizontal="1" Rectangle="91,184,293,208" TexturePos="0,0" BtnRect="0,0,27,24" BtnPos="51,338" Texture="./UI/Texture/main.gwo" />
+  
+  </AudioSetupUI>
+
+</UIConfig>

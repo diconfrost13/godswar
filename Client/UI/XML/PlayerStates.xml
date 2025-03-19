@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：PlayerStates.xml
+		摘    要：状态显示图标配置表
+
+		当前版本：1.00
+		作    者：C.D
+		完成日期：2008-03-13  
+		Why are you looking at this?
+		Alright, gtfo.
+		-iceblade112
+-->
+<UIConfig>
+
+  <StatesWnd     Type="Window" Layer="1"  Rectangle="599,10,839,90"  Visible="1" Enable="0">
+    <GoodState7   Template="T_IconText"  ID="610007"   Rectangle="0,0,36,36" />
+    <GoodState6   Template="T_IconText"  ID="610006"     Rectangle="30,0,66,36" />
+    <GoodState5   Template="T_IconText"  ID="610005"     Rectangle="60,0,96,36" />
+    <GoodState4   Template="T_IconText"  ID="610004"     Rectangle="90,0,126,36" />
+    <GoodState3   Template="T_IconText"  ID="610003"     Rectangle="120,0,156,36" />
+    <GoodState2   Template="T_IconText"  ID="610002"     Rectangle="150,0,186,36" />
+    <GoodState1   Template="T_IconText"  ID="610001"     Rectangle="180,0,216,36" />
+    <GoodState0   Template="T_IconText"  ID="610000"     Rectangle="210,0,246,36" />
+    
+
+    <EvilState7   Template="T_IconText"  ID="620007"     Rectangle="0,30,36,66" />
+    <EvilState6   Template="T_IconText"  ID="620006"     Rectangle="30,30,66,66" />
+    <EvilState5   Template="T_IconText"  ID="620005"     Rectangle="60,30,96,66" />
+    <EvilState4   Template="T_IconText"  ID="620004"     Rectangle="90,30,126,66" />
+    <EvilState3   Template="T_IconText"  ID="620003"     Rectangle="120,30,156,66" />
+    <EvilState2   Template="T_IconText"  ID="620002"     Rectangle="150,30,186,66" />
+    <EvilState1   Template="T_IconText"  ID="620001"     Rectangle="180,30,216,66" />
+    <EvilState0   Template="T_IconText"  ID="620000"     Rectangle="210,30,246,66" />    
+  </StatesWnd>
+
+  <NoteWnd        Template="T_BgWindow" Rectangle="0,0,176,80"  Visible="0" Enable="0">    
+  </NoteWnd>
+
+</UIConfig>
+
+
+  

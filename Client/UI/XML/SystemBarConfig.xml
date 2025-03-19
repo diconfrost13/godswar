@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+  <SystemBar Type="Window" ID="211000"  Rectangle="957,190,1023,432" TexturePos="242,846" Texture="./UI/Texture/Main.gwo" Visible="0" Text="">
+    <SystemBarText1 Type="Text" ID="211001" Rectangle="0,0,67,69" TexturePos="242,846" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText2 Type="Text" ID="-1" Rectangle="0,60,66,90" TexturePos="242,906" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText3 Type="Text" ID="-1" Rectangle="0,87,66,117" TexturePos="242,906" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText4 Type="Text" ID="-1" Rectangle="0,114,66,144" TexturePos="242,906" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText5 Type="Text" ID="-1" Rectangle="0,141,66,171" TexturePos="242,906" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText6 Type="Text" ID="-1" Rectangle="0,168,66,198" TexturePos="242,906" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText7 Type="Text" ID="-1" Rectangle="0,195,66,225" TexturePos="242,906" Texture="./UI/Texture/Main.gwo" Text=""/>
+    <SystemBarText8 Type="Text" ID="-1" Rectangle="0,219,66,242" TexturePos="242,930" Texture="./UI/Texture/Main.gwo" Text=""/>
+
+    <state   Type="Button" ID="211002" Rectangle="3,51,63,78" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="State" Font="DEFAULT_TEXTTITLE" FontColor="WHITE_TEXTCOLOR"  TextFormat="5"/>
+    <item    Type="Button" ID="211003" Rectangle="3,78,63,104" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="Equip" Font="DEFAULT_TEXTTITLE" FontColor="WHITE_TEXTCOLOR" TextFormat="5"/>
+    <skill   Type="Button" ID="211004" Rectangle="3,105,63,133" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="Skill" Font="DEFAULT_TEXTTITLE" FontColor="WHITE_TEXTCOLOR" TextFormat="5"/>
+    <quest 	 Type="Button" ID="211005" Rectangle="3,132,63,159" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="Quest" Font="DEFAULT_TEXTTITLE" FontColor="WHITE_TEXTCOLOR" TextFormat="5"/>
+    <meet  	 Type="Button" ID="211006" Rectangle="3,159,63,185" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="交际" Font="DEFAULT_TEXTTITLE" FontColor="WHITE_TEXTCOLOR" TextFormat="5"/>
+    <system  Type="Button" ID="211007" Rectangle="3,186,63,212" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="System" Font="DEFAULT_TEXTTITLE" FontColor="WHITE_TEXTCOLOR" TextFormat="5"/>
+    <help    Type="Button" ID="211008" Rectangle="3,213,63,239" Texture="./UI/Texture/Main.gwo" TexturePos="38,80" Text="Help" Font="DEFAULT_TEXTTITLE" FontColor="WHITE_TEXTCOLOR" TextFormat="5"/>
+  </SystemBar>
+</UIConfig>

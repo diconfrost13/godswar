@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：personalinfouiconfig.xml
+		摘    要：人物状态信息
+
+		当前版本：1.00
+		作    者：赖滔
+		完成日期：2008-03-18  
+ 
+-->
+<!-- edited with XMLSpy v2007 sp1 (http://www.altova.com) by fox (EMBRACE) -->
+<UIConfig>
+	<PersonalInfo Template="T_NormalWindow" ID="280000" Modal="0" Rectangle="100,100,363,626" Texture="./UI/Texture/main.gwo" TexturePos="0,0" BtnRect="196,13,233,50" BtnPos="0,80" Visible="0">
+	<!--2个大图标-->
+    
+    <!--CampIcon1 Type="Text" Visible="0" ID="280001" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Rectangle="0,0,0,1" Text=""/>
+		<CampIcon2 Type="Text" Visible="0" ID="280002" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Rectangle="0,0,0,1" Text=""/>
+
+    <NameTextLeft  Type="Text"       ID="-1"      Texture="./UI/Texture/main.gwo" Rectangle="43,78,50,107" TexturePos="131,173"  Text=""/>
+    <NameTextRight Type="Text"       ID="-1"      Texture="./UI/Texture/main.gwo" Rectangle="258,78,265,107" TexturePos="138,173"  Text=""/>
+    <NameText Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" TexturePos="137,173" Rectangle="50,78,51,107" Text="" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    <name Type="Text" ID="280003" Texture="./UI/Texture/main.gwo" TexturePos="137,173" Rectangle="50,78,258,107" Text="" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/-->
+
+    <!--阵营名字图标背景-->
+    <!--GodlinessBk Type="Text" Rectangle="26,112,74,159" Texture="./UI/Texture/main.gwo" TexturePos="42,671"/-->
+
+    <!--阵营名字图标-->
+    <!--GodlinessIcon1 Type="Text" ID="280005" Visible="0" DisableAlpha="1" Texture="./UI/Texture/icon.gwo" TexturePos="0,900" Rectangle="32,118,68,154" Text=""/>
+		<GodlinessIcon2 Type="Text" ID="280006" Visible="0" DisableAlpha="1" Texture="./UI/Texture/icon.gwo" TexturePos="36,900" Rectangle="32,118,68,154" Text=""/>
+		<GodlinessIcon3 Type="Text" ID="280007" Visible="0" DisableAlpha="1" Texture="./UI/Texture/icon.gwo" TexturePos="72,900" Rectangle="32,118,68,154" Text=""/>
+		<GodlinessIcon4 Type="Text" ID="280008" Visible="0" DisableAlpha="1" Texture="./UI/Texture/icon.gwo" TexturePos="108,900" Rectangle="32,118,68,154" Text=""/>
+		<GodlinessIcon5 Type="Text" ID="280009" Visible="0" DisableAlpha="1" Texture="./UI/Texture/icon.gwo" TexturePos="144,900" Rectangle="32,118,68,154" Text=""/>
+		<GodlinessIcon6 Type="Text" ID="280010" Visible="0" DisableAlpha="1" Texture="./UI/Texture/icon.gwo" TexturePos="180,900" Rectangle="32,118,68,154" Text=""/>
+		<GodlinessIcon7 Type="Text" ID="280011" Visible="0" DisableAlpha="1" Texture="./UI/Texture/icon.gwo" TexturePos="216,900" Rectangle="32,118,68,154" Text=""/>
+		<GodlinessIcon8 Type="Text" ID="280012" Visible="0" DisableAlpha="1" Texture="./UI/Texture/icon.gwo" TexturePos="252,900" Rectangle="32,118,68,154" Text=""/>
+		<GodlinessIcon9 Type="Text" ID="280013" Visible="0" DisableAlpha="1" Texture="./UI/Texture/icon.gwo" TexturePos="288,900" Rectangle="32,118,68,154" Text=""/>
+		<GodlinessIcon10 Type="Text" ID="280014" Visible="0" DisableAlpha="1" Texture="./UI/Texture/icon.gwo" TexturePos="324,900" Rectangle="32,118,68,154" Text=""/>
+		<GodlinessIcon11 Type="Text" ID="280015" Visible="0" DisableAlpha="1" Texture="./UI/Texture/icon.gwo" TexturePos="360,900" Rectangle="32,118,68,154" Text=""/>
+		<GodlinessIcon12 Type="Text" ID="280016" Visible="0" DisableAlpha="1" Texture="./UI/Texture/icon.gwo" TexturePos="396,900" Rectangle="32,118,68,154" Text=""/>
+		<GodlinessIcon13 Type="Text" ID="280017" Visible="0" DisableAlpha="1" Texture="./UI/Texture/icon.gwo" TexturePos="432,900" Rectangle="32,118,68,154" Text=""/>
+		<GodlinessIcon14 Type="Text" ID="280018" Visible="0" DisableAlpha="1" Texture="./UI/Texture/icon.gwo" TexturePos="468,900" Rectangle="32,118,68,154" Text=""/>
+  
+    <GodlinessName Type="Text" ID="280019" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Rectangle="80,119,185,147" Text="上帝上上上" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/-->
+
+    <!--2职业图标背景-->
+    <!--GodlinessBk Type="Text" Rectangle="26,159,74,206" Texture="./UI/Texture/main.gwo" TexturePos="42,671"/-->
+
+    <!--2职业图标-->
+    <!--MetierIcon1 Type="Text" ID="280120" Visible="0"  Texture="./UI/Texture/icon.gwo" TexturePos="0,0" Rectangle="32,165,68,201" Text="">
+		<MetierIcon2 Type="Text" ID="280121" Visible="0"  Texture="./UI/Texture/icon.gwo" TexturePos="36,899" Rectangle="32,165,68,201" Text=""/>
+		<MetierIcon3 Type="Text" ID="280122" Visible="0"  Texture="./UI/Texture/icon.gwo" TexturePos="0,0" Rectangle="32,165,68,201" Text=""/>
+		<MetierIcon4 Type="Text" ID="280123" Visible="0"  Texture="./UI/Texture/icon.gwo" TexturePos="36,899" Rectangle="32,165,68,201" Text=""/>
+		<MetierIcon5 Type="Text" ID="280124" Visible="0"  Texture="./UI/Texture/icon.gwo" TexturePos="0,0" Rectangle="32,165,68,201" Text=""/>
+		<MetierIcon6 Type="Text" ID="280125" Visible="0"  Texture="./UI/Texture/icon.gwo" TexturePos="36,899" Rectangle="32,165,68,201" Text=""/>
+		</MetierIcon1>
+    
+    <MetierName Type="Text" ID="280022" Texture="./UI/Texture/icon.gwo" TexturePos="0,0" Rectangle="80,166,185,194" Text="火魔法师" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/-->
+		
+    <!--公会-->
+    <!--ConsortiaTitle Type="Text" ID="-1"  Rectangle="23,218,63,246"  Text="公会:" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+		<ConsortiaName Type="Text" ID="280023" Texture="./UI/Texture/main.gwo" TexturePos="8,790" Rectangle="65,218,214,246" Text="" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR"/>
+		<ConsortiaMetier Type="Text" ID="280024" Texture="./UI/Texture/main.gwo" TexturePos="8,790" Rectangle="214,218,314,246" Text="" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR"/-->
+		
+    <!--爵位-->
+    <!--KnightTitle Type="Text" ID="-1"  Rectangle="23,241,63,695"  Text="爵位:" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+		<KnightText Type="Text" ID="280025" Texture="./UI/Texture/main.gwo" TexturePos="8,790" Rectangle="65,241,272,695" Text="" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR"/-->
+
+    <!--声望-->
+    <!--CretitTitle Type="Text" ID="-1"  Rectangle="23,264,63,284"  Text="声望:" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+		<CretitText Type="Text" ID="280026" Texture="./UI/Texture/main.gwo" TexturePos="8,790" Rectangle="65,264,174,284" Text="100000" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR"/-->
+		
+    <!--中间分隔条左手方-->
+    <!--Separate Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" TexturePos="146,173" Rectangle="14,285,29,300" Text=""/-->
+    <!--中间分隔条中间缩放-->
+    <!--Separate2 Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" TexturePos="159,179" Rectangle="29,291,30,294" Text=""/-->
+    <!--中间分隔条右手方-->
+    <!--Separate Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" TexturePos="146,188" Rectangle="279,285,294,300" Text=""/-->
+
+    <!--等级 经验字-->
+    <!--LevelTitle1 Type="Text" ID="-1"   Rectangle="23,317,63,345" Text="等级:" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/-->
+    <!--ExpTitle1 Type="Text" ID="-1"   Rectangle="92,317,132,345" Text="经验:" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/-->
+
+    <!--等级 经验数值字-->
+    <!--LevelText1 Type="Text" ID="280027" Texture="./UI/Texture/main.gwo" TexturePos="8,790" Rectangle="65,317,90,345" Text="20" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR"/-->
+    <!--ExpText1 Type="Text" ID="280028" Texture="./UI/Texture/main.gwo" TexturePos="8,790" Rectangle="125,317,260,345" Text="9999999/9999999" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR"/-->
+
+    <!--物理攻击字与数值-->
+    <!--PhysicalAttackTitle Type="Text" ID="-1" DisableAlpha="1"  Rectangle="23,357,142,390" Text="物理攻击" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/-->
+    <!--PhysicalAttackText Type="Text" ID="280031" Texture="./UI/Texture/main.gwo" TexturePos="8,790" Rectangle="97,357,142,375" Text="10000" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR"/-->
+    
+    <!--物理防御-->
+    <!--PhysicalRecoveryTitle Type="Text" ID="-1" DisableAlpha="1"  Rectangle="23,390,142,423"  Text="物理防御" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+    <PhysicalRecoveryText Type="Text" ID="280032" Texture="./UI/Texture/main.gwo" TexturePos="8,790" Rectangle="97,390,142,408" Text="10000" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR"/-->
+    
+    <!--命中-->
+    <!--HitTitle Type="Text" ID="-1" DisableAlpha="1"  Rectangle="23,424,142,457" Text="命中" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+    <HitText Type="Text" ID="280033" Texture="./UI/Texture/main.gwo" TexturePos="8,790" Rectangle="97,424,142,442" Text="10000" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR"/-->
+
+    <!--闪避-->
+    <!--JookTitle Type="Text" ID="-1" DisableAlpha="1"  Rectangle="23,457,142,491" Text="闪避" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+    <JookText Type="Text" ID="280034" Texture="./UI/Texture/main.gwo" TexturePos="8,790" Rectangle="97,458,142,476" Text="10000" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR"/-->
+
+    <!--魔法豁免-->
+    <!--
+    <MagicRecoveryTitle Type="Text" ID="-1" DisableAlpha="1"  Rectangle="23,490,142,524" Text="魔法豁免" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR" TextFormat="0"/>
+    <MagicRecoveryText Type="Text" ID="280036" Texture="./UI/Texture/main.gwo" TexturePos="8,790" Rectangle="97,491,142,509" Text="10000" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR"/>
+    -->
+    
+    <!--抗毒图标-->
+    <!--
+    <EarthFastnessTitle Type="Text" ID="-1" DisableAlpha="1" Texture="./UI/Texture/main.gwo" TexturePos="93,648" Rectangle="169,380,195,404" Text=""/>
+    <EarthFastnessText Type="Text" ID="280037" Texture="./UI/Texture/main.gwo" TexturePos="8,790" Rectangle="211,390,266,408" Text="50%" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR"/>
+    -->
+    
+    <!--抗冰图标-->
+    <!--
+    <IceFastnessTitle Type="Text" ID="-1" DisableAlpha="1" Texture="./UI/Texture/main.gwo" TexturePos="118,648" Rectangle="169,414,195,438" Text=""/>
+    <IceFastnessText Type="Text" ID="280038" Texture="./UI/Texture/main.gwo" TexturePos="8,790" Rectangle="211,424,266,442" Text="50%" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR"/>
+    -->
+    
+    <!--抗电图标-->
+    <!--
+    <LightningFastnessTitle Type="Text" ID="-1" DisableAlpha="1" Texture="./UI/Texture/main.gwo" TexturePos="93,672" Rectangle="169,448,195,472" Text=""/>
+    <LightningFastnessText Type="Text" ID="280039" Texture="./UI/Texture/main.gwo" TexturePos="8,790" Rectangle="211,458,266,476" Text="50%" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR"/>
+    -->
+    
+    <!--抗火图标-->
+    <!--
+    <FireFastnessTitle Type="Text" ID="-1" DisableAlpha="1" Texture="./UI/Texture/main.gwo" TexturePos="118,673" Rectangle="169,481,195,505" Text=""/>
+    <FireFastnessText Type="Text" ID="280040" Texture="./UI/Texture/main.gwo" TexturePos="8,790" Rectangle="211,491,266,509" Font="SONGTI_14" FontColor="DEFAULT_TEXTCOLOR" Text="种鸽" />
+    -->
+
+    
+    <!--***********************************************************************************************************-->
+    <!--***********************************************************************************************************-->
+    <StatusBack Template="T_BgWindow" ID="-1" Rectangle="19,78,243,173" />
+    <UnionBack Template="T_BgWindow" ID="-1" Rectangle="19,176,243,250" />
+    <LevelBack Template="T_BgWindow" ID="-1" Rectangle="19,253,243,327" />
+    <BaseBack Template="T_BgWindow" ID="-1" Rectangle="19,330,127,510" />
+    <FightBack Template="T_BgWindow" ID="-1" Rectangle="129,330,243,510" />
+
+    <!--信仰-->
+    <Belief       Template="T_Money" ID="281101"       Rectangle="29,85,68,101"     Format="4"  FontColor="BASE_HEADCOLOR"  Text="信仰"    />
+    <BeliefText   Template="T_Money" ID="281001"   Rectangle="70,85,180,101"    Format="4"  FontColor="ORDINARY_INFOCOLOR" Text="雅典娜"   />
+
+    <!--职业-->
+    <Class        Template="T_Money" ID="281102"       Rectangle="29,107,68,123"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="职业"    />
+    <ClassText    Template="T_Money" ID="281002"   Rectangle="70,107,180,123"   Format="4"  FontColor="ORDINARY_INFOCOLOR"  Text="战士战士"  />
+    
+    <!--声望-->
+    <Credit       Template="T_Money" ID="281103"       Rectangle="29,129,68,145"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="声望"    />
+    <CreditText   Template="T_Money" ID="281003"   Rectangle="70,129,180,145"   Format="4"  FontColor="ORDINARY_INFOCOLOR" Text="9999"   />
+
+    <!--爵位-->
+    <Knight       Template="T_Money" ID="281104"       Rectangle="29,149,68,165"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="爵位"    />
+    <KnightText   Template="T_Money" ID="281004"   Rectangle="70,149,180,165"   Format="4"  FontColor="ORDINARY_INFOCOLOR"  Text="检察官"  />
+    
+    
+    <!--***********************************************************************************************************-->
+    
+    <!--公会-->
+    <Union        Template="T_Money" ID="281105"       Rectangle="29,185,68,201"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="公会"    />
+    <UnionText    Template="T_Money" ID="281005"   Rectangle="70,185,180,201"   Format="4"  FontColor="ORDINARY_INFOCOLOR" Text="欢乐连线欢乐连线"   />
+
+    <!--职务-->
+    <Duty         Template="T_Money" ID="281106"       Rectangle="29,205,68,221"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="职位"    />
+    <DutyText     Template="T_Money" ID="281006"   Rectangle="70,205,180,221"   Format="4"  FontColor="ORDINARY_INFOCOLOR" Text="欢乐连线"   />
+
+    <!--贡献-->
+    <Contribute   Template="T_Money" ID="281107"       Rectangle="29,226,68,242"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="贡献"    />
+    <ContributeText Template="T_Money" ID="281007" Rectangle="70,226,180,242"   Format="4"  FontColor="ORDINARY_INFOCOLOR"  Text="12345678"  />
+
+    <!--***********************************************************************************************************-->
+
+    <!--等级-->
+    <Level        Template="T_Money" ID="281108"       Rectangle="29,262,68,278"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="等级"    />
+    <LevelText    Template="T_Money" ID="281008"   Rectangle="70,262,180,278"   Format="4"  FontColor="ORDINARY_INFOCOLOR"  Text="99"  />
+    
+    <!--经验-->
+    <EXP          Template="T_Money" ID="281109"       Rectangle="29,282,68,298"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="经验"    />
+    <EXPText      Template="T_Money" ID="281009"   Rectangle="70,282,180,298"   Format="4"  FontColor="ORDINARY_INFOCOLOR" Text="1234567890123"   />
+
+    <!--到下一等级经验-->
+    <NextExp      Template="T_Money" ID="281110"       Rectangle="29,303,136,319"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="到下一等级经验"    />
+    <NextExpText  Template="T_Money" ID="281010"   Rectangle="140,303,200,319"   Format="4"  FontColor="ORDINARY_INFOCOLOR"  Text="未知"  />
+
+    <!--***********************************************************************************************************-->
+
+    <!--生命-->
+    <HP           Template="T_Money" ID="281111"       Rectangle="24,334,62,350"    Format="4"   FontColor="BASE_HEADCOLOR" Text="生命值"    />
+    <HPText       Template="T_Money" ID="281011"   Rectangle="75,334,125,350"   Format="4" FontColor="ORDINARY_INFOCOLOR"  Text="99999"   />
+
+    <!--魔法-->
+    <MP           Template="T_Money" ID="281112"       Rectangle="24,360,62,376"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="魔法值"    />
+    <MPText       Template="T_Money" ID="281012"   Rectangle="75,360,125,376"   Format="4"  FontColor="ORDINARY_INFOCOLOR" Text="99999"   />
+
+    <!--物理攻击-->
+    <Attack       Template="T_Money" ID="281113"       Rectangle="24,386,78,402"    Format="4"   FontColor="BASE_HEADCOLOR" Text="物理攻击"    />
+    <AttackText   Template="T_Money" ID="281013"   Rectangle="85,386,125,402"   Format="4"   FontColor="ORDINARY_INFOCOLOR" Text="12345678"  />
+
+    <!--物理防御-->
+    <Defend       Template="T_Money" ID="281114"       Rectangle="24,412,78,428"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="物理防御"    />
+    <DefendText   Template="T_Money" ID="281014"   Rectangle="85,412,125,428"   Format="4"  FontColor="ORDINARY_INFOCOLOR"  Text="12345678"  />
+
+    <!--魔法攻击-->
+    <MagicAttack  Template="T_Money" ID="281115"       Rectangle="24,438,78,454"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="魔法攻击"    />
+    <MagicAttackText Template="T_Money" ID="281015" Rectangle="85,438,125,454"  Format="4"  FontColor="ORDINARY_INFOCOLOR" Text="787878"   />
+
+    <!--魔法防御-->
+    <MagicDefend  Template="T_Money" ID="281116"       Rectangle="24,464,78,480"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="魔法防御"    />
+    <MagicDefendText Template="T_Money" ID="281016" Rectangle="85,464,125,480"  Format="4"  FontColor="ORDINARY_INFOCOLOR" Text="456954"   />
+
+    <!--治疗加成-->
+    <Cure         Template="T_Money" ID="281117"       Rectangle="24,491,78,507"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="治疗加成"    />
+    <CureText     Template="T_Money" ID="281017"   Rectangle="85,491,125,507"   Format="4"  FontColor="ORDINARY_INFOCOLOR" Text="1.2%"   />
+
+    <!--***********************************************************************************************************-->
+
+    <!--命中-->
+    <Hit          Template="T_Money" ID="281118"       Rectangle="137,334,170,350"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="命中"    />
+    <HitText      Template="T_Money" ID="281018"   Rectangle="178,334,241,350"   Format="4"   FontColor="ORDINARY_INFOCOLOR" Text="9999"  />
+
+    <!--躲闪-->
+    <Dodge        Template="T_Money" ID="281119"       Rectangle="137,360,170,376"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="躲闪"    />
+    <DodgeText    Template="T_Money" ID="281019"   Rectangle="178,360,241,376"   Format="4"   FontColor="ORDINARY_INFOCOLOR" Text="12345678"  />
+
+    <!--暴击-->
+    <CritAppend   Template="T_Money" ID="281120"       Rectangle="137,386,170,402"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="致命"    />
+    <CritAppendText Template="T_Money" ID="281020" Rectangle="178,386,241,402"   Format="4"  FontColor="ORDINARY_INFOCOLOR" Text="9999"   />
+
+    <!--暴击抵抗-->
+    <CritDefend   Template="T_Money" ID="281121"       Rectangle="137,412,170,428"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="坚韧"    />
+    <CritDefendText Template="T_Money" ID="281021"   Rectangle="178,412,241,428"   Format="4" FontColor="ORDINARY_INFOCOLOR"  Text="9999"   />
+
+    <!--物理伤害-->
+    <PhyDamageAppend     Template="T_Money" ID="281122"       Rectangle="137,438,200,454"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="物理伤害"    />
+    <PhyDamageAppendText Template="T_Money" ID="281022"   Rectangle="205,438,241,454"   Format="4"  FontColor="ORDINARY_INFOCOLOR" Text="80.3%"   />
+
+    <!--魔法伤害-->
+    <MagicDamageAppend        Template="T_Money" ID="281123"       Rectangle="137,464,200,480"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="魔法伤害"    />
+    <MagicDamageAppendText    Template="T_Money" ID="281023"   Rectangle="205,464,241,480"   Format="4"  FontColor="ORDINARY_INFOCOLOR"  Text="80.3%"  />
+
+    <!--伤害吸收-->
+    <DamageSorb        Template="T_Money" ID="281124"       Rectangle="137,491,200,507"    Format="4"  FontColor="BASE_HEADCOLOR"  Text="伤害吸收"    />
+    <DamageSorbText    Template="T_Money" ID="281024"   Rectangle="205,491,241,507"   Format="4"   FontColor="ORDINARY_INFOCOLOR" Text="21000"  />
+
+    <!--角色名-->
+    <RoleNameText    Template="T_NoBackgroundText" ID="281025"   Rectangle="5,51,258,67"   Format="4" TextFormat="5"  FontColor="GREEN_TEXTCOLOR" Text="角色名"  />
+    <!--***********************************************************************************************************-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </PersonalInfo>
+</UIConfig>

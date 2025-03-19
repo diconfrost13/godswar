@@ -1,0 +1,783 @@
+#技能属性配置表
+#说明：
+
+[parameter]
+Count=200
+Percent=11,12,17,18;
+EffectCount=19
+
+[Effect]
+Effect0=MaxHP
+Effect1=MaxMP
+Effect2=Hit
+Effect3=Miss
+Effect4=PhyAttack
+Effect5=PhyDefend
+Effect6=MagicAttack
+Effect7=MagicDefend
+Effect8=FrenzyHit
+Effect9=FrenzyMiss
+Effect10=DamageSorb
+Effect11=PhyDamage
+Effect12=MagicDamage
+Effect13=HPResume
+Effect14=MPResume
+Effect15=StatusHit
+Effect16=StatusMiss
+Effect17=Cure
+Effect18=Becure
+
+[NODE]
+0=Maximum Health+
+1=Maximum Mana+
+2=Hit Rating+
+3=Dodge Rating+
+4=Melee Damage+
+5=Melee Defense+
+6=Magical Damage+
+7=Magical Defense+
+8=Crit Bonus+
+9=Crit Resistance+
+10=Damage Absorption+
+11=Melee Damage Bonus+
+12=Magical Damage Bonus+
+13=HP Restoration Spd+
+14=MP Restoration Spd+
+15=Duration Based Spell Hit Rating+
+16=Duration Based Spell Resistance Rating+
+17=Healing+
+18=Healing Done+
+
+[classnum]
+Count=4;
+
+[class0]
+Skill=0,1,2,3,4,5,6,7,12,13,14,8,9,10,11,15,16,17;
+[class1]
+Skill=50,51,52,53,54,55,56,57,62,63,64,58,59,60,61,65,66,67;
+[class2]
+Skill=150,151,152,153,154,155,156,157,162,163,164,158,159,160,161,165,166,167;
+[class3]
+Skill=100,101,102,103,104,105,106,107,112,113,114,108,109,110,111,115,116,117;
+
+
+
+[0]
+Name=Basic Physique
+PrefixID=0
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MaxHP=0,60
+IconPos=900,72
+IconSize=36,36
+
+[1]
+Name=Basic Wrist Strength
+PrefixID=0
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+PhyAttack=4,8
+IconPos=72,0
+IconSize=36,36
+
+[2]
+Name=Basic Defense
+PrefixID=0
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+PhyDefend=5,6
+IconPos=180,0
+IconSize=36,36
+
+[3]
+Name=Basic Accuracy
+PrefixID=0
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+Hit=2,4
+IconPos=216,0
+IconSize=36,36
+
+[4]
+Name=Basic Will
+PrefixID=0
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MaxMP=1,8
+IconPos=0,0
+IconSize=36,36
+
+[5]
+Name=Ancient Swordplay
+PrefixID=1
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+PhyDamage=11,.004
+IconPos=144,0
+IconSize=36,36
+
+[6]
+Name=Phalanx Duty
+PrefixID=2
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+PhyDefend=5,12
+IconPos=36,0
+IconSize=36,36
+
+[7]
+Name=Casting Net
+PrefixID=3
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+Miss=3,4
+IconPos=828,72
+IconSize=36,36
+
+[8]
+Name=Improved Armor
+PrefixID=4
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+DamageSorb=10,4
+IconPos=108,0
+IconSize=36,36
+
+[9]
+Name=Lion's Blood
+PrefixID=4
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+HPResume=13,20
+IconPos=360,0
+IconSize=36,36
+
+[10]
+Name=Perseus' Swordplay
+PrefixID=4
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+StatusHit=15,1
+IconPos=144,108
+IconSize=36,36
+
+[11]
+Name=Calmness
+PrefixID=4
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MaxMP=1,12
+IconPos=540,0
+IconSize=36,36
+
+[12]
+Name=Thrace Swordplay
+PrefixID=5
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+PhyAttack=4,14
+IconPos=108,108
+IconSize=36,36
+
+[13]
+Name=Gorgon's Blood
+PrefixID=6
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MaxHP=0,100
+IconPos=252,0
+IconSize=36,36
+
+[14]
+Name=Aquarian Order
+PrefixID=7
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+FrenzyMiss=9,1.6
+IconPos=396,0
+IconSize=36,36
+
+[15]
+Name=Reinforced Armor
+PrefixID=8
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+DamageSorb=10,7
+IconPos=396,72
+IconSize=36,36
+
+[16]
+Name=Bear's Steadiness
+PrefixID=9
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MagicDefend=7,10
+IconPos=288,0
+IconSize=36,36
+
+[17]
+Name=Perseus' Defense
+PrefixID=10
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+StatusMiss=16,1.2
+IconPos=936,72
+IconSize=36,36
+
+[50]
+Name=Basic Throwing Spear
+PrefixID=50
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+Hit=2,3
+IconPos=360,108
+IconSize=36,36
+
+[51]
+Name=Basic Brawn
+PrefixID=50
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+PhyAttack=4,10
+IconPos=72,0
+IconSize=36,36
+
+[52]
+Name=Basic Solidity
+PrefixID=50
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+PhyDefend=5,9
+IconPos=0,0
+IconSize=36,36
+
+[53]
+Name=Basic Stamina
+PrefixID=50
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MaxHP=0,50
+IconPos=900,72
+IconSize=36,36
+
+[54]
+Name=Basic Agility
+PrefixID=50
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+Miss=3,2
+IconPos=324,0
+IconSize=36,36
+
+[55]
+Name=Archaian Spearplay
+PrefixID=51
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+PhyDamage=11,.005
+IconPos=324,108
+IconSize=36,36
+
+[56]
+Name=Pounce
+PrefixID=52
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+Hit=2,5
+IconPos=216,0
+IconSize=36,36
+
+[57]
+Name=Save Strength
+PrefixID=53
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+HPResume=13,16
+IconPos=360,0
+IconSize=36,36
+
+[58]
+Name=Casting Net
+PrefixID=54
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+Miss=3,4
+IconPos=828,72
+IconSize=36,36
+
+[59]
+Name=Hero's Spirit
+PrefixID=54
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MagicDefend=7,7
+IconPos=288,0
+IconSize=36,36
+
+[60]
+Name=Harden Resolve
+PrefixID=54
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MPResume=14,3
+IconPos=396,0
+IconSize=36,36
+
+[61]
+Name=Improved Healing
+PrefixID=54
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+Becure=18,.01
+IconPos=540,0
+IconSize=36,36
+
+[62]
+Name=Improved Attack
+PrefixID=55
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+PhyAttack=4,20
+IconPos=504,72
+IconSize=36,36
+
+[63]
+Name=Amazon Rage
+PrefixID=56
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+FrenzyHit=8,1.6
+IconPos=108,36
+IconSize=36,36
+
+[64]
+Name=Released Dander
+PrefixID=57
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MPResume=14,4
+IconPos=324,72
+IconSize=36,36
+
+[65]
+Name=Defensive Spearplay
+PrefixID=58
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+FrenzyMiss=9,1.2
+IconPos=396,108
+IconSize=36,36
+
+[66]
+Name=Improved Endurance
+PrefixID=59
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+DamageSorb=10,7
+IconPos=252,0
+IconSize=36,36
+
+[67]
+Name=Centaur's Herbalism
+PrefixID=60
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MaxHP=0,90
+IconPos=252,36
+IconSize=36,36
+
+[100]
+Name=Basic Intellect
+PrefixID=100
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MaxMP=1,12
+IconPos=468,0
+IconSize=36,36
+
+[101]
+Name=Basic Summoning
+PrefixID=100
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MagicAttack=6,8
+IconPos=684,72
+IconSize=36,36
+
+[102]
+Name=Improved Hit
+PrefixID=100
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+Hit=2,3
+IconPos=252,0
+IconSize=36,36
+
+[103]
+Name=Basic Absorption
+PrefixID=100
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+DamageSorb=10,4
+IconPos=972,36
+IconSize=36,36
+
+[104]
+Name=Basic Mans Shield
+PrefixID=100
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MagicDefend=7,4
+IconPos=936,72
+IconSize=36,36
+
+[105]
+Name=Improved Fire
+PrefixID=101
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MagicAttack=6,14
+IconPos=36,36
+IconSize=36,36
+
+[106]
+Name=Eagle Eye
+PrefixID=102
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+Hit=2,4
+IconPos=216,0
+IconSize=36,36
+
+[107]
+Name=Lore of Staves
+PrefixID=103
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+PhyDefend=5,8
+IconPos=432,108
+IconSize=36,36
+
+[108]
+Name=Lore of Air
+PrefixID=104
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+Miss=3,4
+IconPos=216,72
+IconSize=36,36
+
+[109]
+Name=Lore of Water
+PrefixID=104
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+HPResume=13,10
+IconPos=540,0
+IconSize=36,36
+
+[110]
+Name=Lore of  Earth
+PrefixID=104
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MaxMP=1,20
+IconPos=288,72
+IconSize=36,36
+
+[111]
+Name=Natural Defense
+PrefixID=104
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MagicDefend=7,8
+IconPos=360,72
+IconSize=36,36
+
+[112]
+Name=Gorgon's Blood. L
+PrefixID=105
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MagicDamage=12,.006
+IconPos=324,72
+IconSize=36,36
+
+[113]
+Name=Dionysus' Carnival
+PrefixID=106
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+FrenzyHit=8,1.2
+IconPos=360,0
+IconSize=36,36
+
+[114]
+Name=Congeal
+PrefixID=107
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+DamageSorb=10,6
+IconPos=288,0
+IconSize=36,36
+
+[115]
+Name=Storm Shield
+PrefixID=108
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+FrenzyMiss=9,1
+IconPos=864,72
+IconSize=36,36
+
+[116]
+Name=Elosmith's Mystery
+PrefixID=109
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MaxHP=0,80
+IconPos=396,0
+IconSize=36,36
+
+[117]
+Name=Gaea's Energy
+PrefixID=110
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MPResume=14,4
+IconPos=900,72
+IconSize=36,36
+
+[150]
+Name=Basic Agility
+PrefixID=150
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+Miss=3,2
+IconPos=324,0
+IconSize=36,36
+
+[151]
+Name=Basic Blessing
+PrefixID=150
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MagicDefend=7,5
+IconPos=36,0
+IconSize=36,36
+
+[152]
+Name=Basic Defense
+PrefixID=150
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+PhyDefend=5,10
+IconPos=0,0
+IconSize=36,36
+
+[153]
+Name=Basic Purification
+PrefixID=150
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MagicAttack=6,7
+IconPos=288,0
+IconSize=36,36
+
+[154]
+Name=Basic Prayer
+PrefixID=150
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MaxMP=1,10
+IconPos=468,0
+IconSize=36,36
+
+[155]
+Name=Sacrifice Bonus
+PrefixID=151
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MagicDefend=7,9
+IconPos=504,0
+IconSize=36,36
+
+[156]
+Name=Storm Shield
+PrefixID=152
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+FrenzyMiss=9,1
+IconPos=864,72
+IconSize=36,36
+
+[157]
+Name=Improved Sight
+PrefixID=153
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+Hit=2,5
+IconPos=216,0
+IconSize=36,36
+
+[158]
+Name=Amplify Magic
+PrefixID=154
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MaxMP=1,14
+IconPos=360,0
+IconSize=36,36
+
+[159]
+Name=Light of Olympia
+PrefixID=154
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+StatusMiss=16,1.4
+IconPos=900,72
+IconSize=36,36
+
+[160]
+Name=Hotspring's Blessing
+PrefixID=154
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+HPResume=13,10
+IconPos=540,0
+IconSize=36,36
+
+[161]
+Name=Machaon's Healing
+PrefixID=154
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+Cure=17,.02
+IconPos=324,72
+IconSize=36,36
+
+[162]
+Name=Attemper Destiny
+PrefixID=155
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+DamageSorb=10,8
+IconPos=504,72
+IconSize=36,36
+
+[163]
+Name=Delphi Forecast
+PrefixID=156
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+Miss=3,5
+IconPos=324,0
+IconSize=36,36
+
+[164]
+Name=Holy Touch
+PrefixID=157
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MagicAttack=6,12
+IconPos=432,0
+IconSize=36,36
+
+[165]
+Name=Nectar Usage
+PrefixID=158
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MPResume=14,3
+IconPos=396,0
+IconSize=36,36
+
+[166]
+Name=Delphi Theology
+PrefixID=159
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+StatusHit=15,1.2
+IconPos=216,72
+IconSize=36,36
+
+[167]
+Name=Centaur's Herbalism
+PrefixID=160
+RrefixRank=0
+TotalRank=0
+EquipRequest=-1
+MaxHP=0,90
+IconPos=252,36
+IconSize=36,36

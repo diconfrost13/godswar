@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--this is BijouForge config-->
+<BijouForge>
+    <MaterialID1 ID="4200" NextID="4201" MaterialType="1"/>
+    <MaterialID2 ID="4201" NextID="4202" MaterialType="1" MaterialProyAdd="8"/>
+    <MaterialID3 ID="4202" MaterialType="1" MaterialProyAdd="16"/>
+    <MaterialBase1 ID="4210" NextID="4211" MaterialType="2"/>
+    <MaterialBase2 ID="4211" NextID="4212" MaterialType="2" MaterialProyAdd="8"/>
+    <MaterialBase3 ID="4212" MaterialType="2" MaterialProyAdd="16"/>
+    <MaterialAppend1 ID="4220" NextID="4221" MaterialType="3"/>
+    <MaterialAppend2 ID="4221" NextID="4222" MaterialType="3" MaterialProyAdd="8"/>
+    <MaterialAppend3 ID="4222" MaterialType="3" MaterialProyAdd="16"/>
+    <MaterialOdds1 ID="4230" NextID="4231" MaterialType="4" MaterialProyAdd="2"/>
+    <MaterialOdds2 ID="4231" NextID="4232" MaterialType="4" MaterialProyAdd="4"/>
+    <MaterialOdds3 ID="4232" MaterialType="4" MaterialProyAdd="8"/>
+    <MaterialFlee1 ID="4240" NextID="4241" MaterialType="5"/>
+    <MaterialFlee2 ID="4241" NextID="4242" MaterialType="5"/>
+    <MaterialFlee3 ID="4242" MaterialType="5"/>
+    <Ghost1 ID="4105" NextID="4107" MaterialType="6"/>
+    <Ghost2 ID="4106" NextID="4108" MaterialType="6"/>
+    <MoonCake1 ID="3800" NextID="3806" MaterialType="6"/>
+    <MoonCake2 ID="3801" NextID="3807" MaterialType="6"/>
+    <MoonCake3 ID="3802" NextID="3808" MaterialType="6"/>
+    <MoonCake4 ID="3803" NextID="3809" MaterialType="6"/>
+    <MoonCake5 ID="3804" NextID="3810" MaterialType="6"/>
+    <MoonCake6 ID="3805" NextID="3811" MaterialType="6"/>
+</BijouForge>

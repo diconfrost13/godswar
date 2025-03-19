@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<UITemplate>
+	
+	<InterfaceCheck Template="T_NormalCheckBox" />
+	<InterfaceName Template="T_NormalText" Rectangle="50,0,200,20"/>
+	<InterfaceHelp Template="T_NormalText" Rectangle="200,0,350,20" />
+
+</UITemplate>

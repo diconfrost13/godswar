@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：TargetInfoConfig.xml
+		摘    要：选中对象框配置表
+
+		当前版本：1.00
+		作    者：C.D
+		完成日期：2008-03-22  
+ 
+-->
+<UIConfig>
+  <TargetInfo  Type="Window" ID="212000" Layer="1" Rectangle="340,0,603,83" TexturePos="0,0" Texture="./UI/Texture/main.gwo" Visible="0" Text="" >
+    <BackGround1  Template="T_NormalText"   ID="212001" Rectangle="0,0,233,82"    TexturePos="1,873"  />
+    <Name         Template="T_NormalText"   ID="212003" Rectangle="85,13,213,30" TexturePos="0,250"  Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" />
+    <Label        Template="T_NormalText"   ID="212004" Rectangle="233,19,327,29" TexturePos="0,250"  />
+    <Handle       Type="Button" ID="212005" Rectangle="102,50,150,75" TexturePos="451,106" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="Info" />
+    <Blood        Type="Text"   ID="212006" Rectangle="90,34,231 ,48" TexturePos="496,896" Texture="./UI/Texture/main.gwo" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextWeight="3" TextFormat="5"/>
+    <ftnSparta    Type="Text"   ID="212007" Rectangle="27,12,83,67"  TexturePos="233,788" Texture="./UI/Texture/main.gwo" Text="" />
+    <ftnAthens    Type="Text"   ID="212008" Rectangle="27,12,83,67" TexturePos="289,788" Texture="./UI/Texture/main.gwo" Text=""/>
+    <Rank         Type="Text"   ID="212020" Rectangle="69,54,93,76" TexturePos="0,250" Texture="./UI/Texture/main.gwo" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  </TargetInfo>
+  <PopMenu Template="T_SimpleWindow" ID="213000"   Rectangle="440,76,540,278"  Visible="0" Layer="1">
+    <ObjInfo       Template="T_Button4" ID="213001" Rectangle="9,10,92,37"    Text="Character Info" />
+    <TeamInvite    Template="T_Button4" ID="213002" Rectangle="9,36,92,63"   Text="Invite to Team" />
+    <RequestTrade  Template="T_Button4" ID="213003" Rectangle="9,62,92,89"   Text="Request Trade" />
+    <RequestFriend Template="T_Button4" ID="213004" Rectangle="9,88,92,115"  Text="Add as Friend" />
+    <MeetScret     Template="T_Button4" ID="213005" Rectangle="9,114,92,141" Text="Whisper" />
+    <CheckStall    Template="T_Button4" ID="213006" Rectangle="9,140,92,167" Text="查看摊位" />
+    <CheckGuild    Template="T_Button4" ID="213007" Rectangle="9,166,92,193" Text="Invite to Guild" />
+  </PopMenu>
+  <StateWnd        Type="Window" Layer="1" Rectangle="445,80,860,120"    Visible="1" Enable="1"  >
+    <State0   Template="T_IconText"  ID="214000"     Rectangle="0,0,36,36" />
+    <State1   Template="T_IconText"  ID="214001"     Rectangle="20,0,56,36" />
+    <State2   Template="T_IconText"  ID="214002"     Rectangle="40,0,76,36" />
+    <State3   Template="T_IconText"  ID="214003"     Rectangle="60,0,96,36" />
+    <State4   Template="T_IconText"  ID="214004"     Rectangle="80,0,116,36" />
+    <State5   Template="T_IconText"  ID="214005"     Rectangle="100,0,136,36" />
+    <State6   Template="T_IconText"  ID="214006"     Rectangle="120,0,156,36" />
+    <State7   Template="T_IconText"  ID="214007"     Rectangle="140,0,176,36" />
+    <State8   Template="T_IconText"  ID="214008"     Rectangle="160,0,196,36" />
+    <State9  Template="T_IconText"  ID="214009"      Rectangle="180,0,216,36" />
+    <State10  Template="T_IconText"  ID="214010"     Rectangle="200,0,236,36" />
+    <State11  Template="T_IconText"  ID="214011"     Rectangle="220,0,256,36" />
+  </StateWnd>
+
+
+
+
+  <TargetInfoWnd Template="T_NormalWindow" ID="215000" Modal="0" Rectangle="80,112,388,636" Texture="./UI/Texture/main.gwo" TexturePos="0,0" BtnRect="240,13,278,50" BtnPos="0,80" Visible="0">
+
+    <!--背景窗口-->
+    <bgWnd1      Template="T_BgWindow"          ID="-1"       Rectangle="19,78,289,188"                 Enable="0"/>
+
+    <!--信仰-->
+    <Belief       Template="T_Money" ID="-1"       Rectangle="30,106,68,122"     TextFormat="0"    Text="信仰："   FontColor="BASE_HEADCOLOR" />
+    <BeliefText   Template="T_Money" ID="215001"   Rectangle="75,106,135,122"    TextFormat="0"    Text="雅典娜"   FontColor="ORDINARY_INFOCOLOR" />
+
+    <!--职业-->
+    <Class        Template="T_Money" ID="-1"       Rectangle="30,87,68,103"    TextFormat="0"    Text="Class："    FontColor="BASE_HEADCOLOR" />
+    <ClassText    Template="T_Money" ID="215002"   Rectangle="75,87,135,103"   TextFormat="0"    Text="战士战士" FontColor="ORDINARY_INFOCOLOR" />
+
+    <!--声望-->
+    <Credit       Template="T_Money" ID="-1"       Rectangle="155,87,238,103"    TextFormat="0"    Text="声望："    FontColor="BASE_HEADCOLOR" />
+    <CreditText   Template="T_Money" ID="215003"   Rectangle="239,87,289,103"   TextFormat="0"   Text="9999"   FontColor="ORDINARY_INFOCOLOR"/>
+
+    <!--爵位-->
+    <Knight       Template="T_Money" ID="-1"       Rectangle="30,125,68,141"    TextFormat="0"    Text="爵位："    FontColor="BASE_HEADCOLOR" />
+    <KnightText   Template="T_Money" ID="215004"   Rectangle="75,125,130,141"   TextFormat="0"    Text="检察官"  FontColor="ORDINARY_INFOCOLOR"/>
+
+    <!--公会-->
+    <Union        Template="T_Money" ID="-1"       Rectangle="30,147,68,163"    TextFormat="0"    Text="Guild："    FontColor="BASE_HEADCOLOR" />
+    <UnionText    Template="T_Money" ID="215005"   Rectangle="75,147,180,163"   TextFormat="0"   Text="JoyMaxStudiosJoyMaxStudios"  FontColor="ORDINARY_INFOCOLOR" />
+
+    <!--职务-->
+    <Duty         Template="T_Money" ID="-1"       Rectangle="30,166,68,182"    TextFormat="0"    Text="职位："    FontColor="BASE_HEADCOLOR" />
+    <DutyText     Template="T_Money" ID="215006"   Rectangle="75,166,130,182"   TextFormat="0"   Text="JoyMaxStudios"   FontColor="ORDINARY_INFOCOLOR"/>
+
+    <!--***********************************************************************************************************-->
+
+    <bgWnd2      Template="T_BgWindow"          ID="-1"       Rectangle="19,190,289,375"                 Enable="0"/>
+   
+
+    <!--各个部分装备-->
+    <!--头盔-->
+    <Head Type="Button" ID="216001" Rectangle="129,199,171,241" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="0,432" BtnTopRect="3,3,39,39"/>
+    <!--护身符-->
+    <Amulet Type="Button" ID="216002" Rectangle="172,199,214,241" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="0,684" BtnTopRect="3,3,39,39"/>
+
+
+    <!--主手武器-->
+    <MainHand0 Type="Button" ID="216011" Rectangle="45,241,87,283" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="0,144" BtnTopRect="3,3,39,39"/>
+    <!--MainHand1 Type="Button" ID="216013" Rectangle="45,284,87,326" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="0,144" BtnTopRect="3,3,39,39" Visible="0"/-->
+    <!--手套-->
+    <Glove Type="Button" ID="216003" Rectangle="88,241,130,283" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="0,576" BtnTopRect="3,3,39,39"/>
+    <!--装甲-->
+    <Armor Type="Button" ID="216004" Rectangle="131,241,173,283" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="0,360" BtnTopRect="3,3,39,39"/>
+    <!--护腕-->
+    <Cuff Type="Button" ID="216005" Rectangle="174,241,216,283" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="0,504" BtnTopRect="3,3,39,39"/>
+    <!--副手武器-->
+    <AuxiliaryHand0 Type="Button" ID="216012" Rectangle="217,241,259,283" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="0,144" BtnTopRect="3,3,39,39"/>
+    <!--AuxiliaryHand1 Type="Button" ID="216014" Rectangle="217,284,259,326" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="0,144" BtnTopRect="3,3,39,39" Visible="0"/-->
+
+    <!--戒指1-->
+    <Ring1 Type="Button" ID="216009" Rectangle="88,284,130,326" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="504,685" BtnTopRect="3,3,39,39"/>
+    <!--腰带-->
+    <Girdle Type="Button" ID="216006" Rectangle="131,284,173,326" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="0,648" BtnTopRect="3,3,39,39"/>
+    <!--戒指2-->
+    <Ring2 Type="Button" ID="216010" Rectangle="174,284,216,326" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="504,685" BtnTopRect="3,3,39,39"/>
+
+
+    <!--腿部-->
+    <Leggins Type="Button" ID="216008" Rectangle="88,327,130,369" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="0,542" BtnTopRect="3,3,39,39"/>
+    <!--鞋子-->
+    <Shoes Type="Button" ID="216007" Rectangle="174,327,216,369" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="0,612" BtnTopRect="3,3,39,39"/>
+    <!--***********************************************************************************************************-->
+    
+    <bgWnd3      Template="T_BgWindow"          ID="-1"       Rectangle="19,378,154,510"                 Enable="0"/>
+    <!--物理攻击-->
+    <Attack       Template="T_Money" ID="-1"       Rectangle="23,388,85,404"    TextFormat="0"    Text="物理攻击："    FontColor="BASE_HEADCOLOR" />
+    <AttackText   Template="T_Money" ID="215013"   Rectangle="90,388,137,404"   TextFormat="0"    Text="12345678"  FontColor="ORDINARY_INFOCOLOR"/>
+
+    <!--物理防御-->
+    <Defend       Template="T_Money" ID="-1"       Rectangle="23,407,85,423"    TextFormat="0"    Text="物理防御："   FontColor="BASE_HEADCOLOR"  />
+    <DefendText   Template="T_Money" ID="215014"   Rectangle="90,407,137,423"   TextFormat="0"    Text="12345678"  FontColor="ORDINARY_INFOCOLOR"/>
+
+    <!--魔法攻击-->
+    <MagicAttack  Template="T_Money" ID="-1"       Rectangle="23,427,85,443"    TextFormat="0"    Text="魔法攻击："   FontColor="BASE_HEADCOLOR"  />
+    <MagicAttackText Template="T_Money" ID="215015" Rectangle="90,427,137,443"  TextFormat="0"   Text="787878"   FontColor="ORDINARY_INFOCOLOR"/>
+
+    <!--魔法防御-->
+    <MagicDefend  Template="T_Money" ID="-1"       Rectangle="23,447,85,463"    TextFormat="0"    Text="魔法防御："   FontColor="BASE_HEADCOLOR"  />
+    <MagicDefendText Template="T_Money" ID="215016" Rectangle="90,447,137,463"  TextFormat="0"   Text="456954"   FontColor="ORDINARY_INFOCOLOR"/>
+
+    <!--物理伤害-->
+    <PhyDamageAppend     Template="T_Money" ID="-1"       Rectangle="23,467,85,483"    TextFormat="0"    Text="物理伤害："   FontColor="BASE_HEADCOLOR"  />
+    <PhyDamageAppendText Template="T_Money" ID="215022"   Rectangle="90,467,137,483"   TextFormat="0"   Text="80.3%"   FontColor="ORDINARY_INFOCOLOR"/>
+
+    <!--魔法伤害-->
+    <MagicDamageAppend        Template="T_Money" ID="-1"       Rectangle="23,487,85,503"    TextFormat="0"    Text="魔法伤害："   FontColor="BASE_HEADCOLOR"  />
+    <MagicDamageAppendText    Template="T_Money" ID="215023"   Rectangle="90,487,137,503"   TextFormat="0"    Text="80.3%"  FontColor="ORDINARY_INFOCOLOR"/>
+
+
+    <!--***********************************************************************************************************-->
+
+    
+    <bgWnd4      Template="T_BgWindow"          ID="-1"       Rectangle="155,378,289,510"                 Enable="0"/>
+    <!--命中-->
+    <Hit          Template="T_Money" ID="-1"       Rectangle="158,388,173,404"    TextFormat="0"    Text="命中："   FontColor="BASE_HEADCOLOR"  />
+    <HitText      Template="T_Money" ID="215018"   Rectangle="195,388,240,404"   TextFormat="0"    Text="9999"  FontColor="ORDINARY_INFOCOLOR"/>
+
+    <!--躲闪-->
+    <Dodge        Template="T_Money" ID="-1"       Rectangle="158,407,173,423"    TextFormat="0"    Text="躲闪："   FontColor="BASE_HEADCOLOR"  />
+    <DodgeText    Template="T_Money" ID="215019"   Rectangle="195,407,240,423"   TextFormat="0"    Text="12345678"  FontColor="ORDINARY_INFOCOLOR"/>
+
+    <!--暴击-->
+    <CritAppend   Template="T_Money" ID="-1"       Rectangle="158,427,173,443"    TextFormat="0"    Text="致命："   FontColor="BASE_HEADCOLOR"  />
+    <CritAppendText Template="T_Money" ID="215020" Rectangle="195,427,240,443"   TextFormat="0"   Text="9999"   FontColor="ORDINARY_INFOCOLOR"/>
+
+    <!--暴击抵抗-->
+    <CritDefend   Template="T_Money" ID="-1"       Rectangle="158,447,173,463"    TextFormat="0"    Text="坚韧："   FontColor="BASE_HEADCOLOR"  />
+    <CritDefendText Template="T_Money" ID="215021"   Rectangle="195,447,240,463"   TextFormat="0"   Text="9999"   FontColor="ORDINARY_INFOCOLOR"/>
+
+    <!--治疗加成-->
+    <Cure         Template="T_Money" ID="-1"       Rectangle="158,467,197,483"    TextFormat="0"    Text="治疗加成："   FontColor="BASE_HEADCOLOR"  />
+    <CureText     Template="T_Money" ID="215017"   Rectangle="225,467,240,483"   TextFormat="0"   Text="1.2%"   FontColor="ORDINARY_INFOCOLOR"/>
+
+    <!--伤害吸收-->
+    <DamageSorb        Template="T_Money" ID="-1"       Rectangle="158,487,197,503"    TextFormat="0"    Text="伤害吸收："   FontColor="BASE_HEADCOLOR"  />
+    <DamageSorbText    Template="T_Money" ID="215024"   Rectangle="225,487,240,503"   TextFormat="0"    Text="21000"  FontColor="ORDINARY_INFOCOLOR"/>
+
+   
+    <!--***********************************************************************************************************-->
+
+  </TargetInfoWnd>
+
+
+
+
+</UIConfig>

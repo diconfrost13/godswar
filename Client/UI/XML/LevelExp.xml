@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+  <LevelExp Type="Window" ID="121000" Layer="1" Rectangle="0,760,1024,768" TexturePos="0,1015" Texture="./UI/Texture/main.gwo" Visible="0"  >
+    <ExpText Type="Text" ID="121001" Rectangle="4,2,1020,7" TexturePos="8,1010" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text="" />
+  </LevelExp>
+</UIConfig>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--this is ItemColor config-->
+<ItemColor>
+    <Equip>
+        <Base>
+            <BaseLevel1 BaseLv="1" BaseName="普通的" BaseColor="1.0f,1.0f,1.0f,1.0f"/>
+            <BaseLevel2 BaseLv="2" BaseName="坚固的" BaseColor="0.0f,1.0f,1.0f,1.0f"/>
+            <BaseLevel3 BaseLv="3" BaseName="精致的" BaseColor="1.0f,1.0f,0.0f,1.0f"/>
+            <BaseLevel4 BaseLv="4" BaseName="卓越的" BaseColor="0.0f,1.0f,0.0f,1.0f"/>
+            <BaseLevel5 BaseLv="5" BaseName="完美的" BaseColor="1.0f,0.0f,1.0f,1.0f"/>
+        </Base>
+        <Append>
+            <AppLevel1 AppendLv="1" AppendStar="☆" AppendColor="1.0f,1.0f,1.0f,1.0f" AppAttributeColor="0.0f,1.0f,0.0f,1.0f"/>
+            <AppLevel2 AppendLv="2" AppendStar="☆☆" AppendColor="1.0f,1.0f,1.0f,1.0f" AppAttributeColor="0.0f,1.0f,0.0f,1.0f"/>
+            <AppLevel3 AppendLv="3" AppendStar="★★★" AppendColor="1.0f,1.0f,1.0f,1.0f" AppAttributeColor="0.0f,1.0f,0.0f,1.0f"/>
+            <AppLevel4 AppendLv="4" AppendStar="★★★★" AppendColor="0.0f,1.0f,1.0f,1.0f" AppAttributeColor="0.0f,1.0f,0.0f,1.0f"/>
+            <AppLevel5 AppendLv="5" AppendStar="★★★★★" AppendColor="0.0f,1.0f,1.0f,1.0f" AppAttributeColor="0.0f,1.0f,0.0f,1.0f"/>
+            <AppLevel6 AppendLv="6" AppendStar="★★★★★★" AppendColor="1.0f,1.0f,0.0f,1.0f" AppAttributeColor="0.0f,1.0f,0.0f,1.0f"/>
+            <AppLevel7 AppendLv="7" AppendStar="●●●●●●●" AppendColor="1.0f,1.0f,0.0f,1.0f" AppAttributeColor="0.0f,1.0f,0.0f,1.0f"/>
+            <AppLevel8 AppendLv="8" AppendStar="●●●●●●●●" AppendColor="0.0f,1.0f,0.0f,1.0f" AppAttributeColor="0.0f,1.0f,0.0f,1.0f"/>
+            <AppLevel9 AppendLv="9" AppendStar="囧囧囧囧囧囧囧囧囧" AppendColor="0.0f,1.0f,0.0f,1.0f" AppAttributeColor="0.0f,1.0f,0.0f,1.0f"/>
+            <AppLevel10 AppendLv="10" AppendStar="囧囧囧囧囧囧囧囧囧囧" AppendColor="1.0f,0.0f,1.0f,1.0f" AppAttributeColor="0.0f,1.0f,0.0f,1.0f"/>
+        </Append>
+    </Equip>
+</ItemColor>

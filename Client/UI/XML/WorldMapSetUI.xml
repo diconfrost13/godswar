@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：WorldMapSetUI.xml
+		摘    要：世界地图显示设置配置表
+
+		当前版本：1.00
+		作    者：Tavia
+		完成日期：2008-06-26
+ 
+-->
+<UIConfig>
+
+  <GodwardTextMap Type="Window" ID="440200" Layer="0" Enable="0" Rectangle="273,200,785,712" Visible="0" Text="" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR">
+
+  </GodwardTextMap>
+
+  <ViewSetWin Template="T_NormalWindow" ID="440210" Rectangle="600,250,900,550" BtnRect="234,13,271,50" BtnPos="0,80"  Visible="0" >
+    
+    <!--显示设置-->
+    <ViewSetText Type="Text"  Rectangle="40,17,100,43"  Text="显示设置" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    <!--显示项-->
+    <Text Type="Text"  Rectangle="20,75,100,95"  Text="显示项" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+
+    <Text1 Type="Text"  Rectangle="20,100,100,130"  Text="NPC" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    <Text21 Type="Text"  Rectangle="105,107,117,119"  Text=""  Texture="./UI/Texture/main.gwo" TexturePos="162,198" />
+
+    <Text2 Type="Text"  Rectangle="20,134,100,154"  Text="同阵营玩家" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    <Text22 Type="Text"  Rectangle="107,138,115,146"  Text="" Texture="./UI/Texture/main.gwo" TexturePos="268,226" />
+    <Text3 Type="Text"  Rectangle="20,168,100,178"  Text="异阵营玩家" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    <Text23 Type="Text"  Rectangle="107,167,115,175"  Text=""  Texture="./UI/Texture/main.gwo" TexturePos="268,234" />
+
+    <Text4 Type="Text"  Rectangle="20,190,100,210"  Text="同阵营卫兵" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    <Text24 Type="Text"  Rectangle="107,194,115,202"  Text=""  Texture="./UI/Texture/main.gwo" TexturePos="260,226" />
+    <Text5 Type="Text"  Rectangle="20,218,100,238"  Text="异阵营卫兵" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    <Text25 Type="Text"  Rectangle="107,222,115,230"  Text=""  Texture="./UI/Texture/main.gwo" TexturePos="260,234" />
+
+    <Text6 Type="Text"  Rectangle="20,245,100,265"  Text="普通怪物" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    <Text26 Type="Text"  Rectangle="107,249,115,257"  Text=""  Texture="./UI/Texture/main.gwo" TexturePos="164,222" />
+    <Text7 Type="Text"  Rectangle="20,275,100,285"  Text="安全区" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    <Text27 Type="Text"  Rectangle="20,275,100,285"  Text="" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+
+    <!--<Text8 Type="Text"  Rectangle="20,395,100,415"  Text="BOSS，精英" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>-->
+
+    <!--复选项-->
+    <Text11 Type="Text"  Rectangle="140,75,210,95"  Text="大地图" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    <Text12 Type="Text"  Rectangle="210,75,280,95"  Text="小地图" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+
+    <!--NPC-->
+    <NPCWorldCheck Template="T_NormalCheckBox" ID="440220"  TexturePos="222,189" Rectangle="170,103,187,121" />
+    <NPCMinCheck Template="T_NormalCheckBox" ID="440221"  TexturePos="222,189" Rectangle="235,103,252,121" />
+    <!--同阵营玩家-->
+    <SPlayerWorldCheck Template="T_NormalCheckBox" ID="440222"  TexturePos="222,189" Rectangle="170,134,187,152" />
+    <SPlayerMinCheck  Template="T_NormalCheckBox" ID="440223"  TexturePos="222,189" Rectangle="235,134,252,152" />
+    <!--异阵营玩家-->
+    <DPlayerWorldCheck Template="T_NormalCheckBox" ID="440224"  TexturePos="222,189" Rectangle="170,162,187,180" />
+    <DPlayerMinCheck  Template="T_NormalCheckBox" ID="440225"  TexturePos="222,189" Rectangle="235,162,252,180" />
+    <!--同阵营卫兵-->
+    <SGuardWorldCheck Template="T_NormalCheckBox" ID="440226"  TexturePos="222,189" Rectangle="170,190,187,208" />
+    <SGuardMinCheck Template="T_NormalCheckBox" ID="440227"  TexturePos="222,189" Rectangle="235,190,252,208" />
+    <!--异阵营卫兵-->
+    <DGuardWorldCheck Template="T_NormalCheckBox" ID="440228"  TexturePos="222,189" Rectangle="170,216,187,234" />
+    <DGuardMinCheck Template="T_NormalCheckBox" ID="440229"  TexturePos="222,189" Rectangle="235,216,252,234" />
+    <!--普通怪物-->
+    <MosterWorldCheck Template="T_NormalCheckBox" ID="440230"  TexturePos="222,189" Rectangle="170,245,187,263" />
+    <MosterMinCheck Template="T_NormalCheckBox" ID="440231"  TexturePos="222,189" Rectangle="235,245,252,263" />
+    <!--安全区-->
+    <SRectWorldCheck Template="T_NormalCheckBox" ID="440232"  TexturePos="222,189" Rectangle="170,270,187,288" />
+    <SRectMinCheck Template="T_NormalCheckBox" ID="440233"  TexturePos="222,189" Rectangle="235,270,252,288" />
+    <!--BOSS，精英--><!--
+    <BOSSWorldCheck Template="T_NormalCheckBox" ID="440234"  TexturePos="222,189" Rectangle="170,396,187,414" />
+    <BOSSMinCheck Template="T_NormalCheckBox" ID="440235"  TexturePos="222,189" Rectangle="250,396,267,414" />-->-->
+
+  </ViewSetWin>
+
+</UIConfig>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+  <StatusUI Type="Window" ID="230000" Modal="0" Rectangle="0,0,294,82" TexturePos="634,874" Texture="./UI/Texture/main.gwo" Visible="0" Text="">
+    <Font Type="Text" ID="230001" Rectangle="104, 5 ,215, 19" TexturePos="96,146" Texture="./UI/Texture/main.gwo" Text="" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" />
+    <Hp Type="Text" ID="230002" Rectangle="103, 27 ,239, 39" TexturePos="496,896" Texture="./UI/Texture/main.gwo" Text="" />
+    <Mp Type="Text" ID="230003" Rectangle="103, 45 ,239, 60" TexturePos="358,896" Texture="./UI/Texture/main.gwo" Text="" />
+    <Exp Type="Text" ID="230004" Rectangle="103, 59 ,239, 63" TexturePos="496,890" Texture="./UI/Texture/main.gwo" Text="" />
+    <Leader Type="Text" ID="230006" Rectangle="75, 1 ,100, 21" TexturePos="966,289" Texture="./UI/Texture/main.gwo" Text=""  TextFormat="5"/>
+    <UnionSparta Type="Text" ID="230007" Rectangle="10,15,62,67" TexturePos="721,687" Texture="./UI/Texture/main.gwo" Text="" />
+    <UnionAthens Type="Text" ID="230008" Rectangle="10,15,62,67" TexturePos="668,687" Texture="./UI/Texture/main.gwo" Text="" />
+    <HpText Type="Text" ID="230009" Rectangle="103, 27 ,239, 39" TexturePos="830,285" Texture="./UI/Texture/main.gwo" Text="" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <MpText Type="Text" ID="230010" Rectangle="103, 45 ,239, 60" TexturePos="358,896" Texture="./UI/Texture/main.gwo" Text="" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <Rank Type="Text" ID="230012" Rectangle="58, 54 ,83, 76" TexturePos="0,250" Texture="./UI/Texture/main.gwo" Text="" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  </StatusUI>
+</UIConfig>

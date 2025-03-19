@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：ChatWndUI.xml
+		摘    要：聊天配置表
+
+		当前版本：1.00
+		作    者：C.D
+		完成日期：2008-08-29  
+ 
+-->
+<UIConfig>
+  <ChatMainWnd      Template="T_NormalWindow" ID="-1"     Rectangle="0,0,400,400"     BtnRect="340,13,378,50" BtnPos="0,80" Visible="1">
+    <!--主窗体-->
+    <MainTitle      Template="T_Money"        ID="-1"     Rectangle="42,18,360,40"    TextFormat="0"   FontColor="YELLOW_TEXTCOLOR"    SText="CW_X0_1"/>
+    <!---->
+    <TargetListBoxBackground
+                    Template="T_BgWindow"     Rectangle="18,74,365,300"/>
+    <TemplateListBox  Type="ListBox"            ID="-1"     Rectangle="26,82,360,292"   Texture="" Height="20" ScrollTexture="./UI/Texture/main.gwo"
+                    ScrollPos="0,0" ScrollRect="339,0,356,210"  BtnPos="133,122" BtnRect="0,0,17,27"/>
+    <!---->
+    <SentBtn        Template="T_Button3"      ID="441000" Rectangle="280,360,350,387"     SText="CW_X0_2" />
+    <!--CloseBtn       Template="T_Button3"      ID="441001" Rectangle="10,11,60,33"     Text="关 闭" /-->
+    <ExpressionBtn  Template="T_Button3"      ID="441002" Rectangle="30,360,100,387"     SText="CW_X0_3"    Enable="0"/>
+    <MinBtn         Template="T_Button2_S"    ID="441003" Rectangle="270,16,320,38"   Text="━" />
+    <!---->
+    <InputBoxBackground
+                    Template="T_BgWindow"     Rectangle="18,318,380,352"/>
+    <InputBox       Template="T_ChatEdit"     ID="441004" Rectangle="28,326,370,344"    Texture=""     MaxText="80" />
+    <!---->
+    
+    <!--名字列表窗-->
+    <NameListWnd  Template="T_SimpleWindow" ID="-1" Modal="0" Rectangle="390,74,600,300" Visible="1">
+      <NameListTitle  Template="T_Money"     ID="-1" Rectangle="10,8,200,38"          TextFormat="5"   FontColor="YELLOW_TEXTCOLOR"    Text="0/0"/>
+      <!---->
+      <NameListBoxBackground
+                    Template="T_BgWindow"     Rectangle="14,38,175,212"/>
+      <NameListBox  Type="ListBox"        ID="-1" Rectangle="16,40,173,210"        Texture="" Height="20" ScrollTexture="./UI/Texture/main.gwo" ScrollPos="0,0" ScrollRect="159,0,176,170"  BtnPos="133,122" BtnRect="0,0,17,27"/>
+      <!---->
+    </NameListWnd>
+  </ChatMainWnd>
+
+  
+
+  <MinWnd Template="T_BgWindow" ID="-1" Modal="0" Rectangle="800,609,956,640" Visible="0">
+    <MinWndButton Template="T_Button9"    ID="441004" Rectangle="2,2,154,29"    SText="CW_X0_4"/>
+  </MinWnd>
+  
+  
+
+  
+
+</UIConfig>

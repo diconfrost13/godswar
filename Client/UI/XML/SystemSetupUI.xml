@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+  <SystemSetupBack Type="Window" ID="240000" Layer="1" Rectangle="421,271,603,497" Visible="0" Enable="1" >
+
+    <UpTexture Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="50,0,142,27" TexturePos="932,896" Text=""/>
+    <ClosetBtn Type="Button"   Texture="./UI/Texture/main.gwo" ID="240008" Rectangle="85,3,106,24" TexturePos="124,540" Text=""/>
+
+    <SystemSetupWin Template="T_SimpleWindow" ID="-1" Rectangle="0,26,192,226" Enable="0">
+      <TempButton         Type="Button" ID="-1" Visable="1" Enable="1"  Rectangle="0,0,192,200 " />
+
+    </SystemSetupWin>
+    
+    <GraphicBtn   Template="T_Button9" ID="240001" Rectangle="20,41,172,68" Text="Display Settings"   TextFormat="5"/>
+    <AudioBtn    Template="T_Button9" ID="240002" Rectangle="20,68,172,95" Text="Sound Settings"  TextFormat="5"/>
+    <GameBtn   Template="T_Button9" ID="240003" Rectangle="20,95,172,122" Text="Game Settings"  TextFormat="5"/>
+    <KeyBoardBtn 	 Template="T_Button9" ID="240004" Rectangle="20,122,172,149" Text="Keyboard Shortcuts"  TextFormat="5"/>
+    <ExitBtn  Template="T_Button9" ID="240006" Rectangle="20,149,172,176" Text="Quit Game"  TextFormat="5"/>
+    <ReturnGameBtn    Template="T_Button9" ID="240007" Rectangle="20,184,172,211" Text="Resume Game"  TextFormat="5"/>
+   
+    <!--<ReturntoLoginBtn  	 Template="T_Button9" ID="240005" Rectangle="10,144,162,171" Texture="./UI/Texture/main.gwo" TexturePos="42,540" Text="返回登陆界面" Font="MainFont14" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>-->
+
+  </SystemSetupBack>
+
+  <AudioSetupUI Template="T_NormalWindow" ID="240200" CanHovered="1" Enable="1"  Rectangle="366,225,751,594"  Visible="0" >
+    <ok Template="T_Button2" ID="240205" Rectangle="246,332,306,358" Text="OK"/>
+    <cancel Template="T_Button2" ID="240206" Rectangle="306,332,366,358"  Text="Cancel"/>
+    <close Template="T_CloseButton" ID="240207" Rectangle="317,13,355,50" Text=""/>
+
+    <SoundMid  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="91,119,92,143" TexturePos="151,205"  Text=""/>
+    <MusicMid  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="91,184,92,208" TexturePos="151,205"  Text=""/>
+
+    <MusicText1  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="106,138,121,143" TexturePos="161,179"  Text=""/>
+    <MusicText2  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="136,138,151,143" TexturePos="161,179"  Text=""/>
+    <MusicText3  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="166,138,181,143" TexturePos="161,179"  Text=""/>
+    <MusicText4  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="196,138,211,143" TexturePos="161,179"  Text=""/>
+    <MusicText5  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="226,138,241,143" TexturePos="161,179"  Text=""/>
+    <MusicText6  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="256,138,271,143" TexturePos="161,179"  Text=""/>
+
+    <SoundText1  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="106,203,121,208" TexturePos="161,179"  Text=""/>
+    <SoundText2  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="136,203,151,208" TexturePos="161,179"  Text=""/>
+    <SoundText3  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="166,203,181,208" TexturePos="161,179"  Text=""/>
+    <SoundText4  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="196,203,211,208" TexturePos="161,179"  Text=""/>
+    <SoundText5  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="226,203,241,208" TexturePos="161,179"  Text=""/>
+    <SoundText6  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="256,203,271,208" TexturePos="161,179"  Text=""/>
+
+    <SetSoundText Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="25,90,200,120" TexturePos="500,500" Text="Music Volume:" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />
+    <SetMusicText Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="25,155,200,185" TexturePos="500,500" Text="Sound Volume:" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />
+    <MinTexttop Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="25,120,66,146" TexturePos="500,500" Text="Low" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />
+    <MaxTexttop Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="320,123,366,146" TexturePos="500,500" Text="High" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />
+    <MinTextbtm Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="25,187,120,213" TexturePos="500,500" Text="Low" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />
+    <MaxTextbtm Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="320,187,366,213" TexturePos="500,500" Text="High" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />
+
+
+    <MusicLeft Template="T_LeftButton" ID="240210" Rectangle="66,117,90,146" Text=""/>
+    <MusicRight Template="T_RightButton" ID="240211" Rectangle="293,117,317,146" Text=""/>
+
+    <SoundLeft Template="T_LeftButton" ID="240212" Rectangle="66,182,90,211" Text=""/>
+    <SoundRight Template="T_RightButton" ID="240213" Rectangle="293,182,317,211" Text=""/>
+
+
+    <ScrollBar1 Type="ScrollBar" ID="240208" Texture="./UI/Texture/main.gwo"  Horizontal="1" Rectangle="91,119,293,143"  TexturePos="0,0" BtnRect="0,0,27,24" BtnPos="51,338"/>
+    <ScrollBar2 Type="ScrollBar" ID="240209" Horizontal="1" Rectangle="91,184,293,208" TexturePos="0,0" BtnRect="0,0,27,24" BtnPos="51,338" Texture="./UI/Texture/main.gwo" />
+  
+  </AudioSetupUI>
+
+</UIConfig>

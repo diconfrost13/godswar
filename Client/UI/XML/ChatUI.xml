@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：ChatUI.xml
+		摘    要：聊天配置表
+
+		当前版本：1.00
+		作    者：C.D
+		完成日期：2008-03-18  
+  		Why are you looking at this?
+		Alright, gtfo.
+		-iceblade112
+-->
+<UIConfig>
+  <SystemMessageWin   Type="Window" ID="180000" Rectangle="118,130,818,230" Texture="./UI/Texture/main.gwo" TexturePos="523,163,766,233"  Visible="1" Enable="0" Layer="2">
+    <SystemMessageListBox     Type="ListBox"  ID="180006" Rectangle="0,0,700,140"     Texture="./UI/Texture/main.gwo" Height="30" />
+  </SystemMessageWin>
+  
+  <!--用来接受消息-->
+  <MsgReciever        Type="Button" ID="-1"     Rectangle="0,465,24,768"    Texture=""    TexturePos="0,0"   Visible="1" Enable="1" />
+
+  <EditWinUI          Type="Window" ID="180003" Rectangle="0,706,437,759"   Texture="./UI/Texture/main.gwo" TexturePos="522,162,991,354" Visible="1" Enable="0" Layer="0">
+    <!--背景贴图，分别由左右两张，以及中间拉伸的图拼接成-->
+    <Background_L     Template="T_NormalText"    ID="-1" Rectangle="0,0,54,54"    TexturePos="0,956,53,1009"   />
+    <Background_M     Template="T_NormalText"    ID="-1" Rectangle="54,0,55,54"    TexturePos="51,956,53,1009"   />
+    <Background_R     Template="T_NormalText"    ID="-1" Rectangle="383,0,437,54"    TexturePos="55,956,108,1009"   />
+
+    <!--按Shift键选择字时候的背景显示-->
+    <CursorBackground Template="T_NormalText"      ID="180037" Rectangle="0,51,0,69"     TexturePos="523,163,850,210" />
+    
+    <!--频道屏蔽选择按钮-->
+    <NormalChannel    Type="CheckBox"  ID="180013" Rectangle="13,8,91,31"   Texture="./UI/Texture/main.gwo" TexturePos="609,718" Font="MainMap" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="Normal" TextWeight="1"/>
+    <CampChannel      Type="CheckBox"  ID="180014" Rectangle="93,8,171,31"  Texture="./UI/Texture/main.gwo" TexturePos="609,718" Font="MainMap" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="Camp" TextWeight="1"/>
+    <TeamChannel      Type="CheckBox"  ID="180015" Rectangle="173,8,251,31" Texture="./UI/Texture/main.gwo" TexturePos="609,718" Font="MainMap" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="Team" TextWeight="1"/>
+    <FactionChannel   Type="CheckBox"  ID="180016" Rectangle="253,8,335,31" Texture="./UI/Texture/main.gwo" TexturePos="609,718" Font="MainMap" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="Guild" TextWeight="1"/>
+    <PrivateChannel   Type="CheckBox"  ID="180017" Rectangle="333,8,415,31" Texture="./UI/Texture/main.gwo" TexturePos="609,718" Font="MainMap" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="Private" TextWeight="1"/>
+
+    <!--频道CheckBox间的花纹-->
+    <CheckBoxPartition1     Template="T_NormalText"    ID="-1" Rectangle="89,7,97,32"   TexturePos="109,984" />
+    <CheckBoxPartition2     Template="T_NormalText"    ID="-1" Rectangle="169,7,177,32" TexturePos="109,984" />
+    <CheckBoxPartition3     Template="T_NormalText"    ID="-1" Rectangle="249,7,257,32" TexturePos="109,984" />
+    <CheckBoxPartition4     Template="T_NormalText"    ID="-1" Rectangle="329,7,337,32" TexturePos="109,984" />
+    
+    <ListSelectBtn    Template="T_Button2_S"    ID="180018" Rectangle="1,33,51,55"   Text="Normal" />
+    <NameEdit         Template="T_ChatEdit"     ID="180019" Rectangle="55,35,162,54"  />
+    <WhisperTalkEdit  Template="T_ChatEdit"     ID="180021" Rectangle="172,35,416,54" MaxText="80"/>
+    <NormalTaklEdit   Template="T_ChatEdit"     ID="180034" Rectangle="55,35,417,54"  MaxText="80"/>
+    <PartitionWhisper Template="T_NormalText"   ID="180036" Rectangle="160,33,168,53" TexturePos="109,963" Visible="0"/>
+  </EditWinUI>
+
+  <ChannelSelectWin   Template="T_SimpleWindow" ID="180004" Rectangle="14,584,84,736"     Visible="0" Enable="0" Layer="1" >
+    <WorldBtn         Template="T_Button2_S"    ID="180027" Rectangle="10,11,60,33"    Text="World" />
+    <NormalBtn        Template="T_Button2_S"    ID="180028" Rectangle="10,33,60,55"    Text="Normal" />
+    <CampBtn          Template="T_Button2_S"    ID="180029" Rectangle="10,55,60,77"    Text="Camp" />
+    <TeamBtn          Template="T_Button2_S"    ID="180030" Rectangle="10,77,60,99"    Text="Team" />
+    <FactionBtn       Template="T_Button2_S"    ID="180031" Rectangle="10,99,60,122"   Text="Guild" />
+    <WhisperBtn       Template="T_Button2_S"    ID="180032" Rectangle="10,122,60,143," Text="Private" />
+  </ChannelSelectWin>
+
+  <ChatPopMenu        Template="T_SimpleWindow" ID="233000" Rectangle="0,0,104,204"  Texture="./UI/Texture/main.gwo" TexturePos="522,162,991,354" Visible="0" Enable="0" Layer="1">
+    <ObjInfo          Template="T_Button4" ID="233001"    Rectangle="11,11,93,38"   Text="Character Info"  />
+    <TeamInvite       Template="T_Button4" ID="233002"    Rectangle="11,37,93,64"   Text="Team Invitation"  />
+    <RequestTrade     Template="T_Button4" ID="233003"    Rectangle="11,63,93,90"   Text="Trade Request"   />
+    <RequestFriend    Template="T_Button4" ID="233004"    Rectangle="11,89,93,116"  Text="Add Friend"/>
+    <MeetScret        Template="T_Button4" ID="233005"    Rectangle="11,115,93,142" Text="Whisper"/>
+    <CheckStall       Template="T_Button4" ID="233006"    Rectangle="11,141,93,168" Text="Stall Viewer"/> <!--Honestly, I have no fucking idea what this is: 查看摊位-->
+    <CheckGuild       Template="T_Button4" ID="233007"    Rectangle="11,167,93,194" Text="Guild Invitation"/>
+  </ChatPopMenu>
+
+
+
+  <HistoryMessageWin  Type="Window" ID="180001" Rectangle="0,465,420,643"   Texture="./UI/Texture/main.gwo" TexturePos="522,162,991,354"  Visible="1" Enable="0" Layer="0">
+
+
+    <!--ScrollBar背景-->
+    <ScrollBarBackground_Top    Template="T_NormalText"    ID="-1" Rectangle="0,21,21,42"    TexturePos="900,957" />
+    <ScrollBarBackground_Middle Template="T_NormalText"    ID="-1" Rectangle="0,21,25,24"    TexturePos="900,979" />
+
+    <!--该背景紧贴HistoryListBoxPgDownBtn 由程序限制-->
+    <ScrollBarBackground_Bottom Template="T_NormalText"    ID="-1" Rectangle="0,21,21,42"    TexturePos="900,983" />
+
+    <!--ScrollBar还没有设置-->
+    <HistoryMessageListBox    Type="ListBox"        ID="180007" Rectangle="22,0,420,180"     Texture="" Height="20" ScrollTexture="./UI/Texture/main.gwo" ScrollPos="0,0" ScrollRect="0,23,17,153"  BtnPos="133,122" BtnRect="0,0,17,27"/>
+
+    <HistoryListBoxPgUpBtn    Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="333,877" ID="180025" Rectangle="0,0,23,21" Text=""/>
+    <!--该按钮紧贴窗口下方由程序限制-->
+    <HistoryListBoxPgDownBtn  Type="Button"  Texture="./UI/Texture/main.gwo" TexturePos="310,877" ID="180026" Rectangle="0,0,23,21" Text=""/>
+  </HistoryMessageWin>
+
+  <RecentMessageWin   Type="Window" ID="180002" Rectangle="0,643,420,705"      Texture="./UI/Texture/main.gwo" TexturePos="522,162,991,354"  Visible="1" Enable="0" Layer="0">
+    <RecentMessageListBox     Type="ListBox"        ID="180008" Rectangle="22,0,420,60"  TexturePos="0,0"    Texture="./UI/Texture/main.gwo" Height="20" />
+  </RecentMessageWin>
+  
+  
+
+  <!--按钮窗口-->
+  <BtnWin Type="Window" ID="181000" Rectangle="0,644,22,706"  Texture="" TexturePos="522,162,991,354" Visible="1" Enable="0" Layer="0">
+    <HistoryMessageScroll Type="Button"  ID="181001" Texture="./UI/Texture/main.gwo" TexturePos="310,877"     Rectangle="0,0,23,21"     Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    <WinTop_Up            Type="Button"  ID="181002" Texture="./UI/Texture/main.gwo" TexturePos="333,877"    Rectangle="0,21,23,42"     Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    <WinTop_Down          Type="Button"  ID="181003" Texture="./UI/Texture/main.gwo" TexturePos="310,877"    Rectangle="0,42,23,63"     Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  </BtnWin>
+  
+  
+  
+  
+  
+  
+
+
+  
+
+  -->
+</UIConfig>

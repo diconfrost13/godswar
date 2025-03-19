@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：ChatUI.xml
+		摘    要：状态显示图标配置表
+
+		当前版本：1.00
+		作    者：C.D
+		完成日期：2008-03-18  
+ 
+-->
+<UITemplate>
+
+  <!--窗口模板-->
+  <!--正常-->
+  <T_NormalWindow Type="Window" Texture="./UI/Texture/main.gwo" WinRect="80" WinPixel="80" WinBody="70,76" WinTop="81,0" WinBottom="241,0" WinLeft="160,1" WinRight="240,1" WinTopLeft="0,0" WinTopRight="80,0" WinBottomLeft="160,0" WinBottomRight="240,0" Enable="1" Layer="1"/>
+  <!--简化-->
+  <T_SimpleWindow Type="Window" Texture="./UI/Texture/main.gwo" WinRect="17" WinPixel="17" WinBody="176,96" WinTop="176,81" WinBottom="182,63" WinLeft="161,96" WinRight="179,96" WinTopLeft="161,81" WinTopRight="179,81" WinBottomLeft="167,63" WinBottomRight="296,63" Enable="1" Layer="1"/>
+  <!--背景-->
+  <T_BgWindow Type="Window" Texture="./UI/Texture/main.gwo" WinRect="7" WinPixel="7" WinBody="116,210" WinTop="130,205" WinBottom="130,215" WinLeft="110,224" WinRight="120,224" WinTopLeft="110,204" WinTopRight="120,204" WinBottomLeft="110,214" WinBottomRight="120,214" Enable="0" Layer="1"/>
+  <!--效果（交易）-->
+  <T_EffectWindow Type="Window" Texture="./UI/Texture/main.gwo" WinRect="13" WinPixel="13" WinBody="105,184" WinTop="101,174" WinBottom="109,174" WinLeft="89,217" WinRight="89,221" WinTopLeft="83,189" WinTopRight="96,189" WinBottomLeft="83,202" WinBottomRight="96,202" Enable="0" Layer="1"/>
+  <!--小地图-->
+  <T_MiniMapWindow Type="Window" Texture="./UI/Texture/main.gwo" WinRect="34" WinPixel="34" WinBody="990,972" WinTop="990,940" WinBottom="986,975" WinLeft="954,972" WinRight="989,976" WinTopLeft="954,940" WinTopRight="989,940" WinBottomLeft="954,975" WinBottomRight="989,975" Enable="0" Layer="1"/>
+  <!--聊天气泡-->
+  <T_BubbleWnd Type="Window" Texture="./UI/Texture/main.gwo" WinRect="4" WinPixel="4" WinBody="82,414" WinTop="85,410" WinBottom="85,421" WinLeft="78,417" WinRight="89,417" WinTopLeft="78,410" WinTopRight="89,410" WinBottomLeft="78,421" WinBottomRight="89,421" Enable="0" Layer="0"/>
+  <!--全屏背景图-->
+  <T_EmptyBgWin Type="Window" Texture="" Rectangle="0,0,1024,768" Modal="0" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Enable="0" Layer="1"/>
+  <!---->
+
+  <!--按钮模板-->
+  <!--登陆-->
+  <T_LoginButton Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="58,231" Rectangle="0,0,20,1" Font="Mainlogin" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--关闭-->
+  <T_CloseButton Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="0,80" Rectangle="0,0,38,37" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--二字-->
+  <T_Button2 Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="38,80" Rectangle="0,0,61,27" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--二字小号-->
+  <T_Button2_S Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="304,453" Rectangle="0,0,50,22" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--三字-->
+  <T_Button3 Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="196,80" Rectangle="0,0,70,27" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--四字-->
+  <T_Button4 Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="42,540" Rectangle="0,0,82,27" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--九字-->
+  <T_Button9 Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="0,432" Rectangle="0,0,152,27" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--技能-->
+  <T_SkillButton Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Rectangle="0,0,42,42" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"/>
+  <!--向上-->
+  <T_UpButton Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="0,228" Rectangle="0,0,28,22" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--向下-->
+  <T_DownButton Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="29,228" Rectangle="0,0,28,22" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--向左-->
+  <T_LeftButton Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="0,316" Rectangle="0,0,24,29" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--向右-->
+  <T_RightButton Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="25,316" Rectangle="0,0,24,29" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--向上半框-->
+  <T_halfUpButton Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="333,877" Rectangle="0,0,23,21" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--向下半框-->
+  <T_halfDownButton Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="310,877" Rectangle="0,0,23,21" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--大城市-->
+  <T_CityBottonL Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="266,80" Rectangle="0,0,28,28" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--小城市-->
+  <T_CityBottonS Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="294,80" Rectangle="0,0,20,20" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  
+  <!--ListBox向上，加了点击事件-->
+  <T_UpListBoxBtn Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="0,228" Rectangle="0,0,28,22" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" OnClick="UpListBoxBtn()"/>
+  <!--ListBox向下，加了点击事件-->
+  <T_DownListBoxtn Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="29,228" Rectangle="0,0,28,22" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" OnClick="DownListBoxBtn()"/>
+  
+  <!--Container向上，加了点击事件-->
+  <T_UpContainerBtn Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="0,228" Rectangle="0,0,28,22" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" OnClick="UpContainerBtn()"/>
+  <!--Container向下，加了点击事件-->
+  <T_DownContainertn Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="29,228" Rectangle="0,0,28,22" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" OnClick="DownContainerBtn()"/>
+  
+  <!--Container1向上，加了点击事件-->
+  <T_UpContainer1Btn Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="0,228" Rectangle="0,0,28,22" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" OnClick="UpContainer1Btn()"/>
+  <!--Container1向下，加了点击事件-->
+  <T_DownContainer1tn Type="Button" Texture="./UI/Texture/main.gwo" TexturePos="29,228" Rectangle="0,0,28,22" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" OnClick="DownContainer1Btn()"/>
+
+  <!---->
+
+  <!--贴图模板-->
+  <!--ScrollBar 纵向-->
+  <T_ScrollBarX Type="Text" Texture="./UI/Texture/main.gwo" Font="Mainlogin2" FontColor="GWO_IMG_TEXTCOLOR" TextFormat="5" TexturePos="900,980" Rectangle="0,0,21,1"/>
+  <!--标题-->
+  <T_TitleText Type="Text" Texture="./UI/Texture/main.gwo" Font="Mainlogin2" FontColor="YELLOW_TEXTCOLOR" TextFormat="5"/>
+  <!--普通-->
+  <T_NormalText Type="Text" Texture="./UI/Texture/main.gwo" Font="Mainlogin2" FontColor="YELLOW_TEXTCOLOR" TextFormat="5"/>
+  <!--系统通知-->
+  <T_SystemText Type="Text" Texture="./UI/Texture/main.gwo" Font="Mainlogin2" FontColor="YELLOW_TEXTCOLOR" TextFormat="5"/>
+  <!--聊天气泡背景-->
+  <T_BubbleText Type="Text" Texture="./UI/Texture/main.gwo" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" TexturePos="40,28"/>
+  <!--小地图-->
+  <T_MinMapText Type="Text" Texture="./UI/Texture/main.gwo" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--Icon图标-->
+  <T_IconText Type="Text" Texture="./UI/Texture/Icon.gwo" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" TexturePos="216,972"/>
+  <!--无背景文字-->
+  <T_NoBackgroundText Type="Text" Texture="" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+
+  <!--钱-->
+  <T_Money Type="Text" Texture="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+  <!--普通商城-->
+  <T_NormalMall Type="Text" Texture="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!---->
+
+  <!--CheckBox模板-->
+  <!--聊天（四字大小）-->
+  <T_ScrollBarX Type="CheckBox" Texture="./UI/Texture/main.gwo" TexturePos="42,568" Rectangle="0,0,83,28" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--图标-->
+  <T_NormalCheckBox Type="CheckBox" Texture="./UI/Texture/main.gwo" Rectangle="0,0,42,42" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!--工会按钮-->
+  <T_GuildCheckBox Type="CheckBox" Texture="./UI/Texture/main.gwo" TexturePos="609,620"  Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <!---->
+
+  <!--EditBox模板-->
+  <!--聊天-->
+  <T_ChatEdit Type="EditBox" MaxText="32" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4" ResponseMouse="1"/>
+  <!---->
+
+  <!--字体专用模板-->
+  <!--普通字体-->
+  <T_Autoway       Font="MainMap"/>
+  <T_Window      Font="MainFonts"/>
+  <T_Consortia       Font="MainFonts"/>
+  <T_Worldmap       Font="MainFonts"/>
+  <T_Market       Font="MainMap"/>
+  <T_Warning       Font="MainFonts"/>
+  <T_Mmap       Font="MainMap"/>
+  <!--T_Guildtext  Font="Mainlogin2"/-->
+  <T_Friend      Font="MainFonts"/>
+  <T_Enmy       Font="MainFonts"/>
+  <T_Pmessage       Font="Mainlogin2"/>
+  <T_Serverch       Font="Mainlogin2"/>
+  <T_Skillname       Font="MainFonts"/>
+  <T_Hovering       Font="MainMap"/>
+
+  <!--聊天气泡字体-->
+  <T_ChatBubbleFont         Font="MainFonts"      FontColor="DEFAULT_TEXTCOLOR"/>
+
+  <!--聊天上层历史记录框字体-->
+  <T_ChatHistoryFont        Font="ChatFont14"/>
+  <!--聊天下层当前记录框字体-->
+  <T_ChatRecentFont         Font="ChatFont14"/>
+  <!--聊天各频道字体颜色-->
+  <!--GM-->
+  <T_GMColor          FontColor="YELLOW_TEXTCOLOR" />
+  <!--私聊-->
+  <T_WhisperColor     FontColor="WHISPER_COLOR"/>
+  <!--本地客户端信息-->
+  <T_ToselfColor      FontColor="WHISPER_COLOR"/>
+  <!--队伍-->
+  <T_TeamColor        FontColor="TEAM_COLOR"/>
+  <!--公会-->
+  <T_GuildColor       FontColor="GUILD_COLOR"/>
+  <!--阵营-->
+  <T_CampColor        FontColor="CAMP_COLOR"/>
+  <!--普通-->
+  <T_LocalColor       FontColor="DEFAULT_TEXTCOLOR"/>
+  <!--世界-->
+  <T_WorldColor       FontColor="ORDINARY_INFOCOLOR"/>
+  <!--系统-->
+  <T_SystemColor      FontColor="YELLOW_TEXTCOLOR"/>
+  <!--道具-->
+  <T_ItemsColor       FontColor="DEFAULT_TEXTCOLOR"/>
+
+  <!--战斗信息字体-->
+  <T_normalattackfont         Font="MainFonts"      FontColor="GWORed"/>
+  <T_criticalattackfont       Font="Mainlogin"      FontColor="GWORed"/>
+  <T_missattackfont           Font="MainFonts"      FontColor="GWORed"/>
+  <!--治疗字体-->
+  <T_healfont                 Font="MainFonts"      FontColor="GREEN_TEXTCOLOR"/>
+  <T_healHPfont               Font="MainFonts"      FontColor="GREEN_TEXTCOLOR"/>
+  <T_healMPfont               Font="MainFonts"      FontColor="TEAM_COLOR"/>
+
+  <T_normaldeffont            Font="MainFonts"      FontColor="YELLOW_TEXTCOLOR"/>
+  <T_crisdeffont              Font="Mainlogin"      FontColor="YELLOW_TEXTCOLOR"/>
+  <T_missdeffont              Font="MainFonts"      FontColor="YELLOW_TEXTCOLOR"/>
+
+  <!--头顶名称-->
+  <T_friendlynamefont         Font="MainFonts"      FontColor="GREEN_TEXTCOLOR" TextFormat="5"/>
+  <T_enemynamefont            Font="MainFonts"      FontColor="GWORed" TextFormat="5"/>
+  <T_neutralnamefont          Font="MainFonts"      FontColor="YELLOW_TEXTCOLOR" TextFormat="5"/>
+
+  <!--公会-->
+  <T_friendlytitlefont        Font="MainFonts"      FontColor="GREEN_TEXTCOLOR"/>
+  <T_enemytitlefont           Font="MainFonts"      FontColor="GWORed"/>
+
+  <!--摆摊-->
+  <T_friendlysellfont         Font="MainFonts"      FontColor="GREEN_TEXTCOLOR"/>
+  <T_enemysellfont            Font="MainFonts"      FontColor="GWORed"/>
+
+
+
+
+
+  <!--人物头顶系统提示信息字体-->.
+  <T_SystemFont             Font="Mainlogin"   FontColor="YELLOW_TEXTCOLOR"/>
+  <!--个人人物状态描述窗口字体-->
+  <T_PlayerStateFont        Font="MainMap"     FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+
+
+
+  <!--容器专用字体-->
+  <!--命名规则，T_Font_容器名-->
+  <!---->
+</UITemplate>

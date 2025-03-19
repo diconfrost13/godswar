@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+  <MessageBoxUI Template="T_SimpleWindow" Layer="3" ID="420000" Rectangle="392,319,632,449" Visible="0" >
+    
+    <OKBtn Template="T_Button3" ID="420001" Rectangle="49,94,118,121" TextFormat="5" Text="确定"  Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"/>
+    <CancelBtn Template="T_Button3" ID="420002" Rectangle="121,94,190,121" TextFormat="5" Text="取消"  Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"/>
+   
+    <BtnLeftText  Type="Text"  ID="420003" Texture="./UI/Texture/main.gwo" Rectangle="14,107,48,120" TexturePos="161,99"  Text=""/>
+    <BtnRightText  Type="Text"  ID="420004" Texture="./UI/Texture/main.gwo" Rectangle="191,107,225,120" TexturePos="161,126"  Text=""/>
+
+    <MessageText  Type="Text"  ID="420005" Rectangle="40,30,200,70"  TextFormat="21" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+
+  </MessageBoxUI>
+</UIConfig>

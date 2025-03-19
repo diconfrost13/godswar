@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<UIConfig>
+	<DialUI Template="T_NormalWindow" ID="390000" Modal="0" EventReceive1="1" EventReceive2="1" Rectangle="400,100,663,626" Text="">
+		<BeginBtn Type="Button" ID="390001" Rectangle="76,392,187,426" TexturePos="58,231" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="开始"/>
+		<StopBtn Type="Button" ID="390002" Rectangle="196,13,233,50" TexturePos="0,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text=""/>
+		<DefaultBtn Type="Button" ID="390003" Rectangle="76,435,187,469" TexturePos="58,231" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="提取默认物品"/>
+		<AgainBtn Type="Button" ID="390004" Rectangle="76,477,187,511" TexturePos="58,231" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="继续开宝箱"/>
+		<SkillFrame1 Type="Text" ID="390005" Rectangle="27,99,68,140" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text="">
+			<Picture1 Type="Text" ID="390006" Rectangle="29,101,66,138" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10" Text=""/>
+			<ShadeIcon1 Type="Text" ID="390007" Rectangle="27,99,68,140" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame2 Type="Text" ID="390008" Rectangle="69,99,110,140" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture2 Type="Text" ID="390009" Rectangle="71,101,108,138" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon2 Type="Text" ID="390010" Rectangle="69,99,110,140" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame3 Type="Text" ID="390011" Rectangle="111,99,152,140" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture3 Type="Text" ID="390012" Rectangle="113,101,150,138" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon3 Type="Text" ID="390013" Rectangle="111,99,152,140" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame4 Type="Text" ID="390014" Rectangle="153,99,194,140" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture4 Type="Text" ID="390015" Rectangle="155,101,192,138" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon4 Type="Text" ID="390016" Rectangle="153,99,194,140" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame5 Type="Text" ID="390017" Rectangle="195,99,236,140" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture5 Type="Text" ID="390018" Rectangle="197,101,234,138" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon5 Type="Text" ID="390019" Rectangle="195,99,236,140" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame6 Type="Text" ID="390020" Rectangle="195,141,236,182" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture6 Type="Text" ID="390021" Rectangle="197,143,234,180" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon6 Type="Text" ID="390022" Rectangle="195,141,236,182" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame7 Type="Text" ID="390023" Rectangle="195,183,236,224" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture7 Type="Text" ID="390024" Rectangle="197,185,234,222" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon7 Type="Text" ID="390025" Rectangle="195,183,236,224" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame8 Type="Text" ID="390026" Rectangle="195,225,236,266" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture8 Type="Text" ID="390027" Rectangle="197,227,234,264" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon8 Type="Text" ID="390028" Rectangle="195,225,236,266" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame9 Type="Text" ID="390029" Rectangle="195,267,236,308" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture9 Type="Text" ID="390030" Rectangle="197,269,234,306" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon9 Type="Text" ID="390031" Rectangle="195,267,236,308" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame10 Type="Text" ID="390032" Rectangle="153,267,194,308" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture10 Type="Text" ID="390033" Rectangle="155,269,192,306" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon10 Type="Text" ID="390034" Rectangle="153,267,194,308" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame11 Type="Text" ID="390035" Rectangle="111,267,152,308" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture11 Type="Text" ID="390036" Rectangle="113,269,150,306" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon11 Type="Text" ID="390037" Rectangle="111,267,152,308" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame12 Type="Text" ID="390038" Rectangle="69,267,110,308" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture12 Type="Text" ID="390039" Rectangle="71,269,108,306" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon12 Type="Text" ID="390040" Rectangle="69,267,110,308" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame13 Type="Text" ID="390041" Rectangle="27,267,68,308" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture13 Type="Text" ID="390042" Rectangle="29,269,66,306" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon13 Type="Text" ID="390043" Rectangle="27,267,68,308" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame14 Type="Text" ID="390044" Rectangle="27,225,68,266" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture14 Type="Text" ID="390045" Rectangle="29,227,66,264" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon14 Type="Text" ID="390046" Rectangle="27,225,68,266" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame15 Type="Text" ID="390047" Rectangle="27,183,68,224" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture15 Type="Text" ID="390048" Rectangle="29,185,66,222" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon15 Type="Text" ID="390049" Rectangle="27,183,68,224" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame16 Type="Text" ID="390050" Rectangle="27,141,68,182" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture16 Type="Text" ID="390051" Rectangle="29,143,66,180" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon16 Type="Text" ID="390052" Rectangle="27,141,68,182" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+			<SkillFrame17 Type="Text" ID="390053" Rectangle="111,177,152,218" TexturePos="50,367" Texture="./UI/Texture/main.gwo" Text=""/>
+			<Picture17 Type="Text" ID="390054" Rectangle="113,179,150,216" TexturePos="0,434" Texture="./UI/Texture/icon.gwo" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10"  Text=""/>
+			<ShadeIcon17 Type="Text" ID="390055" Rectangle="111,177,152,218" TexturePos="0,583" Texture="./UI/Texture/main.gwo" Text=""/>
+		</SkillFrame1>
+		
+		<MidTextleft Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="14,360,28,374" TexturePos="146,173" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        	<MidTextright Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="234,360,248,374" TexturePos="146,188" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        	<MidTextmid Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="28,366,29,368" TexturePos="158,179" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+	</DialUI>
+</UIConfig>

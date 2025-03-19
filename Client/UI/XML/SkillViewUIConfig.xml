@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UIConfig>
+  <SkillViewUI Template="T_NormalWindow" ID="270000" Modal="0" EventReceive1="1" EventReceive2="1" Rectangle="700,200,963,726"  BtnRect="196,13,233,50" BtnPos="0,80" Text="">
+
+    <SkillTabBar Type="TabBar" ID="270001" Rectangle="14,70,248,517" TexturePos="0,0" Texture="./UI/Texture/main.gwo">
+      <Skill Type="Tab" ID="-1" Rectangle="53,-22,114,1" Texture="./UI/Texture/main.gwo" TexturePos="99,80" Text="技能" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5">
+
+        <UpBtn Type="Button" ID="270003" Rectangle="206,2,234,24" TexturePos="0,228" Texture="./UI/Texture/main.gwo" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <DownBtn Type="Button" ID="270004" Rectangle="206,425,234,447" TexturePos="29,228" Texture="./UI/Texture/main.gwo" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <ListBox1Btm  Type="Text"  ID="-1"  Texture="./UI/Texture/main.gwo" Rectangle="208,400,233,425" TexturePos="929,970"  Text=""/>
+        <ListBox1Top  Type="Text"  ID="-1"  Texture="./UI/Texture/main.gwo" Rectangle="208,23,233,49" TexturePos="929,940"  Text=""/>
+        <ListBoxScrollMid Type="Text" ID="270051" Texture="./UI/Texture/main.gwo" Rectangle="208,48,233,49" TexturePos="929,967"  Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <ListBox1 Type="ListBox" ID="270002" Drag="1" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Rectangle="6,6,222,404" ScrollTexture="./UI/Texture/main.gwo" ScrollPos="0,0" ScrollRect="206,20,223,418" BtnPos="133,122" BtnRect="0,0,17,27" Height="56">
+        </ListBox1>
+      </Skill>
+      <Special Type="Tab" ID="-1" Rectangle="114,-22,175,1" Texture="./UI/Texture/main.gwo" TexturePos="99,80" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text="专长" TextFormat="5">
+
+        <Arrow1 Type="Text" ID="-1"  Rectangle="112,77,123,107" TexturePos="144,657" Texture="./UI/Texture/main.gwo" Text=""/>
+        <Arrow2 Type="Text" ID="270039"  Rectangle="112,311,123,341" TexturePos="144,657" Texture="./UI/Texture/main.gwo" Text=""/>
+        <Arrow3 Type="Text" ID="-1" Rectangle="58,155,177,185" TexturePos="93,373" Texture="./UI/Texture/main.gwo" Text=""/>
+
+        <SkillFrame1 Type="Text" ID="-1" Rectangle="94,30,141,77" TexturePos="42,671" Texture="./UI/Texture/main.gwo" Text=""/>
+        <FighterPicture1 Type="Text" ID="270017" Rectangle="100,36,136,72" TexturePos="72,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+        <ScholarPicture1 Type="Text" ID="270025" Rectangle="100,36,136,72" TexturePos="324,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+        <ShadeIcon1 Type="Text" ID="270040" Rectangle="100,36,136,72" TexturePos="0,665" Texture="./UI/Texture/main.gwo" Text=""/>
+        <SkillText1 Type="Text" ID="270005" Rectangle="142,60,161,78" TexturePos="206,432" Texture="./UI/Texture/main.gwo" Text="12" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <SkillButton1 Type="Button" ID="270011" Rectangle="161,60,179,78" Texture="./UI/Texture/main.gwo" TexturePos="225,432" Text=""/>
+
+        <SkillFrame2 Type="Text" ID="-1" Rectangle="94,108,141,155" TexturePos="42,671" Texture="./UI/Texture/main.gwo" Text=""/>
+        <FighterPicture2 Type="Text" ID="270018" Rectangle="100,114,136,150" TexturePos="0,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+        <ScholarPicture2 Type="Text" ID="270026" Rectangle="100,114,136,150" TexturePos="288,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+        <ShadeIcon2 Type="Text" ID="270041" Rectangle="100,114,136,150" TexturePos="0,665" Texture="./UI/Texture/main.gwo" Text=""/>
+        <SkillText2 Type="Text" ID="270006" Rectangle="142,138,161,156" TexturePos="206,432" Texture="./UI/Texture/main.gwo" Text="11" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <SkillButton2 Type="Button" ID="270012" Rectangle="161,138,179,156" Texture="./UI/Texture/main.gwo" TexturePos="225,432" Text=""/>
+
+        <SkillFrame3 Type="Text" ID="-1" Rectangle="40,186,87,233" TexturePos="42,671" Texture="./UI/Texture/main.gwo" Text=""/>
+        <FighterPicture3 Type="Text" ID="270019" Rectangle="46,192,82,228" TexturePos="36,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+        <ScholarPicture3 Type="Text" ID="270027" Rectangle="46,192,82,228" TexturePos="360,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+        <ShadeIcon3 Type="Text" ID="270042" Rectangle="46,192,82,228" TexturePos="0,665" Texture="./UI/Texture/main.gwo" Text=""/>
+        <SkillText3 Type="Text" ID="270007" Rectangle="3,216,22,234" TexturePos="206,432" Texture="./UI/Texture/main.gwo" Text="12" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <SkillButton3 Type="Button" ID="270013" Rectangle="22,216,40,234" Texture="./UI/Texture/main.gwo" TexturePos="225,432" Text=""/>
+
+        <SkillFrame4 Type="Text" ID="-1" Rectangle="148,186,195,233" TexturePos="42,671" Texture="./UI/Texture/main.gwo" Text=""/>
+        <FighterPicture4 Type="Text" ID="270020" Rectangle="154,192,190,228" TexturePos="108,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+        <ScholarPicture4 Type="Text" ID="270028" Rectangle="154,192,190,228" TexturePos="396,0," Texture="./UI/Texture/icon.gwo" Text=""/>
+        <ShadeIcon4 Type="Text" ID="270043" Rectangle="154,192,190,228" TexturePos="0,665" Texture="./UI/Texture/main.gwo" Text=""/>
+        <SkillText4 Type="Text" ID="270008" Rectangle="196,216,215,234" TexturePos="206,432" Texture="./UI/Texture/main.gwo" Text="5" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <SkillButton4 Type="Button" ID="270014" Rectangle="215,216,233,234" Texture="./UI/Texture/main.gwo" TexturePos="225,432" Text=""/>
+
+        <SkillFrame5 Type="Text" ID="270037" Rectangle="94,264,141,311" TexturePos="42,671" Texture="./UI/Texture/main.gwo" Text=""/>
+        <FighterPicture5-1 Type="Text" ID="270021" Rectangle="100,270,136,306" TexturePos="144,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+        <FighterPicture5-2 Type="Text" ID="270022" Rectangle="100,270,136,306" TexturePos="216,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+        <ScholarPicture5-1 Type="Text" ID="270029" Rectangle="100,270,136,306" TexturePos="468,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+        <ScholarPicture5-2 Type="Text" ID="270030" Rectangle="100,270,136,306" TexturePos="504,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+        <ShadeIcon5 Type="Text" ID="270044" Rectangle="100,270,136,306" Texture="./UI/Texture/main.gwo" TexturePos="0,665"  Text=""/>
+        <SkillText5 Type="Text" ID="270009" Rectangle="142,294,161,312" TexturePos="206,432" Texture="./UI/Texture/main.gwo" Text="5" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <SkillButton5 Type="Button" ID="270015" Rectangle="161,294,179,312" Texture="./UI/Texture/main.gwo" TexturePos="225,432" Text=""/>
+
+        <SkillFrame6 Type="Text" ID="270038" Rectangle="94,342,141,389" TexturePos="42,671" Texture="./UI/Texture/main.gwo" Text=""/>
+        <FighterPicture6-1 Type="Text" ID="270023" Rectangle="100,348,136,384" TexturePos="180,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+        <FighterPicture6-2 Type="Text" ID="270024" Rectangle="100,348,136,384" TexturePos="252,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+        <ScholarPicture6-1 Type="Text" ID="270031" Rectangle="100,348,136,384" TexturePos="432,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+        <ScholarPicture6-2 Type="Text" ID="270032" Rectangle="100,348,136,384" TexturePos="540,0" Texture="./UI/Texture/icon.gwo" Text=""/>
+        <ShadeIcon6 Type="Text" ID="270045" Rectangle="100,348,136,384" Texture="./UI/Texture/main.gwo" TexturePos="0,665"  Text=""/>
+        <SkillText6 Type="Text" ID="270010" Rectangle="142,372,160,426" TexturePos="206,432" Texture="./UI/Texture/main.gwo" Text="5" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <SkillButton6 Type="Button" ID="270016" Rectangle="161,372,179,426" Texture="./UI/Texture/main.gwo" TexturePos="225,432" Text=""/>
+
+      </Special>
+    </SkillTabBar>
+    <SkillInfo Type="Text" ID="270035" Rectangle="35,74,69,89" TexturePos="0,703" Text=""/>
+    <SpecialInfo Type="Text" ID="270036" Rectangle="95,74,129,89" TexturePos="0,686" Text=""/>
+    <HelpButton Type="Button" ID="270033" Rectangle="16,490,42,517" Texture="./UI/Texture/main.gwo" TexturePos="179,432" Text=""/>
+    <SkillNumInfo Type="Text" ID="-1" Rectangle="62,497,135,515" TexturePos="734,786"  Text="专长点数:" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <SkillNumText Type="Text" ID="270034" Rectangle="135,497,185,515" TexturePos="734,786" Text="13点" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+  </SkillViewUI>
+</UIConfig>

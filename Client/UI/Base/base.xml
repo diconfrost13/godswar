@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+	<Script Interface="Default"/>
+	<Script File="UI/base/base.lua"/>
+	<Script File="UI/base/font.lua"/>
+	<Script File="UI/base/event.lua"/>
+	
+</UIConfig>

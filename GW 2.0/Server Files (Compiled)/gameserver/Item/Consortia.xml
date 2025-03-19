@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--this is Consortia config-->
+<Consortia>
+  <!--公会每日维护消耗-->
+  <ConsortiaConsume>
+    <level1 Clevel="1" found="0" bijou="0"/>
+    <level2 Clevel="2" found="100" bijou="10"/>
+    <level3 Clevel="3" found="300" bijou="20"/>
+    <level4 Clevel="4" found="600" bijou="35"/>
+    <level5 Clevel="5" found="900" bijou="48"/>
+    <level6 Clevel="6" found="1200" bijou="60"/>
+    <level7 Clevel="7" found="1500" bijou="70"/>
+    <level8 Clevel="8" found="1800" bijou="80"/>
+    <level9 Clevel="9" found="2200" bijou="90"/>
+    <level10 Clevel="10" found="2500" bijou="100"/>
+    <level11 Clevel="11" found="2800" bijou="110"/>
+    <level12 Clevel="12" found="3200" bijou="120"/>
+  </ConsortiaConsume>
+  <!--公会升级消耗及而外的附加效果-->
+  <ConsortiaLevelUp>
+    <level1 Clevel="1" found="100" bijou="10" member="50" altarNum="3"/>
+    <level2 Clevel="2" found="600" bijou="40" member="50" altarNum="3"/>
+    <level3 Clevel="3" found="1000" bijou="60" member="50" altarNum="4"/>
+    <level4 Clevel="4" found="1500" bijou="80" member="50" altarNum="4"/>
+    <level5 Clevel="5" found="2100" bijou="105" member="50" altarNum="5"/>
+    <level6 Clevel="6" found="3000" bijou="150" member="50" altarNum="5"/>
+    <level7 Clevel="7" found="4200" bijou="210" member="50" altarNum="6"/>
+    <level8 Clevel="8" found="5800" bijou="290" member="50" altarNum="6"/>
+    <level9 Clevel="9" found="8000" bijou="400" member="50" altarNum="7"/>
+    <level10 Clevel="10" found="12000" bijou="600" member="50" altarNum="7"/>
+    <level11 Clevel="11" found="20000" bijou="1000" member="50" altarNum="8"/>
+    <level12 Clevel="12" found="35000" bijou="1750" member="50" altarNum="8"/>
+  </ConsortiaLevelUp>
+</Consortia>

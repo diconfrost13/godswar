@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+  <Counter Type="Window" ID="310000"  Layer="1" Rectangle="490,346,675,571" Visible="0"  BtnRect="81,3,102,24" BtnPos="124,540">
+    <CounterHead Type="Text" ID="-1" Rectangle="46,0,136,25" TexturePos="932,896" Texture="./UI/Texture/main.gwo" />
+    <Close Type="Button" ID="310007" Rectangle="81,3,102,24" Texture="./UI/Texture/main.gwo" TexturePos="124,540" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text=""/>
+
+    <CounterWin Template="T_SimpleWindow" Enable="0" ID="-1" Rectangle="0,25,182,225">
+    </CounterWin>
+
+    <MCheckBox    Type="CheckBox"  ID="310021"  Texture="./UI/Texture/main.gwo" TexturePos="210,784" Rectangle="14,46,36,68"/>
+    <MText Type="Text" ID="-1" Rectangle="40,48,55,64" Texture="./UI/Texture/main.gwo" TexturePos="57,213" />
+
+    <BCheckBox    Type="CheckBox"  ID="310022"    Texture="./UI/Texture/main.gwo" TexturePos="210,784" Rectangle="87,46,109,68"/>
+    <BText Type="Text" ID="-1" Rectangle="113,48,130,64" Texture="./UI/Texture/main.gwo" TexturePos="241,226" />
+
+    <Max Type="Button" ID="310001" Rectangle="110,95,161,123" Texture="./UI/Texture/main.gwo" TexturePos="145,540" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="最大"/>
+    <Back Type="Button" ID="310002" Rectangle="110,123,161,151" Texture="./UI/Texture/main.gwo" TexturePos="145,540" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="去位"/>
+    <Confirm Type="Button" ID="310003" Rectangle="110,151,161,179" Texture="./UI/Texture/main.gwo" TexturePos="145,540" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="确定" />
+    <Cancel Type="Button" ID="310004" Rectangle="110,179,161,207" Texture="./UI/Texture/main.gwo" TexturePos="145,540" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="取消" />
+
+    <CEditLeft  Type="Text"  ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="14,67,36,89"   TexturePos="38,188"  Text=""/>
+    <CEditRight Type="Text"  ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="140,67,162,89" TexturePos="60,188"  Text=""/>
+    <CounterEditText  Type="Text"  ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="36,67,37,89"   TexturePos="61,188"  Text="" />
+    <Edit Type="EditBox" ID="310005" Rectangle="19,70,160,92" Texture="./UI/Texture/main.gwo" TexturePos="0,0" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"  ResponseMouse="0" Number="1" Right="1" MaxText="10" TextFormat="2"/>
+    <Text Type="Text" ID="310006" Rectangle="113,48,130,65" Texture="./UI/Texture/main.gwo" Visible="0"  TexturePos="241,226" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"/>
+
+    <C0 Type="Button" ID="310020" Rectangle="23,179,74,207" Texture="./UI/Texture/main.gwo" TexturePos="145,540" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="00"/>
+    <C1 Type="Button" ID="310011" Rectangle="23,151,47,179" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="1"/>
+    <C2 Type="Button" ID="310012" Rectangle="54,151,78,179" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="2"/>
+    <C3 Type="Button" ID="310013" Rectangle="85,151,109,179" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="3"/>
+
+    <C4 Type="Button" ID="310014" Rectangle="23,123,47,151" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="4"/>
+    <C5 Type="Button" ID="310015" Rectangle="54,123,78,151" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="5"/>
+    <C6 Type="Button" ID="310016" Rectangle="85,123,109,151" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="6"/>
+
+    <C7 Type="Button" ID="310017" Rectangle="23,95,47,123" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="7" />
+    <C8 Type="Button" ID="310018" Rectangle="54,95,78,123" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="8"/>
+    <C9 Type="Button" ID="310019" Rectangle="85,95,109,123" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="9"/>
+    <C00 Type="Button" ID="310010" Rectangle="85,179,109,207" Texture="./UI/Texture/main.gwo" TexturePos="248,257" Font="MainFonts" FontColor="YELLOW_TEXTCOLOR" TextFormat="5" Text="0"/>
+
+  </Counter>
+</UIConfig>

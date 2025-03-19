@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：
+		摘    要：拾取物品框
+
+		当前版本：1.00
+		作    者：赖滔
+		完成日期：2008-03-18  
+ 
+-->
+<UIConfig>
+  <PickupDrops Template="T_NormalWindow" ID="100000" Modal="0" Rectangle="272,236,496,450" Texture="./UI/Texture/main.gwo"  BtnRect="157,13,195,50" BtnPos="0,80" Visible="0">
+      <Monster Type="Text" ID="100020" Rectangle="0,0,0,0" Texture="./UI/Texture/main.gwo"/>
+    
+    <!--按钮背景-->
+    
+    <Drop0Bk Type="Text" Rectangle="19,77,61,119" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+    <Drop1Bk Type="Text" Rectangle="67,77,109,119" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+    <Drop2Bk Type="Text" Rectangle="115,77,157,119" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+    <Drop3Bk Type="Text" Rectangle="163,77,205,119" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+    
+    <Drop4Bk Type="Text" Rectangle="19,127,62,169" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+    <Drop5Bk Type="Text" Rectangle="67,127,109,169" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+    <Drop6Bk Type="Text" Rectangle="115,127,157,169" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+    <Drop7Bk Type="Text" Rectangle="163,127,205,169" Texture="./UI/Texture/main.gwo" TexturePos="50,367"/>
+
+    <!--按钮-->
+
+    <Drop0 Type="Button" ID="100001" Rectangle="19,77,61,119" Texture="./UI/Texture/main.gwo" TexturePos="0,540"   BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+    <Drop1 Type="Button" ID="100002" Rectangle="67,77,109,119" Texture="./UI/Texture/main.gwo" TexturePos="0,540"   BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+    <Drop2 Type="Button" ID="100003" Rectangle="115,77,157,119" Texture="./UI/Texture/main.gwo" TexturePos="0,540"    BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+    <Drop3 Type="Button" ID="100004" Rectangle="163,77,205,119" Texture="./UI/Texture/main.gwo" TexturePos="0,540"   BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+   
+    <Drop4 Type="Button" ID="100005" Rectangle="19,127,62,169" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+    <Drop5 Type="Button" ID="100006" Rectangle="67,127,109,169" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+    <Drop6 Type="Button" ID="100007" Rectangle="115,127,157,169" Texture="./UI/Texture/main.gwo" TexturePos="0,540" Text="" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+    <Drop7 Type="Button" ID="100008" Rectangle="163,127,205,169" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+    
+
+  
+    <PickAll Type="Button" ID="100021" Rectangle="131,175,199,201" Texture="./UI/Texture/main.gwo" TexturePos="197,80" Text="全部拾取" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  </PickupDrops>
+</UIConfig>

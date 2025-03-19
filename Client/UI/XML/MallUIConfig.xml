@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：
+		摘    要：商城界面
+
+		当前版本：1.00
+		作    者：小熊
+		完成日期：2008-04-3  
+ 
+-->
+<!-- edited with XMLSpy v2007 sp1 (http://www.altova.com) by fox (EMBRACE) -->
+<UIConfig>
+  <MallWin Template="T_NormalWindow" ID="290000" Rectangle="100,150,682,624" BtnRect="515,13,552,50" BtnPos="0,80" Visible="0" Enable="1">
+ 
+    <StoneTitle Template="T_NormalMall" ID="-1" Rectangle="20,432,70,454" TexturePos="42,540" Text="持有:"/>
+    <ConfirmBuy Template="T_Button4" ID="290001" Rectangle="496,438,565,465" TexturePos="196,80" Text="确认购买" Font="MainMap" TextForamt="5"/>
+    <Voucher Template="T_Button4" ID="290002" Rectangle="244,431,313,458" TexturePos="196,80" Text="充值金币" Font="MainMap" TextForamt="5"/>
+    
+    <!--容器滚动条背景-->
+    <!--文本框及背景-->
+    <StoneLeft  Template="T_TitleText"  ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="79,429,86,457"  TexturePos="131,173"  Text=""/>
+    <StoneRight Template="T_TitleText"  ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="201,429,208,457"  TexturePos="138,173"  Text=""/>
+    <StoneMid   Template="T_TitleText"  ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="86,429,87,457"    TexturePos="137,173"  Text=""/>
+    <StoneText  Template="T_NormalMall" ID="-1" Rectangle="85,429,202,457"  TexturePos="367,34"  Text=""/>
+
+    <StoneTexture Template="T_TitleText" ID="-1" Rectangle="220,437,234,451" TexturePos="242,227" Text=""/>
+
+    
+    <!--7个商城物品包裹-->
+    <MallBags Type="TabBar" ID="-1" Rectangle="17,73,570,421" >
+      <MallBags0 Type="Tab" Rectangle="23,-25,83,-2" Texture="./UI/Texture/main.gwo" TexturePos="244,450" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="5">
+        <ListBox1Btm  Type="Text"  ID="-1" Rectangle="524,322,549,346" TexturePos="929,970" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBox1Top  Type="Text"  ID="-1" Rectangle="524,0,549,24"   TexturePos="929,940" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBoxScrollMid Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="524,24,549,25" TexturePos="929,967"  Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <UpBtn Template="T_UpListBoxBtn" ID="290120"   Rectangle="522,-2,551,20" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <DownBtn Template="T_DownListBoxtn" ID="290121" Rectangle="522,324,551,346" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <ListBox Type="ListBox" ID="-1" TexturePos="0,0" Rectangle="4,4,526,355" ScrollTexture="./UI/Texture/main.gwo" ScrollPos="0,0" ScrollRect="524,15,541,320" BtnPos="133,122" BtnRect="0,0,17,27" Height="115">
+          <list0 Type="ListItem"  TexturePos="0,0">
+            <ListBox0Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox0Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox0Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox0Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item0 Template="T_NormalCheckBox" ID="290100" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item1 Template="T_NormalCheckBox" ID="290101" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item2 Template="T_NormalCheckBox" ID="290102" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item3 Template="T_NormalCheckBox" ID="290103" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            
+            <ItemNew0 Template="T_NormalMall" ID="291100" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291101" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291102" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291103" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            
+            <ItemDiscount0 Template="T_NormalMall" ID="292100" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292101" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292102" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292103" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            
+            <ItemOldMoney0 Template="T_NormalMall" ID="293100" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293101" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293102" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293103" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            
+            <ItemNewMoney0 Template="T_NormalMall" ID="294100" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>      
+            <ItemNewMoney1 Template="T_NormalMall" ID="294101" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>     
+            <ItemNewMoney2 Template="T_NormalMall" ID="294102" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294103" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list0>
+          <list1 Type="ListItem"  TexturePos="0,0">
+            <ListBox1Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox1Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox1Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox1Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item4 Template="T_NormalCheckBox" ID="290104" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item5 Template="T_NormalCheckBox" ID="290105" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item6 Template="T_NormalCheckBox" ID="290106" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item7 Template="T_NormalCheckBox" ID="290107" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291104" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291105" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291106" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291107" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292104" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292105" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292106" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292107" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293104" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293105" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293106" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293107" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294104" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294105" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294106" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294107" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list1>
+          <list2 Type="ListItem"  TexturePos="0,0">
+            <ListBox2Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox2Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox2Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox2Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item8 Template="T_NormalCheckBox" ID="290108" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item9 Template="T_NormalCheckBox" ID="290109" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item10 Template="T_NormalCheckBox" ID="290110" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item11 Template="T_NormalCheckBox" ID="290111" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291108" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291109" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291110" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291111" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292108" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292109" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292110" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292111" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293108" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293109" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293110" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293111" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294108" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294109" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294110" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294111" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list2>
+          <list3 Type="ListItem"  TexturePos="0,0">
+            <ListBox3Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox3Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox3Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox3Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item12 Template="T_NormalCheckBox" ID="290112" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item13 Template="T_NormalCheckBox" ID="290113" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item14 Template="T_NormalCheckBox" ID="290114" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item15 Template="T_NormalCheckBox" ID="290115" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291112" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291113" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291114" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291115" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292112" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292113" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292114" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292115" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293112" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293113" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293114" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293115" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294112" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294113" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294114" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294115" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list3>
+          <list4 Type="ListItem"  TexturePos="0,0">
+            <ListBox4Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox4Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox4Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox4Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item16 Template="T_NormalCheckBox" ID="290116" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item17 Template="T_NormalCheckBox" ID="290117" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item18 Template="T_NormalCheckBox" ID="290118" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item19 Template="T_NormalCheckBox" ID="290119" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291116" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291117" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291118" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291119" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292116" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292117" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292118" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292119" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293116" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293117" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293118" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293119" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294116" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294117" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294118" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294119" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list4>
+        </ListBox>
+      </MallBags0>
+      <MallBags1 Type="Tab" Rectangle="83,-25,143,-2" Texture="./UI/Texture/main.gwo" TexturePos="244,450" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="5">
+        <ListBox1Btm  Type="Text"  ID="-1" Rectangle="524,322,549,346" TexturePos="929,970" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBox1Top  Type="Text"  ID="-1" Rectangle="524,0,549,24"   TexturePos="929,940" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBoxScrollMid Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="524,24,549,25" TexturePos="929,967"  Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <UpBtn Template="T_UpListBoxBtn" ID="290220"   Rectangle="522,-2,551,20"    Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <DownBtn Template="T_DownListBoxtn" ID="290221" Rectangle="522,324,551,346" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <ListBox Type="ListBox" ID="-1" TexturePos="0,0" Rectangle="4,4,526,355" ScrollTexture="./UI/Texture/main.gwo" ScrollPos="0,0" ScrollRect="524,15,541,320" BtnPos="133,122" BtnRect="0,0,17,27" Height="115">
+          <list0 Type="ListItem"  TexturePos="0,0">
+            <ListBox0Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox0Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox0Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox0Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item0 Template="T_NormalCheckBox" ID="290200" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item1 Template="T_NormalCheckBox" ID="290201" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item2 Template="T_NormalCheckBox" ID="290202" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item3 Template="T_NormalCheckBox" ID="290203" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291200" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291201" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291202" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291203" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292200" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292201" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292202" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292203" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293200" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293201" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293202" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293203" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294200" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294201" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294202" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294203" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list0>
+          <list1 Type="ListItem"  TexturePos="0,0">
+            <ListBox1Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox1Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox1Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox1Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item4 Template="T_NormalCheckBox" ID="290204" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item5 Template="T_NormalCheckBox" ID="290205" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item6 Template="T_NormalCheckBox" ID="290206" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item7 Template="T_NormalCheckBox" ID="290207" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291204" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291205" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291206" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291207" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292204" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292205" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292206" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292207" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293204" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293205" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293206" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293207" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294204" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294205" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294206" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294207" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list1>
+          <list2 Type="ListItem"  TexturePos="0,0">
+            <ListBox2Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox2Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox2Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox2Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item8 Template="T_NormalCheckBox" ID="290208" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item9 Template="T_NormalCheckBox" ID="290209" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item10 Template="T_NormalCheckBox" ID="290210" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item11 Template="T_NormalCheckBox" ID="290211" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291208" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291209" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291210" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291211" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292208" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292209" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292210" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292211" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293208" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293209" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293210" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293211" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294208" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294209" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294210" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294211" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list2>
+          <list3 Type="ListItem"  TexturePos="0,0">
+            <ListBox3Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox3Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox3Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox3Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item12 Template="T_NormalCheckBox" ID="290212" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item13 Template="T_NormalCheckBox" ID="290213" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item14 Template="T_NormalCheckBox" ID="290214" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item15 Template="T_NormalCheckBox" ID="290215" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291212" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291213" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291214" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291215" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292212" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292213" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292214" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292215" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293212" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293213" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293214" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293215" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294212" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294213" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294214" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294215" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list3>
+          <list4 Type="ListItem"  TexturePos="0,0">
+            <ListBox4Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox4Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox4Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox4Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item16 Template="T_NormalCheckBox" ID="290216" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item17 Template="T_NormalCheckBox" ID="290217" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item18 Template="T_NormalCheckBox" ID="290218" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item19 Template="T_NormalCheckBox" ID="290219" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291216" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291217" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291218" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291219" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292216" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292217" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292218" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292219" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293216" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293217" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293218" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293219" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294216" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294217" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294218" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294219" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list4>
+        </ListBox>
+      </MallBags1>
+      <MallBags2 Type="Tab" Rectangle="143,-25,203,-2" Texture="./UI/Texture/main.gwo" TexturePos="244,450" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="5">
+        <ListBox1Btm  Type="Text"  ID="-1" Rectangle="524,322,549,346" TexturePos="929,970" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBox1Top  Type="Text"  ID="-1" Rectangle="524,0,549,24"   TexturePos="929,940" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBoxScrollMid Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="524,24,549,25" TexturePos="929,967"  Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <UpBtn Template="T_UpListBoxBtn" ID="290320"   Rectangle="522,-2,551,20"    Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <DownBtn Template="T_DownListBoxtn" ID="290321" Rectangle="522,324,551,346" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <ListBox Type="ListBox" ID="-1" TexturePos="0,0" Rectangle="4,4,526,355" ScrollTexture="./UI/Texture/main.gwo" ScrollPos="0,0" ScrollRect="524,15,541,320" BtnPos="133,122" BtnRect="0,0,17,27" Height="115">
+          <list0 Type="ListItem"  TexturePos="0,0">
+            <ListBox0Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox0Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox0Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox0Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item0 Template="T_NormalCheckBox" ID="290300" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item1 Template="T_NormalCheckBox" ID="290301" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item2 Template="T_NormalCheckBox" ID="290302" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item3 Template="T_NormalCheckBox" ID="290303" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291300" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291301" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291302" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291303" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292300" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292301" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292302" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292303" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293300" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293301" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293302" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293303" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294300" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294301" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294302" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294303" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list0>
+          <list1 Type="ListItem"  TexturePos="0,0">
+            <ListBox1Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox1Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox1Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox1Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item4 Template="T_NormalCheckBox" ID="290304" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item5 Template="T_NormalCheckBox" ID="290305" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item6 Template="T_NormalCheckBox" ID="290306" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item7 Template="T_NormalCheckBox" ID="290307" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291304" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291305" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291306" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291307" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292304" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292305" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292306" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292307" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293304" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293305" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293306" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293307" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294304" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294305" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294306" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294307" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list1>
+          <list2 Type="ListItem"  TexturePos="0,0">
+            <ListBox2Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox2Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox2Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox2Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item8 Template="T_NormalCheckBox" ID="290308" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item9 Template="T_NormalCheckBox" ID="290309" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item10 Template="T_NormalCheckBox" ID="290310" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item11 Template="T_NormalCheckBox" ID="290311" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291308" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291309" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291310" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291311" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292308" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292309" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292310" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292311" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293308" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293309" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293310" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293311" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294308" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294309" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294310" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294311" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list2>
+          <list3 Type="ListItem"  TexturePos="0,0">
+            <ListBox3Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox3Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox3Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox3Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item12 Template="T_NormalCheckBox" ID="290312" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item13 Template="T_NormalCheckBox" ID="290313" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item14 Template="T_NormalCheckBox" ID="290314" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item15 Template="T_NormalCheckBox" ID="290315" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291312" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291313" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291314" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291315" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292312" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292313" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292314" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292315" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293312" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293313" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293314" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293315" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294312" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294313" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294314" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294315" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list3>
+          <list4 Type="ListItem"  TexturePos="0,0">
+            <ListBox4Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox4Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox4Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox4Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item16 Template="T_NormalCheckBox" ID="290316" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item17 Template="T_NormalCheckBox" ID="290317" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item18 Template="T_NormalCheckBox" ID="290318" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item19 Template="T_NormalCheckBox" ID="290319" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291316" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291317" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291318" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291319" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292316" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292317" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292318" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292319" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293316" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293317" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293318" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293319" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294316" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294317" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294318" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294319" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list4>
+        </ListBox>
+      </MallBags2>
+      <MallBags3 Type="Tab" Rectangle="203,-25,263,-2" Texture="./UI/Texture/main.gwo"  TexturePos="244,450" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="5">
+        <ListBox1Btm  Type="Text"  ID="-1" Rectangle="524,322,549,346" TexturePos="929,970" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBox1Top  Type="Text"  ID="-1" Rectangle="524,0,549,24"   TexturePos="929,940" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBoxScrollMid Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="524,24,549,25" TexturePos="929,967"  Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <UpBtn Template="T_UpListBoxBtn" ID="290420"   Rectangle="522,-2,551,20"    Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <DownBtn Template="T_DownListBoxtn" ID="290421" Rectangle="522,324,551,346" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <ListBox Type="ListBox" ID="-1" TexturePos="0,0" Rectangle="4,4,526,355" ScrollTexture="./UI/Texture/main.gwo" ScrollPos="0,0" ScrollRect="524,15,541,320" BtnPos="133,122" BtnRect="0,0,17,27" Height="115">
+          <list0 Type="ListItem"  TexturePos="0,0">
+            <ListBox0Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox0Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox0Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox0Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item0 Template="T_NormalCheckBox" ID="290400" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item1 Template="T_NormalCheckBox" ID="290401" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item2 Template="T_NormalCheckBox" ID="290402" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item3 Template="T_NormalCheckBox" ID="290403" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291400" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291401" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291402" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291403" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292400" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292401" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292402" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292403" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293400" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293401" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293402" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293403" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294400" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294401" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294402" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294403" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list0>
+          <list1 Type="ListItem"  TexturePos="0,0">
+            <ListBox1Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox1Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox1Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox1Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item4 Template="T_NormalCheckBox" ID="290404" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item5 Template="T_NormalCheckBox" ID="290405" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item6 Template="T_NormalCheckBox" ID="290406" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item7 Template="T_NormalCheckBox" ID="290407" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291404" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291405" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291406" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291407" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292404" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292405" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292406" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292407" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293404" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293405" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293406" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293407" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294404" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294405" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294406" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294407" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list1>
+          <list2 Type="ListItem"  TexturePos="0,0">
+            <ListBox2Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox2Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox2Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox2Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item8 Template="T_NormalCheckBox" ID="290408" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item9 Template="T_NormalCheckBox" ID="290409" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item10 Template="T_NormalCheckBox" ID="290410" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item11 Template="T_NormalCheckBox" ID="290411" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291408" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291409" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291410" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291411" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292408" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292409" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292410" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292411" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293408" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293409" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293410" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293411" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294408" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294409" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294410" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294411" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list2>
+          <list3 Type="ListItem"  TexturePos="0,0">
+            <ListBox3Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox3Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox3Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox3Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item12 Template="T_NormalCheckBox" ID="290412" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item13 Template="T_NormalCheckBox" ID="290413" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item14 Template="T_NormalCheckBox" ID="290414" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item15 Template="T_NormalCheckBox" ID="290415" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291412" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291413" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291414" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291415" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292412" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292413" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292414" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292415" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293412" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293413" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293414" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293415" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294412" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294413" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294414" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294415" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list3>
+          <list4 Type="ListItem"  TexturePos="0,0">
+            <ListBox4Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox4Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox4Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox4Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item16 Template="T_NormalCheckBox" ID="290416" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item17 Template="T_NormalCheckBox" ID="290417" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item18 Template="T_NormalCheckBox" ID="290418" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item19 Template="T_NormalCheckBox" ID="290419" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291416" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291417" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291418" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291419" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292416" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292417" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292418" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292419" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293416" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293417" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293418" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293419" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294416" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294417" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294418" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294419" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list4>
+        </ListBox>
+      </MallBags3>
+      <MallBags4 Type="Tab" Rectangle="263,-25,323,-2" Texture="./UI/Texture/main.gwo" TexturePos="244,450" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="5">
+        <ListBox1Btm  Type="Text"  ID="-1" Rectangle="524,322,549,346" TexturePos="929,970" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBox1Top  Type="Text"  ID="-1" Rectangle="524,0,549,24"   TexturePos="929,940" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBoxScrollMid Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="524,24,549,25" TexturePos="929,967"  Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <UpBtn Template="T_UpListBoxBtn" ID="290520"   Rectangle="522,-2,551,20"    Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <DownBtn Template="T_DownListBoxtn" ID="290521" Rectangle="522,324,551,346" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <ListBox Type="ListBox" ID="-1" TexturePos="0,0" Rectangle="4,4,526,355" ScrollTexture="./UI/Texture/main.gwo" ScrollPos="0,0" ScrollRect="524,15,541,320" BtnPos="133,122" BtnRect="0,0,17,27" Height="115">
+          <list0 Type="ListItem"  TexturePos="0,0">
+            <ListBox0Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox0Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox0Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox0Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item0 Template="T_NormalCheckBox" ID="290500" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item1 Template="T_NormalCheckBox" ID="290501" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item2 Template="T_NormalCheckBox" ID="290502" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item3 Template="T_NormalCheckBox" ID="290503" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291500" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291501" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291502" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291503" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292500" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292501" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292502" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292503" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293500" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293501" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293502" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293503" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294500" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294501" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294502" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294503" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list0>
+          <list1 Type="ListItem"  TexturePos="0,0">
+            <ListBox1Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox1Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox1Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox1Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item4 Template="T_NormalCheckBox" ID="290504" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item5 Template="T_NormalCheckBox" ID="290505" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item6 Template="T_NormalCheckBox" ID="290506" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item7 Template="T_NormalCheckBox" ID="290507" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291504" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291505" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291506" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291507" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292504" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292505" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292506" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292507" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293504" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293505" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293506" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293507" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294504" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294505" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294506" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294507" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list1>
+          <list2 Type="ListItem"  TexturePos="0,0">
+            <ListBox2Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox2Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox2Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox2Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item8 Template="T_NormalCheckBox" ID="290508" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item9 Template="T_NormalCheckBox" ID="290509" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item10 Template="T_NormalCheckBox" ID="290510" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item11 Template="T_NormalCheckBox" ID="290511" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291508" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291509" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291510" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291511" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292508" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292509" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292510" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292511" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293508" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293509" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293510" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293511" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294508" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294509" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294510" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294511" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list2>
+          <list3 Type="ListItem"  TexturePos="0,0">
+            <ListBox3Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox3Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox3Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox3Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item12 Template="T_NormalCheckBox" ID="290512" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item13 Template="T_NormalCheckBox" ID="290513" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item14 Template="T_NormalCheckBox" ID="290514" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item15 Template="T_NormalCheckBox" ID="290515" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291512" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291513" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291514" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291515" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292512" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292513" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292514" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292515" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293512" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293513" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293514" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293515" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294512" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294513" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294514" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294515" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list3>
+          <list4 Type="ListItem"  TexturePos="0,0">
+            <ListBox4Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox4Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox4Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox4Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item16 Template="T_NormalCheckBox" ID="290516" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item17 Template="T_NormalCheckBox" ID="290517" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item18 Template="T_NormalCheckBox" ID="290518" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item19 Template="T_NormalCheckBox" ID="290519" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291516" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291517" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291518" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291519" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292516" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292517" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292518" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292519" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293516" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293517" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293518" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293519" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294516" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294517" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294518" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294519" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list4>
+        </ListBox>
+      </MallBags4>
+      <MallBags5 Type="Tab" Rectangle="323,-25,383,-2" Texture="./UI/Texture/main.gwo" TexturePos="244,450" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="5">
+        <ListBox1Btm  Type="Text"  ID="-1" Rectangle="524,322,549,346" TexturePos="929,970" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBox1Top  Type="Text"  ID="-1" Rectangle="524,0,549,24"   TexturePos="929,940" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBoxScrollMid Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="524,24,549,25" TexturePos="929,967"  Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <UpBtn Template="T_UpListBoxBtn" ID="290620"   Rectangle="522,-2,551,20"    Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <DownBtn Template="T_DownListBoxtn" ID="290621" Rectangle="522,324,551,346" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <ListBox Type="ListBox" ID="-1" TexturePos="0,0" Rectangle="4,4,526,355" ScrollTexture="./UI/Texture/main.gwo" ScrollPos="0,0" ScrollRect="524,15,541,320" BtnPos="133,122" BtnRect="0,0,17,27" Height="115">
+          <list0 Type="ListItem"  TexturePos="0,0">
+            <ListBox0Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox0Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox0Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox0Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item0 Template="T_NormalCheckBox" ID="290600" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item1 Template="T_NormalCheckBox" ID="290601" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item2 Template="T_NormalCheckBox" ID="290602" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item3 Template="T_NormalCheckBox" ID="290603" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291600" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291601" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291602" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291603" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292600" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292601" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292602" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292603" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293600" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293601" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293602" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293603" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294600" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294601" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294602" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294603" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list0>
+          <list1 Type="ListItem"  TexturePos="0,0">
+            <ListBox1Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox1Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox1Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox1Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item4 Template="T_NormalCheckBox" ID="290604" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item5 Template="T_NormalCheckBox" ID="290605" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item6 Template="T_NormalCheckBox" ID="290606" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item7 Template="T_NormalCheckBox" ID="290607" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291604" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291605" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291606" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291607" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292604" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292605" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292606" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292607" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293604" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293605" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293606" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293607" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294604" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294605" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294606" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294607" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list1>
+          <list2 Type="ListItem"  TexturePos="0,0">
+            <ListBox2Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox2Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox2Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox2Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item8 Template="T_NormalCheckBox" ID="290608" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item9 Template="T_NormalCheckBox" ID="290609" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item10 Template="T_NormalCheckBox" ID="290610" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item11 Template="T_NormalCheckBox" ID="290611" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291608" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291609" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291610" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291611" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292608" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292609" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292610" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292611" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293608" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293609" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293610" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293611" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294608" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294609" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294610" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294611" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list2>
+          <list3 Type="ListItem"  TexturePos="0,0">
+            <ListBox3Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox3Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox3Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox3Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item12 Template="T_NormalCheckBox" ID="290612" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item13 Template="T_NormalCheckBox" ID="290613" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item14 Template="T_NormalCheckBox" ID="290614" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item15 Template="T_NormalCheckBox" ID="290615" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291612" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291613" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291614" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291615" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292612" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292613" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292614" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292615" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293612" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293613" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293614" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293615" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294612" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294613" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294614" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294615" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list3>
+          <list4 Type="ListItem"  TexturePos="0,0">
+            <ListBox4Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox4Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox4Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox4Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item16 Template="T_NormalCheckBox" ID="290616" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item17 Template="T_NormalCheckBox" ID="290617" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item18 Template="T_NormalCheckBox" ID="290618" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item19 Template="T_NormalCheckBox" ID="290619" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291616" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291617" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291618" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291619" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292616" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292617" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292618" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292619" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293616" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293617" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293618" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293619" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294616" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294617" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294618" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294619" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list4>
+        </ListBox>
+      </MallBags5>
+      <MallBags6 Type="Tab" Rectangle="383,-25,443,-2" Texture="./UI/Texture/main.gwo" TexturePos="244,450" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="5">
+        <ListBox1Btm  Type="Text"  ID="-1" Rectangle="524,322,549,346" TexturePos="929,970" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBox1Top  Type="Text"  ID="-1" Rectangle="524,0,549,24"   TexturePos="929,940" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBoxScrollMid Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="524,24,549,25" TexturePos="929,967"  Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <UpBtn Template="T_UpListBoxBtn" ID="290720"   Rectangle="522,-2,551,20"    Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <DownBtn Template="T_DownListBoxtn" ID="290721" Rectangle="522,324,551,346" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+        <ListBox Type="ListBox" ID="-1" TexturePos="0,0" Rectangle="4,4,526,355" ScrollTexture="./UI/Texture/main.gwo" ScrollPos="0,0" ScrollRect="524,15,541,320" BtnPos="133,122" BtnRect="0,0,17,27" Height="115">
+          <list0 Type="ListItem"  TexturePos="0,0">
+            <ListBox0Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox0Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox0Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox0Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item0 Template="T_NormalCheckBox" ID="290700" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item1 Template="T_NormalCheckBox" ID="290701" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item2 Template="T_NormalCheckBox" ID="290702" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item3 Template="T_NormalCheckBox" ID="290703" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291700" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291701" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291702" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291703" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292700" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292701" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292702" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292703" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293700" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293701" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293702" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293703" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294700" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294701" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294702" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294703" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list0>
+          <list1 Type="ListItem"  TexturePos="0,0">
+            <ListBox1Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox1Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox1Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox1Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item4 Template="T_NormalCheckBox" ID="290704" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item5 Template="T_NormalCheckBox" ID="290705" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item6 Template="T_NormalCheckBox" ID="290706" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item7 Template="T_NormalCheckBox" ID="290707" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291704" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291705" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291706" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291707" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292704" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292705" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292706" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292707" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293704" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293705" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293706" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293707" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294704" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294705" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294706" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294707" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list1>
+          <list2 Type="ListItem"  TexturePos="0,0">
+            <ListBox2Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox2Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox2Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox2Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item8 Template="T_NormalCheckBox" ID="290708" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item9 Template="T_NormalCheckBox" ID="290709" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item10 Template="T_NormalCheckBox" ID="290710" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item11 Template="T_NormalCheckBox" ID="290711" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291708" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291709" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291710" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291711" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292708" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292709" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292710" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292711" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293708" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293709" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293710" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293711" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294708" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294709" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294710" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294711" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list2>
+          <list3 Type="ListItem"  TexturePos="0,0">
+            <ListBox3Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox3Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox3Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox3Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item12 Template="T_NormalCheckBox" ID="290712" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item13 Template="T_NormalCheckBox" ID="290713" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item14 Template="T_NormalCheckBox" ID="290714" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item15 Template="T_NormalCheckBox" ID="290715" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291712" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291713" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291714" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291715" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292712" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292713" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292714" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292715" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293712" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293713" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293714" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293715" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294712" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294713" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294714" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294715" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list3>
+          <list4 Type="ListItem"  TexturePos="0,0">
+            <ListBox4Bg0 Template="T_BgWindow" ID="-1" Rectangle="0,0,127,112" />
+            <ListBox4Bg1 Template="T_BgWindow" ID="-1" Rectangle="129,0,256,112" />
+            <ListBox4Bg2 Template="T_BgWindow" ID="-1" Rectangle="258,0,385,112" />
+            <ListBox4Bg3 Template="T_BgWindow" ID="-1" Rectangle="387,0,514,112" />
+            <Item16 Template="T_NormalCheckBox" ID="290716" Rectangle="7,10,49,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item17 Template="T_NormalCheckBox" ID="290717" Rectangle="137,10,179,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item18 Template="T_NormalCheckBox" ID="290718" Rectangle="266,10,308,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <Item19 Template="T_NormalCheckBox" ID="290719" Rectangle="395,10,437,52"   TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39"/>
+            <ItemNew0 Template="T_NormalMall" ID="291716" Rectangle="53,10,130,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew1 Template="T_NormalMall" ID="291717" Rectangle="182,10,259,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew2 Template="T_NormalMall" ID="291718" Rectangle="312,10,389,41" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNew3 Template="T_NormalMall" ID="291719" Rectangle="442,10,519,41" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemDiscount0 Template="T_NormalMall" ID="292716" Rectangle="55,43,135,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount1 Template="T_NormalMall" ID="292717" Rectangle="184,43,264,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount2 Template="T_NormalMall" ID="292718" Rectangle="314,43,394,64" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemDiscount3 Template="T_NormalMall" ID="292719" Rectangle="444,43,521,64" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemOldMoney0 Template="T_NormalMall" ID="293716" Rectangle="7,62,95,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney1 Template="T_NormalMall" ID="293717" Rectangle="137,62,225,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney2 Template="T_NormalMall" ID="293718" Rectangle="266,62,354,83" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemOldMoney3 Template="T_NormalMall" ID="293719" Rectangle="395,62,483,83" TexturePos="42,540" Text="" TextFormat="4"/>
+
+            <ItemNewMoney0 Template="T_NormalMall" ID="294716" Rectangle="7,83,95,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney1 Template="T_NormalMall" ID="294717" Rectangle="137,83,225,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney2 Template="T_NormalMall" ID="294718" Rectangle="266,83,354,104" TexturePos="42,540" Text="" TextFormat="4"/>
+            <ItemNewMoney3 Template="T_NormalMall" ID="294719" Rectangle="395,83,483,104" TexturePos="42,540" Text="" TextFormat="4"/>
+          </list4>
+        </ListBox>
+      </MallBags6>
+    </MallBags>
+  </MallWin>
+</UIConfig>

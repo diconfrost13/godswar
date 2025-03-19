@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：QuestViewUIConfig.xml
+		摘    要：任务信息描述UI配置表
+      
+		当前版本：Ver1.00
+		作    者：Tavia
+		完成日期：2008-3-23-->
+<UIConfig>
+  <QuestInfo Template="TestWindow" ID="360000" Rectangle="79,112,342,638" Visible="0">
+    <TabBar Type="TabBar" ID="360001" Rectangle="14,71,247,517" TexturePos="267,622">
+      <MyQuests Type="Tab" ID="-1" Rectangle="57,-23,118,0" Texture="./UI/Texture/main.gwo" TexturePos="99,80" Text="当前任务" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5">
+        <UpTexttop Template="TestText" ID="-1" Rectangle="208,23,232,47" TexturePos="929,940" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <UpTextbtm Template="TestText" ID="-1" Rectangle="208,140,232,164" TexturePos="929,970" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <UpTextmid Template="TestText" ID="-1" Rectangle="208,47,232,48" TexturePos="929,967" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <MidTextleft Template="TestText" ID="-1" Rectangle="0,180,14,194" TexturePos="146,173" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <MidTextright Template="TestText" ID="-1" Rectangle="220,180,234,194" TexturePos="146,188" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <MidTextmid Template="TestText" ID="-1" Rectangle="14,186,15,188" TexturePos="158,179" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <DownTexttop Template="TestText" ID="-1" Rectangle="208,210,232,234" TexturePos="929,940" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <DownTextbtm Template="TestText" ID="-1" Rectangle="208,371,232,395" TexturePos="929,970" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <DownTextmid Template="TestText" ID="-1" Rectangle="208,234,232,235" TexturePos="929,967" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <BtmTextleft Template="TestText" ID="-1" Rectangle="0,411,14,425" TexturePos="146,173" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <BtmTextright Template="TestText" ID="-1" Rectangle="220,411,234,425" TexturePos="146,188" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <BtmTextmid Template="TestText" ID="-1" Rectangle="14,417,15,419" TexturePos="158,179" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <QuestListUp Template="TestButton" ID="360012" Rectangle="206,1,234,22" TexturePos="0,228" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestListDown Template="TestButton" ID="360013" Rectangle="206,165,234,186" TexturePos="29,228" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <QuestViewUp Template="TestButton" ID="360014" Rectangle="206,188,234,209" TexturePos="0,228" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestViewDown Template="TestButton" ID="360015" Rectangle="206,396,234,417" TexturePos="29,228" Text="" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <QuestCancel Template="TestButton" ID="360016" Rectangle="172,419,232,446" TexturePos="38,80" Text="放弃" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <QuestsCount Template="TestText" ID="360017" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="14,410,100,433" TexturePos="632,90"/>
+        <QuestsCountText Template="TestText" ID="360018" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="100,410,200,433" TexturePos="538,455"/>
+        <Texture Template="TestText" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="0,159,242,177" TexturePos="782,352"/>
+
+        <QuestListContainer Type="Container" ID="360011" Rectangle="0,0,234,186" Texture="./UI/Texture/main.gwo" TexturePos="0,0" ScrollTexture="./UI/Texture/main.gwo" ScrollRect="212,23,229,164" ScrollPos="0,0" BtnPos="133,122" BtnRect="0,0,17,27" Font="CONTAIN2_TEXTFONT" FontColor="TEST_IMAGECOLOR">
+          <QuestList1 Template="TestList" ID="360200" Rectangle="5,0,220,415" ScrollRect="0,0,0,0" TexturePos="25,365" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,32,32" Height="15" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <QuestList2 Template="TestList" ID="360201" Rectangle="5,0,220,415" ScrollRect="0,0,0,0" TexturePos="25,365" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,32,32" Height="15" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <QuestList3 Template="TestList" ID="360202" Rectangle="5,0,220,415" ScrollRect="0,0,0,0" TexturePos="25,365" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,32,32" Height="15" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <QuestList4 Template="TestList" ID="360203" Rectangle="5,0,220,415" ScrollRect="0,0,0,0" TexturePos="25,365" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,32,32" Height="15" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <QuestList5 Template="TestList" ID="360204" Rectangle="5,0,220,415" ScrollRect="0,0,0,0" TexturePos="25,365" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,32,32" Height="15" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <QuestList6 Template="TestList" ID="360205" Rectangle="5,0,220,415" ScrollRect="0,0,0,0" TexturePos="25,365" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,32,32" Height="15" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <QuestText1 Template="TestText" ID="360210" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,100,30" TexturePos="538,455" TextFormat="0"/>
+          <QuestText2 Template="TestText" ID="360211" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,100,30" TexturePos="538,455" TextFormat="0"/>
+          <QuestText3 Template="TestText" ID="360212" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,100,30" TexturePos="538,455" TextFormat="0"/>
+          <QuestText4 Template="TestText" ID="360213" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,100,30" TexturePos="538,455" TextFormat="0"/>
+          <QuestText5 Template="TestText" ID="360214" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,100,30" TexturePos="538,455" TextFormat="0"/>
+          <QuestText6 Template="TestText" ID="360215" Font="CONTAIN2_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,100,30" TexturePos="538,455" TextFormat="0"/>
+        </QuestListContainer>
+
+        <QuestViewContainer Type="Container" ID="360010" Rectangle="0,188,234,417" Texture="./UI/Texture/main.gwo" TexturePos="0,0" ScrollTexture="./UI/Texture/main.gwo" ScrollRect="212,22,229,187" ScrollPos="0,0" BtnPos="133,122" BtnRect="0,0,17,27" Font="CONTAIN1_TEXTFONT" FontColor="TEST_IMAGECOLOR">
+          <QuestTitle Template="TestText" ID="360020" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,30" TexturePos="538,455"/>
+          <QuestDetails Template="TestText" ID="360021" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,202,250" TexturePos="538,455"/>
+          <QuestObjectives Template="TestText" ID="360022" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,202,250" TexturePos="538,455"/>
+          <QuestItem1 Template="TestButton" ID="360023" Rectangle="5,0,220,15" TexturePos="625,908" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <QuestItem2 Template="TestButton" ID="360024" Rectangle="5,0,220,15" TexturePos="625,908" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <QuestItem3 Template="TestButton" ID="360025" Rectangle="5,0,220,15" TexturePos="625,908" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <QuestItem4 Template="TestButton" ID="360026" Rectangle="5,0,220,15" TexturePos="625,908" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <QuestCreature1 Template="TestButton" ID="360027" Rectangle="5,0,220,15" TexturePos="625,908" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <QuestCreature2 Template="TestButton" ID="360028" Rectangle="5,0,220,15" TexturePos="625,908" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+          <QuestCreature3 Template="TestButton" ID="360029" Rectangle="5,0,220,15" TexturePos="625,908" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestCreature4 Template="TestButton" ID="360030" Rectangle="5,0,220,15" TexturePos="625,908" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestRespond Template="TestText" ID="360031" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,220,30" TexturePos="538,455"/>
+        <QuestResponder Template="TestButton" ID="360032" Rectangle="5,0,220,15" TexturePos="625,908" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" />
+        <QuestResponderName Template="TestText" ID="360033" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,220,15" TexturePos="538,455"/>
+        <QuestReward Template="TestText" ID="360034" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,360,30" TexturePos="538,455"/>
+        <QuestRewards Template="TestText" ID="360035" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,202,250" TexturePos="538,455"/>
+        <QuestAppend Template="TestText" ID="360036" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,202,250" TexturePos="538,455"/>
+        <RewardItem1 Template="TestCheckBox" ID="360037" Rectangle="5,53,47,95" TexturePos="566,0" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <RewardItem2 Template="TestCheckBox" ID="360038" Rectangle="51,53,93,95" TexturePos="566,0" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <RewardItem3 Template="TestCheckBox" ID="360039" Rectangle="97,53,139,95" TexturePos="566,0" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestItemText1 Template="TestText" ID="360040" Rectangle="5,0,100,15" TexturePos="784,240" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" italic="1"/>
+        <QuestItemText2 Template="TestText" ID="360041" Rectangle="5,0,100,15" TexturePos="784,240" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" italic="1"/>
+        <QuestItemText3 Template="TestText" ID="360042" Rectangle="5,0,100,15" TexturePos="784,240" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" italic="1"/>
+        <QuestItemText4 Template="TestText" ID="360043" Rectangle="5,0,100,15" TexturePos="784,240" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" italic="1"/>
+        <QuestCreatureText1 Template="TestText" ID="360044" Rectangle="5,0,100,15" TexturePos="784,240" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" italic="1"/>
+        <QuestCreatureText2 Template="TestText" ID="360045" Rectangle="5,0,100,15" TexturePos="784,240" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" italic="1"/>
+        <QuestCreatureText3 Template="TestText" ID="360046" Rectangle="5,0,100,15" TexturePos="784,240" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" italic="1"/>
+        <QuestCreatureText4 Template="TestText" ID="360047" Rectangle="5,0,100,15" TexturePos="784,240" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" italic="1"/>
+        <QuestCreatureCount1 Template="TestText" ID="360048" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="110,0,220,15" TexturePos="538,455" italic="1"/>
+        <QuestCreatureCount2 Template="TestText" ID="360049" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="110,0,220,15" TexturePos="538,455" italic="1"/>
+        <QuestCreatureCount3 Template="TestText" ID="360050" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="110,0,220,15" TexturePos="538,455" italic="1"/>
+        <QuestCreatureCount4 Template="TestText" ID="360051" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="110,0,220,15" TexturePos="538,455" italic="1"/>
+        <QuestItemCount1 Template="TestText" ID="360052" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="110,0,220,15" TexturePos="538,455" italic="1"/>
+        <QuestItemCount2 Template="TestText" ID="360053" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="110,0,220,15" TexturePos="538,455" italic="1"/>
+        <QuestItemCount3 Template="TestText" ID="360054" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="110,0,220,15" TexturePos="538,455" italic="1"/>
+        <QuestItemCount4 Template="TestText" ID="360055" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="110,0,220,15" TexturePos="538,455" italic="1"/>
+        </QuestViewContainer>
+      </MyQuests>
+
+      <LookupQuests Type="Tab" Rectangle="118,-23,179,0" Texture="./UI/Texture/main.gwo" TexturePos="99,80" Text="查找任务" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5">
+        <Texture Template="TestText" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="245,23,267,379"  TexturePos="632,90"/>
+
+        <Texttop Template="TestText" ID="-1" Rectangle="208,23,232,47" TexturePos="929,940" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Textbtm Template="TestText" ID="-1" Rectangle="208,371,232,395" TexturePos="929,970" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Textmid Template="TestText" ID="-1" Rectangle="208,47,232,48" TexturePos="929,967" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <BtmTextleft Template="TestText" ID="-1" Rectangle="0,411,14,425" TexturePos="146,173" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <BtmTextright Template="TestText" ID="-1" Rectangle="220,411,234,425" TexturePos="146,188" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <BtmTextmid Template="TestText" ID="-1" Rectangle="14,417,15,419" TexturePos="158,179" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <QuestFindContainer Type="Container" ID="361000" Rectangle="0,0,234,417" Texture="./UI/Texture/main.gwo" TexturePos="0,0" ScrollTexture="./UI/Texture/main.gwo" ScrollRect="212,23,229,395" ScrollPos="0,0" BtnPos="133,122" BtnRect="0,0,17,27" Font="CONTAIN3_TEXTFONT" FontColor="TEST_IMAGECOLOR"/>
+        <QuestListUp Template="TestButton" ID="360012" Rectangle="206,1,234,22" TexturePos="0,228" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestViewDown Template="TestButton" ID="360015" Rectangle="206,396,234,417" TexturePos="29,228" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestFind Template="TestButton" ID="361003" Rectangle="172,419,232,446" TexturePos="38,80" Text="查找" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <Sparta Template="TestText" ID="361100" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Athens Template="TestText" ID="361101" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Athens_Newbie Template="TestText" ID="361102" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Parnitha_1 Template="TestText" ID="361103" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Sparta_Newbie Template="TestText" ID="361104" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Nemea_1 Template="TestText" ID="361105" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Mycenae_All Template="TestText" ID="361106" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Olympia_All Template="TestText" ID="361107" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Plataea_All Template="TestText" ID="361108" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Thebes_All Template="TestText" ID="361109" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Larissa_All Template="TestText" ID="361110" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Marathon_All Template="TestText" ID="361111" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Parnitha_2 Template="TestText" ID="361112" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Peloponnese_All Template="TestText" ID="361113" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Nemea_2 Template="TestText" ID="361114" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Argolis_All Template="TestText" ID="361115" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Isthmus_of_Corinth_1 Template="TestText" ID="361116" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Isthmus_of_Corinth_2 Template="TestText" ID="361117" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Isthmus_of_Corinth_3 Template="TestText" ID="361118" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Megara_All Template="TestText" ID="361119" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Oracle_of_Delphi_All Template="TestText" ID="361120" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Olympus_All Template="TestText" ID="361121" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <The_gate_to_Hades_All Template="TestText" ID="361122" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Stymphalian_All Template="TestText" ID="361123" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Lernaean_All Template="TestText" ID="361124" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Sanctum_to_Dionpysus_All Template="TestText" ID="361125" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Medusa_den_All Template="TestText" ID="361126" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Pan_Forest_All Template="TestText" ID="361127" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Garden_of_Hes_perIDes_All Template="TestText" ID="361128" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+        <Quest1 Type="Button" ID="361200" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest2 Type="Button" ID="361201" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest3 Type="Button" ID="361202" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest4 Type="Button" ID="361203" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest5 Type="Button" ID="361204" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest6 Type="Button" ID="361205" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest7 Type="Button" ID="361206" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest8 Type="Button" ID="361207" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest9 Type="Button" ID="361208" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest10 Type="Button" ID="361209" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest11 Type="Button" ID="361210" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest12 Type="Button" ID="361211" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest13 Type="Button" ID="361212" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest14 Type="Button" ID="361213" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest15 Type="Button" ID="361214" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest16 Type="Button" ID="361215" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest17 Type="Button" ID="361216" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest18 Type="Button" ID="361217" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="5" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest19 Type="Button" ID="361218" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <Quest20 Type="Button" ID="361219" Rectangle="5,0,220,15"  TexturePos="625,908" TextFormat="0" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText1 Template="TestText" ID="361300" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText2 Template="TestText" ID="361301" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText3 Template="TestText" ID="361302" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText4 Template="TestText" ID="361303" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText5 Template="TestText" ID="361304" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText6 Template="TestText" ID="361305" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText7 Template="TestText" ID="361306" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText8 Template="TestText" ID="361307" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText9 Template="TestText" ID="361308" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText10 Template="TestText" ID="361309" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText11 Template="TestText" ID="361310" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText12 Template="TestText" ID="361311" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText13 Template="TestText" ID="361312" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText14 Template="TestText" ID="361313" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText15 Template="TestText" ID="361314" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText16 Template="TestText" ID="361315" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText17 Template="TestText" ID="361316" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText18 Template="TestText" ID="361317" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText19 Template="TestText" ID="361318" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+        <QuestText20 Template="TestText" ID="361319" Rectangle="5,0,200,15"  TexturePos="784,240" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+
+      </LookupQuests>
+
+    </TabBar>
+    <ClosetBtn Template="TestButton" ID="360019" Rectangle="196,13,233,50" TexturePos="0,80" Text=""/>
+
+  </QuestInfo>
+</UIConfig>

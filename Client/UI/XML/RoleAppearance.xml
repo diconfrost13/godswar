@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+  <RoleBackground Template="TestWindow" ID="990000" Rectangle="0,96,263,622">
+    <UpBtntop Template="TestButton" ID="990001" Rectangle="220,72,248,93" TexturePos="0,228" Text=""/>
+    <UpBtndown Template="TestButton" ID="990002" Rectangle="220,272,248,293" TexturePos="29,228" Text=""/>
+    <UpTexttop Template="TestText" ID="-1" Rectangle="222,94,246,118" TexturePos="929,940" Text=""/>
+    <UpTextbtm Template="TestText" ID="-1" Rectangle="222,247,246,271" TexturePos="929,970" Text=""/>
+    <UpTextmid Template="TestText" ID="990005" Rectangle="222,118,246,119" TexturePos="929,967" Text=""/>
+    
+    <UpContent        Type="Container" ID="990005" Rectangle="26,72,240,293" Texture="./UI/Texture/main.gwo" TexturePos="0,250" ScrollTexture="./UI/Texture/main.gwo" ScrollRect="198,18,220,410" ScrollPos="0,250" BtnPos="29,227" BtnRect="0,0,22,22" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+      <UpCampText Template="TestText" ID="-1" Rectangle="2,5,48,54" TexturePos="321,962" Text=""/>
+      <UpContentText  Type="Text" ID="-1"  Parent="UpContent" Texture="./UI/Texture/main.gwo" Rectangle="0,57,186,221" TexturePos="0,0"  Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    </UpContent>
+
+    <MidTextleft Template="TestText" ID="-1" Rectangle="14,287,28,301" TexturePos="146,173" Text=""/>
+    <MidTextmid Template="TestText" ID="990009" Rectangle="28,293,29,295" TexturePos="158,179" Text=""/>
+    <MidTextright Template="TestText" ID="-1" Rectangle="234,287,248,301" TexturePos="146,188" Text=""/>
+
+    <DownBtntop Template="TestButton" ID="990011" Rectangle="220,295,248,316" TexturePos="0,228" Text=""/>
+    <DownBtndown Template="TestButton" ID="990002" Rectangle="220,495,248,516" TexturePos="29,228" Text=""/>
+    <DownTexttop Template="TestText" ID="-1" Rectangle="222,317,246,341" TexturePos="929,940" Text=""/>
+    <DownTextbtm Template="TestText" ID="-1" Rectangle="222,470,246,494" TexturePos="929,970" Text=""/>
+    <DownTextmid Template="TestText" ID="990015" Rectangle="222,341,246,342" TexturePos="929,967" Text=""/>
+
+    <DownContent        Type="Container" ID="990016" Rectangle="26,295,240,516" Texture="./UI/Texture/main.gwo" TexturePos="0,250" ScrollTexture="./UI/Texture/main.gwo" ScrollRect="198,18,220,410" ScrollPos="0,250" BtnPos="29,227" BtnRect="0,0,22,22" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+      <DownCampText Template="TestText" ID="-1" Rectangle="2,5,48,54" TexturePos="321,962" Text=""/>
+      <DownContentText  Type="Text" ID="-1"  Parent="DownContent" Texture="./UI/Texture/main.gwo" Rectangle="0,57,186,221" TexturePos="0,0"  Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    </DownContent>
+
+    <LeftTexttop Template="TestText" ID="-1" Rectangle="0,27,6,53" TexturePos="123,173" Text=""/>
+    <LeftTextbtm Template="TestText" ID="-1" Rectangle="0,514,6,525" TexturePos="81,216" Text=""/>
+    <LeftTextmid Template="TestText" ID="990025" Rectangle="0,53,6,54" TexturePos="97,225" Text=""/>
+    
+  </RoleBackground>
+</UIConfig>

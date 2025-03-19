@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+  <GodwardMapUI Type="Window" ID="410000" Modal="0" Rectangle="0,0,1024,768" Texture="./UI/Texture/main.gwo" Visible="0" Text="" closebuttonimage="./UI/Texture/main.gwo" closebuttonrectangle="318,0,350,32" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+    <DownBtn Type="Button" ID="411111" Rectangle="918,1,997,29" TexturePos="235,499" Texture="./UI/Texture/main.gwo" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <CloseBtn Type="Button" ID="411112" Rectangle="997,1,1024,26" TexturePos="314,332" Texture="./UI/Texture/main.gwo" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <SceneMapBtn1 Type="Button" ID="440000" Rectangle="752,510,780,538" TexturePos="342,498" Texture="./UI/Texture/main.gwo" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <SceneMapBtn2 Type="Button" ID="440001" Rectangle="469,673,497,701" TexturePos="342,498" Texture="./UI/Texture/main.gwo" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <SceneMapBtn3 Type="Button" ID="440002" Rectangle="780,505,800,525" TexturePos="345,398" Texture="./UI/Texture/main.gwo" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <SceneMapBtn4 Type="Button" ID="440003" Rectangle="768,447,788,467" TexturePos="345,398" Texture="./UI/Texture/main.gwo" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <SceneMapBtn5 Type="Button" ID="440004" Rectangle="709,406,729,426" TexturePos="345,398" Texture="./UI/Texture/main.gwo" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <SceneMapBtn6 Type="Button" ID="440005" Rectangle="658,412,678,432" TexturePos="345,398" Texture="./UI/Texture/main.gwo" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <SceneMapBtn7 Type="Button" ID="440006" Rectangle="654,435,674,455" TexturePos="345,398" Texture="./UI/Texture/main.gwo" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <SceneMapBtn8 Type="Button" ID="440007" Rectangle="620,450,640,470" TexturePos="345,398" Texture="./UI/Texture/main.gwo" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <SceneMapBtn9 Type="Button" ID="440008" Rectangle="613,479,633,499" TexturePos="345,398" Texture="./UI/Texture/main.gwo" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <SceneMapBtn10 Type="Button" ID="440009" Rectangle="585,453,605,473" TexturePos="345,398" Texture="./UI/Texture/main.gwo" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <SceneMapBtn11 Type="Button" ID="440010" Rectangle="469,549,489,569" TexturePos="345,398" Texture="./UI/Texture/main.gwo" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <SceneMapBtn12 Type="Button" ID="440011" Rectangle="426,624,446,644" TexturePos="345,398" Texture="./UI/Texture/main.gwo" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <SceneMapBtn13 Type="Button" ID="440012" Rectangle="514,690,534,710" TexturePos="345,398" Texture="./UI/Texture/main.gwo" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+  </GodwardMapUI>
+</UIConfig>

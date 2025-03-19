@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+  <Storage Template="T_NormalWindow" ID="300000" Modal="0" Rectangle="0,0,263,526"  BtnRect="196,13,233,50" BtnPos="0,80" Visible="0">
+    <Save Type="Button" ID="300001" Rectangle="186,490,246,517" Texture="./UI/Texture/main.gwo" TexturePos="38,80" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="存储"/>
+    <Load Type="Button" ID="300002" Rectangle="125,490,186,517" Texture="./UI/Texture/main.gwo" TexturePos="38,80" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="取出"/>
+
+    <EditLeft  Type="Text"  ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="54,446,76,468"   TexturePos="38,188"  Text=""/>
+    <EditRight Type="Text"  ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="189,446,211,468" TexturePos="60,188"  Text=""/>
+    <StorageEditText  Type="Text"  ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="76,446,77,468"   TexturePos="61,188"  Text="" />
+    <Edit Type="EditBox" ID="300003" Rectangle="60,449,207,468" Texture="./UI/Texture/main.gwo" TexturePos="389,527" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" ResponseMouse="0" Number="1" Right="1" MaxText="10" TextFormat="4"/>
+    
+    
+    <MoneyText Type="Text" Rectangle="221,450,235,464" Texture="./UI/Texture/main.gwo" TexturePos="57,213"/>
+   
+    <C0 Type="Button" ID="300010" Rectangle="27,86,68,128" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C1 Type="Button" ID="300011" Rectangle="68,86,110,128" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C2 Type="Button" ID="300012" Rectangle="110,86,152,128" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C3 Type="Button" ID="300013" Rectangle="152,86,194,128" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C4 Type="Button" ID="300014" Rectangle="194,86,237,128" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    
+    <C5 Type="Button" ID="300015" Rectangle="27,128,68,170" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C6 Type="Button" ID="300016" Rectangle="68,128,110,170" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C7 Type="Button" ID="300017" Rectangle="110,128,152,170" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C8 Type="Button" ID="300018" Rectangle="152,128,194,170" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C9 Type="Button" ID="300019" Rectangle="194,128,237,170" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    
+    <C10 Type="Button" ID="300020" Rectangle="27,170,68,212" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C11 Type="Button" ID="300021" Rectangle="68,170,110,212" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C12 Type="Button" ID="300022" Rectangle="110,170,152,212" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C13 Type="Button" ID="300023" Rectangle="152,170,194,212" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C14 Type="Button" ID="300024" Rectangle="194,170,237,212" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    
+    <C15 Type="Button" ID="300025" Rectangle="27,212,68,254" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C16 Type="Button" ID="300026" Rectangle="68,212,110,254" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C17 Type="Button" ID="300027" Rectangle="110,212,152,254" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C18 Type="Button" ID="300028" Rectangle="152,212,194,254" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C19 Type="Button" ID="300029" Rectangle="194,212,237,254" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    
+    <C20 Type="Button" ID="300030" Rectangle="27,254,68,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C21 Type="Button" ID="300031" Rectangle="68,254,110,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C22 Type="Button" ID="300032" Rectangle="110,254,152,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C23 Type="Button" ID="300033" Rectangle="152,254,194,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C24 Type="Button" ID="300034" Rectangle="194,254,237,296" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    
+    <C25 Type="Button" ID="300035" Rectangle="27,296,68,338" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C26 Type="Button" ID="300036" Rectangle="68,296,110,338" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C27 Type="Button" ID="300037" Rectangle="110,296,152,338" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C28 Type="Button" ID="300038" Rectangle="152,296,194,338" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C29 Type="Button" ID="300039" Rectangle="194,296,237,338" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    
+    <C30 Type="Button" ID="300040" Rectangle="27,338,68,380" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C31 Type="Button" ID="300041" Rectangle="68,338,110,380" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C32 Type="Button" ID="300042" Rectangle="110,338,152,380" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C33 Type="Button" ID="300043" Rectangle="152,338,194,380" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C34 Type="Button" ID="300044" Rectangle="194,338,237,380" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    
+    <C35 Type="Button" ID="300045" Rectangle="27,380,68,422" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C36 Type="Button" ID="300046" Rectangle="68,380,110,422" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C37 Type="Button" ID="300047" Rectangle="110,380,152,422" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C38 Type="Button" ID="300048" Rectangle="152,380,194,422" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    <C39 Type="Button" ID="300049" Rectangle="194,380,237,422" Texture="./UI/Texture/main.gwo" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text="" TextFormat="10"/>
+    
+   
+  </Storage>
+</UIConfig>

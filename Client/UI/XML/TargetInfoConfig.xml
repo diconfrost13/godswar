@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：TargetInfoConfig.xml
+		摘    要：选中对象框配置表
+
+		当前版本：1.00
+		作    者：C.D
+		完成日期：2008-03-22  
+ 
+-->
+<UIConfig>
+  <TargetInfo  Type="Window" ID="212000" Modal="0" Rectangle="340,0,603,83" TexturePos="0,0" Texture="./UI/Texture/main.gwo" Visible="0" Text="" >
+    <BackGround1  Template="T_NormalText"   ID="212001" Rectangle="0,0,233,82"    TexturePos="1,873"  />
+    <Name         Template="T_NormalText"   ID="212003" Rectangle="103,13,213,27" TexturePos="0,250"  />
+    <Label        Template="T_NormalText"   ID="212004" Rectangle="233,19,327,29" TexturePos="0,250"  />
+    <Handle       Type="Button" ID="212005" Rectangle="102,50,150,75" TexturePos="451,106"/>
+    <Blood        Template="T_NormalText"   ID="212006" Rectangle="92,34,225,46"  TexturePos="496,896"/>
+    <ftnSparta    Template="T_NormalText"   ID="212007" Rectangle="8,9,60,61"     TexturePos="721,687"/>
+    <ftnAthens    Template="T_NormalText"   ID="212008" Rectangle="8,9,60,61"     TexturePos="668,687"/>
+    <Rank         Template="T_NormalText"   ID="212020" Rectangle="78,62,92,76"   TexturePos="0,250"  />
+  </TargetInfo>
+  <PopMenu Template="T_SimpleWindow" ID="213000"   Rectangle="396,82,492,288"  Visible="0" >
+    <ObjInfo       Template="T_Button4" ID="213001" Rectangle="6,2,89,30"    Text="人物信息" />
+    <TeamInvite    Template="T_Button4" ID="213002" Rectangle="6,30,89,58"   Text="组队邀请" />
+    <RequestTrade  Template="T_Button4" ID="213003" Rectangle="6,58,89,86"   Text="请求交易" />
+    <RequestFriend Template="T_Button4" ID="213004" Rectangle="6,86,89,114"  Text="加为好友" />
+    <MeetScret     Template="T_Button4" ID="213005" Rectangle="6,114,89,142" Text="悄 悄 话" />
+    <CheckStall    Template="T_Button4" ID="213006" Rectangle="6,142,89,170" Text="查看摊位" />
+    <CheckGuild    Template="T_Button4" ID="213007" Rectangle="6,170,89,198" Text="公会邀请" />
+  </PopMenu>
+</UIConfig>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--this is BijouForge config-->
+<BijouForge>
+    <MaterialID1 ID="4200" NextID="4201" MaterialType="1"/>
+    <MaterialID2 ID="4201" NextID="4202" MaterialType="1" MaterialProyAdd="3"/>
+    <MaterialID3 ID="4202" MaterialType="1" MaterialProyAdd="8"/>
+    <MaterialBase1 ID="4210" NextID="4211" MaterialType="2"/>
+    <MaterialBase2 ID="4211" NextID="4212" MaterialType="2" MaterialProyAdd="3"/>
+    <MaterialBase3 ID="4212" MaterialType="2" MaterialProyAdd="8"/>
+    <MaterialAppend1 ID="4220" NextID="4221" MaterialType="3"/>
+    <MaterialAppend2 ID="4221" NextID="4222" MaterialType="3" MaterialProyAdd="3"/>
+    <MaterialAppend3 ID="4222" MaterialType="3" MaterialProyAdd="8"/>
+    <MaterialOdds1 ID="4230" NextID="4231" MaterialType="4" MaterialProyAdd="5"/>
+    <MaterialOdds2 ID="4231" NextID="4232" MaterialType="4" MaterialProyAdd="8"/>
+    <MaterialOdds3 ID="4232" MaterialType="4" MaterialProyAdd="16"/>
+    <MaterialFlee1 ID="4240" NextID="4241" MaterialType="5" MaterialProyAdd="-10"/>
+    <MaterialFlee2 ID="4241" NextID="4242" MaterialType="5"/>
+    <MaterialFlee3 ID="4242" MaterialType="5" MaterialProyAdd="10"/>
+</BijouForge>

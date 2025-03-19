@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+  <Counter Type="Window" ID="310000" Modal="0" Rectangle="490,346,650,538" Texture="./UI/Texture/main.gwo" TexturePos="42,410"   BtnRect="133,0,160,25" BtnPos="314,332" Visible="0">
+    <Max Type="Button" ID="310001" Rectangle="94,82,148,108" Texture="./UI/Texture/main.gwo" TexturePos="394,687"/>
+    <Back Type="Button" ID="310002" Rectangle="94,107,148,133" Texture="./UI/Texture/main.gwo" TexturePos="449,687"/>
+    <Confirm Type="Button" ID="310003" Rectangle="94,132,148,158" Texture="./UI/Texture/main.gwo" TexturePos="504,687"/>
+    <Cancel Type="Button" ID="310004" Rectangle="94,157,148,187" Texture="./UI/Texture/main.gwo" TexturePos="559,687"/>
+    <Edit Type="EditBox" ID="310005" Rectangle="10,42,151,67" Texture="./UI/Texture/main.gwo" TexturePos="842,321" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextOffset="-6,3,0,0" ResponseMouse="0" Number="1" Right="1" MaxText="10"/>
+    <Text Type="Text" ID="310006" Rectangle="65,4,150,20" Texture="./UI/Texture/main.gwo" TexturePos="762,91" Font="SKILL_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <C0 Type="Button" ID="310010" Rectangle="16,157,67,187" Texture="./UI/Texture/main.gwo" TexturePos="314,687"/>
+    <C1 Type="Button" ID="310011" Rectangle="16,132,41,158" Texture="./UI/Texture/main.gwo" TexturePos="71,687"/>
+    <C2 Type="Button" ID="310012" Rectangle="41,132,66,158" Texture="./UI/Texture/main.gwo" TexturePos="97,687"/>
+    <C3 Type="Button" ID="310013" Rectangle="66,132,94,158" Texture="./UI/Texture/main.gwo" TexturePos="123,687"/>
+    <C4 Type="Button" ID="310014" Rectangle="16,107,41,133" Texture="./UI/Texture/main.gwo" TexturePos="152,687"/>
+    <C5 Type="Button" ID="310015" Rectangle="41,107,66,133" Texture="./UI/Texture/main.gwo" TexturePos="178,687"/>
+    <C6 Type="Button" ID="310016" Rectangle="66,107,94,133" Texture="./UI/Texture/main.gwo" TexturePos="204,687"/>
+    <C7 Type="Button" ID="310017" Rectangle="16,82,41,108" Texture="./UI/Texture/main.gwo" TexturePos="233,687"/>
+    <C8 Type="Button" ID="310018" Rectangle="41,82,66,108" Texture="./UI/Texture/main.gwo" TexturePos="259,687"/>
+    <C9 Type="Button" ID="310019" Rectangle="66,82,94,108" Texture="./UI/Texture/main.gwo" TexturePos="285,687"/>
+    <C00 Type="Button" ID="310020" Rectangle="67,157,94,187" Texture="./UI/Texture/main.gwo" TexturePos="366,687"/>
+  </Counter>
+</UIConfig>

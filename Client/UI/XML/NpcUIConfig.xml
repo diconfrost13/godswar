@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- edited with XMLSpy v2007 sp1 (http://www.altova.com) by fox (EMBRACE) -->
+<UIConfig>
+	<NPC Type="Window" ID="170000" modal="0" Rectangle="79,112,368,656" Texture="./UI/Texture/main.gwo" TexturePos="0,0" TexturebtnRectangle="665,128" visible="0">
+		<Scroll Type="Text" Color="255,255,255,255" Rectangle="259,100,281,456" Texture="./UI/Texture/main.gwo" TexturePos="632,90"/>
+		<QuestContainer Type="Container" ID="170001" Rectangle="14,77,256,475" Texture="./UI/Texture/main.gwo" TexturePos="267,624" Texturescroll="./UI/Texture/main.gwo" Texturebutton="./UI/Texture/main.gwo" scrollRectangle="245,23,267,379" Texturescrollpos="632,90" TexturebtnRectangle="599,179">
+			<Text Type="Text" ID="170010" Rectangle="5,0,220,320" Texture="./UI/Texture/main.gwo" TexturePos="645,774" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+			<ListBox Type="ListBox" ID="170011" Rectangle="5,290,220,540" scrollRectangle="0,0,0,0" Texture="./UI/Texture/main.gwo" TexturePos="25,365" Texturescroll="./UI/Texture/main.gwo" Texturescrollpos="632,90" Texturebutton="./UI/Texture/main.gwo" TexturebtnRectangle="599,179" Height="25" Color="255,255,255,100">
+				<list1 Type="ListItem" ID="170100" Texture="./UI/Texture/main.gwo" TexturePos="784,240" itemTexturemask="./UI/Texture/main.gwo" itemTexturemaskpos="300,300" Texturebutton="./UI/Texture/main.gwo">
+					<Text Type="Text" ID="170200" Rectangle="0,0,235,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+				</list1>
+				<list2 Type="ListItem" ID="170101" Texture="./UI/Texture/main.gwo" TexturePos="784,240" itemTexturemask="./UI/Texture/main.gwo" itemTexturemaskpos="300,300" Texturebutton="./UI/Texture/main.gwo">
+					<Text Type="Text" ID="170201" Rectangle="0,0,235,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+				</list2>
+				<list3 Type="ListItem" ID="170102" Texture="./UI/Texture/main.gwo" TexturePos="784,240" itemTexturemask="./UI/Texture/main.gwo" itemTexturemaskpos="300,300" Texturebutton="./UI/Texture/main.gwo">
+					<Text Type="Text" ID="170202" Rectangle="0,0,235,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+				</list3>
+				<list4 Type="ListItem" ID="170103" Texture="./UI/Texture/main.gwo" TexturePos="784,240" itemTexturemask="./UI/Texture/main.gwo" itemTexturemaskpos="300,300" Texturebutton="./UI/Texture/main.gwo">
+					<Text Type="Text" ID="170203" Rectangle="0,0,235,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+				</list4>
+				<list5 Type="ListItem" ID="170104" Texture="./UI/Texture/main.gwo" TexturePos="784,240" itemTexturemask="./UI/Texture/main.gwo" itemTexturemaskpos="300,300" Texturebutton="./UI/Texture/main.gwo">
+					<Text Type="Text" ID="170204" Rectangle="0,0,235,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+				</list5>
+				<list6 Type="ListItem" ID="170105" Texture="./UI/Texture/main.gwo" TexturePos="784,240" itemTexturemask="./UI/Texture/main.gwo" itemTexturemaskpos="300,300" Texturebutton="./UI/Texture/main.gwo">
+					<Text Type="Text" ID="170205" Rectangle="0,0,235,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+				</list6>
+				<list7 Type="ListItem" ID="170106" Texture="./UI/Texture/main.gwo" TexturePos="784,240" itemTexturemask="./UI/Texture/main.gwo" itemTexturemaskpos="300,300" Texturebutton="./UI/Texture/main.gwo">
+					<Text Type="Text" ID="170206" Rectangle="0,0,235,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+				</list7>
+				<list8 Type="ListItem" ID="170107" Texture="./UI/Texture/main.gwo" TexturePos="784,240" itemTexturemask="./UI/Texture/main.gwo" itemTexturemaskpos="300,300" Texturebutton="./UI/Texture/main.gwo">
+					<Text Type="Text" ID="170207" Rectangle="0,0,235,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+				</list8>
+				<list9 Type="ListItem" ID="170108" Texture="./UI/Texture/main.gwo" TexturePos="784,240" itemTexturemask="./UI/Texture/main.gwo" itemTexturemaskpos="300,300" Texturebutton="./UI/Texture/main.gwo">
+					<Text Type="Text" ID="170208" Rectangle="0,0,235,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+				</list9>
+				<list10 Type="ListItem" ID="170109" Texture="./UI/Texture/main.gwo" TexturePos="784,240" itemTexturemask="./UI/Texture/main.gwo" itemTexturemaskpos="300,300" Texturebutton="./UI/Texture/main.gwo">
+					<Text Type="Text" ID="170209" Rectangle="0,0,235,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+				</list10>
+			</ListBox>
+		</QuestContainer>
+		<Up Type="Button" ID="170002" Rectangle="259,79,281,101" Texture="./UI/Texture/main.gwo" TexturePos="609,91"/>
+		<Down Type="Button" ID="170003" Rectangle="259,455,281,477" Texture="./UI/Texture/main.gwo" TexturePos="609,2"/>
+	</NPC>
+	<NPCTrade Type="Window" ID="171000" Rectangle="79,112,368,656" Texture="./UI/Texture/main.gwo" TexturePos="0,0" closebuttonTexture="./UI/Texture/main.gwo" closebuttonRectangle="241,0,288,28" TexturebtnRectangle="665,128" visible="0">
+		<Bags Type="TabBar" ID="171001" Rectangle="23,74,265,498" Texture="./UI/Texture/main.gwo" TexturePos="267,600">
+			<Bag0 Type="Tab" Rectangle="0,0,61,30" Texture="./UI/Texture/main.gwo" Texturetabbtnrect="0,904" buttontopTexture="./UI/Texture/main.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="12,5,47,21">
+				<Item0 Type="Button" ID="171100" Rectangle="16,32,58,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item1 Type="Button" ID="171101" Rectangle="59,32,101,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item2 Type="Button" ID="171102" Rectangle="102,32,144,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item3 Type="Button" ID="171103" Rectangle="145,32,187,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item4 Type="Button" ID="171104" Rectangle="188,32,230,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item5 Type="Button" ID="171105" Rectangle="16,75,58,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item6 Type="Button" ID="171106" Rectangle="59,75,101,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item7 Type="Button" ID="171107" Rectangle="102,75,144,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item8 Type="Button" ID="171108" Rectangle="145,75,187,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item9 Type="Button" ID="171109" Rectangle="188,75,230,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item10 Type="Button" ID="171110" Rectangle="16,118,58,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item11 Type="Button" ID="171111" Rectangle="59,118,101,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item12 Type="Button" ID="171112" Rectangle="102,118,144,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item13 Type="Button" ID="171113" Rectangle="145,118,187,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item14 Type="Button" ID="171114" Rectangle="188,118,230,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item15 Type="Button" ID="171115" Rectangle="16,161,58,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item16 Type="Button" ID="171116" Rectangle="59,161,101,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item17 Type="Button" ID="171117" Rectangle="102,161,144,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item18 Type="Button" ID="171118" Rectangle="145,161,187,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item19 Type="Button" ID="171119" Rectangle="188,161,230,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item20 Type="Button" ID="171120" Rectangle="16,204,58,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item21 Type="Button" ID="171121" Rectangle="59,204,101,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item22 Type="Button" ID="171122" Rectangle="102,204,144,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item23 Type="Button" ID="171123" Rectangle="145,204,187,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item24 Type="Button" ID="171124" Rectangle="188,204,230,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item25 Type="Button" ID="171125" Rectangle="16,247,58,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item26 Type="Button" ID="171126" Rectangle="59,247,101,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item27 Type="Button" ID="171127" Rectangle="102,247,144,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item28 Type="Button" ID="171128" Rectangle="145,247,187,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item29 Type="Button" ID="171129" Rectangle="188,247,230,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item30 Type="Button" ID="171130" Rectangle="16,290,58,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item31 Type="Button" ID="171131" Rectangle="59,290,101,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item32 Type="Button" ID="171132" Rectangle="102,290,144,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item33 Type="Button" ID="171133" Rectangle="145,290,187,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item34 Type="Button" ID="171134" Rectangle="188,290,230,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item35 Type="Button" ID="171135" Rectangle="16,333,58,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item36 Type="Button" ID="171136" Rectangle="59,333,101,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item37 Type="Button" ID="171137" Rectangle="102,333,144,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item38 Type="Button" ID="171138" Rectangle="145,333,187,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item39 Type="Button" ID="171139" Rectangle="188,333,230,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item40 Type="Button" ID="171140" Rectangle="16,376,58,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item41 Type="Button" ID="171141" Rectangle="59,376,101,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item42 Type="Button" ID="171142" Rectangle="102,376,144,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item43 Type="Button" ID="171143" Rectangle="145,376,187,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item44 Type="Button" ID="171144" Rectangle="188,376,230,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+			</Bag0>
+			<Bag1 Type="Tab" Rectangle="61,0,122,30" Texture="./UI/Texture/main.gwo" Texturetabbtnrect="61,904" buttontopTexture="./UI/Texture/main.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="12,5,47,21">
+				<Item0 Type="Button" ID="171200" Rectangle="16,32,58,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item1 Type="Button" ID="171201" Rectangle="59,32,101,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item2 Type="Button" ID="171202" Rectangle="102,32,144,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item3 Type="Button" ID="171203" Rectangle="145,32,187,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item4 Type="Button" ID="171204" Rectangle="188,32,230,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item5 Type="Button" ID="171205" Rectangle="16,75,58,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item6 Type="Button" ID="171206" Rectangle="59,75,101,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item7 Type="Button" ID="171207" Rectangle="102,75,144,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item8 Type="Button" ID="171208" Rectangle="145,75,187,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item9 Type="Button" ID="171209" Rectangle="188,75,230,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item10 Type="Button" ID="171210" Rectangle="16,118,58,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item11 Type="Button" ID="171211" Rectangle="59,118,101,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item12 Type="Button" ID="171212" Rectangle="102,118,144,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item13 Type="Button" ID="171213" Rectangle="145,118,187,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item14 Type="Button" ID="171214" Rectangle="188,118,230,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item15 Type="Button" ID="171215" Rectangle="16,161,58,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item16 Type="Button" ID="171216" Rectangle="59,161,101,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item17 Type="Button" ID="171217" Rectangle="102,161,144,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item18 Type="Button" ID="171218" Rectangle="145,161,187,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item19 Type="Button" ID="171219" Rectangle="188,161,230,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item20 Type="Button" ID="171220" Rectangle="16,204,58,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item21 Type="Button" ID="171221" Rectangle="59,204,101,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item22 Type="Button" ID="171222" Rectangle="102,204,144,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item23 Type="Button" ID="171223" Rectangle="145,204,187,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item24 Type="Button" ID="171224" Rectangle="188,204,230,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item25 Type="Button" ID="171225" Rectangle="16,247,58,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item26 Type="Button" ID="171226" Rectangle="59,247,101,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item27 Type="Button" ID="171227" Rectangle="102,247,144,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item28 Type="Button" ID="171228" Rectangle="145,247,187,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item29 Type="Button" ID="171229" Rectangle="188,247,230,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item30 Type="Button" ID="171230" Rectangle="16,290,58,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item31 Type="Button" ID="171231" Rectangle="59,290,101,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item32 Type="Button" ID="171232" Rectangle="102,290,144,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item33 Type="Button" ID="171233" Rectangle="145,290,187,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item34 Type="Button" ID="171234" Rectangle="188,290,230,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item35 Type="Button" ID="171235" Rectangle="16,333,58,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item36 Type="Button" ID="171236" Rectangle="59,333,101,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item37 Type="Button" ID="171237" Rectangle="102,333,144,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item38 Type="Button" ID="171238" Rectangle="145,333,187,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item39 Type="Button" ID="171239" Rectangle="188,333,230,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item40 Type="Button" ID="171240" Rectangle="16,376,58,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item41 Type="Button" ID="171241" Rectangle="59,376,101,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item42 Type="Button" ID="171242" Rectangle="102,376,144,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item43 Type="Button" ID="171243" Rectangle="145,376,187,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item44 Type="Button" ID="171244" Rectangle="188,376,230,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+			</Bag1>
+			<Bag2 Type="Tab" Rectangle="122,0,183,30" Texture="./UI/Texture/main.gwo" Texturetabbtnrect="122,904" buttontopTexture="./UI/Texture/main.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="12,5,47,21">
+				<Item0 Type="Button" ID="171300" Rectangle="16,32,58,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item1 Type="Button" ID="171301" Rectangle="59,32,101,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item2 Type="Button" ID="171302" Rectangle="102,32,144,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item3 Type="Button" ID="171303" Rectangle="145,32,187,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item4 Type="Button" ID="171304" Rectangle="188,32,230,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item5 Type="Button" ID="171305" Rectangle="16,75,58,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item6 Type="Button" ID="171306" Rectangle="59,75,101,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item7 Type="Button" ID="171307" Rectangle="102,75,144,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item8 Type="Button" ID="171308" Rectangle="145,75,187,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item9 Type="Button" ID="171309" Rectangle="188,75,230,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item10 Type="Button" ID="171310" Rectangle="16,118,58,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item11 Type="Button" ID="171311" Rectangle="59,118,101,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item12 Type="Button" ID="171312" Rectangle="102,118,144,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item13 Type="Button" ID="171313" Rectangle="145,118,187,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item14 Type="Button" ID="171314" Rectangle="188,118,230,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item15 Type="Button" ID="171315" Rectangle="16,161,58,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item16 Type="Button" ID="171316" Rectangle="59,161,101,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item17 Type="Button" ID="171317" Rectangle="102,161,144,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item18 Type="Button" ID="171318" Rectangle="145,161,187,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item19 Type="Button" ID="171319" Rectangle="188,161,230,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item20 Type="Button" ID="171320" Rectangle="16,204,58,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item21 Type="Button" ID="171321" Rectangle="59,204,101,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item22 Type="Button" ID="171322" Rectangle="102,204,144,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item23 Type="Button" ID="171323" Rectangle="145,204,187,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item24 Type="Button" ID="171324" Rectangle="188,204,230,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item25 Type="Button" ID="171325" Rectangle="16,247,58,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item26 Type="Button" ID="171326" Rectangle="59,247,101,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item27 Type="Button" ID="171327" Rectangle="102,247,144,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item28 Type="Button" ID="171328" Rectangle="145,247,187,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item29 Type="Button" ID="171329" Rectangle="188,247,230,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item30 Type="Button" ID="171330" Rectangle="16,290,58,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item31 Type="Button" ID="171331" Rectangle="59,290,101,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item32 Type="Button" ID="171332" Rectangle="102,290,144,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item33 Type="Button" ID="171333" Rectangle="145,290,187,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item34 Type="Button" ID="171334" Rectangle="188,290,230,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item35 Type="Button" ID="171335" Rectangle="16,333,58,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item36 Type="Button" ID="171336" Rectangle="59,333,101,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item37 Type="Button" ID="171337" Rectangle="102,333,144,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item38 Type="Button" ID="171338" Rectangle="145,333,187,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item39 Type="Button" ID="171339" Rectangle="188,333,230,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item40 Type="Button" ID="171340" Rectangle="16,376,58,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item41 Type="Button" ID="171341" Rectangle="59,376,101,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item42 Type="Button" ID="171342" Rectangle="102,376,144,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item43 Type="Button" ID="171343" Rectangle="145,376,187,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item44 Type="Button" ID="171344" Rectangle="188,376,230,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+			</Bag2>
+			<Bag3 Type="Tab" Rectangle="183,0,244,30" Texture="./UI/Texture/main.gwo" Texturetabbtnrect="183,904" buttontopTexture="./UI/Texture/main.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="12,5,47,21">
+				<Item0 Type="Button" ID="171400" Rectangle="16,32,58,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item1 Type="Button" ID="171401" Rectangle="59,32,101,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item2 Type="Button" ID="171402" Rectangle="102,32,144,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item3 Type="Button" ID="171403" Rectangle="145,32,187,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item4 Type="Button" ID="171404" Rectangle="188,32,230,74" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item5 Type="Button" ID="171405" Rectangle="16,75,58,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item6 Type="Button" ID="171406" Rectangle="59,75,101,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item7 Type="Button" ID="171407" Rectangle="102,75,144,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item8 Type="Button" ID="171408" Rectangle="145,75,187,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item9 Type="Button" ID="171409" Rectangle="188,75,230,117" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item10 Type="Button" ID="171410" Rectangle="16,118,58,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item11 Type="Button" ID="171411" Rectangle="59,118,101,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item12 Type="Button" ID="171412" Rectangle="102,118,144,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item13 Type="Button" ID="171413" Rectangle="145,118,187,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item14 Type="Button" ID="171414" Rectangle="188,118,230,160" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item15 Type="Button" ID="171415" Rectangle="16,161,58,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item16 Type="Button" ID="171416" Rectangle="59,161,101,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item17 Type="Button" ID="171417" Rectangle="102,161,144,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item18 Type="Button" ID="171418" Rectangle="145,161,187,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item19 Type="Button" ID="171419" Rectangle="188,161,230,203" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item20 Type="Button" ID="171420" Rectangle="16,204,58,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item21 Type="Button" ID="171421" Rectangle="59,204,101,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item22 Type="Button" ID="171422" Rectangle="102,204,144,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item23 Type="Button" ID="171423" Rectangle="145,204,187,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item24 Type="Button" ID="171424" Rectangle="188,204,230,246" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item25 Type="Button" ID="171425" Rectangle="16,247,58,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item26 Type="Button" ID="171426" Rectangle="59,247,101,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item27 Type="Button" ID="171427" Rectangle="102,247,144,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item28 Type="Button" ID="171428" Rectangle="145,247,187,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item29 Type="Button" ID="171429" Rectangle="188,247,230,289" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item30 Type="Button" ID="171430" Rectangle="16,290,58,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item31 Type="Button" ID="171431" Rectangle="59,290,101,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item32 Type="Button" ID="171432" Rectangle="102,290,144,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item33 Type="Button" ID="171433" Rectangle="145,290,187,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item34 Type="Button" ID="171434" Rectangle="188,290,230,332" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item35 Type="Button" ID="171435" Rectangle="16,333,58,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item36 Type="Button" ID="171436" Rectangle="59,333,101,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item37 Type="Button" ID="171437" Rectangle="102,333,144,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item38 Type="Button" ID="171438" Rectangle="145,333,187,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item39 Type="Button" ID="171439" Rectangle="188,333,230,375" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item40 Type="Button" ID="171440" Rectangle="16,376,58,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item41 Type="Button" ID="171441" Rectangle="59,376,101,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item42 Type="Button" ID="171442" Rectangle="102,376,144,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item43 Type="Button" ID="171443" Rectangle="145,376,187,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+				<Item44 Type="Button" ID="171444" Rectangle="188,376,230,418" Texture="./UI/Texture/main.gwo" TexturePos="566,0" buttontopTexture="./UI/Texture/icon.gwo" buttontopTexturerect="982,982" btntopTexturerectangel="3,3,39,39"/>
+			</Bag3>
+		</Bags>
+	</NPCTrade>
+</UIConfig>

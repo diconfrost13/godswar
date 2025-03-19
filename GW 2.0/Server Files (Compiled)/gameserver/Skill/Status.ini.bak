@@ -1,0 +1,1003 @@
+状态
+[parameter]
+Count=2000
+
+[Status]
+Effect0=HaltIntonate;   中断别人吟唱(bool)(特殊效果)
+Effect1=ReboundDamage;  返还伤害(float)(特殊效果)
+Effect2=NonMoving;  不能移动
+Effect3=NonMagicUsing;  不能使用魔法(bool)
+Effect4=NonZSUsing; 不能使用招式(bool)
+Effect5=NonAttackUsing; 不能使用普通攻击(bool)
+Effect6=NonPropUsing;   不能使用道具(bool)
+Effect7=ReturnDamage;   返还伤害(float)
+Effect8=ChangeIntonateTime; 改变吟唱时间(float)
+Effect9=BeCure; 受到治疗(float)
+Effect10=UseCure;   使用治疗(float)
+Effect11=BeMagicDamage; 受到魔法伤害(float)
+Effect12=CreateMagicDamage; 造成魔法伤害(float)
+Effect13=BeAttackDamage;    受到物理伤害(float)
+Effect14=CreateAttackDamage;    造成物理伤害(float)
+Effect15=GetEXP;    得到经验值(float)
+Effect16=MPMax; 魔法上限(float)
+Effect17=HPMax; 生命上限(float)
+Effect18=Hit;   命中(float)
+Effect19=Duck;  闪避(float)
+Effect20=Defend;    防御(float)
+Effect21=Attack;    攻击(float)
+Effect22=CirtAdd;   暴击命中
+Effect23=CirtDefend;    暴击加成
+Effect24=MagicAttack;   魔法攻击
+Effect25=MagicDefend;   魔法防御
+Effect26=AddHP; 增加HP(int)
+Effect27=DecHP; 减少HP(int)
+Effect28=AddMP; 增加MP(int)
+Effect29=DecMP; 减少MP(int)
+Effect30=ChangeMagicSuccedOdds; 改变状态类魔法成功率(float)
+Effect31=ChangeMagicDefendOdds; 改变状态类魔法抵抗率(float)
+
+[10]
+Name=Bleeding
+Style=0
+Kind=1
+Priority=1
+Effect=27
+Values=24
+Interval=2
+Time=6
+Note=Causes damage per second
+IconPos=612,72
+IconSize=36,36
+EffectDisplay=-1
+
+[11]
+Name=Bleeding
+Style=0
+Kind=1
+Priority=2
+Effect=27
+Values=40
+Interval=2
+Time=6
+Note=Causes damage per second
+IconPos=612,72
+IconSize=36,36
+EffectDisplay=-1
+
+[12]
+Name=Bleeding
+Style=0
+Kind=1
+Priority=3
+Effect=27
+Values=90
+Interval=2
+Time=6
+Note=Causes damage per second
+IconPos=612,72
+IconSize=36,36
+EffectDisplay=-1
+
+[13]
+Name=Bleeding
+Style=0
+Kind=1
+Priority=4
+Effect=27
+Values=140
+Interval=2
+Time=6
+Note=Causes damage per second
+IconPos=612,72
+IconSize=36,36
+EffectDisplay=-1
+
+[14]
+Name=Bleeding
+Style=0
+Kind=1
+Priority=5
+Effect=27
+Values=60
+Interval=2
+Time=6
+Note=Causes damage per second
+IconPos=612,72
+IconSize=36,36
+EffectDisplay=-1
+
+[15]
+Name=Bleeding
+Style=0
+Kind=1
+Priority=6
+Effect=27
+Values=100
+Interval=2
+Time=6
+Note=Causes damage per second
+IconPos=612,72
+IconSize=36,36
+EffectDisplay=-1
+
+[16]
+Name=Bleeding
+Style=0
+Kind=1
+Priority=7
+Effect=27
+Values=180
+Interval=2
+Time=6
+Note=Causes damage per second
+IconPos=612,72
+IconSize=36,36
+EffectDisplay=-1
+
+[17]
+Name=Bleeding
+Style=0
+Kind=1
+Priority=8
+Effect=27
+Values=250
+Interval=2
+Time=6
+Note=Causes damage per second
+IconPos=612,72
+IconSize=36,36
+EffectDisplay=-1
+
+[18]
+Name=Bleeding
+Style=0
+Kind=1
+Priority=9
+Effect=27
+Values=200
+Interval=2
+Time=15
+Note=Causes damage per second
+IconPos=612,72
+IconSize=36,36
+EffectDisplay=-1
+
+[19]
+Name=Bleeding
+Style=0
+Kind=1
+Priority=10
+Effect=27
+Values=300
+Interval=2
+Time=15
+Note=Causes damage per second
+IconPos=612,72
+IconSize=36,36
+EffectDisplay=-1
+
+[40]
+Name=Fire Corruption
+Style=0
+Kind=2
+Priority=1
+Effect=27
+Values=60
+Interval=2
+Time=20
+Note=Causes fire damage continually
+IconPos=252,72
+IconSize=36,36
+EffectDisplay=-1
+
+[41]
+Name=Fire Corruption
+Style=0
+Kind=2
+Priority=2
+Effect=27
+Values=120
+Interval=2
+Time=20
+Note=Causes fire damage continually
+IconPos=252,72
+IconSize=36,36
+EffectDisplay=-1
+
+[42]
+Name=Fire Corruption
+Style=0
+Kind=2
+Priority=3
+Effect=27
+Values=210
+Interval=2
+Time=20
+Note=Causes fire damage continually
+IconPos=252,72
+IconSize=36,36
+EffectDisplay=-1
+
+[43]
+Name=Fire Corruption
+Style=0
+Kind=2
+Priority=4
+Effect=27
+Values=160
+Interval=2
+Time=20
+Note=Causes fire damage continually
+IconPos=252,72
+IconSize=36,36
+EffectDisplay=-1
+
+[44]
+Name=Fire Corruption
+Style=0
+Kind=2
+Priority=5
+Effect=27
+Values=240
+Interval=2
+Time=20
+Note=Causes fire damage continually
+IconPos=252,72
+IconSize=36,36
+EffectDisplay=-1
+
+[45]
+Name=Fire Corruption
+Style=0
+Kind=2
+Priority=6
+Effect=27
+Values=280
+Interval=2
+Time=20
+Note=Causes fire damage continually
+IconPos=252,72
+IconSize=36,36
+EffectDisplay=-1
+
+[70]
+Name=Bee Venom
+Style=0
+Kind=3
+Priority=1
+Effect=27
+Values=45
+Interval=2
+Time=30
+Note=Causes damage per second
+IconPos=252,36
+IconSize=36,36
+EffectDisplay=-1
+
+[100]
+Name=Armor Decreased
+Style=0
+Kind=4
+Priority=1
+Effect=20,25
+Values=-30,-15
+Interval=0,0
+Time=20
+Note=Armor reduced
+IconPos=144,36
+IconSize=36,36
+EffectDisplay=-1
+
+[101]
+Name=Armor Decreased
+Style=0
+Kind=4
+Priority=2
+Effect=20,25
+Values=-70,-35
+Interval=0,0
+Time=20
+Note=Armor reduced
+IconPos=144,36
+IconSize=36,36
+EffectDisplay=-1
+
+[102]
+Name=Armor Decreased
+Style=0
+Kind=4
+Priority=3
+Effect=20,25
+Values=-120,-60
+Interval=0,0
+Time=20
+Note=Armor reduced
+IconPos=144,36
+IconSize=36,36
+EffectDisplay=-1
+
+[103]
+Name=Armor Decreased
+Style=0
+Kind=4
+Priority=4
+Effect=20,25
+Values=-200,-100
+Interval=0,0
+Time=20
+Note=Armor reduced
+IconPos=144,36
+IconSize=36,36
+EffectDisplay=-1
+
+[104]
+Name=Armor Decreased
+Style=0
+Kind=4
+Priority=5
+Effect=20,25
+Values=-300,-150
+Interval=0,0
+Time=20
+Note=Armor reduced
+IconPos=144,36
+IconSize=36,36
+EffectDisplay=-1
+
+[105]
+Name=Armor Decreased
+Style=0
+Kind=4
+Priority=6
+Effect=20,25
+Values=-500,-250
+Interval=0,0
+Time=12
+Note=Armor reduced
+IconPos=144,36
+IconSize=36,36
+EffectDisplay=-1
+
+[106]
+Name=Armor Decreased
+Style=0
+Kind=4
+Priority=7
+Effect=20,25
+Values=-1000,-500
+Interval=0,0
+Time=12
+Note=Armor reduced
+IconPos=144,36
+IconSize=36,36
+EffectDisplay=-1
+
+[130]
+Name=Internal Injury
+Style=0
+Kind=5
+Priority=1
+Effect=13
+Values=-0.1
+Interval=0
+Time=12
+Note=Physical damage taken increased
+IconPos=108,36
+IconSize=36,36
+EffectDisplay=-1
+
+[131]
+Name=Internal Injury
+Style=0
+Kind=5
+Priority=2
+Effect=13
+Values=-0.1
+Interval=0
+Time=20
+Note=Physical damage taken increased
+IconPos=108,36
+IconSize=36,36
+EffectDisplay=-1
+
+[132]
+Name=Internal Injury
+Style=0
+Kind=5
+Priority=3
+Effect=13
+Values=-0.15
+Interval=0
+Time=12
+Note=Physical damage taken increased
+IconPos=108,36
+IconSize=36,36
+EffectDisplay=-1
+
+[133]
+Name=Internal Injury
+Style=0
+Kind=5
+Priority=4
+Effect=13
+Values=-0.15
+Interval=0
+Time=20
+Note=Physical damage taken increased
+IconPos=108,36
+IconSize=36,36
+EffectDisplay=-1
+
+[134]
+Name=Weakness
+Style=0
+Kind=5
+Priority=5
+Effect=13
+Values=-.1
+Interval=0
+Time=12
+Note=Physical damage taken increased
+IconPos=108,36
+IconSize=36,36
+EffectDisplay=-1
+
+[135]
+Name=Weakness
+Style=0
+Kind=5
+Priority=6
+Effect=13
+Values=-.1
+Interval=0
+Time=20
+Note=Physical damage taken increased
+IconPos=108,36
+IconSize=36,36
+EffectDisplay=-1
+
+[136]
+Name=Weakness
+Style=0
+Kind=5
+Priority=7
+Effect=13
+Values=-0.15
+Interval=0
+Time=12
+Note=Physical damage taken increased
+IconPos=108,36
+IconSize=36,36
+EffectDisplay=-1
+
+[137]
+Name=Weakness
+Style=0
+Kind=5
+Priority=8
+Effect=13
+Values=-0.15
+Interval=0
+Time=20
+Note=Physical damage taken increased
+IconPos=108,36
+IconSize=36,36
+EffectDisplay=-1
+
+[160]
+Name=Lesser Holy Ward
+Style=1
+Kind=6
+Priority=1
+Effect=13,11
+Values=0.1,-0.1
+Interval=0,0
+Time=120
+Note=Reduced physical damage.
+IconPos=396,72
+IconSize=36,36
+EffectDisplay=5002
+
+[161]
+Name=Holy Ward
+Style=1
+Kind=6
+Priority=2
+Effect=13,11
+Values=0.13,-0.13
+Interval=0,0
+Time=120
+Note=Reduced physical damage.
+IconPos=396,72
+IconSize=36,36
+EffectDisplay=5002
+
+[162]
+Name=Greater Holy Ward
+Style=1
+Kind=6
+Priority=3
+Effect=13,11
+Values=0.16,-0.16
+Interval=0,0
+Time=150
+Note=Reduced physical and magical damage.
+IconPos=396,72
+IconSize=36,36
+EffectDisplay=5002
+
+[163]
+Name=Major Holy Ward
+Style=1
+Kind=6
+Priority=4
+Effect=13,11
+Values=0.2,-0.2
+Interval=0,0
+Time=180
+Note=Reduced physical and magical damage.
+IconPos=396,72
+IconSize=36,36
+EffectDisplay=5002
+
+[164]
+Name=Super Holy Ward
+Style=1
+Kind=6
+Priority=5
+Effect=13,11
+Values=0.25,-0.25
+Interval=0,0
+Time=240
+Note=Reduced physical and magical damage.
+IconPos=396,72
+IconSize=36,36
+EffectDisplay=5002
+
+[200]
+Name=Lesser Sacred Zeal
+Style=1
+Kind=7
+Priority=1
+Effect=18,22
+Values=10,4
+Interval=0,0
+Time=120
+Note=Hit and critical chance increased
+IconPos=468,72
+IconSize=36,36
+EffectDisplay=-1
+
+[201]
+Name=Sacred Zeal
+Style=1
+Kind=7
+Priority=2
+Effect=18,22
+Values=20,8
+Interval=0,0
+Time=120
+Note=Hit and critical chance increased
+IconPos=468,72
+IconSize=36,36
+EffectDisplay=-1
+
+[202]
+Name=Greater Sacred Zeal
+Style=1
+Kind=7
+Priority=3
+Effect=18,22
+Values=30,12
+Interval=0,0
+Time=150
+Note=Hit and critical chance increased
+IconPos=468,72
+IconSize=36,36
+EffectDisplay=-1
+
+[203]
+Name=Major Sacred Zeal
+Style=1
+Kind=7
+Priority=4
+Effect=18,22
+Values=45,18
+Interval=0,0
+Time=180
+Note=Hit and critical chance increased
+IconPos=468,72
+IconSize=36,36
+EffectDisplay=-1
+
+[204]
+Name=Super Sacred Zeal
+Style=1
+Kind=7
+Priority=5
+Effect=18,22
+Values=60,24
+Interval=0,0
+Time=240
+Note=Hit and critical chance increased
+IconPos=468,72
+IconSize=36,36
+EffectDisplay=-1
+
+[230]
+Name=Lesser Five-star Form
+Style=1
+Kind=8
+Priority=1
+Effect=13,11
+Values=0.08,0.1
+Interval=0,0
+Time=120
+Note=Magical and physical damage reduced
+IconPos=36,0
+IconSize=36,36
+EffectDisplay=5007
+
+[231]
+Name=Five-star Form
+Style=1
+Kind=8
+Priority=2
+Effect=13,11
+Values=0.1,0.15
+Interval=0,0
+Time=120
+Note=Magical and physical damage reduced
+IconPos=36,0
+IconSize=36,36
+EffectDisplay=5007
+
+[232]
+Name=Greater Five-star Form
+Style=1
+Kind=8
+Priority=3
+Effect=13,11
+Values=0.12,0.2
+Interval=0,0
+Time=150
+Note=Magical and physical damage reduced
+IconPos=36,0
+IconSize=36,36
+EffectDisplay=5007
+
+[233]
+Name=Major Five-star Form
+Style=1
+Kind=8
+Priority=4
+Effect=13,11
+Values=0.15,0.27
+Interval=0,0
+Time=180
+Note=Magical and physical damage reduced
+IconPos=36,0
+IconSize=36,36
+EffectDisplay=5007
+
+[234]
+Name=Super Five-star Form
+Style=1
+Kind=8
+Priority=5
+Effect=13,11
+Values=0.2,0.35
+Interval=0,0
+Time=240
+Note=Magical and physical damage reduced
+IconPos=36,0
+IconSize=36,36
+EffectDisplay=5007
+
+[260]
+Name=Lesser Mana Shield
+Style=1
+Kind=9
+Priority=1
+Effect=20,25
+Values=14,6
+Interval=0,0
+Time=120
+Note=Physical and magical defense increased
+IconPos=936,72
+IconSize=36,36
+EffectDisplay=-1
+
+[261]
+Name=Mana Shield
+Style=1
+Kind=9
+Priority=2
+Effect=20,25
+Values=38,18
+Interval=0,0
+Time=120
+Note=Physical and magical defense increased
+IconPos=936,72
+IconSize=36,36
+EffectDisplay=-1
+
+[262]
+Name=Greater Mana Shield
+Style=1
+Kind=9
+Priority=3
+Effect=20,25
+Values=70,30
+Interval=0,0
+Time=150
+Note=Physical and magical defense increased
+IconPos=936,72
+IconSize=36,36
+EffectDisplay=-1
+
+[263]
+Name=Major Mana Shield
+Style=1
+Kind=9
+Priority=4
+Effect=20,25
+Values=125,60
+Interval=0,0
+Time=180
+Note=Physical and magical defense increased
+IconPos=936,72
+IconSize=36,36
+EffectDisplay=-1
+
+[264]
+Name=Super Mana Shield
+Style=1
+Kind=9
+Priority=5
+Effect=20,25
+Values=200,95
+Interval=0,0
+Time=240
+Note=Physical and magical defense increased
+IconPos=936,72
+IconSize=36,36
+EffectDisplay=-1
+
+[270]
+Name=Lesser Gaia Care
+Style=1
+Kind=10
+Priority=1
+Effect=19
+Values=3000
+Interval=0
+Time=5
+Note=Dodge chance increased
+IconPos=324,0
+IconSize=36,36
+EffectDisplay=5008
+
+[271]
+Name=Gaia Care
+Style=1
+Kind=10
+Priority=2
+Effect=19
+Values=3000
+Interval=0
+Time=5
+Note=Dodge chance increased
+IconPos=324,0
+IconSize=36,36
+EffectDisplay=5008
+
+[272]
+Name=Greater Gaia Care
+Style=1
+Kind=10
+Priority=3
+Effect=19
+Values=3000
+Interval=0
+Time=7
+Note=Dodge chance increased
+IconPos=324,0
+IconSize=36,36
+EffectDisplay=5008
+
+[273]
+Name=Major Gaia Care
+Style=1
+Kind=10
+Priority=4
+Effect=19
+Values=3000
+Interval=0
+Time=8
+Note=Dodge chance increased
+IconPos=324,0
+IconSize=36,36
+EffectDisplay=5008
+
+[274]
+Name=Super Gaia Care
+Style=1
+Kind=10
+Priority=5
+Effect=19
+Values=3000
+Interval=0
+Time=10
+Note=Dodge chance increased
+IconPos=324,0
+IconSize=36,36
+EffectDisplay=5008
+
+[299]
+Name=Freezing
+Style=0
+Kind=10
+Priority=1
+Effect=0,2
+Values=1,1
+Interval=0,0
+Time=2
+Note=Frozen in place and spell casting interrupted
+IconPos=648,72
+IconSize=36,36
+EffectDisplay=5004
+
+[300]
+Name=Freezing
+Style=0
+Kind=10
+Priority=1
+Effect=0,2
+Values=1,1
+Interval=0,0
+Time=2
+Note=Frozen in place and spell casting interrupted
+IconPos=648,72
+IconSize=36,36
+EffectDisplay=-1
+
+[301]
+Name=Freezing
+Style=0
+Kind=10
+Priority=1
+Effect=0,2
+Values=1,1
+Interval=0,0
+Time=5
+Note=Frozen in place and spell casting interrupted
+IconPos=648,72
+IconSize=36,36
+EffectDisplay=-1
+
+[330]
+Name=Stun
+Style=0
+Kind=11
+Priority=1
+Effect=0,2,3,4,5,6
+Values=1,1,1,1,1,1
+Interval=0,0,0,0,0,0
+Time=2
+Note=Stunned
+IconPos=252,108
+IconSize=36,36
+EffectDisplay=5003
+
+[331]
+Name=Stun
+Style=0
+Kind=11
+Priority=1
+Effect=0,2,3,4,5,6
+Values=1,1,1,1,1,1
+Interval=0,0,0,0,0,0
+Time=3
+Note=Stunned
+IconPos=252,108
+IconSize=36,36
+EffectDisplay=5003
+
+[360]
+Name=Silence
+Style=0
+Kind=12
+Priority=1
+Effect=3,4
+Values=1,1
+Interval=0,0
+Time=10
+Note=Silenced
+IconPos=540,72
+IconSize=36,36
+EffectDisplay=-1
+
+[400]
+Name=Shackle
+Style=0
+Kind=13
+Priority=1
+Effect=0,2,3,4,5,6,11,13
+Values=1,1,1,1,1,1,0.5,0.5
+Interval=0,0,0,0,0,0,0,0
+Time=12
+Note=Shackled. Damage taken reduced.
+IconPos=900,72
+IconSize=36,36
+EffectDisplay=5001
+
+[401]
+Name=Shackle
+Style=0
+Kind=13
+Priority=1
+Effect=0,2,3,4,5,6
+Values=1,1,1,1,1,1
+Interval=0,0,0,0,0,0
+Time=3
+Note=Shackled
+IconPos=900,72
+IconSize=36,36
+EffectDisplay=5001
+
+[402]
+Name=Freezing
+Style=0
+Kind=13
+Priority=1
+Effect=0,2,3,4,5,6
+Values=1,1,1,1,1,1
+Interval=0,0,0,0,0,0
+Time=3
+Note=Frozen in place
+IconPos=540,0
+IconSize=36,36
+EffectDisplay=5005
+
+[500]
+Name=Experience Bonus
+Style=1
+Kind=14
+Priority=1
+Effect=15
+Values=0.2
+Interval=0
+Time=7200
+Note=Experience gain increased by 60%
+IconPos=324,72
+IconSize=36,36
+EffectDisplay=-1
+
+[520]
+Name=Durative Healing
+Style=1
+Kind=15
+Priority=1
+Effect=26
+Values=500
+Interval=1
+Time=30
+Note=Heals 500 damage per second
+IconPos=324,72
+IconSize=36,36
+EffectDisplay=-1
+
+[540]
+Name=Blessed Weapon
+Style=1
+Kind=16
+Priority=1
+Effect=12,14
+Values=0.3,0.3
+Interval=0,0
+Time=60
+Note=Weapon improved
+IconPos=324,72
+IconSize=36,36
+EffectDisplay=-1

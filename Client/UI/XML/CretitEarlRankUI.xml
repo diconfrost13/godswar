@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：CretitEarlRankUI.xml
+		摘    要：官职和俸禄的领取配置表
+
+		当前版本：1.00
+		作    者：Tavia
+		完成日期：2008-03-30
+ 
+-->
+<UIConfig>
+  <CretitEarlRank Template="T_NormalWindow" ID="390000" Rectangle="80,112,365,456"  BtnRect="240,13,278,50" BtnPos="0,80" Visible="1">
+
+    <RewardTitle Type="Text" ID="-1" Font="MainFont14" FontColor="DEFAULT_TEXTCOLOR" Rectangle="20,80,278,110" Text="你现在可以领取"/>
+    <RewardMoneyText Type="Text" ID="-1" Font="MainFont14" FontColor="DEFAULT_TEXTCOLOR" Rectangle="20,110,100,140" Text="银币："/>
+    <RewardMoney Type="Text" ID="390001" Font="MainFont14" FontColor="DEFAULT_TEXTCOLOR" Rectangle="120,110,278,140" Text=""/>
+    <RewardExpText Type="Text" ID="-1" Font="MainFont14" FontColor="DEFAULT_TEXTCOLOR" Rectangle="20,140,100,170" Text="经验："/>
+    <RewardExp Type="Text" ID="390002" Font="MainFont14" FontColor="DEFAULT_TEXTCOLOR" Rectangle="120,140,278,170" Text=""/>
+    <RewardItemText Type="Text" ID="-1" Font="MainFont14" FontColor="DEFAULT_TEXTCOLOR" Rectangle="20,170,278,200" Text="以及道具："/>
+
+
+    <RewardItem1 Type="Button" ID="390100" Rectangle="25,200,61,236" TexturePos="566,0" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="MainFont14" FontColor="DEFAULT_TEXTCOLOR"/>
+    <RewardItem2 Type="Button" ID="390101" Rectangle="70,200,106,236" TexturePos="566,0" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="MainFont14" FontColor="DEFAULT_TEXTCOLOR"/>
+    <RewardItem3 Type="Button" ID="390102" Rectangle="115,200,151,236" Texture="./UI/Texture/main.gwo" TexturePos="566,0" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="MainFont14" FontColor="DEFAULT_TEXTCOLOR"/>
+    <RewardItem4 Type="Button" ID="390103" Rectangle="160,200,196,236" Texture="./UI/Texture/main.gwo" TexturePos="566,0" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="MainFont14" FontColor="DEFAULT_TEXTCOLOR"/>
+
+    <Ok Template="T_Button2" ID="390020" Rectangle="50,300,111,327" Text="确定" Font="MainFont14" FontColor="DEFAULT_TEXTCOLOR"/>
+    <Cancel Template="T_Button2" ID="390021" Rectangle="184,300,245,327" Text="取消" Font="MainFont14" FontColor="DEFAULT_TEXTCOLOR"/>
+
+  </CretitEarlRank>
+</UIConfig>

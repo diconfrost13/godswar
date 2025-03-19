@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：GodwardMapUI.xml
+		摘    要：世界地图配置表
+
+		当前版本：1.00
+		作    者：Tavia
+		完成日期：2008-03-27
+ 
+-->
+<UIConfig>
+  <!--<GodwardMapUI Type="Window" ID="410000" Rectangle="256,128,768,640" Visible="0" Text="" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR">-->
+  <GodwardMapUI Template="T_NormalWindow" ID="410000" Rectangle="256,128,802,722" Layer="0"  Visible="0" >
+
+    <!--世界地图按钮-->
+    <Zoomtn Template="T_Button4" ID="411111"  Rectangle="370,17,451,43"  Text="世界地图"/>
+    <!--显示设置按钮-->
+    <ViewSet Template="T_Button4" ID="411113"  Rectangle="270,17,351,43"  Text="显示设置"/>
+
+    <!--关闭按钮-->
+    <CloseBtn Template="T_CloseButton" ID="411112" Rectangle="480,13,517,50" Text=""/>
+    
+    <TempWindow Type="Window" ID="411000" Rectangle="17,72,529,584" >
+    </TempWindow>
+
+  </GodwardMapUI>
+
+  <GodwardButMap Type="Window" ID="440100" Layer="0" Enable="0" Rectangle="273,200,785,712" Visible="0" Text="" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR">
+    <!--雅典0-->
+    <Athens Type="Button" ID="440000" Rectangle="394,347,422,375" TexturePos="266,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <!--斯巴达1-->
+    <Sparta Type="Button" ID="440001" Rectangle="207,457,235,485" TexturePos="266,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <!--雅典近郊2-->
+    <Athens_Newbie Type="Button" ID="440002" Rectangle="417,341,437,361" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <!--马拉松3-->
+    <Marathon_All Type="Button" ID="440003" Rectangle="408,315,428,335" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <!--帕尼萨4-->
+    <Parnitha_1 Type="Button" ID="440004" Rectangle="370,277,390,297" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <!--布拉底亚5-->
+    <Plataea_All Type="Button" ID="440005" Rectangle="335,280,355,300" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <!--迈加拉6-->
+    <Megara_All Type="Button" ID="440006" Rectangle="332,297,352,317" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <!--科林斯地峡7-->
+    <Isthmus_of_Corinth_All Type="Button" ID="440007" Rectangle="309,307,329,327" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <!--阿格利司8-->
+    <Argolis_All Type="Button" ID="440008" Rectangle="293,336,313,356" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <!--德尔韦尼9-->
+    <Derveni_All Type="Button" ID="440009" Rectangle="286,308,306,328" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <!--尼米亚10-->
+    <Nemea_1 Type="Button" ID="440010" Rectangle="208,373,228,393" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <!--伯罗奔尼撒11-->
+    <Peloponnese_All Type="Button" ID="440011" Rectangle="181,424,201,444" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+    <!--斯巴达郊外12-->
+    <Sparta_Newbie Type="Button" ID="440012" Rectangle="242,458,262,478" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+
+    <!--奥林匹斯圣山13-->
+    <!--<Sparta_Newbie Type="Button" ID="440013" Rectangle="222,61,242,81" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>-->
+    <!--埃拉松14-->
+    <!--<Sparta_Newbie Type="Button" ID="440014" Rectangle="241,109,261,129" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>-->
+    <!--拉里萨15-->
+    <!--<Sparta_Newbie Type="Button" ID="440015" Rectangle="173,137,193,157" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>-->
+    <!--底比斯16-->
+    <!--<Sparta_Newbie Type="Button" ID="440016" Rectangle="223,189,243,209" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>-->
+    <!--德尔斐圣林17-->
+    <!--<Sparta_Newbie Type="Button" ID="440017" Rectangle="185,224,205,244" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>-->
+    <!--温泉关18-->
+    <!--<Sparta_Newbie Type="Button" ID="440018" Rectangle="295,235,315,255" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>-->
+    <!--帕尼萨港口19-->
+    <!--<Sparta_Newbie Type="Button" ID="440019" Rectangle="379,248,399,268" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>-->
+    <!--迈锡尼20-->
+    <!--<Sparta_Newbie Type="Button" ID="440020" Rectangle="265,324,285,344" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>-->
+    <!--奥林匹亚21-->
+    <!--<Sparta_Newbie Type="Button" ID="440021" Rectangle="121,335,141,355" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>-->
+    <!--尼米亚森林22-->
+    <!--<Sparta_Newbie Type="Button" ID="440022" Rectangle="179,359,199,379" TexturePos="294,80" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text=""/>-->
+
+  </GodwardButMap>
+  <GodwardHintWin Type="Window" ID="440050" Layer="1" Enable="0" Rectangle="273,200,785,712" Visible="0" Text="" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR">
+
+  </GodwardHintWin>
+
+
+</UIConfig>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+	<Script File="Interface/base/message/message.lua"/>
+	<MessageUI Type="Window" CanHovered="1" Enable="0" ID="1" Texture="UI/Texture/message.tga" TexturePos="0,893" Rectangle="337,318,687,449" Visible="1" OnLoad="Message_Onload()" OnEvent="Message_OnEvent()">
+		<Button Type="Button" Parent="MessageUI" Texture="UI/Texture/message.tga" TexturePos="680,420" Rectangle="146,100,204,128"/>
+		<Text Type="Text" Parent="MessageUI" Text="很好!" Rectangle="3,60,340,110" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="1"/>
+	</MessageUI>
+</UIConfig>

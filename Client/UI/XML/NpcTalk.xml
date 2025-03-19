@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：
+		摘    要：npc对话框
+
+		当前版本：1.00
+		作    者：赖滔
+		完成日期：2008-03-18  
+  		Why are you looking at this?
+		Alright, gtfo.
+		-iceblade112
+-->
+<UIConfig>
+	<NPC Template="T_NormalWindow" ID="170000" Modal="0" Rectangle="79,112,342,638"  BtnRect="196,13,234,50" BtnPos="0,80" Visible="0">
+		
+    <Scroll Type="Text"  Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="259,100,281,456" Texture="./UI/Texture/main.gwo" TexturePos="632,90"/>
+    
+    <UpButtonTop    Type="Text"            ID="-1"     Texture="./UI/Texture/main.gwo" Rectangle="222,72,246,96" TexturePos="929,940"  Text="" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <BscrollMidMy     Type="Text"            ID="-1"    Texture="./UI/Texture/main.gwo" Rectangle="222,96,246,97" TexturePos="929,967"  Text="" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <DownButtonBtm  Type="Text"            ID="-1"    Texture="./UI/Texture/main.gwo" Rectangle="222,493,246,517" TexturePos="929,970"  Text="" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+
+    <Up Type="Button" ID="170002" Rectangle="220,72,249,94" Texture="./UI/Texture/main.gwo" TexturePos="0,228" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" OnClick="UpContainerBtn()"/>
+    <Down Type="Button" ID="170003" Rectangle="220,495,249,517" Texture="./UI/Texture/main.gwo" TexturePos="29,228" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" OnClick="DownContainerBtn()"/>
+
+    <Container Type="Container" ID="170001" Rectangle="14,72,245,495" Texture="./UI/Texture/main.gwo" TexturePos="0,0" ScrollTexture="./UI/Texture/main.gwo" ScrollRect="212,22,229,423" ScrollPos="0,0" BtnPos="133,122" BtnRect="0,0,17,27" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16">
+
+      <Text Type="Text" ID="170010" Rectangle="5,0,205,320" Texture="./UI/Texture/main.gwo" TexturePos="645,774" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0" TextFormat="16"/>
+
+      <ListBox Type="ListBox" ID="170011" Rectangle="-5,290,205,790" Texture="./UI/Texture/main.gwo" TexturePos="25,365" ScrollRect="0,0,0,0"  ScrollTexture="./UI/Texture/main.gwo" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,22,22" Height="20"  Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+
+        <list1 Type="ListItem" ID="170100" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170200" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0" TextFormat="16"/>
+        </list1>
+        <list2 Type="ListItem" ID="170101" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170201" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0" TextFormat="16"/>
+        </list2>
+        <list3 Type="ListItem" ID="170102" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0" >
+          <Text Type="Text" ID="170202" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0" TextFormat="16"/>
+        </list3>
+        <list4 Type="ListItem" ID="170103" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170203" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0" TextFormat="16"/>
+        </list4>
+        <list5 Type="ListItem" ID="170104" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170204" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0" TextFormat="16"/>
+        </list5>
+        <list6 Type="ListItem" ID="170105" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170205" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0" TextFormat="16"/>
+        </list6>
+        <list7 Type="ListItem" ID="170106" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170206" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0" TextFormat="16"/>
+        </list7>
+        <list8 Type="ListItem" ID="170107" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170207" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0" TextFormat="16"/>
+        </list8>
+        <list9 Type="ListItem" ID="170108" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170208" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0" TextFormat="16"/>
+        </list9>
+        <list10 Type="ListItem" ID="170109" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170209" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list10>
+        <list11 Type="ListItem" ID="170110" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170210" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list11>
+        <list12 Type="ListItem" ID="170111" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170211" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list12>
+        <list13 Type="ListItem" ID="170112" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170212" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list13>
+        <list14 Type="ListItem" ID="170113" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170213" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list14>
+        <list15 Type="ListItem" ID="170114" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170214" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list15>
+        <list16 Type="ListItem" ID="170115" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170215" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list16>
+        <list17 Type="ListItem" ID="170116" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170216" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list17>
+        <list18 Type="ListItem" ID="170117" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170217" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list18>
+        <list19 Type="ListItem" ID="170118" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170218" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list19>
+        <list20 Type="ListItem" ID="170119" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0">
+          <Text Type="Text" ID="170219" Rectangle="0,0,200,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN5_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list20>
+
+      </ListBox>
+
+    </Container>
+
+  </NPC>
+</UIConfig>

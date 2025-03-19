@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：CretitExchange.xml
+		摘    要：经验兑换配置表
+
+		当前版本：1.00
+		作    者：Tavia
+		完成日期：2008-03-30
+ 
+-->
+<UIConfig>
+  <CretitExchange Template="T_NormalWindow" ID="380000" Rectangle="80,112,388,656"  BtnRect="240,13,278,50" BtnPos="0,80" Visible="0">
+    <UpButtonTop    Type="Text"            ID="-1"     Texture="./UI/Texture/main.gwo" Rectangle="261,101,285,125" TexturePos="929,940"  Text="" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <BscrollMidMy     Type="Text"            ID="-1"    Texture="./UI/Texture/main.gwo" Rectangle="261,122,285,123" TexturePos="929,967"  Text="" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <DownButtonBtm  Type="Text"            ID="-1"    Texture="./UI/Texture/main.gwo" Rectangle="261,432,285,456" TexturePos="929,970"  Text="" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <Up Type="Button" ID="380002" Rectangle="259,79,288,101" Texture="./UI/Texture/main.gwo" TexturePos="0,228" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <Down Type="Button" ID="380003" Rectangle="259,455,288,477" Texture="./UI/Texture/main.gwo" TexturePos="29,228" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <ExchangeContainer Type="Container" ID="380001" Rectangle="26,80,240,515" Texture="./UI/Texture/main.gwo" TexturePos="0,0" ScrollTexture="./UI/Texture/main.gwo" ScrollRect="198,18,220,410" ScrollPos="0,0" BtnPos="29,227" BtnRect="0,0,22,22" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+      <ContainerText Type="Text" ID="380010" Rectangle="5,0,220,120" Texture="./UI/Texture/main.gwo" TexturePos="645,774" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+      <ListBox Type="ListBox" ID="380011" Rectangle="5,130,220,400" Texture="./UI/Texture/main.gwo" TexturePos="25,365" ScrollRect="0,0,0,0"  ScrollTexture="./UI/Texture/main.gwo" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,22,22" Height="20"  Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+        <list1 Type="ListItem" ID="380100" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+          <Text Type="Text" ID="380200" Rectangle="0,0,235,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list1>
+        <list2 Type="ListItem" ID="380101" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+          <Text Type="Text" ID="380201" Rectangle="0,0,235,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list2>
+        <list3 Type="ListItem" ID="380102" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" >
+          <Text Type="Text" ID="380202" Rectangle="0,0,235,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list3>
+        <list4 Type="ListItem" ID="380103" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+          <Text Type="Text" ID="380203" Rectangle="0,0,235,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list4>
+        <list5 Type="ListItem" ID="380104" Texture="./UI/Texture/main.gwo" TexturePos="784,240" MaskTexture="./UI/Texture/main.gwo" MaskPos="320,0" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+          <Text Type="Text" ID="380204" Rectangle="0,0,235,25" Texture="./UI/Texture/main.gwo" TexturePos="784,240" Font="CONTAIN9_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Enable="0"/>
+        </list5>
+      </ListBox>
+    </ExchangeContainer>
+  </CretitExchange>
+</UIConfig>

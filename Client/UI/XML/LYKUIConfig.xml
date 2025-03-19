@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UIConfig>
+	<TeamUI Type="Window" ID="200000" Modal="0" Rectangle="0,80,174,330" TexturePos="176,180" Texture="./UI/Texture/main.gwo" Text=""  Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+
+    <Player1 Type="Window" ID="200100" Modal="0" Rectangle="0,0,168,62" TexturePos="0,0" Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+      <TeamBackground Type="Text"         Rectangle="0,0,169,44"    TexturePos="176,180"    Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <Teamblood  Type="Text" ID="200102" Rectangle="46,29,169,39"  TexturePos="861,310" Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <TeamLeader Type="Text" ID="200103" Rectangle="49,11,65,23"   TexturePos="966,289" Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <TeamFaction  Type="Text" ID="200104" Rectangle="4,4,37,37"   TexturePos="1,793"   Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <TeamLevel  Type="Text" ID="200105" Rectangle="31,23,45,37"   TexturePos="0,0"     Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <TeamName   Type="Text" ID="200101" Rectangle="68,11,163,25"  TexturePos="176,180" Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    </Player1>
+
+    <Player2 Type="Window" ID="200200" Modal="0" Rectangle="0,62,168,124" TexturePos="176,180" Texture="./UI/Texture/main.gwo" Text=""  Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+      <TeamBackground Type="Text"         Rectangle="0,0,169,44" TexturePos="176,180" Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <Teamblood  Type="Text" ID="200202" Rectangle="46,29,169,39"  TexturePos="861,310" Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <TeamLeader Type="Text" ID="200203" Rectangle="49,11,65,23"   TexturePos="966,289" Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <TeamFaction  Type="Text" ID="200204" Rectangle="4,4,37,37"   TexturePos="1,793"          Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" />
+      <TeamLevel  Type="Text" ID="200205" Rectangle="31,23,45,37"   TexturePos="0,0"         Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <TeamName   Type="Text" ID="200201" Rectangle="68,11,163,25"  TexturePos="176,180" Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    </Player2>
+    <Player3 Type="Window" ID="200300" Modal="0" Rectangle="0,124,168,186" TexturePos="176,180" Texture="./UI/Texture/main.gwo" Text=""  Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+      <TeamBackground Type="Text"         Rectangle="0,0,169,44" TexturePos="176,180" Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <Teamblood  Type="Text" ID="200302" Rectangle="46,29,169,39"  TexturePos="861,310" Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <TeamLeader Type="Text" ID="200303" Rectangle="49,11,65,23"   TexturePos="966,289" Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <TeamFaction  Type="Text" ID="200304" Rectangle="4,4,37,37"   TexturePos="1,793"          Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" />
+      <TeamLevel  Type="Text" ID="200305" Rectangle="31,23,45,37"        TexturePos="0,0"         Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <TeamName   Type="Text" ID="200301" Rectangle="68,11,163,25"  TexturePos="176,180" Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    </Player3>
+    <Player4 Type="Window" ID="200400" Modal="0" Rectangle="0,186,168,248" TexturePos="176,180"  Texture="./UI/Texture/main.gwo" Text=""  Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+      <TeamBackground Type="Text"         Rectangle="0,0,169,44" TexturePos="176,180"    Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <Teamblood  Type="Text" ID="200402" Rectangle="46,29,169,39"  TexturePos="861,310" Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <TeamLeader Type="Text" ID="200403" Rectangle="49,11,65,23"   TexturePos="966,289" Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <TeamFaction  Type="Text" ID="200404" Rectangle="4,4,37,37"   TexturePos="1,793"    Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <TeamLevel  Type="Text" ID="200405" Rectangle="31,23,45,37"   TexturePos="0,0"         Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+      <TeamName   Type="Text" ID="200401" Rectangle="68,11,163,25"  TexturePos="176,180" Texture="./UI/Texture/main.gwo" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    </Player4>
+	</TeamUI>
+  
+	<TeamMenu Type="Window" ID="210000" Modal="0" Rectangle="0,120,95,305" TexturePos="0,224" Texture="./UI/Texture/main.gwo" Text=""  Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+    <changeleader Type="Button" ID="210001" Rectangle="6,10,90,32" padding="50,80" Texture="./UI/Texture/main.gwo" TexturePos="504,828" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <fireout Type="Button" ID="210002" Rectangle="6,34,90,56" padding="50,80" Texture="./UI/Texture/main.gwo" TexturePos="588,828" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <destroy Type="Button" ID="210003" Rectangle="6,58,90,80" padding="50,80" Texture="./UI/Texture/main.gwo" TexturePos="672,828" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <escape Type="Button" ID="210004" Rectangle="6,82,90,104" padding="50,80" Texture="./UI/Texture/main.gwo" TexturePos="84,916" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <addfriend Type="Button" ID="210005" Rectangle="6,106,90,128" padding="50,80" Texture="./UI/Texture/main.gwo" TexturePos="252,828" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+    <whisper Type="Button" ID="210006" Rectangle="6,130,90,152" padding="50,80" Texture="./UI/Texture/main.gwo" TexturePos="336,828" Text="" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+	</TeamMenu>
+  
+
+</UIConfig>

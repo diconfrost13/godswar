@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：TargetInfoConfig.xml
+		摘    要：选中对象框配置表
+
+		当前版本：1.00
+		作    者：Tavia
+		完成日期：2008-03-22  
+ 
+-->
+<UIConfig>
+  <StatusUI Type="Window" ID="230000"  Rectangle="0,0,294,82" TexturePos="634,874" Texture="./UI/Texture/main.gwo" Visible="0" Text="" Layer="1">
+    <Font Type="Text" ID="230001" Rectangle="95, 5 ,215, 23" TexturePos="96,146" Texture="./UI/Texture/main.gwo" Text="" Font="MainFonts" FontColor="GREEN_TEXTCOLOR" TextForamt="5" />
+    <Hp Type="Text" ID="230002" Rectangle="103, 27 ,239, 39" TexturePos="496,896" Texture="./UI/Texture/main.gwo" Text=""/>
+    <Mp Type="Text" ID="230003" Rectangle="103, 43 ,239, 55" TexturePos="358,896" Texture="./UI/Texture/main.gwo" Text=""/>
+    <Exp Type="Text" ID="230004" Rectangle="103, 59 ,239, 63" TexturePos="496,890" Texture="./UI/Texture/main.gwo" Text="" />
+    <Leader Type="Text" ID="230006" Rectangle="80, 7 ,96, 19" TexturePos="937,997" Texture="./UI/Texture/main.gwo" Text=""  TextFormat="5"/>
+    <UnionSparta Type="Text" ID="230007" Rectangle="19,12,75,69" TexturePos="233,788" Texture="./UI/Texture/main.gwo" Text="" />
+    <UnionAthens Type="Text" ID="230008" Rectangle="19,12,75,69" TexturePos="289,788" Texture="./UI/Texture/main.gwo" Text="" />
+    <HpText Type="Text" ID="230009" Rectangle="103, 26 ,239, 42" TexturePos="830,285" Texture="./UI/Texture/main.gwo" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextWeight="3"/>
+    <MpText Type="Text" ID="230010" Rectangle="103, 42 ,239, 58" TexturePos="358,896" Texture="./UI/Texture/main.gwo" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextWeight="3"/>
+    <Rank Type="Text" ID="230012" Rectangle="59, 54 ,85, 76" TexturePos="0,250" Texture="./UI/Texture/main.gwo" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  </StatusUI>
+</UIConfig>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+  <ReviveBGWin Template="T_EmptyBgWin" ID="-1"  Rectangle="0,0,1024,768">
+    <ReviveWin Template="T_SimpleWindow" ID="-1" Rectangle="392,319,632,449" Enable="false">
+      <Revive_Text Type="Text" ID="-1" Rectangle="40,0,200,70"  TexturePos="0,228" Text="You're dead... or not!" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="21"/>
+      <ReviveBtn_Confirm Template="T_Button3" ID="-1" Rectangle="49,94,118,121"   Text="OK" Font="MainFonts" OnClick="OnClick_Confirm()"/>
+      <ReviveBtn_Cancel  Template="T_Button3" ID="-1" Rectangle=" 121,94,190,121" Text="Cancel" Font="MainFonts" OnClick="OnClick_Cancel()"/>
+      <ReviveBtn_Stone   Template="T_Button3" ID="-1" Rectangle="12,94,82,121"     Text="Gold Revive" Font="MainFonts" OnClick="OnClick_ReviveBtn_Stone()"/>
+      <ReviveBtn_Money   Template="T_Button3" ID="-1" Rectangle="85,94,155,121"   Text="Money Revive" Font="MainFonts" OnClick="OnClick_ReviveBtn_Money()"/>
+      <ReviveBtn_Free    Template="T_Button3" ID="-1" Rectangle="85,94,155,121"  Text="Free Revive" Font="MainFonts" OnClick="OnClick_ReviveBtn_Free()"/>
+    </ReviveWin>
+  </ReviveBGWin>
+  <!--158,94,228,121 -->
+  <Script File="./UI/XML/Revive.lua" Help=""/>
+</UIConfig>

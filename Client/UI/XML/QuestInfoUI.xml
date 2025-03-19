@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：QuestViewUIConfig.xml
+		摘    要：任务信息描述UI配置表
+      
+		当前版本：Ver1.00
+		作    者：Tavia
+		完成日期：2008-3-23-->
+<UIConfig>
+  <QuestInfo Template="T_NormalWindow" ID="360000" Rectangle="79,112,370,638" BtnRect="222,13,259,50" BtnPos="0,80"  Visible="0">
+    <TabBar Type="TabBar" ID="360001" Rectangle="14,71,260,517" TexturePos="267,622">
+      <MyQuests Type="Tab" ID="-1" Rectangle="57,-23,118,0" Texture="./UI/Texture/main.gwo" TexturePos="244,450" Text="当前任务" Font="MainMap" TextFormat="5">
+        <UpTexttop Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="236,1,260,25" TexturePos="929,940" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"/>
+        <UpTextbtm Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="236,140,260,164" TexturePos="929,970" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"/>
+        <UpTextmid Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="236,25,260,26" TexturePos="929,967" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <MidTextleft Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="0,180,14,194" TexturePos="146,173" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"/>
+        <MidTextright Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="236,180,260,194" TexturePos="146,188" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"/>
+        <MidTextmid Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="14,186,15,188" TexturePos="158,179" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <DownTexttop Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="236,188,260,212" TexturePos="929,940" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"/>
+        <DownTextbtm Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="236,395,260,419" TexturePos="929,970" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"/>
+        <DownTextmid Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="236,212,260,213" TexturePos="929,967" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <BtmTextleft Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="0,411,14,425" TexturePos="146,173" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"/>
+        <BtmTextright Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="236,411,260,425" TexturePos="146,188" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"/>
+        <BtmTextmid Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="14,417,15,419" TexturePos="158,179" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <QuestListUp Template="T_UpButton" ID="360012" Rectangle="234,1,260,23" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" OnClick="UpContainerBtn()"/>
+        <QuestListDown Template="T_DownButton" ID="360013" Rectangle="234,165,260,187" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" OnClick="DownContainerBtn()"/>
+
+        <QuestViewUp Template="T_UpButton" ID="360014" Rectangle="234,188,260,210" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" OnClick="UpContainer1Btn()"/>
+        <QuestViewDown Template="T_DownButton" ID="360015" Rectangle="234,396,260,418" Text="" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" OnClick="DownContainer1Btn()"/>
+
+        <QuestCancel Template="T_Button2" ID="360016" Rectangle="200,419,260,446" Text="放弃" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <QuestsCount Type="Text" ID="360017" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Rectangle="14,427,100,450" TexturePos="632,90"/>
+        <QuestsCountText Type="Text" ID="360018" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Rectangle="100,427,200,450" TexturePos="538,455"/>
+        <Texture Type="Text" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" Rectangle="0,159,255,177" TexturePos="782,352"/>
+
+        <Container Type="Container" ID="360011" Rectangle="0,0,258,186" Texture="./UI/Texture/main.gwo" TexturePos="0,0" ScrollTexture="./UI/Texture/main.gwo" ScrollRect="239,23,256,164" ScrollPos="0,0" BtnPos="133,122" BtnRect="0,0,17,27" Font="CONTAIN6_TEXTFONT" FontColor="TEST_IMAGECOLOR">
+          <QuestText1 Type="Text" Texture="./UI/Texture/main.gwo" ID="360210" Font="CONTAIN6_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,1,100,30" TexturePos="538,455" TextFormat="16"/>
+          <QuestText2 Type="Text" Texture="./UI/Texture/main.gwo" ID="360211" Font="CONTAIN6_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,1,100,30" TexturePos="538,455" TextFormat="16"/>
+          <QuestText3 Type="Text" Texture="./UI/Texture/main.gwo" ID="360212" Font="CONTAIN6_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,1,100,30" TexturePos="538,455" TextFormat="16"/>
+          <QuestText4 Type="Text" Texture="./UI/Texture/main.gwo" ID="360213" Font="CONTAIN6_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,1,100,30" TexturePos="538,455" TextFormat="0"/>
+          <QuestText5 Type="Text" Texture="./UI/Texture/main.gwo" ID="360214" Font="CONTAIN6_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,1,100,30" TexturePos="538,455" TextFormat="0"/>
+          <QuestText6 Type="Text" Texture="./UI/Texture/main.gwo" ID="360215" Font="CONTAIN6_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,1,100,30" TexturePos="538,455" TextFormat="0"/>
+          <!--<QuestText7 Type="Text" Texture="./UI/Texture/main.gwo" ID="360216" Font="CONTAIN6_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,1,100,30" TexturePos="538,455" TextFormat="0"/>
+          <QuestText8 Type="Text" Texture="./UI/Texture/main.gwo" ID="360217" Font="CONTAIN6_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,1,100,30" TexturePos="538,455" TextFormat="0"/>
+          <QuestText9 Type="Text" Texture="./UI/Texture/main.gwo" ID="360218" Font="CONTAIN6_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,1,100,30" TexturePos="538,455" TextFormat="0"/>-->
+          <QuestList1 Type="ListBox" ID="360200" Texture="./UI/Texture/main.gwo" Rectangle="5,30,230,415" ScrollRect="0,0,0,0" TexturePos="25,365" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,32,32" Height="16" Font="CONTAIN6_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+          <QuestList2 Type="ListBox" ID="360201" Texture="./UI/Texture/main.gwo" Rectangle="5,30,230,415" ScrollRect="0,0,0,0" TexturePos="25,365" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,32,32" Height="16" Font="CONTAIN6_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+          <QuestList3 Type="ListBox" ID="360202" Texture="./UI/Texture/main.gwo" Rectangle="5,30,230,415" ScrollRect="0,0,0,0" TexturePos="25,365" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,32,32" Height="16" Font="CONTAIN6_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+          <QuestList4 Type="ListBox" ID="360203" Texture="./UI/Texture/main.gwo" Rectangle="5,30,230,415" ScrollRect="0,0,0,0" TexturePos="25,365" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,32,32" Height="16" Font="CONTAIN6_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+          <QuestList5 Type="ListBox" ID="360204" Texture="./UI/Texture/main.gwo" Rectangle="5,30,230,415" ScrollRect="0,0,0,0" TexturePos="25,365" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,32,32" Height="16" Font="CONTAIN6_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+          <QuestList6 Type="ListBox" ID="360205" Texture="./UI/Texture/main.gwo" Rectangle="5,30,230,415" ScrollRect="0,0,0,0" TexturePos="25,365" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,32,32" Height="16" Font="CONTAIN6_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+          <!--<QuestList7 Type="ListBox" ID="360206" Texture="./UI/Texture/main.gwo" Rectangle="5,30,205,415" ScrollRect="0,0,0,0" TexturePos="25,365" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,32,32" Height="16" Font="CONTAIN6_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+          <QuestList8 Type="ListBox" ID="360207" Texture="./UI/Texture/main.gwo" Rectangle="5,30,205,415" ScrollRect="0,0,0,0" TexturePos="25,365" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,32,32" Height="16" Font="CONTAIN6_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+					<QuestList9 Type="ListBox" ID="360208" Texture="./UI/Texture/main.gwo" Rectangle="5,30,205,415" ScrollRect="0,0,0,0" TexturePos="25,365" ScrollPos="632,90" BtnPos="599,179" BtnRect="0,0,32,32" Height="16" Font="CONTAIN6_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>-->
+        </Container>
+
+        <Container1 Type="Container" ID="360010" Rectangle="0,188,258,417" Texture="./UI/Texture/main.gwo" TexturePos="0,0" ScrollTexture="./UI/Texture/main.gwo" ScrollRect="239,22,256,207" ScrollPos="0,0" BtnPos="133,122" BtnRect="0,0,17,27" Font="CONTAIN1_TEXTFONT" FontColor="TEST_IMAGECOLOR">
+          <QuestTitle Type="Text" Texture="./UI/Texture/main.gwo" ID="360020" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,200,30" TexturePos="538,455" TextFormat="16"/>
+          <QuestDetails Type="Text" Texture="./UI/Texture/main.gwo" ID="360021" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,223,250" TexturePos="538,455" TextFormat="16"/>
+          <QuestObjectives Type="Text" Texture="./UI/Texture/main.gwo" ID="360022" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,223,250" TexturePos="538,455" TextFormat="16"/>
+          <QuestItem1 Type="Button" Texture="./UI/Texture/main.gwo" ID="360023" Rectangle="5,0,230,21" TexturePos="610,620" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <QuestItem2 Type="Button" Texture="./UI/Texture/main.gwo" ID="360024" Rectangle="5,0,230,21" TexturePos="610,620" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <QuestItem3 Type="Button" Texture="./UI/Texture/main.gwo" ID="360025" Rectangle="5,0,230,21" TexturePos="610,620" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <QuestItem4 Type="Button" Texture="./UI/Texture/main.gwo" ID="360026" Rectangle="5,0,230,21" TexturePos="610,620" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <QuestCreature1 Type="Button" Texture="./UI/Texture/main.gwo" ID="360027" Rectangle="5,0,230,21" TexturePos="610,620" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <QuestCreature2 Type="Button" Texture="./UI/Texture/main.gwo" ID="360028" Rectangle="5,0,230,21" TexturePos="610,620" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <QuestCreature3 Type="Button" Texture="./UI/Texture/main.gwo" ID="360029" Rectangle="5,0,230,21" TexturePos="610,620" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <QuestCreature4 Type="Button" Texture="./UI/Texture/main.gwo" ID="360030" Rectangle="5,0,230,21" TexturePos="610,620" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <QuestRespond Type="Text" Texture="./UI/Texture/main.gwo" ID="360031" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,250,30" TexturePos="538,455"/>
+          <QuestResponder Type="Button" ID="360032" Rectangle="5,0,230,21" Texture="./UI/Texture/main.gwo" TexturePos="610,620" Font="CONTAIN1_TEXTFONT" FontColor="GREEN_TEXTCOLOR" TextFormat="4"/>
+          <!--<QuestResponderName Type="Text" Texture="./UI/Texture/main.gwo" ID="360033" Font="CONTAIN1_TEXTFONT" FontColor="GREEN_TEXTCOLOR" Rectangle="5,0,220,21" TexturePos="538,455" TextFormat="4"/>-->
+          <QuestReward Type="Text" Texture="./UI/Texture/main.gwo" ID="360034" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,360,30" TexturePos="538,455" TextFormat="16"/>
+          <QuestRewards Type="Text" Texture="./UI/Texture/main.gwo" ID="360035" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,202,250" TexturePos="538,455" TextFormat="16"/>
+          <QuestAppend Type="Text" Texture="./UI/Texture/main.gwo" ID="360036" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="5,0,202,250" TexturePos="538,455" TextFormat="16" />
+          <RewardItem1 Type="CheckBox" Texture="./UI/Texture/main.gwo" ID="360070" Rectangle="5,53,47,95" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10" Text=""/>
+          <RewardItem2 Type="CheckBox" Texture="./UI/Texture/main.gwo" ID="360071" Rectangle="51,53,93,95" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10" Text=""/>
+          <RewardItem3 Type="CheckBox" Texture="./UI/Texture/main.gwo" ID="360072" Rectangle="97,53,139,95" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10" Text=""/>
+          <RewardItem4 Type="CheckBox" Texture="./UI/Texture/main.gwo" ID="360073" Rectangle="143,53,185,95" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="CONTAIN1_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="10" Text=""/>
+        </Container1>
+      </MyQuests>
+
+      <LookupQuests Type="Tab" Rectangle="118,-23,179,0" Texture="./UI/Texture/main.gwo" TexturePos="244,450" Text="查找任务" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5">
+        <Texture Type="Text" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Rectangle="245,23,267,379"  TexturePos="632,90"/>
+
+        <Texttop Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="236,1,260,25" TexturePos="929,940" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+        <Textbtm Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="236,394,260,418" TexturePos="929,970" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+        <Textmid Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="236,25,260,26" TexturePos="929,967" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+        <BtmTextleft Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="0,411,14,425" TexturePos="146,173" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+        <BtmTextright Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="236,411,260,425" TexturePos="146,188" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+        <BtmTextmid Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="14,417,15,419" TexturePos="158,179" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+        
+        <QuestListUp Template="T_UpButton" ID="360012" Rectangle="234,1,260,23" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" OnClick="UpContainerBtn()"/>
+        <QuestViewDown Template="T_DownButton" ID="360015" Rectangle="234,396,260,418" Text="" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" OnClick="DownContainerBtn()"/>
+        <QuestFind Template="T_Button2" ID="361003" Rectangle="200,419,260,446" Text="查找" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <Container Type="Container" ID="361000" Rectangle="0,0,258,417" Texture="./UI/Texture/main.gwo" TexturePos="0,0" ScrollTexture="./UI/Texture/main.gwo" ScrollRect="239,23,256,395" ScrollPos="0,0" BtnPos="133,122" BtnRect="0,0,17,27" Font="CONTAIN3_TEXTFONT" FontColor="TEST_IMAGECOLOR">
+
+          <Sparta Type="Text" Texture="./UI/Texture/main.gwo" ID="361100" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Athens Type="Text" Texture="./UI/Texture/main.gwo" ID="361101" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Athens_Newbie Type="Text" Texture="./UI/Texture/main.gwo" ID="361102" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Parnitha_1 Type="Text" Texture="./UI/Texture/main.gwo" ID="361103" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Sparta_Newbie Type="Text" Texture="./UI/Texture/main.gwo" ID="361104" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Nemea_1 Type="Text" Texture="./UI/Texture/main.gwo" ID="361105" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Mycenae_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361106" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Olympia_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361107" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Plataea_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361108" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Thebes_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361109" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Larissa_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361110" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Marathon_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361111" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Parnitha_2 Type="Text" Texture="./UI/Texture/main.gwo" ID="361112" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Peloponnese_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361113" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Nemea_2 Type="Text" Texture="./UI/Texture/main.gwo" ID="361114" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Argolis_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361115" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Isthmus_of_Corinth_1 Type="Text" Texture="./UI/Texture/main.gwo" ID="361116" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Isthmus_of_Corinth_2 Type="Text" Texture="./UI/Texture/main.gwo" ID="361117" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Isthmus_of_Corinth_3 Type="Text" Texture="./UI/Texture/main.gwo" ID="361118" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Megara_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361119" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Oracle_of_Delphi_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361120" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Olympus_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361121" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <The_gate_to_Hades_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361122" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Stymphalian_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361123" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Lernaean_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361124" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Sanctum_to_Dionpysus_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361125" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Medusa_den_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361126" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Pan_Forest_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361127" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+          <Garden_of_Hes_perIDes_All Type="Text" Texture="./UI/Texture/main.gwo" ID="361128" Font="CONTAIN3_TEXTFONT" FontColor="YELLOW_TEXTCOLOR" Rectangle="5,0,200,25"  TexturePos="538,455"/>
+
+          <Quest1 Type="Button" ID="361200" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest2 Type="Button" ID="361201" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest3 Type="Button" ID="361202" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest4 Type="Button" ID="361203" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest5 Type="Button" ID="361204" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest6 Type="Button" ID="361205" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest7 Type="Button" ID="361206" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest8 Type="Button" ID="361207" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest9 Type="Button" ID="361208" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest10 Type="Button" ID="361209" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest11 Type="Button" ID="361210" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest12 Type="Button" ID="361211" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest13 Type="Button" ID="361212" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest14 Type="Button" ID="361213" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest15 Type="Button" ID="361214" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest16 Type="Button" ID="361215" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest17 Type="Button" ID="361216" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest18 Type="Button" ID="361217" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest19 Type="Button" ID="361218" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+          <Quest20 Type="Button" ID="361219" Rectangle="5,0,230,21"  TexturePos="610,620" Texture="./UI/Texture/main.gwo" Font="CONTAIN3_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+
+        </Container>
+
+      </LookupQuests>
+    </TabBar>
+  </QuestInfo>
+</UIConfig>

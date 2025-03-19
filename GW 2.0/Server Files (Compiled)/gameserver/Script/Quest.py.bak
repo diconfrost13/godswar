@@ -1,0 +1,5491 @@
+# import item,, improt time
+import Item
+# SpecialFlags
+QUEST_SPECIAL_FLAGS_NONE = 0
+QUEST_SPECIAL_FLAGS_DELIVER = 1
+QUEST_SPECIAL_FLAGS_EXPLORATION = 2
+QUEST_SPECIAL_FLAGS_SPEAKTO = 4
+QUEST_SPECIAL_FLAGS_KILL_OR_CAST = 8
+QUEST_SPECIAL_FLAGS_TIMED = 16
+QUEST_SPECIAL_FLAGS_REPEATABLE = 32
+QUEST_SPECIAL_FLAGS_REPUTATION = 64
+# QuestSort
+QUEST_SORT_NORMAL = 0
+QUEST_SORT_REWARD = 1
+QUEST_SORT_RANDOM = 2
+QUEST_SORT_CAMP = 3
+# QuestColor
+COLOR_WHITE = 0
+COLOR_GREEN = 1
+COLOR_BLUE = 2
+COLOR_PURPLE = 3
+# QuestFaction
+QUEST_FACTION_NONE = -1
+QUEST_FACTION_ATHENS = 0
+QUEST_FACTION_SPARTA = 1
+# QuestClass
+QUEST_CLASS_NONE = -1
+QUEST_CLASS_FIGHTER = 0
+QUEST_CLASS_SCHOLAR = 1
+QUEST_CLASS_FIGHTER1 = 2
+QUEST_CLASS_FIGHTER2 = 3
+QUEST_CLASS_SCHOLAR1 = 4
+QUEST_CLASS_SCHOLAR2 = 5
+# QuestBelief
+QUEST_BELIEF_NONE = -1
+class QuestInfo:
+    def __init__(self):
+        self.QuestID = -1
+        self.QuestSort = 0
+        self.PrevQuestId = -1
+        self.NextQuestId = -1
+        self.NextQuestsId = -1 , -1
+        self.MinLevel = 1
+        self.MaxLevel = 60
+        self.RequiredClass = -1
+        self.RequiredBelief = -1
+        self.RequiredFaction = -1
+        self.MinTime = [0,58,0,-1]  #hour(0-23),min(0-59),sec(0-59),wday(0-6)
+        self.MaxTime = [18,16,0,-1] #hour(0-23),min(0-59),sec(0-59),wday(0-6)
+        self.MaxNum = 0
+        self.SpecialFlags = QUEST_SPECIAL_FLAGS_NONE
+        self.Color = COLOR_WHITE
+        self.Item = [-1 , -1 , -1 , -1]
+        self.Creature = [-1 , -1 , -1 , -1]
+        self.ItemCount = [0 , 0 , 0 , 0]
+        self.CreatureCount = [0 , 0 , 0 , 0]
+        self.ItemProbability = [100 , 100 , 100 , 100]
+        self.Money = 0
+        self.Bijou = 0
+        self.Repeat = 1
+        self.RewardMoney = 0
+        self.RewardBijou = 0
+        self.RewardItem = [Item.ItemData() , Item.ItemData() , Item.ItemData()];
+    def __del__(self):
+        return 0
+class QuestReward:
+    def __init__(self):
+        self.QuestID = -1
+        self.Credit = 0
+        self.Contribute = 0
+        self.Exp = 0
+        self.SkillEXP = 0
+        self.SpecialFlags = 0
+        self.SpecialCount = 0
+    def __del__(self):
+        return 0
+#########################
+QI101 = QuestInfo()
+QI102 = QuestInfo()
+QI103 = QuestInfo()
+QI104 = QuestInfo()
+QI105 = QuestInfo()
+QI106 = QuestInfo()
+QI107 = QuestInfo()
+QI108 = QuestInfo()
+QI109 = QuestInfo()
+QI110 = QuestInfo()
+QI111 = QuestInfo()
+QI112 = QuestInfo()
+QI113 = QuestInfo()
+QI114 = QuestInfo()
+QI115 = QuestInfo()
+QI116 = QuestInfo()
+QI117 = QuestInfo()
+QI118 = QuestInfo()
+QI119 = QuestInfo()
+QI120 = QuestInfo()
+QI121 = QuestInfo()
+QI122 = QuestInfo()
+QI123 = QuestInfo()
+QI124 = QuestInfo()
+QI125 = QuestInfo()
+QI126 = QuestInfo()
+QI127 = QuestInfo()
+QI128 = QuestInfo()
+QI129 = QuestInfo()
+QI130 = QuestInfo()
+QI131 = QuestInfo()
+QI132 = QuestInfo()
+QI133 = QuestInfo()
+QI134 = QuestInfo()
+QI135 = QuestInfo()
+QI136 = QuestInfo()
+QI137 = QuestInfo()
+QI138 = QuestInfo()
+QI139 = QuestInfo()
+QI140 = QuestInfo()
+QI141 = QuestInfo()
+QI142 = QuestInfo()
+QI143 = QuestInfo()
+QI144 = QuestInfo()
+QI145 = QuestInfo()
+QI146 = QuestInfo()
+QI147 = QuestInfo()
+QI148 = QuestInfo()
+QI149 = QuestInfo()
+QI150 = QuestInfo()
+QI151 = QuestInfo()
+QI152 = QuestInfo()
+QI153 = QuestInfo()
+QI154 = QuestInfo()
+QI155 = QuestInfo()
+QI156 = QuestInfo()
+QI157 = QuestInfo()
+QI158 = QuestInfo()
+QI159 = QuestInfo()
+QI160 = QuestInfo()
+QI161 = QuestInfo()
+QI162 = QuestInfo()
+QI163 = QuestInfo()
+QI164 = QuestInfo()
+QI165 = QuestInfo()
+QI166 = QuestInfo()
+QI167 = QuestInfo()
+QI168 = QuestInfo()
+QI169 = QuestInfo()
+QI170 = QuestInfo()
+QI171 = QuestInfo()
+QI172 = QuestInfo()
+QI173 = QuestInfo()
+QI174 = QuestInfo()
+QI175 = QuestInfo()
+QI176 = QuestInfo()
+QI177 = QuestInfo()
+QI178 = QuestInfo()
+QI179 = QuestInfo()
+QI180 = QuestInfo()
+QI181 = QuestInfo()
+QI182 = QuestInfo()
+QI183 = QuestInfo()
+QI184 = QuestInfo()
+QI185 = QuestInfo()
+QI186 = QuestInfo()
+QI187 = QuestInfo()
+QI188 = QuestInfo()
+QI189 = QuestInfo()
+QI190 = QuestInfo()
+QI191 = QuestInfo()
+QI192 = QuestInfo()
+QI193 = QuestInfo()
+QI194 = QuestInfo()
+QI195 = QuestInfo()
+QI196 = QuestInfo()
+QI197 = QuestInfo()
+QI198 = QuestInfo()
+QI199 = QuestInfo()
+QI200 = QuestInfo()
+QI201 = QuestInfo()
+QI301 = QuestInfo()
+QI302 = QuestInfo()
+QI303 = QuestInfo()
+QI304 = QuestInfo()
+QI305 = QuestInfo()
+QI306 = QuestInfo()
+QI307 = QuestInfo()
+QI308 = QuestInfo()
+QI309 = QuestInfo()
+QI310 = QuestInfo()
+QI311 = QuestInfo()
+QI312 = QuestInfo()
+QI313 = QuestInfo()
+QI314 = QuestInfo()
+QI315 = QuestInfo()
+QI321 = QuestInfo()
+QI322 = QuestInfo()
+QI323 = QuestInfo()
+QI324 = QuestInfo()
+QI325 = QuestInfo()
+QI326 = QuestInfo()
+QI327 = QuestInfo()
+QI341 = QuestInfo()
+QI342 = QuestInfo()
+QI343 = QuestInfo()
+QI344 = QuestInfo()
+QI345 = QuestInfo()
+QI346 = QuestInfo()
+QI351 = QuestInfo()
+QI352 = QuestInfo()
+QI353 = QuestInfo()
+QI354 = QuestInfo()
+QI355 = QuestInfo()
+QI356 = QuestInfo()
+QI361 = QuestInfo()
+QI362 = QuestInfo()
+QI363 = QuestInfo()
+QI364 = QuestInfo()
+QI365 = QuestInfo()
+QI401 = QuestInfo()
+QI402 = QuestInfo()
+QI403 = QuestInfo()
+QI404 = QuestInfo()
+QI405 = QuestInfo()
+QI431 = QuestInfo()
+QI432 = QuestInfo()
+QI433 = QuestInfo()
+QI434 = QuestInfo()
+QI435 = QuestInfo()
+QI436 = QuestInfo()
+QI251 = QuestInfo()
+QI252 = QuestInfo()
+QI253 = QuestInfo()
+QI254 = QuestInfo()
+QI255 = QuestInfo()
+QI256 = QuestInfo()
+QI257 = QuestInfo()
+QI258 = QuestInfo()
+QI259 = QuestInfo()
+QI260 = QuestInfo()
+QI261 = QuestInfo()
+QI262 = QuestInfo()
+QI263 = QuestInfo()
+QI264 = QuestInfo()
+QI265 = QuestInfo()
+QI266 = QuestInfo()
+QI267 = QuestInfo()
+QI268 = QuestInfo()
+QI269 = QuestInfo()
+QI270 = QuestInfo()
+QI501 = QuestInfo()
+QI502 = QuestInfo()
+QI503 = QuestInfo()
+QI504 = QuestInfo()
+QI505 = QuestInfo()
+QI506 = QuestInfo()
+QI507 = QuestInfo()
+QI508 = QuestInfo()
+QI509 = QuestInfo()
+QI510 = QuestInfo()
+QI511 = QuestInfo()
+QI512 = QuestInfo()
+QI513 = QuestInfo()
+QI514 = QuestInfo()
+QI515 = QuestInfo()
+QI516 = QuestInfo()
+QI517 = QuestInfo()
+QI518 = QuestInfo()
+QI519 = QuestInfo()
+QI520 = QuestInfo()
+QI521 = QuestInfo()
+QI522 = QuestInfo()
+QI523 = QuestInfo()
+QI524 = QuestInfo()
+QI525 = QuestInfo()
+QI526 = QuestInfo()
+QI527 = QuestInfo()
+QI528 = QuestInfo()
+QI529 = QuestInfo()
+QI530 = QuestInfo()
+QI531 = QuestInfo()
+QI532 = QuestInfo()
+QI533 = QuestInfo()
+QI534 = QuestInfo()
+QI535 = QuestInfo()
+QI536 = QuestInfo()
+QI537 = QuestInfo()
+QI538 = QuestInfo()
+QI539 = QuestInfo()
+QI540 = QuestInfo()
+QI541 = QuestInfo()
+QI542 = QuestInfo()
+QI543 = QuestInfo()
+QI544 = QuestInfo()
+QI545 = QuestInfo()
+QI546 = QuestInfo()
+QI547 = QuestInfo()
+QI548 = QuestInfo()
+QI549 = QuestInfo()
+QI550 = QuestInfo()
+QI551 = QuestInfo()
+QI552 = QuestInfo()
+QI553 = QuestInfo()
+QI554 = QuestInfo()
+QI555 = QuestInfo()
+QI556 = QuestInfo()
+QI557 = QuestInfo()
+QI558 = QuestInfo()
+QI559 = QuestInfo()
+QI560 = QuestInfo()
+QI561 = QuestInfo()
+QI562 = QuestInfo()
+QI563 = QuestInfo()
+QI564 = QuestInfo()
+QI565 = QuestInfo()
+QI566 = QuestInfo()
+QI567 = QuestInfo()
+QI568 = QuestInfo()
+QI569 = QuestInfo()
+QI570 = QuestInfo()
+QI571 = QuestInfo()
+QI572 = QuestInfo()
+QI573 = QuestInfo()
+QI574 = QuestInfo()
+QI575 = QuestInfo()
+QI576 = QuestInfo()
+QI577 = QuestInfo()
+QI578 = QuestInfo()
+QI579 = QuestInfo()
+QI580 = QuestInfo()
+QI581 = QuestInfo()
+QI582 = QuestInfo()
+QI583 = QuestInfo()
+QI584 = QuestInfo()
+QI585 = QuestInfo()
+QI586 = QuestInfo()
+QI587 = QuestInfo()
+QI588 = QuestInfo()
+QI589 = QuestInfo()
+QI590 = QuestInfo()
+QI591 = QuestInfo()
+QI592 = QuestInfo()
+QI593 = QuestInfo()
+QI594 = QuestInfo()
+QI595 = QuestInfo()
+QI596 = QuestInfo()
+QI597 = QuestInfo()
+QI598 = QuestInfo()
+QI599 = QuestInfo()
+QI600 = QuestInfo()
+QI601 = QuestInfo()
+QI701 = QuestInfo()
+QI702 = QuestInfo()
+QI703 = QuestInfo()
+QI704 = QuestInfo()
+QI705 = QuestInfo()
+QI706 = QuestInfo()
+QI707 = QuestInfo()
+QI708 = QuestInfo()
+QI709 = QuestInfo()
+QI710 = QuestInfo()
+QI711 = QuestInfo()
+QI712 = QuestInfo()
+QI713 = QuestInfo()
+QI714 = QuestInfo()
+QI715 = QuestInfo()
+QI721 = QuestInfo()
+QI722 = QuestInfo()
+QI723 = QuestInfo()
+QI724 = QuestInfo()
+QI725 = QuestInfo()
+QI726 = QuestInfo()
+QI727 = QuestInfo()
+QI741 = QuestInfo()
+QI742 = QuestInfo()
+QI743 = QuestInfo()
+QI744 = QuestInfo()
+QI745 = QuestInfo()
+QI746 = QuestInfo()
+QI751 = QuestInfo()
+QI752 = QuestInfo()
+QI753 = QuestInfo()
+QI754 = QuestInfo()
+QI755 = QuestInfo()
+QI756 = QuestInfo()
+QI761 = QuestInfo()
+QI762 = QuestInfo()
+QI763 = QuestInfo()
+QI764 = QuestInfo()
+QI765 = QuestInfo()
+QI801 = QuestInfo()
+QI802 = QuestInfo()
+QI803 = QuestInfo()
+QI804 = QuestInfo()
+QI805 = QuestInfo()
+QI831 = QuestInfo()
+QI832 = QuestInfo()
+QI833 = QuestInfo()
+QI834 = QuestInfo()
+QI835 = QuestInfo()
+QI836 = QuestInfo()
+QI651 = QuestInfo()
+QI652 = QuestInfo()
+QI653 = QuestInfo()
+QI654 = QuestInfo()
+QI655 = QuestInfo()
+QI656 = QuestInfo()
+QI657 = QuestInfo()
+QI658 = QuestInfo()
+QI659 = QuestInfo()
+QI660 = QuestInfo()
+QI661 = QuestInfo()
+QI662 = QuestInfo()
+QI663 = QuestInfo()
+QI664 = QuestInfo()
+QI665 = QuestInfo()
+QI666 = QuestInfo()
+QI667 = QuestInfo()
+QI668 = QuestInfo()
+QI669 = QuestInfo()
+QI670 = QuestInfo()
+QR101 = QuestReward()
+QR102 = QuestReward()
+QR103 = QuestReward()
+QR104 = QuestReward()
+QR105 = QuestReward()
+QR106 = QuestReward()
+QR107 = QuestReward()
+QR108 = QuestReward()
+QR109 = QuestReward()
+QR110 = QuestReward()
+QR111 = QuestReward()
+QR112 = QuestReward()
+QR113 = QuestReward()
+QR114 = QuestReward()
+QR115 = QuestReward()
+QR116 = QuestReward()
+QR117 = QuestReward()
+QR118 = QuestReward()
+QR119 = QuestReward()
+QR120 = QuestReward()
+QR121 = QuestReward()
+QR122 = QuestReward()
+QR123 = QuestReward()
+QR124 = QuestReward()
+QR125 = QuestReward()
+QR126 = QuestReward()
+QR127 = QuestReward()
+QR128 = QuestReward()
+QR129 = QuestReward()
+QR130 = QuestReward()
+QR131 = QuestReward()
+QR132 = QuestReward()
+QR133 = QuestReward()
+QR134 = QuestReward()
+QR135 = QuestReward()
+QR136 = QuestReward()
+QR137 = QuestReward()
+QR138 = QuestReward()
+QR139 = QuestReward()
+QR140 = QuestReward()
+QR141 = QuestReward()
+QR142 = QuestReward()
+QR143 = QuestReward()
+QR144 = QuestReward()
+QR145 = QuestReward()
+QR146 = QuestReward()
+QR147 = QuestReward()
+QR148 = QuestReward()
+QR149 = QuestReward()
+QR150 = QuestReward()
+QR151 = QuestReward()
+QR152 = QuestReward()
+QR153 = QuestReward()
+QR154 = QuestReward()
+QR155 = QuestReward()
+QR156 = QuestReward()
+QR157 = QuestReward()
+QR158 = QuestReward()
+QR159 = QuestReward()
+QR160 = QuestReward()
+QR161 = QuestReward()
+QR162 = QuestReward()
+QR163 = QuestReward()
+QR164 = QuestReward()
+QR165 = QuestReward()
+QR166 = QuestReward()
+QR167 = QuestReward()
+QR168 = QuestReward()
+QR169 = QuestReward()
+QR170 = QuestReward()
+QR171 = QuestReward()
+QR172 = QuestReward()
+QR173 = QuestReward()
+QR174 = QuestReward()
+QR175 = QuestReward()
+QR176 = QuestReward()
+QR177 = QuestReward()
+QR178 = QuestReward()
+QR179 = QuestReward()
+QR180 = QuestReward()
+QR181 = QuestReward()
+QR182 = QuestReward()
+QR183 = QuestReward()
+QR184 = QuestReward()
+QR185 = QuestReward()
+QR186 = QuestReward()
+QR187 = QuestReward()
+QR188 = QuestReward()
+QR189 = QuestReward()
+QR190 = QuestReward()
+QR191 = QuestReward()
+QR192 = QuestReward()
+QR193 = QuestReward()
+QR194 = QuestReward()
+QR195 = QuestReward()
+QR196 = QuestReward()
+QR197 = QuestReward()
+QR198 = QuestReward()
+QR199 = QuestReward()
+QR200 = QuestReward()
+QR201 = QuestReward()
+QR301 = QuestReward()
+QR302 = QuestReward()
+QR303 = QuestReward()
+QR304 = QuestReward()
+QR305 = QuestReward()
+QR306 = QuestReward()
+QR307 = QuestReward()
+QR308 = QuestReward()
+QR309 = QuestReward()
+QR310 = QuestReward()
+QR311 = QuestReward()
+QR312 = QuestReward()
+QR313 = QuestReward()
+QR314 = QuestReward()
+QR315 = QuestReward()
+QR321 = QuestReward()
+QR322 = QuestReward()
+QR323 = QuestReward()
+QR324 = QuestReward()
+QR325 = QuestReward()
+QR326 = QuestReward()
+QR327 = QuestReward()
+QR341 = QuestReward()
+QR342 = QuestReward()
+QR343 = QuestReward()
+QR344 = QuestReward()
+QR345 = QuestReward()
+QR346 = QuestReward()
+QR351 = QuestReward()
+QR352 = QuestReward()
+QR353 = QuestReward()
+QR354 = QuestReward()
+QR355 = QuestReward()
+QR356 = QuestReward()
+QR361 = QuestReward()
+QR362 = QuestReward()
+QR363 = QuestReward()
+QR364 = QuestReward()
+QR365 = QuestReward()
+QR401 = QuestReward()
+QR402 = QuestReward()
+QR403 = QuestReward()
+QR404 = QuestReward()
+QR405 = QuestReward()
+QR431 = QuestReward()
+QR432 = QuestReward()
+QR433 = QuestReward()
+QR434 = QuestReward()
+QR435 = QuestReward()
+QR436 = QuestReward()
+QR251 = QuestReward()
+QR252 = QuestReward()
+QR253 = QuestReward()
+QR254 = QuestReward()
+QR255 = QuestReward()
+QR256 = QuestReward()
+QR257 = QuestReward()
+QR258 = QuestReward()
+QR259 = QuestReward()
+QR260 = QuestReward()
+QR261 = QuestReward()
+QR262 = QuestReward()
+QR263 = QuestReward()
+QR264 = QuestReward()
+QR265 = QuestReward()
+QR266 = QuestReward()
+QR267 = QuestReward()
+QR268 = QuestReward()
+QR269 = QuestReward()
+QR270 = QuestReward()
+QR501 = QuestReward()
+QR502 = QuestReward()
+QR503 = QuestReward()
+QR504 = QuestReward()
+QR505 = QuestReward()
+QR506 = QuestReward()
+QR507 = QuestReward()
+QR508 = QuestReward()
+QR509 = QuestReward()
+QR510 = QuestReward()
+QR511 = QuestReward()
+QR512 = QuestReward()
+QR513 = QuestReward()
+QR514 = QuestReward()
+QR515 = QuestReward()
+QR516 = QuestReward()
+QR517 = QuestReward()
+QR518 = QuestReward()
+QR519 = QuestReward()
+QR520 = QuestReward()
+QR521 = QuestReward()
+QR522 = QuestReward()
+QR523 = QuestReward()
+QR524 = QuestReward()
+QR525 = QuestReward()
+QR526 = QuestReward()
+QR527 = QuestReward()
+QR528 = QuestReward()
+QR529 = QuestReward()
+QR530 = QuestReward()
+QR531 = QuestReward()
+QR532 = QuestReward()
+QR533 = QuestReward()
+QR534 = QuestReward()
+QR535 = QuestReward()
+QR536 = QuestReward()
+QR537 = QuestReward()
+QR538 = QuestReward()
+QR539 = QuestReward()
+QR540 = QuestReward()
+QR541 = QuestReward()
+QR542 = QuestReward()
+QR543 = QuestReward()
+QR544 = QuestReward()
+QR545 = QuestReward()
+QR546 = QuestReward()
+QR547 = QuestReward()
+QR548 = QuestReward()
+QR549 = QuestReward()
+QR550 = QuestReward()
+QR551 = QuestReward()
+QR552 = QuestReward()
+QR553 = QuestReward()
+QR554 = QuestReward()
+QR555 = QuestReward()
+QR556 = QuestReward()
+QR557 = QuestReward()
+QR558 = QuestReward()
+QR559 = QuestReward()
+QR560 = QuestReward()
+QR561 = QuestReward()
+QR562 = QuestReward()
+QR563 = QuestReward()
+QR564 = QuestReward()
+QR565 = QuestReward()
+QR566 = QuestReward()
+QR567 = QuestReward()
+QR568 = QuestReward()
+QR569 = QuestReward()
+QR570 = QuestReward()
+QR571 = QuestReward()
+QR572 = QuestReward()
+QR573 = QuestReward()
+QR574 = QuestReward()
+QR575 = QuestReward()
+QR576 = QuestReward()
+QR577 = QuestReward()
+QR578 = QuestReward()
+QR579 = QuestReward()
+QR580 = QuestReward()
+QR581 = QuestReward()
+QR582 = QuestReward()
+QR583 = QuestReward()
+QR584 = QuestReward()
+QR585 = QuestReward()
+QR586 = QuestReward()
+QR587 = QuestReward()
+QR588 = QuestReward()
+QR589 = QuestReward()
+QR590 = QuestReward()
+QR591 = QuestReward()
+QR592 = QuestReward()
+QR593 = QuestReward()
+QR594 = QuestReward()
+QR595 = QuestReward()
+QR596 = QuestReward()
+QR597 = QuestReward()
+QR598 = QuestReward()
+QR599 = QuestReward()
+QR600 = QuestReward()
+QR601 = QuestReward()
+QR701 = QuestReward()
+QR702 = QuestReward()
+QR703 = QuestReward()
+QR704 = QuestReward()
+QR705 = QuestReward()
+QR706 = QuestReward()
+QR707 = QuestReward()
+QR708 = QuestReward()
+QR709 = QuestReward()
+QR710 = QuestReward()
+QR711 = QuestReward()
+QR712 = QuestReward()
+QR713 = QuestReward()
+QR714 = QuestReward()
+QR715 = QuestReward()
+QR721 = QuestReward()
+QR722 = QuestReward()
+QR723 = QuestReward()
+QR724 = QuestReward()
+QR725 = QuestReward()
+QR726 = QuestReward()
+QR727 = QuestReward()
+QR741 = QuestReward()
+QR742 = QuestReward()
+QR743 = QuestReward()
+QR744 = QuestReward()
+QR745 = QuestReward()
+QR746 = QuestReward()
+QR751 = QuestReward()
+QR752 = QuestReward()
+QR753 = QuestReward()
+QR754 = QuestReward()
+QR755 = QuestReward()
+QR756 = QuestReward()
+QR761 = QuestReward()
+QR762 = QuestReward()
+QR763 = QuestReward()
+QR764 = QuestReward()
+QR765 = QuestReward()
+QR801 = QuestReward()
+QR802 = QuestReward()
+QR803 = QuestReward()
+QR804 = QuestReward()
+QR805 = QuestReward()
+QR831 = QuestReward()
+QR832 = QuestReward()
+QR833 = QuestReward()
+QR834 = QuestReward()
+QR835 = QuestReward()
+QR836 = QuestReward()
+QR651 = QuestReward()
+QR652 = QuestReward()
+QR653 = QuestReward()
+QR654 = QuestReward()
+QR655 = QuestReward()
+QR656 = QuestReward()
+QR657 = QuestReward()
+QR658 = QuestReward()
+QR659 = QuestReward()
+QR660 = QuestReward()
+QR661 = QuestReward()
+QR662 = QuestReward()
+QR663 = QuestReward()
+QR664 = QuestReward()
+QR665 = QuestReward()
+QR666 = QuestReward()
+QR667 = QuestReward()
+QR668 = QuestReward()
+QR669 = QuestReward()
+QR670 = QuestReward()
+# 101
+QI101.QuestID =101
+QI101.NextQuestsId =102,-1
+QI101.MinLevel =1
+QI101.RequiredFaction =1
+QI101.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI101.Color =0
+QI101.Repeat =1
+QI101.RewardItem[0].Base =2101
+QI101.RewardItem[0].Append =[3,50,60,61,-1]
+QI101.RewardItem[0].Level =1
+QI101.RewardItem[0].Overlap =1
+QI101.RewardItem[0].Binding =1
+QI101.RewardItem[1].Base =2201
+QI101.RewardItem[1].Append =[3,56,60,61,-1]
+QI101.RewardItem[1].Level =1
+QI101.RewardItem[1].Overlap =1
+QI101.RewardItem[1].Binding =1
+QR101.QuestID =101
+QR101.EXP =100
+
+# 102
+QI102.QuestID =102
+QI102.PrevQuestId =101
+QI102.NextQuestsId =103,-1
+QI102.MinLevel =1
+QI102.RequiredFaction =1
+QI102.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI102.Color =0
+QI102.Repeat =1
+QI102.RewardItem[0].Base =4000
+QI102.RewardItem[0].Overlap =5
+QI102.RewardItem[0].Binding =0
+QR102.QuestID =102
+QR102.EXP =100
+
+# 103
+QI103.QuestID =103
+QI103.PrevQuestId =102
+QI103.NextQuestsId =104,-1
+QI103.MinLevel =1
+QI103.RequiredFaction =1
+QI103.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI103.Color =0
+QI103.Repeat =1
+QI103.RewardItem[0].Base =4100
+QI103.RewardItem[0].Overlap =5
+QI103.RewardItem[0].Binding =0
+QR103.QuestID =103
+QR103.EXP =100
+
+# 104
+QI104.QuestID =104
+QI104.PrevQuestId =103
+QI104.NextQuestsId =105,-1
+QI104.MinLevel =2
+QI104.RequiredFaction =1
+QI104.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI104.Color =0
+QI104.Repeat =1
+QI104.RewardItem[0].Base =2001
+QI104.RewardItem[0].Append =[3,50,56,-1,-1]
+QI104.RewardItem[0].Level =1
+QI104.RewardItem[0].Overlap =1
+QI104.RewardItem[0].Binding =1
+QR104.QuestID =104
+QR104.EXP =100
+
+# 105
+QI105.QuestID =105
+QI105.PrevQuestId =104
+QI105.NextQuestsId =106,-1
+QI105.MinLevel =2
+QI105.RequiredFaction =1
+QI105.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI105.Color =0
+QI105.Repeat =1
+QI105.RewardItem[0].Base =1001
+QI105.RewardItem[0].Append =[0,1,2,6,-1]
+QI105.RewardItem[0].Level =1
+QI105.RewardItem[0].Overlap =1
+QI105.RewardItem[0].Binding =1
+QI105.RewardItem[1].Base =1401
+QI105.RewardItem[1].Append =[0,1,2,6,-1]
+QI105.RewardItem[1].Level =1
+QI105.RewardItem[1].Overlap =1
+QI105.RewardItem[1].Binding =1
+QI105.RewardItem[2].Base =1701
+QI105.RewardItem[2].Append =[8,9,10,57,-1]
+QI105.RewardItem[2].Level =1
+QI105.RewardItem[2].Overlap =1
+QI105.RewardItem[2].Binding =1
+QR105.QuestID =105
+QR105.EXP =100
+
+# 106
+QI106.QuestID =106
+QI106.PrevQuestId =105
+QI106.NextQuestsId =107,-1
+QI106.MinLevel =2
+QI106.RequiredFaction =1
+QI106.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI106.Color =0
+QI106.Creature =[1010,-1,-1,-1]
+QI106.CreatureCount =[10,-1,-1,-1]
+QI106.Repeat =1
+QI106.RewardMoney =20
+QR106.QuestID =106
+QR106.EXP =200
+
+# 107
+QI107.QuestID =107
+QI107.PrevQuestId =106
+QI107.NextQuestsId =108,-1
+QI107.MinLevel =3
+QI107.RequiredFaction =1
+QI107.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI107.Color =0
+QI107.Repeat =1
+QI107.RewardItem[0].Base =2901
+QI107.RewardItem[0].Append =[5,58,59,-1,-1]
+QI107.RewardItem[0].Level =1
+QI107.RewardItem[0].Overlap =1
+QI107.RewardItem[0].Binding =1
+QR107.QuestID =107
+QR107.EXP =30
+
+# 108
+QI108.QuestID =108
+QI108.PrevQuestId =107
+QI108.NextQuestsId =109,-1
+QI108.MinLevel =3
+QI108.RequiredFaction =1
+QI108.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI108.Color =0
+QI108.Repeat =1
+QI108.RewardItem[0].Base =2801
+QI108.RewardItem[0].Append =[0,2,6,-1,-1]
+QI108.RewardItem[0].Level =1
+QI108.RewardItem[0].Overlap =1
+QI108.RewardItem[0].Binding =1
+QR108.QuestID =108
+QR108.EXP =30
+
+# 109
+QI109.QuestID =109
+QI109.PrevQuestId =108
+QI109.NextQuestsId =110,-1
+QI109.MinLevel =4
+QI109.RequiredFaction =1
+QI109.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI109.Color =0
+QI109.Creature =[1011,-1,-1,-1]
+QI109.CreatureCount =[15,-1,-1,-1]
+QI109.Repeat =1
+QI109.RewardMoney =20
+QR109.QuestID =109
+QR109.EXP =400
+
+# 110
+QI110.QuestID =110
+QI110.PrevQuestId =109
+QI110.NextQuestsId =111,-1
+QI110.MinLevel =4
+QI110.RequiredFaction =1
+QI110.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI110.Color =0
+QI110.Repeat =1
+QI110.RewardItem[0].Base =4000
+QI110.RewardItem[0].Overlap =5
+QI110.RewardItem[0].Binding =0
+QR110.QuestID =110
+QR110.EXP =70
+
+# 111
+QI111.QuestID =111
+QI111.PrevQuestId =110
+QI111.NextQuestsId =112,-1
+QI111.MinLevel =4
+QI111.RequiredFaction =1
+QI111.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI111.Color =0
+QI111.Repeat =1
+QI111.RewardItem[0].Base =4100
+QI111.RewardItem[0].Overlap =5
+QI111.RewardItem[0].Binding =0
+QR111.QuestID =111
+QR111.EXP =80
+
+# 112
+QI112.QuestID =112
+QI112.PrevQuestId =111
+QI112.NextQuestsId =113,-1
+QI112.MinLevel =5
+QI112.RequiredFaction =1
+QI112.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI112.Color =0
+QI112.Repeat =1
+QR112.QuestID =112
+QR112.EXP =500
+
+# 113
+QI113.QuestID =113
+QI113.PrevQuestId =112
+QI113.NextQuestsId =114,-1
+QI113.MinLevel =5
+QI113.RequiredFaction =1
+QI113.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI113.Color =0
+QI113.Repeat =1
+QR113.QuestID =113
+QR113.EXP =100
+
+# 114
+QI114.QuestID =114
+QI114.PrevQuestId =113
+QI114.NextQuestsId =115,-1
+QI114.MinLevel =6
+QI114.RequiredFaction =1
+QI114.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI114.Color =0
+QI114.Item =[101,-1,-1,-1]
+QI114.ItemCount =[10,-1,-1,-1]
+QI114.ItemProbability =[50,-1,-1,-1]
+QI114.Repeat =1
+QI114.RewardItem[0].Base =1102
+QI114.RewardItem[0].Append =[0,1,2,6,60]
+QI114.RewardItem[0].Level =1
+QI114.RewardItem[0].Overlap =1
+QI114.RewardItem[0].Binding =1
+QI114.RewardItem[1].Base =1402
+QI114.RewardItem[1].Append =[0,1,2,6,-1]
+QI114.RewardItem[1].Level =1
+QI114.RewardItem[1].Overlap =1
+QI114.RewardItem[1].Binding =1
+QI114.RewardItem[2].Base =1802
+QI114.RewardItem[2].Append =[8,9,10,57,60]
+QI114.RewardItem[2].Level =1
+QI114.RewardItem[2].Overlap =1
+QI114.RewardItem[2].Binding =1
+QR114.QuestID =114
+QR114.EXP =800
+
+# 115
+QI115.QuestID =115
+QI115.PrevQuestId =114
+QI115.NextQuestsId =116,-1
+QI115.MinLevel =6
+QI115.RequiredFaction =1
+QI115.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI115.Color =0
+QI115.Repeat =1
+QI115.RewardMoney =50
+QR115.QuestID =115
+QR115.EXP =500
+
+# 116
+QI116.QuestID =116
+QI116.PrevQuestId =115
+QI116.NextQuestsId =117,-1
+QI116.MinLevel =6
+QI116.RequiredFaction =1
+QI116.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI116.Color =0
+QI116.Repeat =1
+QR116.QuestID =116
+QR116.EXP =150
+
+# 117
+QI117.QuestID =117
+QI117.PrevQuestId =116
+QI117.NextQuestsId =118,-1
+QI117.MinLevel =7
+QI117.RequiredFaction =1
+QI117.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI117.Color =0
+QI117.Creature =[1016,-1,-1,-1]
+QI117.CreatureCount =[20,-1,-1,-1]
+QI117.Repeat =1
+QI117.RewardItem[0].Base =2301
+QI117.RewardItem[0].Append =[0,2,60,-1,-1]
+QI117.RewardItem[0].Level =1
+QI117.RewardItem[0].Overlap =1
+QI117.RewardItem[0].Binding =1
+QI117.RewardItem[1].Base =2401
+QI117.RewardItem[1].Append =[57,61,-1,-1,-1]
+QI117.RewardItem[1].Level =1
+QI117.RewardItem[1].Overlap =1
+QI117.RewardItem[1].Binding =1
+QR117.QuestID =117
+QR117.EXP =1000
+
+# 118
+QI118.QuestID =118
+QI118.PrevQuestId =117
+QI118.NextQuestsId =119,-1
+QI118.MinLevel =8
+QI118.RequiredFaction =1
+QI118.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI118.Color =0
+QI118.Repeat =1
+QI118.RewardItem[0].Base =3001
+QI118.RewardItem[0].Append =[51,52,58,-1,-1]
+QI118.RewardItem[0].Level =1
+QI118.RewardItem[0].Overlap =1
+QI118.RewardItem[0].Binding =1
+QR118.QuestID =118
+QR118.EXP =200
+
+# 119
+QI119.QuestID =119
+QI119.PrevQuestId =118
+QI119.NextQuestsId =120,-1
+QI119.MinLevel =9
+QI119.RequiredFaction =1
+QI119.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI119.Color =0
+QI119.Repeat =1
+QR119.QuestID =119
+QR119.EXP =200
+
+# 120
+QI120.QuestID =120
+QI120.PrevQuestId =119
+QI120.NextQuestsId =121,-1
+QI120.MinLevel =9
+QI120.RequiredFaction =1
+QI120.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI120.Color =0
+QI120.Repeat =1
+QR120.QuestID =120
+QR120.EXP =200
+
+# 121
+QI121.QuestID =121
+QI121.PrevQuestId =120
+QI121.NextQuestsId =122,-1
+QI121.MinLevel =10
+QI121.RequiredFaction =1
+QI121.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI121.Color =1
+QI121.Creature =[1018,-1,-1,-1]
+QI121.CreatureCount =[20,-1,-1,-1]
+QI121.Repeat =1
+QI121.RewardItem[0].Base =3101
+QI121.RewardItem[0].Append =[5,8,57,-1,-1]
+QI121.RewardItem[0].Level =1
+QI121.RewardItem[0].Overlap =1
+QI121.RewardItem[0].Binding =1
+QR121.QuestID =121
+QR121.EXP =1200
+
+# 122
+QI122.QuestID =122
+QI122.PrevQuestId =121
+QI122.NextQuestsId =123,-1
+QI122.MinLevel =10
+QI122.RequiredFaction =1
+QI122.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI122.Color =0
+QI122.Repeat =1
+QI122.RewardMoney =100
+QR122.QuestID =122
+QR122.EXP =200
+
+# 123
+QI123.QuestID =123
+QI123.PrevQuestId =122
+QI123.NextQuestsId =124,-1
+QI123.MinLevel =10
+QI123.RequiredFaction =1
+QI123.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI123.Color =0
+QI123.Repeat =1
+QR123.QuestID =123
+QR123.EXP =200
+
+# 124
+QI124.QuestID =124
+QI124.PrevQuestId =123
+QI124.NextQuestsId =125,-1
+QI124.MinLevel =11
+QI124.RequiredFaction =1
+QI124.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI124.Color =0
+QI124.Repeat =1
+QR124.QuestID =124
+QR124.EXP =200
+
+# 125
+QI125.QuestID =125
+QI125.PrevQuestId =124
+QI125.NextQuestsId =126,-1
+QI125.MinLevel =11
+QI125.RequiredFaction =1
+QI125.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI125.Color =0
+QI125.Repeat =1
+QR125.QuestID =125
+QR125.EXP =200
+
+# 126
+QI126.QuestID =126
+QI126.PrevQuestId =125
+QI126.NextQuestsId =127,-1
+QI126.MinLevel =12
+QI126.RequiredFaction =1
+QI126.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI126.Color =1
+QI126.Item =[102,-1,-1,-1]
+QI126.ItemCount =[8,-1,-1,-1]
+QI126.ItemProbability =[40,-1,-1,-1]
+QI126.Repeat =1
+QI126.RewardMoney =100
+QI126.RewardItem[0].Base =4200
+QI126.RewardItem[0].Overlap =1
+QI126.RewardItem[0].Binding =1
+QR126.QuestID =126
+QR126.EXP =1300
+
+# 127
+QI127.QuestID =127
+QI127.PrevQuestId =126
+QI127.NextQuestsId =128,-1
+QI127.MinLevel =12
+QI127.RequiredFaction =1
+QI127.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI127.Color =0
+QI127.Repeat =1
+QR127.QuestID =127
+QR127.EXP =250
+
+# 128
+QI128.QuestID =128
+QI128.PrevQuestId =127
+QI128.NextQuestsId =129,-1
+QI128.MinLevel =12
+QI128.RequiredFaction =1
+QI128.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI128.Color =0
+QI128.Repeat =1
+QR128.QuestID =128
+QR128.EXP =250
+
+# 129
+QI129.QuestID =129
+QI129.PrevQuestId =128
+QI129.NextQuestsId =130,-1
+QI129.MinLevel =12
+QI129.RequiredFaction =1
+QI129.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI129.Color =0
+QI129.Repeat =1
+QR129.QuestID =129
+QR129.EXP =250
+
+# 130
+QI130.QuestID =130
+QI130.PrevQuestId =129
+QI130.NextQuestsId =131,-1
+QI130.MinLevel =12
+QI130.RequiredFaction =1
+QI130.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI130.Color =0
+QI130.Repeat =1
+QR130.QuestID =130
+QR130.EXP =250
+
+# 131
+QI131.QuestID =131
+QI131.PrevQuestId =130
+QI131.NextQuestsId =132,-1
+QI131.MinLevel =12
+QI131.RequiredFaction =1
+QI131.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI131.Color =0
+QI131.Repeat =1
+QR131.QuestID =131
+QR131.EXP =300
+
+# 132
+QI132.QuestID =132
+QI132.PrevQuestId =131
+QI132.NextQuestsId =133,-1
+QI132.MinLevel =12
+QI132.RequiredFaction =1
+QI132.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI132.Color =0
+QI132.Repeat =1
+QR132.QuestID =132
+QR132.EXP =300
+
+# 133
+QI133.QuestID =133
+QI133.PrevQuestId =132
+QI133.NextQuestsId =134,-1
+QI133.MinLevel =13
+QI133.RequiredFaction =1
+QI133.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI133.Color =1
+QI133.Item =[103,-1,-1,-1]
+QI133.ItemCount =[3,-1,-1,-1]
+QI133.ItemProbability =[20,-1,-1,-1]
+QI133.Repeat =1
+QI133.RewardItem[0].Base =4201
+QI133.RewardItem[0].Overlap =1
+QI133.RewardItem[0].Binding =1
+QR133.QuestID =133
+QR133.EXP =1000
+
+# 134
+QI134.QuestID =134
+QI134.PrevQuestId =133
+QI134.NextQuestsId =135,-1
+QI134.MinLevel =13
+QI134.RequiredFaction =1
+QI134.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI134.Color =0
+QI134.Repeat =1
+QR134.QuestID =134
+QR134.EXP =300
+
+# 135
+QI135.QuestID =135
+QI135.PrevQuestId =134
+QI135.NextQuestsId =136,-1
+QI135.MinLevel =13
+QI135.RequiredFaction =1
+QI135.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI135.Color =0
+QI135.Repeat =1
+QR135.QuestID =135
+QR135.EXP =300
+
+# 136
+QI136.QuestID =136
+QI136.PrevQuestId =135
+QI136.NextQuestsId =137,-1
+QI136.MinLevel =13
+QI136.RequiredFaction =1
+QI136.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI136.Color =0
+QI136.Repeat =1
+QR136.QuestID =136
+QR136.EXP =350
+
+# 137
+QI137.QuestID =137
+QI137.PrevQuestId =136
+QI137.NextQuestsId =138,-1
+QI137.MinLevel =13
+QI137.RequiredFaction =1
+QI137.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI137.Color =0
+QI137.Repeat =1
+QR137.QuestID =137
+QR137.EXP =350
+
+# 138
+QI138.QuestID =138
+QI138.PrevQuestId =137
+QI138.NextQuestsId =139,-1
+QI138.MinLevel =14
+QI138.RequiredFaction =1
+QI138.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI138.Color =0
+QI138.Repeat =1
+QI138.RewardItem[0].Base =1002
+QI138.RewardItem[0].Append =[0,1,-1,-1,-1]
+QI138.RewardItem[0].Level =1
+QI138.RewardItem[0].Overlap =1
+QI138.RewardItem[0].Binding =1
+QI138.RewardItem[1].Base =1102
+QI138.RewardItem[1].Append =[0,1,60,61,-1]
+QI138.RewardItem[1].Level =1
+QI138.RewardItem[1].Overlap =1
+QI138.RewardItem[1].Binding =1
+QI138.RewardItem[2].Base =1702
+QI138.RewardItem[2].Append =[8,57,-1,-1,-1]
+QI138.RewardItem[2].Level =1
+QI138.RewardItem[2].Overlap =1
+QI138.RewardItem[2].Binding =1
+QR138.QuestID =138
+QR138.EXP =100
+
+# 139
+QI139.QuestID =139
+QI139.PrevQuestId =138
+QI139.NextQuestsId =140,-1
+QI139.MinLevel =14
+QI139.RequiredFaction =1
+QI139.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI139.Color =0
+QI139.Repeat =1
+QR139.QuestID =139
+QR139.EXP =350
+
+# 140
+QI140.QuestID =140
+QI140.PrevQuestId =139
+QI140.NextQuestsId =141,-1
+QI140.MinLevel =14
+QI140.RequiredFaction =1
+QI140.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI140.Color =0
+QI140.Repeat =1
+QR140.QuestID =140
+QR140.EXP =400
+
+# 141
+QI141.QuestID =141
+QI141.PrevQuestId =140
+QI141.NextQuestsId =142,-1
+QI141.MinLevel =14
+QI141.RequiredFaction =1
+QI141.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI141.Color =0
+QI141.Repeat =1
+QR141.QuestID =141
+QR141.EXP =400
+
+# 142
+QI142.QuestID =142
+QI142.PrevQuestId =141
+QI142.NextQuestsId =143,-1
+QI142.MinLevel =15
+QI142.RequiredFaction =1
+QI142.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI142.Color =1
+QI142.Item =[104,-1,-1,-1]
+QI142.ItemCount =[1,-1,-1,-1]
+QI142.ItemProbability =[8,-1,-1,-1]
+QI142.Repeat =1
+QI142.RewardItem[0].Base =1402
+QI142.RewardItem[0].Append =[0,1,60,61,-1]
+QI142.RewardItem[0].Level =1
+QI142.RewardItem[0].Overlap =1
+QI142.RewardItem[0].Binding =1
+QI142.RewardItem[1].Base =1802
+QI142.RewardItem[1].Append =[8,57,60,61,-1]
+QI142.RewardItem[1].Level =1
+QI142.RewardItem[1].Overlap =1
+QI142.RewardItem[1].Binding =1
+QI142.RewardItem[2].Base =2002
+QI142.RewardItem[2].Append =[3,4,60,-1,-1]
+QI142.RewardItem[2].Level =1
+QI142.RewardItem[2].Overlap =1
+QI142.RewardItem[2].Binding =1
+QR142.QuestID =142
+QR142.EXP =1000
+
+# 143
+QI143.QuestID =143
+QI143.PrevQuestId =142
+QI143.NextQuestsId =144,-1
+QI143.MinLevel =15
+QI143.RequiredFaction =1
+QI143.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI143.Color =0
+QI143.Repeat =1
+QR143.QuestID =143
+QR143.EXP =450
+
+# 144
+QI144.QuestID =144
+QI144.PrevQuestId =143
+QI144.NextQuestsId =145,-1
+QI144.MinLevel =15
+QI144.RequiredFaction =1
+QI144.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI144.Color =0
+QI144.Repeat =1
+QR144.QuestID =144
+QR144.EXP =450
+
+# 145
+QI145.QuestID =145
+QI145.PrevQuestId =144
+QI145.NextQuestsId =146,-1
+QI145.MinLevel =15
+QI145.RequiredFaction =1
+QI145.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI145.Color =0
+QI145.Repeat =1
+QR145.QuestID =145
+QR145.EXP =450
+
+# 146
+QI146.QuestID =146
+QI146.PrevQuestId =145
+QI146.NextQuestsId =147,-1
+QI146.MinLevel =15
+QI146.RequiredFaction =1
+QI146.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI146.Color =0
+QI146.Repeat =1
+QR146.QuestID =146
+QR146.EXP =500
+
+# 147
+QI147.QuestID =147
+QI147.PrevQuestId =146
+QI147.NextQuestsId =148,-1
+QI147.MinLevel =15
+QI147.RequiredFaction =1
+QI147.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI147.Color =0
+QI147.Repeat =1
+QR147.QuestID =147
+QR147.EXP =500
+
+# 148
+QI148.QuestID =148
+QI148.PrevQuestId =147
+QI148.NextQuestsId =149,-1
+QI148.MinLevel =16
+QI148.RequiredFaction =1
+QI148.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI148.Color =0
+QI148.Repeat =1
+QR148.QuestID =148
+QR148.EXP =1000
+
+# 149
+QI149.QuestID =149
+QI149.PrevQuestId =148
+QI149.NextQuestsId =150,-1
+QI149.MinLevel =16
+QI149.RequiredFaction =1
+QI149.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI149.Color =1
+QI149.Creature =[1030,-1,-1,-1]
+QI149.CreatureCount =[25,-1,-1,-1]
+QI149.Repeat =1
+QR149.QuestID =149
+QR149.EXP =1800
+
+# 150
+QI150.QuestID =150
+QI150.PrevQuestId =149
+QI150.NextQuestsId =151,-1
+QI150.MinLevel =16
+QI150.RequiredFaction =1
+QI150.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI150.Color =1
+QI150.Creature =[1031,-1,-1,-1]
+QI150.CreatureCount =[30,-1,-1,-1]
+QI150.Repeat =1
+QR150.QuestID =150
+QR150.EXP =2000
+
+# 151
+QI151.QuestID =151
+QI151.PrevQuestId =150
+QI151.NextQuestsId =152,-1
+QI151.MinLevel =16
+QI151.RequiredFaction =1
+QI151.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI151.Color =0
+QI151.Repeat =1
+QR151.QuestID =151
+QR151.EXP =500
+
+# 152
+QI152.QuestID =152
+QI152.PrevQuestId =151
+QI152.NextQuestsId =153,-1
+QI152.MinLevel =17
+QI152.RequiredFaction =1
+QI152.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI152.Color =1
+QI152.Item =[105,-1,-1,-1]
+QI152.ItemCount =[1,-1,-1,-1]
+QI152.ItemProbability =[5,-1,-1,-1]
+QI152.Repeat =1
+QR152.QuestID =152
+QR152.EXP =2200
+
+# 153
+QI153.QuestID =153
+QI153.PrevQuestId =152
+QI153.NextQuestsId =154,-1
+QI153.MinLevel =17
+QI153.RequiredFaction =1
+QI153.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI153.Color =0
+QI153.Repeat =1
+QR153.QuestID =153
+QR153.EXP =500
+
+# 154
+QI154.QuestID =154
+QI154.PrevQuestId =153
+QI154.NextQuestsId =155,-1
+QI154.MinLevel =17
+QI154.RequiredFaction =1
+QI154.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI154.Color =0
+QI154.Repeat =1
+QR154.QuestID =154
+QR154.EXP =500
+
+# 155
+QI155.QuestID =155
+QI155.PrevQuestId =154
+QI155.NextQuestsId =156,-1
+QI155.MinLevel =17
+QI155.RequiredFaction =1
+QI155.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI155.Color =0
+QI155.Repeat =1
+QR155.QuestID =155
+QR155.EXP =550
+
+# 156
+QI156.QuestID =156
+QI156.PrevQuestId =155
+QI156.NextQuestsId =157,-1
+QI156.MinLevel =17
+QI156.RequiredFaction =1
+QI156.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI156.Color =0
+QI156.Repeat =1
+QR156.QuestID =156
+QR156.EXP =550
+
+# 157
+QI157.QuestID =157
+QI157.PrevQuestId =156
+QI157.NextQuestsId =158,-1
+QI157.MinLevel =17
+QI157.RequiredFaction =1
+QI157.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI157.Color =0
+QI157.Repeat =1
+QR157.QuestID =157
+QR157.EXP =550
+
+# 158
+QI158.QuestID =158
+QI158.PrevQuestId =157
+QI158.NextQuestsId =159,-1
+QI158.MinLevel =18
+QI158.RequiredFaction =1
+QI158.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI158.Color =1
+QI158.Item =[106,-1,-1,-1]
+QI158.ItemCount =[3,-1,-1,-1]
+QI158.ItemProbability =[10,-1,-1,-1]
+QI158.Repeat =1
+QR158.QuestID =158
+QR158.EXP =2500
+
+# 159
+QI159.QuestID =159
+QI159.PrevQuestId =158
+QI159.NextQuestsId =160,-1
+QI159.MinLevel =18
+QI159.RequiredFaction =1
+QI159.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI159.Color =0
+QI159.Repeat =1
+QR159.QuestID =159
+QR159.EXP =550
+
+# 160
+QI160.QuestID =160
+QI160.PrevQuestId =159
+QI160.NextQuestsId =161,-1
+QI160.MinLevel =18
+QI160.RequiredFaction =1
+QI160.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI160.Color =0
+QI160.Repeat =1
+QR160.QuestID =160
+QR160.EXP =600
+
+# 161
+QI161.QuestID =161
+QI161.PrevQuestId =160
+QI161.NextQuestsId =162,-1
+QI161.MinLevel =18
+QI161.RequiredFaction =1
+QI161.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI161.Color =0
+QI161.Repeat =1
+QR161.QuestID =161
+QR161.EXP =600
+
+# 162
+QI162.QuestID =162
+QI162.PrevQuestId =161
+QI162.NextQuestsId =163,-1
+QI162.MinLevel =19
+QI162.RequiredFaction =1
+QI162.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI162.Color =0
+QI162.Repeat =1
+QR162.QuestID =162
+QR162.EXP =650
+
+# 163
+QI163.QuestID =163
+QI163.PrevQuestId =162
+QI163.NextQuestsId =164,-1
+QI163.MinLevel =19
+QI163.RequiredFaction =1
+QI163.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI163.Color =1
+QI163.Creature =[1033,-1,-1,-1]
+QI163.CreatureCount =[20,-1,-1,-1]
+QI163.Repeat =1
+QR163.QuestID =163
+QR163.EXP =2500
+
+# 164
+QI164.QuestID =164
+QI164.PrevQuestId =163
+QI164.NextQuestsId =165,-1
+QI164.MinLevel =19
+QI164.RequiredFaction =1
+QI164.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI164.Color =0
+QI164.Repeat =1
+QR164.QuestID =164
+QR164.EXP =650
+
+# 165
+QI165.QuestID =165
+QI165.PrevQuestId =164
+QI165.NextQuestsId =166,-1
+QI165.MinLevel =20
+QI165.RequiredFaction =1
+QI165.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI165.Color =1
+QI165.Creature =[1035,-1,-1,-1]
+QI165.CreatureCount =[20,-1,-1,-1]
+QI165.Repeat =1
+QR165.QuestID =165
+QR165.EXP =3000
+
+# 166
+QI166.QuestID =166
+QI166.PrevQuestId =165
+QI166.NextQuestsId =167,-1
+QI166.MinLevel =20
+QI166.RequiredFaction =1
+QI166.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI166.Color =0
+QI166.Repeat =1
+QR166.QuestID =166
+QR166.EXP =700
+
+# 167
+QI167.QuestID =167
+QI167.PrevQuestId =166
+QI167.NextQuestsId =168,-1
+QI167.MinLevel =21
+QI167.RequiredFaction =1
+QI167.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI167.Color =0
+QI167.Repeat =1
+QR167.QuestID =167
+QR167.EXP =700
+
+# 168
+QI168.QuestID =168
+QI168.PrevQuestId =167
+QI168.NextQuestsId =169,-1
+QI168.MinLevel =21
+QI168.RequiredFaction =1
+QI168.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI168.Color =0
+QI168.Repeat =1
+QR168.QuestID =168
+QR168.EXP =700
+
+# 169
+QI169.QuestID =169
+QI169.PrevQuestId =168
+QI169.NextQuestsId =170,-1
+QI169.MinLevel =22
+QI169.RequiredFaction =1
+QI169.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI169.Color =1
+QI169.Creature =[1038,-1,-1,-1]
+QI169.CreatureCount =[15,-1,-1,-1]
+QI169.Repeat =1
+QR169.QuestID =169
+QR169.EXP =3200
+
+# 170
+QI170.QuestID =170
+QI170.PrevQuestId =169
+QI170.NextQuestsId =171,-1
+QI170.MinLevel =23
+QI170.RequiredFaction =1
+QI170.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI170.Color =0
+QI170.Repeat =1
+QR170.QuestID =170
+QR170.EXP =700
+
+# 171
+QI171.QuestID =171
+QI171.PrevQuestId =170
+QI171.NextQuestsId =172,-1
+QI171.MinLevel =24
+QI171.RequiredFaction =1
+QI171.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI171.Color =1
+QI171.Creature =[1051,-1,-1,-1]
+QI171.CreatureCount =[30,-1,-1,-1]
+QI171.Repeat =1
+QR171.QuestID =171
+QR171.EXP =3500
+
+# 172
+QI172.QuestID =172
+QI172.PrevQuestId =171
+QI172.NextQuestsId =173,-1
+QI172.MinLevel =24
+QI172.RequiredFaction =1
+QI172.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI172.Color =0
+QI172.Repeat =1
+QR172.QuestID =172
+QR172.EXP =800
+
+# 173
+QI173.QuestID =173
+QI173.PrevQuestId =172
+QI173.NextQuestsId =174,-1
+QI173.MinLevel =24
+QI173.RequiredFaction =1
+QI173.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI173.Color =0
+QI173.Repeat =1
+QR173.QuestID =173
+QR173.EXP =800
+
+# 174
+QI174.QuestID =174
+QI174.PrevQuestId =173
+QI174.NextQuestsId =175,-1
+QI174.MinLevel =25
+QI174.RequiredFaction =1
+QI174.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI174.Color =0
+QI174.Repeat =1
+QR174.QuestID =174
+QR174.EXP =800
+
+# 175
+QI175.QuestID =175
+QI175.PrevQuestId =174
+QI175.NextQuestsId =176,-1
+QI175.MinLevel =25
+QI175.RequiredFaction =1
+QI175.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI175.Color =0
+QI175.Repeat =1
+QR175.QuestID =175
+QR175.EXP =800
+
+# 176
+QI176.QuestID =176
+QI176.PrevQuestId =175
+QI176.NextQuestsId =177,-1
+QI176.MinLevel =26
+QI176.RequiredFaction =1
+QI176.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI176.Color =1
+QI176.Item =[107,-1,-1,-1]
+QI176.ItemCount =[10,-1,-1,-1]
+QI176.ItemProbability =[50,-1,-1,-1]
+QI176.Repeat =1
+QI176.RewardMoney =500
+QR176.QuestID =176
+QR176.EXP =5000
+
+# 177
+QI177.QuestID =177
+QI177.PrevQuestId =176
+QI177.NextQuestsId =178,-1
+QI177.MinLevel =26
+QI177.RequiredFaction =1
+QI177.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI177.Color =0
+QI177.Repeat =1
+QR177.QuestID =177
+QR177.EXP =900
+
+# 178
+QI178.QuestID =178
+QI178.PrevQuestId =177
+QI178.NextQuestsId =179,-1
+QI178.MinLevel =27
+QI178.RequiredFaction =1
+QI178.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI178.Color =0
+QI178.Repeat =1
+QR178.QuestID =178
+QR178.EXP =900
+
+# 179
+QI179.QuestID =179
+QI179.PrevQuestId =178
+QI179.NextQuestsId =180,-1
+QI179.MinLevel =27
+QI179.RequiredFaction =1
+QI179.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI179.Color =0
+QI179.Repeat =1
+QR179.QuestID =179
+QR179.EXP =1000
+
+# 180
+QI180.QuestID =180
+QI180.PrevQuestId =179
+QI180.NextQuestsId =181,-1
+QI180.MinLevel =28
+QI180.RequiredFaction =1
+QI180.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI180.Color =0
+QI180.Repeat =1
+QR180.QuestID =180
+QR180.EXP =1000
+
+# 181
+QI181.QuestID =181
+QI181.PrevQuestId =180
+QI181.NextQuestsId =182,-1
+QI181.MinLevel =28
+QI181.RequiredFaction =1
+QI181.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI181.Color =2
+QI181.Creature =[1054,-1,-1,-1]
+QI181.CreatureCount =[30,-1,-1,-1]
+QI181.Repeat =1
+QR181.QuestID =181
+QR181.EXP =6500
+
+# 182
+QI182.QuestID =182
+QI182.PrevQuestId =181
+QI182.NextQuestsId =183,-1
+QI182.MinLevel =29
+QI182.RequiredFaction =1
+QI182.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI182.Color =0
+QI182.Repeat =1
+QR182.QuestID =182
+QR182.EXP =1200
+
+# 183
+QI183.QuestID =183
+QI183.PrevQuestId =182
+QI183.NextQuestsId =184,-1
+QI183.MinLevel =29
+QI183.RequiredFaction =1
+QI183.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI183.Color =0
+QI183.Repeat =1
+QR183.QuestID =183
+QR183.EXP =1200
+
+# 184
+QI184.QuestID =184
+QI184.PrevQuestId =183
+QI184.NextQuestsId =185,-1
+QI184.MinLevel =30
+QI184.RequiredFaction =1
+QI184.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI184.Color =1
+QI184.Item =[108,-1,-1,-1]
+QI184.ItemCount =[20,-1,-1,-1]
+QI184.ItemProbability =[60,-1,-1,-1]
+QI184.Repeat =1
+QR184.QuestID =184
+QR184.EXP =7500
+
+# 185
+QI185.QuestID =185
+QI185.PrevQuestId =184
+QI185.NextQuestsId =186,-1
+QI185.MinLevel =31
+QI185.RequiredFaction =1
+QI185.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI185.Color =0
+QI185.Repeat =1
+QR185.QuestID =185
+QR185.EXP =1300
+
+# 186
+QI186.QuestID =186
+QI186.PrevQuestId =185
+QI186.NextQuestsId =187,-1
+QI186.MinLevel =32
+QI186.RequiredFaction =1
+QI186.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI186.Color =0
+QI186.Repeat =1
+QI186.RewardMoney =1000
+QR186.QuestID =186
+QR186.EXP =1400
+
+# 187
+QI187.QuestID =187
+QI187.PrevQuestId =186
+QI187.NextQuestsId =188,-1
+QI187.MinLevel =33
+QI187.RequiredFaction =1
+QI187.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI187.Color =0
+QI187.Money =100
+QI187.Repeat =1
+QR187.QuestID =187
+QR187.EXP =4000
+
+# 188
+QI188.QuestID =188
+QI188.PrevQuestId =187
+QI188.NextQuestsId =189,-1
+QI188.MinLevel =34
+QI188.RequiredFaction =1
+QI188.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI188.Color =1
+QI188.Item =[109,-1,-1,-1]
+QI188.ItemCount =[20,-1,-1,-1]
+QI188.ItemProbability =[100,-1,-1,-1]
+QI188.Repeat =1
+QR188.QuestID =188
+QR188.EXP =4000
+
+# 189
+QI189.QuestID =189
+QI189.PrevQuestId =188
+QI189.NextQuestsId =190,-1
+QI189.MinLevel =35
+QI189.RequiredFaction =1
+QI189.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI189.Color =0
+QI189.Repeat =1
+QR189.QuestID =189
+QR189.EXP =4000
+
+# 190
+QI190.QuestID =190
+QI190.PrevQuestId =189
+QI190.NextQuestsId =191,-1
+QI190.MinLevel =36
+QI190.RequiredFaction =1
+QI190.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI190.Color =0
+QI190.Repeat =1
+QR190.QuestID =190
+QR190.EXP =1500
+
+# 191
+QI191.QuestID =191
+QI191.PrevQuestId =190
+QI191.NextQuestsId =192,-1
+QI191.MinLevel =36
+QI191.RequiredFaction =1
+QI191.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI191.Color =0
+QI191.Repeat =1
+QR191.QuestID =191
+QR191.EXP =1800
+
+# 192
+QI192.QuestID =192
+QI192.PrevQuestId =191
+QI192.NextQuestsId =193,-1
+QI192.MinLevel =37
+QI192.RequiredFaction =1
+QI192.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI192.Color =0
+QI192.Repeat =1
+QR192.QuestID =192
+QR192.EXP =2000
+
+# 193
+QI193.QuestID =193
+QI193.PrevQuestId =192
+QI193.NextQuestsId =194,-1
+QI193.MinLevel =38
+QI193.RequiredFaction =1
+QI193.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI193.Color =0
+QI193.Repeat =1
+QR193.QuestID =193
+QR193.EXP =6000
+
+# 194
+QI194.QuestID =194
+QI194.PrevQuestId =193
+QI194.NextQuestsId =195,-1
+QI194.MinLevel =39
+QI194.RequiredFaction =1
+QI194.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI194.Color =2
+QI194.Creature =[1103,-1,-1,-1]
+QI194.CreatureCount =[40,-1,-1,-1]
+QI194.Repeat =1
+QR194.QuestID =194
+QR194.EXP =12000
+
+# 195
+QI195.QuestID =195
+QI195.PrevQuestId =194
+QI195.NextQuestsId =196,-1
+QI195.MinLevel =40
+QI195.RequiredFaction =1
+QI195.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI195.Color =0
+QI195.Repeat =1
+QR195.QuestID =195
+QR195.EXP =3000
+
+# 196
+QI196.QuestID =196
+QI196.PrevQuestId =195
+QI196.NextQuestsId =197,-1
+QI196.MinLevel =41
+QI196.RequiredFaction =1
+QI196.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI196.Color =2
+QI196.Creature =[1104,-1,-1,-1]
+QI196.CreatureCount =[20,-1,-1,-1]
+QI196.Repeat =1
+QR196.QuestID =196
+QR196.EXP =18000
+
+# 197
+QI197.QuestID =197
+QI197.PrevQuestId =196
+QI197.NextQuestsId =198,-1
+QI197.MinLevel =42
+QI197.RequiredFaction =1
+QI197.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI197.Color =0
+QI197.Repeat =1
+QR197.QuestID =197
+QR197.EXP =5000
+
+# 198
+QI198.QuestID =198
+QI198.PrevQuestId =197
+QI198.NextQuestsId =199,-1
+QI198.MinLevel =43
+QI198.RequiredFaction =1
+QI198.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI198.Color =3
+QI198.Creature =[1106,-1,-1,-1]
+QI198.CreatureCount =[20,-1,-1,-1]
+QI198.Repeat =1
+QR198.QuestID =198
+QR198.EXP =25000
+
+# 199
+QI199.QuestID =199
+QI199.PrevQuestId =198
+QI199.NextQuestsId =200,-1
+QI199.MinLevel =44
+QI199.RequiredFaction =1
+QI199.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI199.Color =0
+QI199.Repeat =1
+QR199.QuestID =199
+QR199.EXP =6000
+
+# 200
+QI200.QuestID =200
+QI200.PrevQuestId =199
+QI200.NextQuestsId =201,-1
+QI200.MinLevel =45
+QI200.RequiredFaction =1
+QI200.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI200.Color =0
+QI200.Repeat =1
+QR200.QuestID =200
+QR200.EXP =7000
+
+# 201
+QI201.QuestID =201
+QI201.PrevQuestId =200
+QI201.NextQuestsId =-1,-1
+QI201.MinLevel =46
+QI201.RequiredFaction =1
+QI201.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI201.Color =2
+QI201.Creature =[1109,-1,-1,-1]
+QI201.CreatureCount =[45,-1,-1,-1]
+QI201.Repeat =1
+QR201.QuestID =201
+QR201.EXP =35000
+
+# 301
+QI301.QuestID =301
+QI301.NextQuestsId =302,-1
+QI301.MinLevel =5
+QI301.MaxLevel =14
+QI301.RequiredFaction =1
+QI301.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI301.Color =0
+QI301.Creature =[1012,-1,-1,-1]
+QI301.CreatureCount =[20,-1,-1,-1]
+QI301.Repeat =1
+QI301.RewardMoney =15
+QR301.QuestID =301
+QR301.EXP =150
+
+# 302
+QI302.QuestID =302
+QI302.PrevQuestId =301
+QI302.NextQuestsId =303,-1
+QI302.MinLevel =15
+QI302.MaxLevel =24
+QI302.RequiredFaction =1
+QI302.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI302.Color =0
+QI302.Creature =[1034,-1,-1,-1]
+QI302.CreatureCount =[30,-1,-1,-1]
+QI302.Repeat =1
+QI302.RewardMoney =200
+QR302.QuestID =302
+QR302.EXP =2000
+
+# 303
+QI303.QuestID =303
+QI303.PrevQuestId =302
+QI303.NextQuestsId =304,-1
+QI303.MinLevel =25
+QI303.MaxLevel =34
+QI303.RequiredFaction =1
+QI303.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI303.Color =1
+QI303.Creature =[1054,-1,-1,-1]
+QI303.CreatureCount =[40,-1,-1,-1]
+QI303.Repeat =1
+QI303.RewardMoney =400
+QR303.QuestID =303
+QR303.EXP =4000
+
+# 304
+QI304.QuestID =304
+QI304.PrevQuestId =303
+QI304.NextQuestsId =305,-1
+QI304.MinLevel =35
+QI304.MaxLevel =44
+QI304.RequiredFaction =1
+QI304.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI304.Color =2
+QI304.Creature =[1104,-1,-1,-1]
+QI304.CreatureCount =[30,-1,-1,-1]
+QI304.Repeat =1
+QI304.RewardMoney =2500
+QR304.QuestID =304
+QR304.EXP =25000
+
+# 305
+QI305.QuestID =305
+QI305.PrevQuestId =304
+QI305.NextQuestsId =306,-1
+QI305.MinLevel =45
+QI305.MaxLevel =59
+QI305.RequiredFaction =1
+QI305.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI305.Color =2
+QI305.Creature =[1109,-1,-1,-1]
+QI305.CreatureCount =[50,-1,-1,-1]
+QI305.Repeat =1
+QI305.RewardMoney =6000
+QR305.QuestID =305
+QR305.EXP =60000
+
+# 306
+QI306.QuestID =306
+QI306.PrevQuestId =305
+QI306.MinLevel =50
+QI306.RequiredFaction =1
+QI306.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI306.Color =3
+QI306.Creature =[1111,-1,-1,-1]
+QI306.CreatureCount =[40,-1,-1,-1]
+QI306.Repeat =1
+QI306.RewardMoney =8000
+QR306.QuestID =306
+QR306.EXP =80000
+
+# 307
+QI307.QuestID =307
+QI307.NextQuestsId =308,-1
+QI307.MinLevel =10
+QI307.RequiredFaction =1
+QI307.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI307.Color =0
+QI307.Repeat =1
+QR307.QuestID =307
+QR307.EXP =150
+
+# 308
+QI308.QuestID =308
+QI308.PrevQuestId =307
+QI308.NextQuestsId =309,-1
+QI308.RequiredFaction =1
+QI308.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI308.Color =0
+QI308.Repeat =1
+QR308.QuestID =308
+QR308.EXP =250
+
+# 309
+QI309.QuestID =309
+QI309.PrevQuestId =308
+QI309.RequiredFaction =1
+QI309.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI309.Color =1
+QI309.Item =[110,-1,-1,-1]
+QI309.ItemCount =[1,-1,-1,-1]
+QI309.ItemProbability =[5,-1,-1,-1]
+QI309.Repeat =1
+QI309.RewardMoney =500
+QR309.QuestID =309
+QR309.EXP =2000
+
+# 310
+QI310.QuestID =310
+QI310.NextQuestsId =311,-1
+QI310.MinLevel =25
+QI310.RequiredFaction =1
+QI310.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI310.Color =1
+QI310.Creature =[1055,-1,-1,-1]
+QI310.CreatureCount =[50,-1,-1,-1]
+QI310.Repeat =1
+QR310.QuestID =310
+QR310.EXP =5000
+
+# 311
+QI311.QuestID =311
+QI311.PrevQuestId =310
+QI311.NextQuestsId =312,-1
+QI311.MinLevel =30
+QI311.RequiredFaction =1
+QI311.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI311.Color =0
+QI311.Repeat =1
+QR311.QuestID =311
+QR311.EXP =1000
+
+# 312
+QI312.QuestID =312
+QI312.PrevQuestId =311
+QI312.RequiredFaction =1
+QI312.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI312.Color =2
+QI312.Creature =[1102,-1,-1,-1]
+QI312.CreatureCount =[50,-1,-1,-1]
+QI312.Repeat =1
+QI312.RewardMoney =1000
+QR312.QuestID =312
+QR312.EXP =10000
+
+# 313
+QI313.QuestID =313
+QI313.NextQuestsId =314,-1
+QI313.MinLevel =50
+QI313.RequiredFaction =1
+QI313.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI313.Color =0
+QI313.Repeat =1
+QR313.QuestID =313
+QR313.EXP =10000
+
+# 314
+QI314.QuestID =314
+QI314.PrevQuestId =313
+QI314.NextQuestsId =315,-1
+QI314.RequiredFaction =1
+QI314.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI314.Color =0
+QI314.Repeat =1
+QR314.QuestID =314
+QR314.EXP =12000
+
+# 315
+QI315.QuestID =315
+QI315.PrevQuestId =314
+QI315.MinLevel =57
+QI315.RequiredFaction =1
+QI315.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI315.Color =3
+QI315.Item =[120,-1,-1,-1]
+QI315.ItemCount =[1,-1,-1,-1]
+QI315.ItemProbability =[3,-1,-1,-1]
+QI315.Repeat =1
+QI315.RewardMoney =10000
+QR315.QuestID =315
+QR315.EXP =100000
+
+# 321
+QI321.QuestID =321
+QI321.MinLevel =5
+QI321.RequiredFaction =1
+QI321.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI321.Color =1
+QI321.Creature =[1017,-1,-1,-1]
+QI321.CreatureCount =[1,-1,-1,-1]
+QI321.Repeat =1
+QI321.RewardMoney =200
+QR321.QuestID =321
+QR321.EXP =1000
+
+# 322
+QI322.QuestID =322
+QI322.MinLevel =18
+QI322.RequiredFaction =1
+QI322.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI322.Color =0
+QI322.Creature =[1037,-1,-1,-1]
+QI322.CreatureCount =[25,-1,-1,-1]
+QI322.Repeat =1
+QI322.RewardMoney =150
+QR322.QuestID =322
+QR322.EXP =1800
+
+# 323
+QI323.QuestID =323
+QI323.MinLevel =23
+QI323.RequiredFaction =1
+QI323.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI323.Color =2
+QI323.Creature =[1053,-1,-1,-1]
+QI323.CreatureCount =[1,-1,-1,-1]
+QI323.Repeat =1
+QI323.RewardMoney =1000
+QR323.QuestID =323
+QR323.EXP =8000
+
+# 324
+QI324.QuestID =324
+QI324.MinLevel =35
+QI324.RequiredFaction =1
+QI324.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI324.Color =1
+QI324.Creature =[1103,-1,-1,-1]
+QI324.CreatureCount =[40,-1,-1,-1]
+QI324.Repeat =1
+QI324.RewardMoney =1200
+QR324.QuestID =324
+QR324.EXP =10000
+
+# 325
+QI325.QuestID =325
+QI325.MinLevel =36
+QI325.RequiredFaction =1
+QI325.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI325.Color =2
+QI325.Creature =[1105,-1,-1,-1]
+QI325.CreatureCount =[25,-1,-1,-1]
+QI325.Repeat =1
+QI325.RewardMoney =1500
+QR325.QuestID =325
+QR325.EXP =12000
+
+# 326
+QI326.QuestID =326
+QI326.MinLevel =45
+QI326.RequiredFaction =1
+QI326.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI326.Color =2
+QI326.Creature =[1110,-1,-1,-1]
+QI326.CreatureCount =[50,-1,-1,-1]
+QI326.Repeat =1
+QI326.RewardMoney =2500
+QR326.QuestID =326
+QR326.EXP =25000
+
+# 327
+QI327.QuestID =327
+QI327.MinLevel =50
+QI327.RequiredFaction =1
+QI327.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI327.Color =3
+QI327.Creature =[1113,-1,-1,-1]
+QI327.CreatureCount =[1,-1,-1,-1]
+QI327.Repeat =1
+QI327.RewardMoney =10000
+QR327.QuestID =327
+QR327.EXP =150000
+
+# 341
+QI341.QuestID =341
+QI341.MinLevel =5
+QI341.RequiredClass =0
+QI341.RequiredFaction =1
+QI341.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI341.Color =0
+QI341.Repeat =1
+QI341.RewardItem[0].Base =5030
+QI341.RewardItem[0].Overlap =1
+QI341.RewardItem[0].Binding =1
+QI341.RewardItem[1].Base =5230
+QI341.RewardItem[1].Overlap =1
+QI341.RewardItem[1].Binding =1
+QR341.QuestID =341
+QR341.EXP =100
+
+# 342
+QI342.QuestID =342
+QI342.MinLevel =15
+QI342.RequiredClass =0
+QI342.RequiredFaction =1
+QI342.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI342.Color =0
+QI342.Repeat =1
+QI342.RewardItem[0].Base =5011
+QI342.RewardItem[0].Overlap =1
+QI342.RewardItem[0].Binding =1
+QI342.RewardItem[1].Base =5211
+QI342.RewardItem[1].Overlap =1
+QI342.RewardItem[1].Binding =1
+QR342.QuestID =342
+QR342.EXP =100
+
+# 343
+QI343.QuestID =343
+QI343.MinLevel =25
+QI343.RequiredClass =0
+QI343.RequiredFaction =1
+QI343.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI343.Color =0
+QI343.Repeat =1
+QI343.RewardItem[0].Base =5002
+QI343.RewardItem[0].Overlap =1
+QI343.RewardItem[0].Binding =1
+QI343.RewardItem[1].Base =5202
+QI343.RewardItem[1].Overlap =1
+QI343.RewardItem[1].Binding =1
+QR343.QuestID =343
+QR343.EXP =100
+
+# 344
+QI344.QuestID =344
+QI344.MinLevel =35
+QI344.RequiredClass =0
+QI344.RequiredFaction =1
+QI344.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI344.Color =0
+QI344.Repeat =1
+QI344.RewardItem[0].Base =5051
+QI344.RewardItem[0].Overlap =1
+QI344.RewardItem[0].Binding =1
+QI344.RewardItem[1].Base =5251
+QI344.RewardItem[1].Overlap =1
+QI344.RewardItem[1].Binding =1
+QR344.QuestID =344
+QR344.EXP =100
+
+# 345
+QI345.QuestID =345
+QI345.MinLevel =45
+QI345.RequiredClass =0
+QI345.RequiredFaction =1
+QI345.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI345.Color =0
+QI345.Repeat =1
+QI345.RewardItem[0].Base =5023
+QI345.RewardItem[0].Overlap =1
+QI345.RewardItem[0].Binding =1
+QI345.RewardItem[1].Base =5223
+QI345.RewardItem[1].Overlap =1
+QI345.RewardItem[1].Binding =1
+QR345.QuestID =345
+QR345.EXP =100
+
+# 346
+QI346.QuestID =346
+QI346.MinLevel =20
+QI346.RequiredClass =0
+QI346.RequiredFaction =1
+QI346.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI346.Color =0
+QI346.Repeat =1
+QI346.RewardItem[0].Base =4400
+QI346.RewardItem[0].Overlap =1
+QI346.RewardItem[0].Binding =1
+QI346.RewardItem[1].Base =4401
+QI346.RewardItem[1].Overlap =1
+QI346.RewardItem[1].Binding =1
+QR346.QuestID =346
+
+# 351
+QI351.QuestID =351
+QI351.MinLevel =5
+QI351.RequiredClass =1
+QI351.RequiredFaction =1
+QI351.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI351.Color =0
+QI351.Repeat =1
+QI351.RewardItem[0].Base =6010
+QI351.RewardItem[0].Overlap =1
+QI351.RewardItem[0].Binding =1
+QI351.RewardItem[1].Base =6210
+QI351.RewardItem[1].Overlap =1
+QI351.RewardItem[1].Binding =1
+QR351.QuestID =351
+QR351.EXP =100
+
+# 352
+QI352.QuestID =352
+QI352.MinLevel =15
+QI352.RequiredClass =1
+QI352.RequiredFaction =1
+QI352.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI352.Color =0
+QI352.Repeat =1
+QI352.RewardItem[0].Base =6001
+QI352.RewardItem[0].Overlap =1
+QI352.RewardItem[0].Binding =1
+QI352.RewardItem[1].Base =6240
+QI352.RewardItem[1].Overlap =1
+QI352.RewardItem[1].Binding =1
+QR352.QuestID =352
+QR352.EXP =100
+
+# 353
+QI353.QuestID =353
+QI353.MinLevel =25
+QI353.RequiredClass =1
+QI353.RequiredFaction =1
+QI353.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI353.Color =0
+QI353.Repeat =1
+QI353.RewardItem[0].Base =6022
+QI353.RewardItem[0].Overlap =1
+QI353.RewardItem[0].Binding =1
+QI353.RewardItem[1].Base =6260
+QI353.RewardItem[1].Overlap =1
+QI353.RewardItem[1].Binding =1
+QR353.QuestID =353
+QR353.EXP =100
+
+# 354
+QI354.QuestID =354
+QI354.MinLevel =35
+QI354.RequiredClass =1
+QI354.RequiredFaction =1
+QI354.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI354.Color =0
+QI354.Repeat =1
+QI354.RewardItem[0].Base =6042
+QI354.RewardItem[0].Overlap =1
+QI354.RewardItem[0].Binding =1
+QI354.RewardItem[1].Base =6233
+QI354.RewardItem[1].Overlap =1
+QI354.RewardItem[1].Binding =1
+QR354.QuestID =354
+QR354.EXP =100
+
+# 355
+QI355.QuestID =355
+QI355.MinLevel =45
+QI355.RequiredClass =1
+QI355.RequiredFaction =1
+QI355.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI355.Color =0
+QI355.Repeat =1
+QI355.RewardItem[0].Base =6062
+QI355.RewardItem[0].Overlap =1
+QI355.RewardItem[0].Binding =1
+QI355.RewardItem[1].Base =6253
+QI355.RewardItem[1].Overlap =1
+QI355.RewardItem[1].Binding =1
+QR355.QuestID =355
+QR355.EXP =100
+
+# 356
+QI356.QuestID =356
+QI356.MinLevel =20
+QI356.RequiredClass =1
+QI356.RequiredFaction =1
+QI356.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI356.Color =0
+QI356.Repeat =1
+QI356.RewardItem[0].Base =4402
+QI356.RewardItem[0].Overlap =1
+QI356.RewardItem[0].Binding =1
+QI356.RewardItem[1].Base =4403
+QI356.RewardItem[1].Overlap =1
+QI356.RewardItem[1].Binding =1
+QR356.QuestID =356
+
+# 361
+QI361.QuestID =361
+QI361.NextQuestsId =362,-1
+QI361.RequiredFaction =1
+QI361.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI361.Color =0
+QI361.Repeat =1
+QR361.QuestID =361
+QR361.EXP =100
+
+# 362
+QI362.QuestID =362
+QI362.PrevQuestId =361
+QI362.NextQuestsId =363,-1
+QI362.RequiredFaction =1
+QI362.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI362.Color =0
+QI362.Creature =[1016,-1,-1,-1]
+QI362.CreatureCount =[15,-1,-1,-1]
+QI362.Repeat =1
+QR362.QuestID =362
+QR362.EXP =500
+
+# 363
+QI363.QuestID =363
+QI363.PrevQuestId =362
+QI363.MinLevel =15
+QI363.RequiredFaction =1
+QI363.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI363.Color =0
+QI363.Repeat =1
+QR363.QuestID =363
+QR363.EXP =500
+
+# 364
+QI364.QuestID =364
+QI364.MinLevel =20
+QI364.RequiredFaction =1
+QI364.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI364.Color =1
+QI364.Item =[121,-1,-1,-1]
+QI364.ItemCount =[1,-1,-1,-1]
+QI364.ItemProbability =[4,-1,-1,-1]
+QI364.Repeat =1
+QR364.QuestID =364
+QR364.EXP =4000
+
+# 365
+QI365.QuestID =365
+QI365.MinLevel =30
+QI365.RequiredFaction =1
+QI365.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI365.Color =1
+QI365.Repeat =1
+QR365.QuestID =365
+QR365.EXP =5000
+
+# 401
+QI401.QuestID =401
+QI401.NextQuestsId =402,-1
+QI401.MinLevel =5
+QI401.RequiredFaction =1
+QI401.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI401.Color =0
+QI401.Repeat =1
+QR401.QuestID =401
+QR401.EXP =100
+
+# 402
+QI402.QuestID =402
+QI402.PrevQuestId =401
+QI402.MinLevel =15
+QI402.MaxLevel =25
+QI402.RequiredFaction =1
+QI402.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI402.Color =1
+QI402.Creature =[1034,-1,-1,-1]
+QI402.CreatureCount =[20,-1,-1,-1]
+QI402.Repeat =0
+QI402.RewardMoney =200
+QR402.QuestID =402
+QR402.EXP =1600
+
+# 403
+QI403.QuestID =403
+QI403.MinLevel =26
+QI403.MaxLevel =35
+QI403.RequiredFaction =1
+QI403.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI403.Color =0
+QI403.Repeat =0
+QI403.RewardMoney =250
+QR403.QuestID =403
+QR403.EXP =2500
+
+# 404
+QI404.QuestID =404
+QI404.MinLevel =36
+QI404.MaxLevel =49
+QI404.RequiredFaction =1
+QI404.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI404.Color =2
+QI404.Creature =[1106,-1,-1,-1]
+QI404.CreatureCount =[65,-1,-1,-1]
+QI404.Repeat =0
+QI404.RewardMoney =2000
+QR404.QuestID =404
+QR404.EXP =30000
+
+# 405
+QI405.QuestID =405
+QI405.MinLevel =50
+QI405.MaxLevel =59
+QI405.RequiredFaction =1
+QI405.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI405.Color =3
+QI405.Creature =[1091,-1,-1,-1]
+QI405.CreatureCount =[100,-1,-1,-1]
+QI405.Repeat =0
+QI405.RewardMoney =5000
+QR405.QuestID =405
+QR405.EXP =100000
+
+# 431
+QI431.QuestID =431
+QI431.MinLevel =15
+QI431.MaxLevel =20
+QI431.RequiredFaction =1
+QI431.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI431.Color =0
+QI431.Item =[122,-1,-1,-1]
+QI431.ItemCount =[12,-1,-1,-1]
+QI431.ItemProbability =[15,-1,-1,-1]
+QI431.Repeat =0
+QR431.QuestID =431
+QR431.EXP =2500
+
+# 432
+QI432.QuestID =432
+QI432.MinLevel =25
+QI432.MaxLevel =30
+QI432.RequiredFaction =1
+QI432.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI432.Color =1
+QI432.Item =[123,-1,-1,-1]
+QI432.ItemCount =[12,-1,-1,-1]
+QI432.ItemProbability =[15,-1,-1,-1]
+QI432.Repeat =0
+QR432.QuestID =432
+QR432.EXP =5000
+
+# 433
+QI433.QuestID =433
+QI433.MinLevel =35
+QI433.MaxLevel =40
+QI433.RequiredFaction =1
+QI433.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI433.Color =2
+QI433.Item =[124,-1,-1,-1]
+QI433.ItemCount =[12,-1,-1,-1]
+QI433.ItemProbability =[15,-1,-1,-1]
+QI433.Repeat =0
+QR433.QuestID =433
+QR433.EXP =10000
+
+# 434
+QI434.QuestID =434
+QI434.MinLevel =45
+QI434.MaxLevel =50
+QI434.RequiredFaction =1
+QI434.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI434.Color =2
+QI434.Item =[125,-1,-1,-1]
+QI434.ItemCount =[12,-1,-1,-1]
+QI434.ItemProbability =[15,-1,-1,-1]
+QI434.Repeat =0
+QR434.QuestID =434
+QR434.EXP =60000
+
+# 435
+QI435.QuestID =435
+QI435.MinLevel =55
+QI435.MaxLevel =60
+QI435.RequiredFaction =1
+QI435.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI435.Color =3
+QI435.Item =[126,-1,-1,-1]
+QI435.ItemCount =[12,-1,-1,-1]
+QI435.ItemProbability =[15,-1,-1,-1]
+QI435.Repeat =0
+QR435.QuestID =435
+QR435.EXP =120000
+
+# 436
+QI436.QuestID =436
+QI436.MinLevel =5
+QI436.MaxLevel =40
+QI436.RequiredFaction =1
+QI436.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI436.Color =0
+QI436.Repeat =0
+QR436.QuestID =436
+QR436.EXP =100
+
+# 251
+QI251.QuestID =251
+QI251.MinLevel =1
+QI251.MaxLevel =3
+QI251.RequiredFaction =1
+QI251.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI251.Color =0
+QI251.Item =[127,-1,-1,-1]
+QI251.ItemCount =[10,-1,-1,-1]
+QI251.ItemProbability =[40,-1,-1,-1]
+QI251.Repeat =0
+QR251.QuestID =251
+QR251.EXP =120
+
+# 252
+QI252.QuestID =252
+QI252.MinLevel =2
+QI252.MaxLevel =5
+QI252.RequiredFaction =1
+QI252.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI252.Color =0
+QI252.Item =[128,-1,-1,-1]
+QI252.ItemCount =[8,-1,-1,-1]
+QI252.ItemProbability =[30,-1,-1,-1]
+QI252.Repeat =0
+QR252.QuestID =252
+QR252.EXP =200
+
+# 253
+QI253.QuestID =253
+QI253.MinLevel =4
+QI253.MaxLevel =9
+QI253.RequiredFaction =1
+QI253.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI253.Color =0
+QI253.Item =[129,-1,-1,-1]
+QI253.ItemCount =[5,-1,-1,-1]
+QI253.ItemProbability =[50,-1,-1,-1]
+QI253.Repeat =0
+QR253.QuestID =253
+QR253.EXP =320
+
+# 254
+QI254.QuestID =254
+QI254.MinLevel =6
+QI254.MaxLevel =14
+QI254.RequiredFaction =1
+QI254.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI254.Color =0
+QI254.Creature =[1015,-1,-1,-1]
+QI254.CreatureCount =[16,-1,-1,-1]
+QI254.Repeat =0
+QR254.QuestID =254
+QR254.EXP =500
+
+# 255
+QI255.QuestID =255
+QI255.MinLevel =10
+QI255.MaxLevel =18
+QI255.RequiredFaction =1
+QI255.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI255.Color =0
+QI255.Creature =[1019,-1,-1,-1]
+QI255.CreatureCount =[12,-1,-1,-1]
+QI255.Repeat =0
+QR255.QuestID =255
+QR255.EXP =800
+
+# 256
+QI256.QuestID =256
+QI256.MinLevel =15
+QI256.MaxLevel =22
+QI256.RequiredFaction =1
+QI256.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI256.Color =0
+QI256.Creature =[1031,-1,-1,-1]
+QI256.CreatureCount =[10,-1,-1,-1]
+QI256.Repeat =0
+QR256.QuestID =256
+QR256.EXP =1000
+
+# 257
+QI257.QuestID =257
+QI257.MinLevel =19
+QI257.MaxLevel =26
+QI257.RequiredFaction =1
+QI257.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI257.Color =0
+QI257.Item =[130,-1,-1,-1]
+QI257.ItemCount =[10,-1,-1,-1]
+QI257.ItemProbability =[40,-1,-1,-1]
+QI257.Repeat =0
+QR257.QuestID =257
+QR257.EXP =2000
+
+# 258
+QI258.QuestID =258
+QI258.MinLevel =23
+QI258.MaxLevel =28
+QI258.RequiredFaction =1
+QI258.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI258.Color =0
+QI258.Creature =[1050,-1,-1,-1]
+QI258.CreatureCount =[15,-1,-1,-1]
+QI258.Repeat =0
+QR258.QuestID =258
+QR258.EXP =3000
+
+# 259
+QI259.QuestID =259
+QI259.MinLevel =25
+QI259.MaxLevel =30
+QI259.RequiredFaction =1
+QI259.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI259.Color =0
+QI259.Creature =[1052,-1,-1,-1]
+QI259.CreatureCount =[12,-1,-1,-1]
+QI259.Repeat =0
+QR259.QuestID =259
+QR259.EXP =4000
+
+# 260
+QI260.QuestID =260
+QI260.MinLevel =27
+QI260.MaxLevel =33
+QI260.RequiredFaction =1
+QI260.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI260.Color =0
+QI260.Creature =[1054,-1,-1,-1]
+QI260.CreatureCount =[15,-1,-1,-1]
+QI260.Repeat =0
+QR260.QuestID =260
+QR260.EXP =6000
+
+# 261
+QI261.QuestID =261
+QI261.MinLevel =29
+QI261.MaxLevel =37
+QI261.RequiredFaction =1
+QI261.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI261.Color =0
+QI261.Creature =[1100,-1,-1,-1]
+QI261.CreatureCount =[15,-1,-1,-1]
+QI261.Repeat =0
+QR261.QuestID =261
+QR261.EXP =7500
+
+# 262
+QI262.QuestID =262
+QI262.MinLevel =31
+QI262.MaxLevel =42
+QI262.RequiredFaction =1
+QI262.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI262.Color =0
+QI262.Item =[131,-1,-1,-1]
+QI262.ItemCount =[12,-1,-1,-1]
+QI262.ItemProbability =[40,-1,-1,-1]
+QI262.Repeat =0
+QR262.QuestID =262
+QR262.EXP =10000
+
+# 263
+QI263.QuestID =263
+QI263.MinLevel =34
+QI263.MaxLevel =45
+QI263.RequiredFaction =1
+QI263.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI263.Color =0
+QI263.Creature =[1102,-1,-1,-1]
+QI263.CreatureCount =[15,-1,-1,-1]
+QI263.Repeat =0
+QR263.QuestID =263
+QR263.EXP =12500
+
+# 264
+QI264.QuestID =264
+QI264.MinLevel =38
+QI264.MaxLevel =49
+QI264.RequiredFaction =1
+QI264.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI264.Color =0
+QI264.Creature =[1107,-1,-1,-1]
+QI264.CreatureCount =[12,-1,-1,-1]
+QI264.Repeat =0
+QR264.QuestID =264
+QR264.EXP =18000
+
+# 265
+QI265.QuestID =265
+QI265.MinLevel =43
+QI265.MaxLevel =52
+QI265.RequiredFaction =1
+QI265.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI265.Color =1
+QI265.Creature =[1108,-1,-1,-1]
+QI265.CreatureCount =[15,-1,-1,-1]
+QI265.Repeat =0
+QR265.QuestID =265
+QR265.EXP =45000
+
+# 266
+QI266.QuestID =266
+QI266.MinLevel =45
+QI266.MaxLevel =55
+QI266.RequiredFaction =1
+QI266.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI266.Color =1
+QI266.Creature =[1109,-1,-1,-1]
+QI266.CreatureCount =[12,-1,-1,-1]
+QI266.Repeat =0
+QR266.QuestID =266
+QR266.EXP =60000
+
+# 267
+QI267.QuestID =267
+QI267.MinLevel =47
+QI267.MaxLevel =56
+QI267.RequiredFaction =1
+QI267.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI267.Color =1
+QI267.Creature =[1110,-1,-1,-1]
+QI267.CreatureCount =[15,-1,-1,-1]
+QI267.Repeat =0
+QR267.QuestID =267
+QR267.EXP =75000
+
+# 268
+QI268.QuestID =268
+QI268.MinLevel =50
+QI268.MaxLevel =58
+QI268.RequiredFaction =1
+QI268.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI268.Color =1
+QI268.Creature =[1111,-1,-1,-1]
+QI268.CreatureCount =[12,-1,-1,-1]
+QI268.Repeat =0
+QR268.QuestID =268
+QR268.EXP =100000
+
+# 269
+QI269.QuestID =269
+QI269.MinLevel =53
+QI269.MaxLevel =60
+QI269.RequiredFaction =1
+QI269.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI269.Color =1
+QI269.Creature =[1090,-1,-1,-1]
+QI269.CreatureCount =[15,-1,-1,-1]
+QI269.Repeat =0
+QR269.QuestID =269
+QR269.EXP =125000
+
+# 270
+QI270.QuestID =270
+QI270.MinLevel =55
+QI270.MaxLevel =60
+QI270.RequiredFaction =1
+QI270.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI270.Color =2
+QI270.Creature =[1076,-1,-1,-1]
+QI270.CreatureCount =[20,-1,-1,-1]
+QI270.Repeat =0
+QR270.QuestID =270
+QR270.EXP =150000
+
+# 501
+QI501.QuestID =501
+QI501.NextQuestsId =502,-1
+QI501.MinLevel =1
+QI501.RequiredFaction =0
+QI501.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI501.Color =0
+QI501.Repeat =1
+QI501.RewardItem[0].Base =2101
+QI501.RewardItem[0].Append =[3,50,60,61,-1]
+QI501.RewardItem[0].Level =1
+QI501.RewardItem[0].Overlap =1
+QI501.RewardItem[0].Binding =1
+QI501.RewardItem[1].Base =2201
+QI501.RewardItem[1].Append =[3,56,60,61,-1]
+QI501.RewardItem[1].Level =1
+QI501.RewardItem[1].Overlap =1
+QI501.RewardItem[1].Binding =1
+QR501.QuestID =501
+QR501.EXP =100
+
+# 502
+QI502.QuestID =502
+QI502.PrevQuestId =501
+QI502.NextQuestsId =503,-1
+QI502.MinLevel =1
+QI502.RequiredFaction =0
+QI502.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI502.Color =0
+QI502.Repeat =1
+QI502.RewardItem[0].Base =4000
+QI502.RewardItem[0].Overlap =5
+QI502.RewardItem[0].Binding =0
+QR502.QuestID =502
+QR502.EXP =100
+
+# 503
+QI503.QuestID =503
+QI503.PrevQuestId =502
+QI503.NextQuestsId =504,-1
+QI503.MinLevel =1
+QI503.RequiredFaction =0
+QI503.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI503.Color =0
+QI503.Repeat =1
+QI503.RewardItem[0].Base =4100
+QI503.RewardItem[0].Overlap =5
+QI503.RewardItem[0].Binding =0
+QR503.QuestID =503
+QR503.EXP =100
+
+# 504
+QI504.QuestID =504
+QI504.PrevQuestId =503
+QI504.NextQuestsId =505,-1
+QI504.MinLevel =2
+QI504.RequiredFaction =0
+QI504.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI504.Color =0
+QI504.Repeat =1
+QI504.RewardItem[0].Base =2001
+QI504.RewardItem[0].Append =[3,50,56,-1,-1]
+QI504.RewardItem[0].Level =1
+QI504.RewardItem[0].Overlap =1
+QI504.RewardItem[0].Binding =1
+QR504.QuestID =504
+QR504.EXP =100
+
+# 505
+QI505.QuestID =505
+QI505.PrevQuestId =504
+QI505.NextQuestsId =506,-1
+QI505.MinLevel =2
+QI505.RequiredFaction =0
+QI505.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI505.Color =0
+QI505.Repeat =1
+QI505.RewardItem[0].Base =1001
+QI505.RewardItem[0].Append =[0,1,2,6,-1]
+QI505.RewardItem[0].Level =1
+QI505.RewardItem[0].Overlap =1
+QI505.RewardItem[0].Binding =1
+QI505.RewardItem[1].Base =1401
+QI505.RewardItem[1].Append =[0,1,2,6,-1]
+QI505.RewardItem[1].Level =1
+QI505.RewardItem[1].Overlap =1
+QI505.RewardItem[1].Binding =1
+QI505.RewardItem[2].Base =1701
+QI505.RewardItem[2].Append =[8,9,10,57,-1]
+QI505.RewardItem[2].Level =1
+QI505.RewardItem[2].Overlap =1
+QI505.RewardItem[2].Binding =1
+QR505.QuestID =505
+QR505.EXP =100
+
+# 506
+QI506.QuestID =506
+QI506.PrevQuestId =505
+QI506.NextQuestsId =507,-1
+QI506.MinLevel =2
+QI506.RequiredFaction =0
+QI506.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI506.Color =0
+QI506.Creature =[1027,-1,-1,-1]
+QI506.CreatureCount =[10,-1,-1,-1]
+QI506.Repeat =1
+QI506.RewardMoney =20
+QR506.QuestID =506
+QR506.EXP =200
+
+# 507
+QI507.QuestID =507
+QI507.PrevQuestId =506
+QI507.NextQuestsId =508,-1
+QI507.MinLevel =3
+QI507.RequiredFaction =0
+QI507.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI507.Color =0
+QI507.Repeat =1
+QI507.RewardItem[0].Base =2901
+QI507.RewardItem[0].Append =[5,58,59,-1,-1]
+QI507.RewardItem[0].Level =1
+QI507.RewardItem[0].Overlap =1
+QI507.RewardItem[0].Binding =1
+QR507.QuestID =507
+QR507.EXP =30
+
+# 508
+QI508.QuestID =508
+QI508.PrevQuestId =507
+QI508.NextQuestsId =509,-1
+QI508.MinLevel =3
+QI508.RequiredFaction =0
+QI508.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI508.Color =0
+QI508.Repeat =1
+QI508.RewardItem[0].Base =2801
+QI508.RewardItem[0].Append =[0,2,6,-1,-1]
+QI508.RewardItem[0].Level =1
+QI508.RewardItem[0].Overlap =1
+QI508.RewardItem[0].Binding =1
+QR508.QuestID =508
+QR508.EXP =30
+
+# 509
+QI509.QuestID =509
+QI509.PrevQuestId =508
+QI509.NextQuestsId =510,-1
+QI509.MinLevel =4
+QI509.RequiredFaction =0
+QI509.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI509.Color =0
+QI509.Creature =[1021,-1,-1,-1]
+QI509.CreatureCount =[15,-1,-1,-1]
+QI509.Repeat =1
+QI509.RewardMoney =20
+QR509.QuestID =509
+QR509.EXP =400
+
+# 510
+QI510.QuestID =510
+QI510.PrevQuestId =509
+QI510.NextQuestsId =511,-1
+QI510.MinLevel =4
+QI510.RequiredFaction =0
+QI510.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI510.Color =0
+QI510.Repeat =1
+QI510.RewardItem[0].Base =4000
+QI510.RewardItem[0].Overlap =5
+QI510.RewardItem[0].Binding =0
+QR510.QuestID =510
+QR510.EXP =70
+
+# 511
+QI511.QuestID =511
+QI511.PrevQuestId =510
+QI511.NextQuestsId =512,-1
+QI511.MinLevel =4
+QI511.RequiredFaction =0
+QI511.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI511.Color =0
+QI511.Repeat =1
+QI511.RewardItem[0].Base =4100
+QI511.RewardItem[0].Overlap =5
+QI511.RewardItem[0].Binding =0
+QR511.QuestID =511
+QR511.EXP =80
+
+# 512
+QI512.QuestID =512
+QI512.PrevQuestId =511
+QI512.NextQuestsId =513,-1
+QI512.MinLevel =5
+QI512.RequiredFaction =0
+QI512.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI512.Color =0
+QI512.Repeat =1
+QR512.QuestID =512
+QR512.EXP =500
+
+# 513
+QI513.QuestID =513
+QI513.PrevQuestId =512
+QI513.NextQuestsId =514,-1
+QI513.MinLevel =5
+QI513.RequiredFaction =0
+QI513.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI513.Color =0
+QI513.Repeat =1
+QR513.QuestID =513
+QR513.EXP =100
+
+# 514
+QI514.QuestID =514
+QI514.PrevQuestId =513
+QI514.NextQuestsId =515,-1
+QI514.MinLevel =6
+QI514.RequiredFaction =0
+QI514.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI514.Color =0
+QI514.Item =[501,-1,-1,-1]
+QI514.ItemCount =[10,-1,-1,-1]
+QI514.ItemProbability =[50,-1,-1,-1]
+QI514.Repeat =1
+QI514.RewardItem[0].Base =1102
+QI514.RewardItem[0].Append =[0,1,2,6,60]
+QI514.RewardItem[0].Level =1
+QI514.RewardItem[0].Overlap =1
+QI514.RewardItem[0].Binding =1
+QI514.RewardItem[1].Base =1402
+QI514.RewardItem[1].Append =[0,1,2,6,-1]
+QI514.RewardItem[1].Level =1
+QI514.RewardItem[1].Overlap =1
+QI514.RewardItem[1].Binding =1
+QI514.RewardItem[2].Base =1802
+QI514.RewardItem[2].Append =[8,9,10,57,60]
+QI514.RewardItem[2].Level =1
+QI514.RewardItem[2].Overlap =1
+QI514.RewardItem[2].Binding =1
+QR514.QuestID =514
+QR514.EXP =800
+
+# 515
+QI515.QuestID =515
+QI515.PrevQuestId =514
+QI515.NextQuestsId =516,-1
+QI515.MinLevel =6
+QI515.RequiredFaction =0
+QI515.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI515.Color =0
+QI515.Repeat =1
+QI515.RewardMoney =50
+QR515.QuestID =515
+QR515.EXP =500
+
+# 516
+QI516.QuestID =516
+QI516.PrevQuestId =515
+QI516.NextQuestsId =517,-1
+QI516.MinLevel =6
+QI516.RequiredFaction =0
+QI516.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI516.Color =0
+QI516.Repeat =1
+QR516.QuestID =516
+QR516.EXP =150
+
+# 517
+QI517.QuestID =517
+QI517.PrevQuestId =516
+QI517.NextQuestsId =518,-1
+QI517.MinLevel =7
+QI517.RequiredFaction =0
+QI517.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI517.Color =0
+QI517.Creature =[1024,-1,-1,-1]
+QI517.CreatureCount =[20,-1,-1,-1]
+QI517.Repeat =1
+QI517.RewardItem[0].Base =2301
+QI517.RewardItem[0].Append =[0,2,60,-1,-1]
+QI517.RewardItem[0].Level =1
+QI517.RewardItem[0].Overlap =1
+QI517.RewardItem[0].Binding =1
+QI517.RewardItem[1].Base =2401
+QI517.RewardItem[1].Append =[57,61,-1,-1,-1]
+QI517.RewardItem[1].Level =1
+QI517.RewardItem[1].Overlap =1
+QI517.RewardItem[1].Binding =1
+QR517.QuestID =517
+QR517.EXP =1000
+
+# 518
+QI518.QuestID =518
+QI518.PrevQuestId =517
+QI518.NextQuestsId =519,-1
+QI518.MinLevel =8
+QI518.RequiredFaction =0
+QI518.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI518.Color =0
+QI518.Repeat =1
+QI518.RewardItem[0].Base =3001
+QI518.RewardItem[0].Append =[51,52,58,-1,-1]
+QI518.RewardItem[0].Level =1
+QI518.RewardItem[0].Overlap =1
+QI518.RewardItem[0].Binding =1
+QR518.QuestID =518
+QR518.EXP =200
+
+# 519
+QI519.QuestID =519
+QI519.PrevQuestId =518
+QI519.NextQuestsId =520,-1
+QI519.MinLevel =9
+QI519.RequiredFaction =0
+QI519.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI519.Color =0
+QI519.Repeat =1
+QR519.QuestID =519
+QR519.EXP =200
+
+# 520
+QI520.QuestID =520
+QI520.PrevQuestId =519
+QI520.NextQuestsId =521,-1
+QI520.MinLevel =9
+QI520.RequiredFaction =0
+QI520.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI520.Color =0
+QI520.Repeat =1
+QR520.QuestID =520
+QR520.EXP =200
+
+# 521
+QI521.QuestID =521
+QI521.PrevQuestId =520
+QI521.NextQuestsId =522,-1
+QI521.MinLevel =10
+QI521.RequiredFaction =0
+QI521.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI521.Color =1
+QI521.Creature =[1025,-1,-1,-1]
+QI521.CreatureCount =[20,-1,-1,-1]
+QI521.Repeat =1
+QI521.RewardItem[0].Base =3101
+QI521.RewardItem[0].Append =[5,8,57,-1,-1]
+QI521.RewardItem[0].Level =1
+QI521.RewardItem[0].Overlap =1
+QI521.RewardItem[0].Binding =1
+QR521.QuestID =521
+QR521.EXP =1200
+
+# 522
+QI522.QuestID =522
+QI522.PrevQuestId =521
+QI522.NextQuestsId =523,-1
+QI522.MinLevel =10
+QI522.RequiredFaction =0
+QI522.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI522.Color =0
+QI522.Repeat =1
+QI522.RewardMoney =100
+QR522.QuestID =522
+QR522.EXP =200
+
+# 523
+QI523.QuestID =523
+QI523.PrevQuestId =522
+QI523.NextQuestsId =524,-1
+QI523.MinLevel =10
+QI523.RequiredFaction =0
+QI523.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI523.Color =0
+QI523.Repeat =1
+QR523.QuestID =523
+QR523.EXP =200
+
+# 524
+QI524.QuestID =524
+QI524.PrevQuestId =523
+QI524.NextQuestsId =525,-1
+QI524.MinLevel =11
+QI524.RequiredFaction =0
+QI524.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI524.Color =0
+QI524.Repeat =1
+QR524.QuestID =524
+QR524.EXP =200
+
+# 525
+QI525.QuestID =525
+QI525.PrevQuestId =524
+QI525.NextQuestsId =526,-1
+QI525.MinLevel =11
+QI525.RequiredFaction =0
+QI525.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI525.Color =0
+QI525.Repeat =1
+QR525.QuestID =525
+QR525.EXP =200
+
+# 526
+QI526.QuestID =526
+QI526.PrevQuestId =525
+QI526.NextQuestsId =527,-1
+QI526.MinLevel =12
+QI526.RequiredFaction =0
+QI526.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI526.Color =1
+QI526.Item =[502,-1,-1,-1]
+QI526.ItemCount =[8,-1,-1,-1]
+QI526.ItemProbability =[40,-1,-1,-1]
+QI526.Repeat =1
+QI526.RewardMoney =100
+QI526.RewardItem[0].Base =4200
+QI526.RewardItem[0].Overlap =1
+QI526.RewardItem[0].Binding =1
+QR526.QuestID =526
+QR526.EXP =1300
+
+# 527
+QI527.QuestID =527
+QI527.PrevQuestId =526
+QI527.NextQuestsId =528,-1
+QI527.MinLevel =12
+QI527.RequiredFaction =0
+QI527.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI527.Color =0
+QI527.Repeat =1
+QR527.QuestID =527
+QR527.EXP =250
+
+# 528
+QI528.QuestID =528
+QI528.PrevQuestId =527
+QI528.NextQuestsId =529,-1
+QI528.MinLevel =12
+QI528.RequiredFaction =0
+QI528.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI528.Color =0
+QI528.Repeat =1
+QR528.QuestID =528
+QR528.EXP =250
+
+# 529
+QI529.QuestID =529
+QI529.PrevQuestId =528
+QI529.NextQuestsId =530,-1
+QI529.MinLevel =12
+QI529.RequiredFaction =0
+QI529.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI529.Color =0
+QI529.Repeat =1
+QR529.QuestID =529
+QR529.EXP =250
+
+# 530
+QI530.QuestID =530
+QI530.PrevQuestId =529
+QI530.NextQuestsId =531,-1
+QI530.MinLevel =12
+QI530.RequiredFaction =0
+QI530.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI530.Color =0
+QI530.Repeat =1
+QR530.QuestID =530
+QR530.EXP =250
+
+# 531
+QI531.QuestID =531
+QI531.PrevQuestId =530
+QI531.NextQuestsId =532,-1
+QI531.MinLevel =12
+QI531.RequiredFaction =0
+QI531.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI531.Color =0
+QI531.Repeat =1
+QR531.QuestID =531
+QR531.EXP =300
+
+# 532
+QI532.QuestID =532
+QI532.PrevQuestId =531
+QI532.NextQuestsId =533,-1
+QI532.MinLevel =12
+QI532.RequiredFaction =0
+QI532.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI532.Color =0
+QI532.Repeat =1
+QR532.QuestID =532
+QR532.EXP =300
+
+# 533
+QI533.QuestID =533
+QI533.PrevQuestId =532
+QI533.NextQuestsId =534,-1
+QI533.MinLevel =13
+QI533.RequiredFaction =0
+QI533.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI533.Color =1
+QI533.Item =[503,-1,-1,-1]
+QI533.ItemCount =[3,-1,-1,-1]
+QI533.ItemProbability =[20,-1,-1,-1]
+QI533.Repeat =1
+QI533.RewardItem[0].Base =4201
+QI533.RewardItem[0].Overlap =1
+QI533.RewardItem[0].Binding =1
+QR533.QuestID =533
+QR533.EXP =1000
+
+# 534
+QI534.QuestID =534
+QI534.PrevQuestId =533
+QI534.NextQuestsId =535,-1
+QI534.MinLevel =13
+QI534.RequiredFaction =0
+QI534.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI534.Color =0
+QI534.Repeat =1
+QR534.QuestID =534
+QR534.EXP =300
+
+# 535
+QI535.QuestID =535
+QI535.PrevQuestId =534
+QI535.NextQuestsId =536,-1
+QI535.MinLevel =13
+QI535.RequiredFaction =0
+QI535.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI535.Color =0
+QI535.Repeat =1
+QR535.QuestID =535
+QR535.EXP =300
+
+# 536
+QI536.QuestID =536
+QI536.PrevQuestId =535
+QI536.NextQuestsId =537,-1
+QI536.MinLevel =13
+QI536.RequiredFaction =0
+QI536.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI536.Color =0
+QI536.Repeat =1
+QR536.QuestID =536
+QR536.EXP =350
+
+# 537
+QI537.QuestID =537
+QI537.PrevQuestId =536
+QI537.NextQuestsId =538,-1
+QI537.MinLevel =13
+QI537.RequiredFaction =0
+QI537.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI537.Color =0
+QI537.Repeat =1
+QR537.QuestID =537
+QR537.EXP =350
+
+# 538
+QI538.QuestID =538
+QI538.PrevQuestId =537
+QI538.NextQuestsId =539,-1
+QI538.MinLevel =14
+QI538.RequiredFaction =0
+QI538.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI538.Color =0
+QI538.Repeat =1
+QI538.RewardItem[0].Base =1002
+QI538.RewardItem[0].Append =[0,1,-1,-1,-1]
+QI538.RewardItem[0].Level =1
+QI538.RewardItem[0].Overlap =1
+QI538.RewardItem[0].Binding =1
+QI538.RewardItem[1].Base =1102
+QI538.RewardItem[1].Append =[0,1,60,61,-1]
+QI538.RewardItem[1].Level =1
+QI538.RewardItem[1].Overlap =1
+QI538.RewardItem[1].Binding =1
+QI538.RewardItem[2].Base =1702
+QI538.RewardItem[2].Append =[8,57,-1,-1,-1]
+QI538.RewardItem[2].Level =1
+QI538.RewardItem[2].Overlap =1
+QI538.RewardItem[2].Binding =1
+QR538.QuestID =538
+QR538.EXP =100
+
+# 539
+QI539.QuestID =539
+QI539.PrevQuestId =538
+QI539.NextQuestsId =540,-1
+QI539.MinLevel =14
+QI539.RequiredFaction =0
+QI539.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI539.Color =0
+QI539.Repeat =1
+QR539.QuestID =539
+QR539.EXP =350
+
+# 540
+QI540.QuestID =540
+QI540.PrevQuestId =539
+QI540.NextQuestsId =541,-1
+QI540.MinLevel =14
+QI540.RequiredFaction =0
+QI540.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI540.Color =0
+QI540.Repeat =1
+QR540.QuestID =540
+QR540.EXP =400
+
+# 541
+QI541.QuestID =541
+QI541.PrevQuestId =540
+QI541.NextQuestsId =542,-1
+QI541.MinLevel =14
+QI541.RequiredFaction =0
+QI541.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI541.Color =0
+QI541.Repeat =1
+QR541.QuestID =541
+QR541.EXP =400
+
+# 542
+QI542.QuestID =542
+QI542.PrevQuestId =541
+QI542.NextQuestsId =543,-1
+QI542.MinLevel =15
+QI542.RequiredFaction =0
+QI542.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI542.Color =1
+QI542.Item =[504,-1,-1,-1]
+QI542.ItemCount =[1,-1,-1,-1]
+QI542.ItemProbability =[8,-1,-1,-1]
+QI542.Repeat =1
+QI542.RewardItem[0].Base =1402
+QI542.RewardItem[0].Append =[0,1,60,61,-1]
+QI542.RewardItem[0].Level =1
+QI542.RewardItem[0].Overlap =1
+QI542.RewardItem[0].Binding =1
+QI542.RewardItem[1].Base =1802
+QI542.RewardItem[1].Append =[8,57,60,61,-1]
+QI542.RewardItem[1].Level =1
+QI542.RewardItem[1].Overlap =1
+QI542.RewardItem[1].Binding =1
+QI542.RewardItem[2].Base =2002
+QI542.RewardItem[2].Append =[3,4,60,-1,-1]
+QI542.RewardItem[2].Level =1
+QI542.RewardItem[2].Overlap =1
+QI542.RewardItem[2].Binding =1
+QR542.QuestID =542
+QR542.EXP =1000
+
+# 543
+QI543.QuestID =543
+QI543.PrevQuestId =542
+QI543.NextQuestsId =544,-1
+QI543.MinLevel =15
+QI543.RequiredFaction =0
+QI543.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI543.Color =0
+QI543.Repeat =1
+QR543.QuestID =543
+QR543.EXP =450
+
+# 544
+QI544.QuestID =544
+QI544.PrevQuestId =543
+QI544.NextQuestsId =545,-1
+QI544.MinLevel =15
+QI544.RequiredFaction =0
+QI544.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI544.Color =0
+QI544.Repeat =1
+QR544.QuestID =544
+QR544.EXP =450
+
+# 545
+QI545.QuestID =545
+QI545.PrevQuestId =544
+QI545.NextQuestsId =546,-1
+QI545.MinLevel =15
+QI545.RequiredFaction =0
+QI545.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI545.Color =0
+QI545.Repeat =1
+QR545.QuestID =545
+QR545.EXP =450
+
+# 546
+QI546.QuestID =546
+QI546.PrevQuestId =545
+QI546.NextQuestsId =547,-1
+QI546.MinLevel =15
+QI546.RequiredFaction =0
+QI546.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI546.Color =0
+QI546.Repeat =1
+QR546.QuestID =546
+QR546.EXP =500
+
+# 547
+QI547.QuestID =547
+QI547.PrevQuestId =546
+QI547.NextQuestsId =548,-1
+QI547.MinLevel =15
+QI547.RequiredFaction =0
+QI547.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI547.Color =0
+QI547.Repeat =1
+QR547.QuestID =547
+QR547.EXP =500
+
+# 548
+QI548.QuestID =548
+QI548.PrevQuestId =547
+QI548.NextQuestsId =549,-1
+QI548.MinLevel =16
+QI548.RequiredFaction =0
+QI548.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI548.Color =0
+QI548.Repeat =1
+QR548.QuestID =548
+QR548.EXP =1000
+
+# 549
+QI549.QuestID =549
+QI549.PrevQuestId =548
+QI549.NextQuestsId =550,-1
+QI549.MinLevel =16
+QI549.RequiredFaction =0
+QI549.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI549.Color =1
+QI549.Creature =[1039,-1,-1,-1]
+QI549.CreatureCount =[25,-1,-1,-1]
+QI549.Repeat =1
+QR549.QuestID =549
+QR549.EXP =1800
+
+# 550
+QI550.QuestID =550
+QI550.PrevQuestId =549
+QI550.NextQuestsId =551,-1
+QI550.MinLevel =16
+QI550.RequiredFaction =0
+QI550.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI550.Color =1
+QI550.Creature =[1040,-1,-1,-1]
+QI550.CreatureCount =[30,-1,-1,-1]
+QI550.Repeat =1
+QR550.QuestID =550
+QR550.EXP =2000
+
+# 551
+QI551.QuestID =551
+QI551.PrevQuestId =550
+QI551.NextQuestsId =552,-1
+QI551.MinLevel =16
+QI551.RequiredFaction =0
+QI551.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI551.Color =0
+QI551.Repeat =1
+QR551.QuestID =551
+QR551.EXP =500
+
+# 552
+QI552.QuestID =552
+QI552.PrevQuestId =551
+QI552.NextQuestsId =553,-1
+QI552.MinLevel =17
+QI552.RequiredFaction =0
+QI552.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI552.Color =1
+QI552.Item =[505,-1,-1,-1]
+QI552.ItemCount =[1,-1,-1,-1]
+QI552.ItemProbability =[5,-1,-1,-1]
+QI552.Repeat =1
+QR552.QuestID =552
+QR552.EXP =2200
+
+# 553
+QI553.QuestID =553
+QI553.PrevQuestId =552
+QI553.NextQuestsId =554,-1
+QI553.MinLevel =17
+QI553.RequiredFaction =0
+QI553.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI553.Color =0
+QI553.Repeat =1
+QR553.QuestID =553
+QR553.EXP =500
+
+# 554
+QI554.QuestID =554
+QI554.PrevQuestId =553
+QI554.NextQuestsId =555,-1
+QI554.MinLevel =17
+QI554.RequiredFaction =0
+QI554.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI554.Color =0
+QI554.Repeat =1
+QR554.QuestID =554
+QR554.EXP =500
+
+# 555
+QI555.QuestID =555
+QI555.PrevQuestId =554
+QI555.NextQuestsId =556,-1
+QI555.MinLevel =17
+QI555.RequiredFaction =0
+QI555.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI555.Color =0
+QI555.Repeat =1
+QR555.QuestID =555
+QR555.EXP =550
+
+# 556
+QI556.QuestID =556
+QI556.PrevQuestId =555
+QI556.NextQuestsId =557,-1
+QI556.MinLevel =17
+QI556.RequiredFaction =0
+QI556.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI556.Color =0
+QI556.Repeat =1
+QR556.QuestID =556
+QR556.EXP =550
+
+# 557
+QI557.QuestID =557
+QI557.PrevQuestId =556
+QI557.NextQuestsId =558,-1
+QI557.MinLevel =17
+QI557.RequiredFaction =0
+QI557.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI557.Color =0
+QI557.Repeat =1
+QR557.QuestID =557
+QR557.EXP =550
+
+# 558
+QI558.QuestID =558
+QI558.PrevQuestId =557
+QI558.NextQuestsId =559,-1
+QI558.MinLevel =18
+QI558.RequiredFaction =0
+QI558.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI558.Color =1
+QI558.Item =[506,-1,-1,-1]
+QI558.ItemCount =[3,-1,-1,-1]
+QI558.ItemProbability =[10,-1,-1,-1]
+QI558.Repeat =1
+QR558.QuestID =558
+QR558.EXP =2500
+
+# 559
+QI559.QuestID =559
+QI559.PrevQuestId =558
+QI559.NextQuestsId =560,-1
+QI559.MinLevel =18
+QI559.RequiredFaction =0
+QI559.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI559.Color =0
+QI559.Repeat =1
+QR559.QuestID =559
+QR559.EXP =550
+
+# 560
+QI560.QuestID =560
+QI560.PrevQuestId =559
+QI560.NextQuestsId =561,-1
+QI560.MinLevel =18
+QI560.RequiredFaction =0
+QI560.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI560.Color =0
+QI560.Repeat =1
+QR560.QuestID =560
+QR560.EXP =600
+
+# 561
+QI561.QuestID =561
+QI561.PrevQuestId =560
+QI561.NextQuestsId =562,-1
+QI561.MinLevel =18
+QI561.RequiredFaction =0
+QI561.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI561.Color =0
+QI561.Repeat =1
+QR561.QuestID =561
+QR561.EXP =600
+
+# 562
+QI562.QuestID =562
+QI562.PrevQuestId =561
+QI562.NextQuestsId =563,-1
+QI562.MinLevel =19
+QI562.RequiredFaction =0
+QI562.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI562.Color =0
+QI562.Repeat =1
+QR562.QuestID =562
+QR562.EXP =650
+
+# 563
+QI563.QuestID =563
+QI563.PrevQuestId =562
+QI563.NextQuestsId =564,-1
+QI563.MinLevel =19
+QI563.RequiredFaction =0
+QI563.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI563.Color =1
+QI563.Creature =[1042,-1,-1,-1]
+QI563.CreatureCount =[20,-1,-1,-1]
+QI563.Repeat =1
+QR563.QuestID =563
+QR563.EXP =2500
+
+# 564
+QI564.QuestID =564
+QI564.PrevQuestId =563
+QI564.NextQuestsId =565,-1
+QI564.MinLevel =19
+QI564.RequiredFaction =0
+QI564.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI564.Color =0
+QI564.Repeat =1
+QR564.QuestID =564
+QR564.EXP =650
+
+# 565
+QI565.QuestID =565
+QI565.PrevQuestId =564
+QI565.NextQuestsId =566,-1
+QI565.MinLevel =20
+QI565.RequiredFaction =0
+QI565.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI565.Color =1
+QI565.Creature =[1043,-1,-1,-1]
+QI565.CreatureCount =[20,-1,-1,-1]
+QI565.Repeat =1
+QR565.QuestID =565
+QR565.EXP =3000
+
+# 566
+QI566.QuestID =566
+QI566.PrevQuestId =565
+QI566.NextQuestsId =567,-1
+QI566.MinLevel =20
+QI566.RequiredFaction =0
+QI566.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI566.Color =0
+QI566.Repeat =1
+QR566.QuestID =566
+QR566.EXP =700
+
+# 567
+QI567.QuestID =567
+QI567.PrevQuestId =566
+QI567.NextQuestsId =568,-1
+QI567.MinLevel =21
+QI567.RequiredFaction =0
+QI567.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI567.Color =0
+QI567.Repeat =1
+QR567.QuestID =567
+QR567.EXP =700
+
+# 568
+QI568.QuestID =568
+QI568.PrevQuestId =567
+QI568.NextQuestsId =569,-1
+QI568.MinLevel =21
+QI568.RequiredFaction =0
+QI568.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI568.Color =0
+QI568.Repeat =1
+QR568.QuestID =568
+QR568.EXP =700
+
+# 569
+QI569.QuestID =569
+QI569.PrevQuestId =568
+QI569.NextQuestsId =570,-1
+QI569.MinLevel =22
+QI569.RequiredFaction =0
+QI569.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI569.Color =1
+QI569.Creature =[1044,-1,-1,-1]
+QI569.CreatureCount =[15,-1,-1,-1]
+QI569.Repeat =1
+QR569.QuestID =569
+QR569.EXP =3200
+
+# 570
+QI570.QuestID =570
+QI570.PrevQuestId =569
+QI570.NextQuestsId =571,-1
+QI570.MinLevel =23
+QI570.RequiredFaction =0
+QI570.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI570.Color =0
+QI570.Repeat =1
+QR570.QuestID =570
+QR570.EXP =700
+
+# 571
+QI571.QuestID =571
+QI571.PrevQuestId =570
+QI571.NextQuestsId =572,-1
+QI571.MinLevel =24
+QI571.RequiredFaction =0
+QI571.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI571.Color =1
+QI571.Creature =[1057,-1,-1,-1]
+QI571.CreatureCount =[30,-1,-1,-1]
+QI571.Repeat =1
+QR571.QuestID =571
+QR571.EXP =3500
+
+# 572
+QI572.QuestID =572
+QI572.PrevQuestId =571
+QI572.NextQuestsId =573,-1
+QI572.MinLevel =24
+QI572.RequiredFaction =0
+QI572.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI572.Color =0
+QI572.Repeat =1
+QR572.QuestID =572
+QR572.EXP =800
+
+# 573
+QI573.QuestID =573
+QI573.PrevQuestId =572
+QI573.NextQuestsId =574,-1
+QI573.MinLevel =24
+QI573.RequiredFaction =0
+QI573.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI573.Color =0
+QI573.Repeat =1
+QR573.QuestID =573
+QR573.EXP =800
+
+# 574
+QI574.QuestID =574
+QI574.PrevQuestId =573
+QI574.NextQuestsId =575,-1
+QI574.MinLevel =25
+QI574.RequiredFaction =0
+QI574.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI574.Color =0
+QI574.Repeat =1
+QR574.QuestID =574
+QR574.EXP =800
+
+# 575
+QI575.QuestID =575
+QI575.PrevQuestId =574
+QI575.NextQuestsId =576,-1
+QI575.MinLevel =25
+QI575.RequiredFaction =0
+QI575.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI575.Color =0
+QI575.Repeat =1
+QR575.QuestID =575
+QR575.EXP =800
+
+# 576
+QI576.QuestID =576
+QI576.PrevQuestId =575
+QI576.NextQuestsId =577,-1
+QI576.MinLevel =26
+QI576.RequiredFaction =0
+QI576.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI576.Color =1
+QI576.Item =[507,-1,-1,-1]
+QI576.ItemCount =[10,-1,-1,-1]
+QI576.ItemProbability =[50,-1,-1,-1]
+QI576.Repeat =1
+QI576.RewardMoney =500
+QR576.QuestID =576
+QR576.EXP =5000
+
+# 577
+QI577.QuestID =577
+QI577.PrevQuestId =576
+QI577.NextQuestsId =578,-1
+QI577.MinLevel =26
+QI577.RequiredFaction =0
+QI577.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI577.Color =0
+QI577.Repeat =1
+QR577.QuestID =577
+QR577.EXP =900
+
+# 578
+QI578.QuestID =578
+QI578.PrevQuestId =577
+QI578.NextQuestsId =579,-1
+QI578.MinLevel =27
+QI578.RequiredFaction =0
+QI578.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI578.Color =0
+QI578.Repeat =1
+QR578.QuestID =578
+QR578.EXP =900
+
+# 579
+QI579.QuestID =579
+QI579.PrevQuestId =578
+QI579.NextQuestsId =580,-1
+QI579.MinLevel =27
+QI579.RequiredFaction =0
+QI579.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI579.Color =0
+QI579.Repeat =1
+QR579.QuestID =579
+QR579.EXP =1000
+
+# 580
+QI580.QuestID =580
+QI580.PrevQuestId =579
+QI580.NextQuestsId =581,-1
+QI580.MinLevel =28
+QI580.RequiredFaction =0
+QI580.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI580.Color =0
+QI580.Repeat =1
+QR580.QuestID =580
+QR580.EXP =1000
+
+# 581
+QI581.QuestID =581
+QI581.PrevQuestId =580
+QI581.NextQuestsId =582,-1
+QI581.MinLevel =28
+QI581.RequiredFaction =0
+QI581.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI581.Color =2
+QI581.Creature =[1061,-1,-1,-1]
+QI581.CreatureCount =[30,-1,-1,-1]
+QI581.Repeat =1
+QR581.QuestID =581
+QR581.EXP =6500
+
+# 582
+QI582.QuestID =582
+QI582.PrevQuestId =581
+QI582.NextQuestsId =583,-1
+QI582.MinLevel =29
+QI582.RequiredFaction =0
+QI582.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI582.Color =0
+QI582.Repeat =1
+QR582.QuestID =582
+QR582.EXP =1200
+
+# 583
+QI583.QuestID =583
+QI583.PrevQuestId =582
+QI583.NextQuestsId =584,-1
+QI583.MinLevel =29
+QI583.RequiredFaction =0
+QI583.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI583.Color =0
+QI583.Repeat =1
+QR583.QuestID =583
+QR583.EXP =1200
+
+# 584
+QI584.QuestID =584
+QI584.PrevQuestId =583
+QI584.NextQuestsId =585,-1
+QI584.MinLevel =30
+QI584.RequiredFaction =0
+QI584.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI584.Color =1
+QI584.Item =[508,-1,-1,-1]
+QI584.ItemCount =[20,-1,-1,-1]
+QI584.ItemProbability =[60,-1,-1,-1]
+QI584.Repeat =1
+QR584.QuestID =584
+QR584.EXP =7500
+
+# 585
+QI585.QuestID =585
+QI585.PrevQuestId =584
+QI585.NextQuestsId =586,-1
+QI585.MinLevel =31
+QI585.RequiredFaction =0
+QI585.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI585.Color =0
+QI585.Repeat =1
+QR585.QuestID =585
+QR585.EXP =1300
+
+# 586
+QI586.QuestID =586
+QI586.PrevQuestId =585
+QI586.NextQuestsId =587,-1
+QI586.MinLevel =32
+QI586.RequiredFaction =0
+QI586.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI586.Color =0
+QI586.Repeat =1
+QI586.RewardMoney =1000
+QR586.QuestID =586
+QR586.EXP =1400
+
+# 587
+QI587.QuestID =587
+QI587.PrevQuestId =586
+QI587.NextQuestsId =588,-1
+QI587.MinLevel =33
+QI587.RequiredFaction =0
+QI587.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI587.Color =0
+QI587.Money =100
+QI587.Repeat =1
+QR587.QuestID =587
+QR587.EXP =4000
+
+# 588
+QI588.QuestID =588
+QI588.PrevQuestId =587
+QI588.NextQuestsId =589,-1
+QI588.MinLevel =34
+QI588.RequiredFaction =0
+QI588.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI588.Color =1
+QI588.Item =[509,-1,-1,-1]
+QI588.ItemCount =[20,-1,-1,-1]
+QI588.ItemProbability =[100,-1,-1,-1]
+QI588.Repeat =1
+QR588.QuestID =588
+QR588.EXP =4000
+
+# 589
+QI589.QuestID =589
+QI589.PrevQuestId =588
+QI589.NextQuestsId =590,-1
+QI589.MinLevel =35
+QI589.RequiredFaction =0
+QI589.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI589.Color =0
+QI589.Repeat =1
+QR589.QuestID =589
+QR589.EXP =4000
+
+# 590
+QI590.QuestID =590
+QI590.PrevQuestId =589
+QI590.NextQuestsId =591,-1
+QI590.MinLevel =36
+QI590.RequiredFaction =0
+QI590.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI590.Color =0
+QI590.Repeat =1
+QR590.QuestID =590
+QR590.EXP =1500
+
+# 591
+QI591.QuestID =591
+QI591.PrevQuestId =590
+QI591.NextQuestsId =592,-1
+QI591.MinLevel =36
+QI591.RequiredFaction =0
+QI591.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI591.Color =0
+QI591.Repeat =1
+QR591.QuestID =591
+QR591.EXP =1800
+
+# 592
+QI592.QuestID =592
+QI592.PrevQuestId =591
+QI592.NextQuestsId =593,-1
+QI592.MinLevel =37
+QI592.RequiredFaction =0
+QI592.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI592.Color =0
+QI592.Repeat =1
+QR592.QuestID =592
+QR592.EXP =2000
+
+# 593
+QI593.QuestID =593
+QI593.PrevQuestId =592
+QI593.NextQuestsId =594,-1
+QI593.MinLevel =38
+QI593.RequiredFaction =0
+QI593.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI593.Color =0
+QI593.Repeat =1
+QR593.QuestID =593
+QR593.EXP =6000
+
+# 594
+QI594.QuestID =594
+QI594.PrevQuestId =593
+QI594.NextQuestsId =595,-1
+QI594.MinLevel =39
+QI594.RequiredFaction =0
+QI594.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI594.Color =2
+QI594.Creature =[1073,-1,-1,-1]
+QI594.CreatureCount =[40,-1,-1,-1]
+QI594.Repeat =1
+QR594.QuestID =594
+QR594.EXP =12000
+
+# 595
+QI595.QuestID =595
+QI595.PrevQuestId =594
+QI595.NextQuestsId =596,-1
+QI595.MinLevel =40
+QI595.RequiredFaction =0
+QI595.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI595.Color =0
+QI595.Repeat =1
+QR595.QuestID =595
+QR595.EXP =3000
+
+# 596
+QI596.QuestID =596
+QI596.PrevQuestId =595
+QI596.NextQuestsId =597,-1
+QI596.MinLevel =41
+QI596.RequiredFaction =0
+QI596.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI596.Color =2
+QI596.Creature =[1074,-1,-1,-1]
+QI596.CreatureCount =[20,-1,-1,-1]
+QI596.Repeat =1
+QR596.QuestID =596
+QR596.EXP =18000
+
+# 597
+QI597.QuestID =597
+QI597.PrevQuestId =596
+QI597.NextQuestsId =598,-1
+QI597.MinLevel =42
+QI597.RequiredFaction =0
+QI597.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI597.Color =0
+QI597.Repeat =1
+QR597.QuestID =597
+QR597.EXP =5000
+
+# 598
+QI598.QuestID =598
+QI598.PrevQuestId =597
+QI598.NextQuestsId =599,-1
+QI598.MinLevel =43
+QI598.RequiredFaction =0
+QI598.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI598.Color =3
+QI598.Creature =[1076,-1,-1,-1]
+QI598.CreatureCount =[20,-1,-1,-1]
+QI598.Repeat =1
+QR598.QuestID =598
+QR598.EXP =25000
+
+# 599
+QI599.QuestID =599
+QI599.PrevQuestId =598
+QI599.NextQuestsId =600,-1
+QI599.MinLevel =44
+QI599.RequiredFaction =0
+QI599.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI599.Color =0
+QI599.Repeat =1
+QR599.QuestID =599
+QR599.EXP =6000
+
+# 600
+QI600.QuestID =600
+QI600.PrevQuestId =599
+QI600.NextQuestsId =601,-1
+QI600.MinLevel =45
+QI600.RequiredFaction =0
+QI600.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI600.Color =0
+QI600.Repeat =1
+QR600.QuestID =600
+QR600.EXP =7000
+
+# 601
+QI601.QuestID =601
+QI601.PrevQuestId =600
+QI601.NextQuestsId =-1,-1
+QI601.MinLevel =46
+QI601.RequiredFaction =0
+QI601.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI601.Color =2
+QI601.Creature =[1081,-1,-1,-1]
+QI601.CreatureCount =[45,-1,-1,-1]
+QI601.Repeat =1
+QR601.QuestID =601
+QR601.EXP =35000
+
+# 701
+QI701.QuestID =701
+QI701.NextQuestsId =702,-1
+QI701.MinLevel =5
+QI701.MaxLevel =14
+QI701.RequiredFaction =0
+QI701.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI701.Color =0
+QI701.Creature =[1028,-1,-1,-1]
+QI701.CreatureCount =[20,-1,-1,-1]
+QI701.Repeat =1
+QI701.RewardMoney =15
+QR701.QuestID =701
+QR701.EXP =150
+
+# 702
+QI702.QuestID =702
+QI702.PrevQuestId =701
+QI702.NextQuestsId =703,-1
+QI702.MinLevel =15
+QI702.MaxLevel =24
+QI702.RequiredFaction =0
+QI702.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI702.Color =0
+QI702.Creature =[1046,-1,-1,-1]
+QI702.CreatureCount =[30,-1,-1,-1]
+QI702.Repeat =1
+QI702.RewardMoney =200
+QR702.QuestID =702
+QR702.EXP =2000
+
+# 703
+QI703.QuestID =703
+QI703.PrevQuestId =702
+QI703.NextQuestsId =704,-1
+QI703.MinLevel =25
+QI703.MaxLevel =34
+QI703.RequiredFaction =0
+QI703.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI703.Color =1
+QI703.Creature =[1061,-1,-1,-1]
+QI703.CreatureCount =[40,-1,-1,-1]
+QI703.Repeat =1
+QI703.RewardMoney =400
+QR703.QuestID =703
+QR703.EXP =4000
+
+# 704
+QI704.QuestID =704
+QI704.PrevQuestId =703
+QI704.NextQuestsId =705,-1
+QI704.MinLevel =35
+QI704.MaxLevel =44
+QI704.RequiredFaction =0
+QI704.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI704.Color =2
+QI704.Creature =[1074,-1,-1,-1]
+QI704.CreatureCount =[30,-1,-1,-1]
+QI704.Repeat =1
+QI704.RewardMoney =2500
+QR704.QuestID =704
+QR704.EXP =25000
+
+# 705
+QI705.QuestID =705
+QI705.PrevQuestId =704
+QI705.NextQuestsId =706,-1
+QI705.MinLevel =45
+QI705.MaxLevel =59
+QI705.RequiredFaction =0
+QI705.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI705.Color =2
+QI705.Creature =[1081,-1,-1,-1]
+QI705.CreatureCount =[50,-1,-1,-1]
+QI705.Repeat =1
+QI705.RewardMoney =6000
+QR705.QuestID =705
+QR705.EXP =60000
+
+# 706
+QI706.QuestID =706
+QI706.PrevQuestId =705
+QI706.MinLevel =50
+QI706.RequiredFaction =0
+QI706.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI706.Color =3
+QI706.Creature =[1083,-1,-1,-1]
+QI706.CreatureCount =[40,-1,-1,-1]
+QI706.Repeat =1
+QI706.RewardMoney =8000
+QR706.QuestID =706
+QR706.EXP =80000
+
+# 707
+QI707.QuestID =707
+QI707.NextQuestsId =708,-1
+QI707.MinLevel =10
+QI707.RequiredFaction =0
+QI707.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI707.Color =0
+QI707.Repeat =1
+QR707.QuestID =707
+QR707.EXP =150
+
+# 708
+QI708.QuestID =708
+QI708.PrevQuestId =707
+QI708.NextQuestsId =709,-1
+QI708.RequiredFaction =0
+QI708.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI708.Color =0
+QI708.Repeat =1
+QR708.QuestID =708
+QR708.EXP =250
+
+# 709
+QI709.QuestID =709
+QI709.PrevQuestId =708
+QI709.RequiredFaction =0
+QI709.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI709.Color =1
+QI709.Item =[510,-1,-1,-1]
+QI709.ItemCount =[1,-1,-1,-1]
+QI709.ItemProbability =[5,-1,-1,-1]
+QI709.Repeat =1
+QI709.RewardMoney =500
+QR709.QuestID =709
+QR709.EXP =2000
+
+# 710
+QI710.QuestID =710
+QI710.NextQuestsId =711,-1
+QI710.MinLevel =25
+QI710.RequiredFaction =0
+QI710.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI710.Color =1
+QI710.Creature =[1061,-1,-1,-1]
+QI710.CreatureCount =[50,-1,-1,-1]
+QI710.Repeat =1
+QR710.QuestID =710
+QR710.EXP =5000
+
+# 711
+QI711.QuestID =711
+QI711.PrevQuestId =710
+QI711.NextQuestsId =712,-1
+QI711.MinLevel =30
+QI711.RequiredFaction =0
+QI711.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI711.Color =0
+QI711.Repeat =1
+QR711.QuestID =711
+QR711.EXP =1000
+
+# 712
+QI712.QuestID =712
+QI712.PrevQuestId =711
+QI712.RequiredFaction =0
+QI712.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI712.Color =2
+QI712.Creature =[1072,-1,-1,-1]
+QI712.CreatureCount =[50,-1,-1,-1]
+QI712.Repeat =1
+QI712.RewardMoney =1000
+QR712.QuestID =712
+QR712.EXP =10000
+
+# 713
+QI713.QuestID =713
+QI713.NextQuestsId =714,-1
+QI713.MinLevel =50
+QI713.RequiredFaction =0
+QI713.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI713.Color =0
+QI713.Repeat =1
+QR713.QuestID =713
+QR713.EXP =10000
+
+# 714
+QI714.QuestID =714
+QI714.PrevQuestId =713
+QI714.NextQuestsId =715,-1
+QI714.RequiredFaction =0
+QI714.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI714.Color =0
+QI714.Repeat =1
+QR714.QuestID =714
+QR714.EXP =12000
+
+# 715
+QI715.QuestID =715
+QI715.PrevQuestId =714
+QI715.MinLevel =57
+QI715.RequiredFaction =0
+QI715.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI715.Color =3
+QI715.Item =[520,-1,-1,-1]
+QI715.ItemCount =[1,-1,-1,-1]
+QI715.ItemProbability =[3,-1,-1,-1]
+QI715.Repeat =1
+QI715.RewardMoney =10000
+QR715.QuestID =715
+QR715.EXP =100000
+
+# 721
+QI721.QuestID =721
+QI721.MinLevel =5
+QI721.RequiredFaction =0
+QI721.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI721.Color =1
+QI721.Creature =[1026,-1,-1,-1]
+QI721.CreatureCount =[1,-1,-1,-1]
+QI721.Repeat =1
+QI721.RewardMoney =200
+QR721.QuestID =721
+QR721.EXP =1000
+
+# 722
+QI722.QuestID =722
+QI722.MinLevel =18
+QI722.RequiredFaction =0
+QI722.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI722.Color =0
+QI722.Creature =[1046,-1,-1,-1]
+QI722.CreatureCount =[25,-1,-1,-1]
+QI722.Repeat =1
+QI722.RewardMoney =150
+QR722.QuestID =722
+QR722.EXP =1800
+
+# 723
+QI723.QuestID =723
+QI723.MinLevel =23
+QI723.RequiredFaction =0
+QI723.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI723.Color =2
+QI723.Creature =[1059,-1,-1,-1]
+QI723.CreatureCount =[1,-1,-1,-1]
+QI723.Repeat =1
+QI723.RewardMoney =1000
+QR723.QuestID =723
+QR723.EXP =8000
+
+# 724
+QI724.QuestID =724
+QI724.MinLevel =35
+QI724.RequiredFaction =0
+QI724.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI724.Color =1
+QI724.Creature =[1073,-1,-1,-1]
+QI724.CreatureCount =[40,-1,-1,-1]
+QI724.Repeat =1
+QI724.RewardMoney =1200
+QR724.QuestID =724
+QR724.EXP =10000
+
+# 725
+QI725.QuestID =725
+QI725.MinLevel =36
+QI725.RequiredFaction =0
+QI725.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI725.Color =2
+QI725.Creature =[1075,-1,-1,-1]
+QI725.CreatureCount =[25,-1,-1,-1]
+QI725.Repeat =1
+QI725.RewardMoney =1500
+QR725.QuestID =725
+QR725.EXP =12000
+
+# 726
+QI726.QuestID =726
+QI726.MinLevel =45
+QI726.RequiredFaction =0
+QI726.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI726.Color =2
+QI726.Creature =[1082,-1,-1,-1]
+QI726.CreatureCount =[50,-1,-1,-1]
+QI726.Repeat =1
+QI726.RewardMoney =2500
+QR726.QuestID =726
+QR726.EXP =25000
+
+# 727
+QI727.QuestID =727
+QI727.MinLevel =50
+QI727.RequiredFaction =0
+QI727.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI727.Color =3
+QI727.Creature =[1085,-1,-1,-1]
+QI727.CreatureCount =[1,-1,-1,-1]
+QI727.Repeat =1
+QI727.RewardMoney =10000
+QR727.QuestID =727
+QR727.EXP =150000
+
+# 741
+QI741.QuestID =741
+QI741.MinLevel =5
+QI741.RequiredClass =0
+QI741.RequiredFaction =0
+QI741.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI741.Color =0
+QI741.Repeat =1
+QI741.RewardItem[0].Base =5030
+QI741.RewardItem[0].Overlap =1
+QI741.RewardItem[0].Binding =1
+QI741.RewardItem[1].Base =5230
+QI741.RewardItem[1].Overlap =1
+QI741.RewardItem[1].Binding =1
+QR741.QuestID =741
+QR741.EXP =100
+
+# 742
+QI742.QuestID =742
+QI742.MinLevel =15
+QI742.RequiredClass =0
+QI742.RequiredFaction =0
+QI742.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI742.Color =0
+QI742.Repeat =1
+QI742.RewardItem[0].Base =5011
+QI742.RewardItem[0].Overlap =1
+QI742.RewardItem[0].Binding =1
+QI742.RewardItem[1].Base =5211
+QI742.RewardItem[1].Overlap =1
+QI742.RewardItem[1].Binding =1
+QR742.QuestID =742
+QR742.EXP =100
+
+# 743
+QI743.QuestID =743
+QI743.MinLevel =25
+QI743.RequiredClass =0
+QI743.RequiredFaction =0
+QI743.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI743.Color =0
+QI743.Repeat =1
+QI743.RewardItem[0].Base =5002
+QI743.RewardItem[0].Overlap =1
+QI743.RewardItem[0].Binding =1
+QI743.RewardItem[1].Base =5202
+QI743.RewardItem[1].Overlap =1
+QI743.RewardItem[1].Binding =1
+QR743.QuestID =743
+QR743.EXP =100
+
+# 744
+QI744.QuestID =744
+QI744.MinLevel =35
+QI744.RequiredClass =0
+QI744.RequiredFaction =0
+QI744.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI744.Color =0
+QI744.Repeat =1
+QI744.RewardItem[0].Base =5051
+QI744.RewardItem[0].Overlap =1
+QI744.RewardItem[0].Binding =1
+QI744.RewardItem[1].Base =5251
+QI744.RewardItem[1].Overlap =1
+QI744.RewardItem[1].Binding =1
+QR744.QuestID =744
+QR744.EXP =100
+
+# 745
+QI745.QuestID =745
+QI745.MinLevel =45
+QI745.RequiredClass =0
+QI745.RequiredFaction =0
+QI745.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI745.Color =0
+QI745.Repeat =1
+QI745.RewardItem[0].Base =5023
+QI745.RewardItem[0].Overlap =1
+QI745.RewardItem[0].Binding =1
+QI745.RewardItem[1].Base =5223
+QI745.RewardItem[1].Overlap =1
+QI745.RewardItem[1].Binding =1
+QR745.QuestID =745
+QR745.EXP =100
+
+# 746
+QI746.QuestID =746
+QI746.MinLevel =20
+QI746.RequiredClass =0
+QI746.RequiredFaction =0
+QI746.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI746.Color =0
+QI746.Repeat =1
+QI746.RewardItem[0].Base =4400
+QI746.RewardItem[0].Overlap =1
+QI746.RewardItem[0].Binding =1
+QI746.RewardItem[1].Base =4401
+QI746.RewardItem[1].Overlap =1
+QI746.RewardItem[1].Binding =1
+QR746.QuestID =746
+
+# 751
+QI751.QuestID =751
+QI751.MinLevel =5
+QI751.RequiredClass =1
+QI751.RequiredFaction =0
+QI751.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI751.Color =0
+QI751.Repeat =1
+QI751.RewardItem[0].Base =6010
+QI751.RewardItem[0].Overlap =1
+QI751.RewardItem[0].Binding =1
+QI751.RewardItem[1].Base =6210
+QI751.RewardItem[1].Overlap =1
+QI751.RewardItem[1].Binding =1
+QR751.QuestID =751
+QR751.EXP =100
+
+# 752
+QI752.QuestID =752
+QI752.MinLevel =15
+QI752.RequiredClass =1
+QI752.RequiredFaction =0
+QI752.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI752.Color =0
+QI752.Repeat =1
+QI752.RewardItem[0].Base =6001
+QI752.RewardItem[0].Overlap =1
+QI752.RewardItem[0].Binding =1
+QI752.RewardItem[1].Base =6240
+QI752.RewardItem[1].Overlap =1
+QI752.RewardItem[1].Binding =1
+QR752.QuestID =752
+QR752.EXP =100
+
+# 753
+QI753.QuestID =753
+QI753.MinLevel =25
+QI753.RequiredClass =1
+QI753.RequiredFaction =0
+QI753.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI753.Color =0
+QI753.Repeat =1
+QI753.RewardItem[0].Base =6022
+QI753.RewardItem[0].Overlap =1
+QI753.RewardItem[0].Binding =1
+QI753.RewardItem[1].Base =6260
+QI753.RewardItem[1].Overlap =1
+QI753.RewardItem[1].Binding =1
+QR753.QuestID =753
+QR753.EXP =100
+
+# 754
+QI754.QuestID =754
+QI754.MinLevel =35
+QI754.RequiredClass =1
+QI754.RequiredFaction =0
+QI754.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI754.Color =0
+QI754.Repeat =1
+QI754.RewardItem[0].Base =6042
+QI754.RewardItem[0].Overlap =1
+QI754.RewardItem[0].Binding =1
+QI754.RewardItem[1].Base =6233
+QI754.RewardItem[1].Overlap =1
+QI754.RewardItem[1].Binding =1
+QR754.QuestID =754
+QR754.EXP =100
+
+# 755
+QI755.QuestID =755
+QI755.MinLevel =45
+QI755.RequiredClass =1
+QI755.RequiredFaction =0
+QI755.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI755.Color =0
+QI755.Repeat =1
+QI755.RewardItem[0].Base =6062
+QI755.RewardItem[0].Overlap =1
+QI755.RewardItem[0].Binding =1
+QI755.RewardItem[1].Base =6253
+QI755.RewardItem[1].Overlap =1
+QI755.RewardItem[1].Binding =1
+QR755.QuestID =755
+QR755.EXP =100
+
+# 756
+QI756.QuestID =756
+QI756.MinLevel =20
+QI756.RequiredClass =1
+QI756.RequiredFaction =0
+QI756.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI756.Color =0
+QI756.Repeat =1
+QI756.RewardItem[0].Base =4402
+QI756.RewardItem[0].Overlap =1
+QI756.RewardItem[0].Binding =1
+QI756.RewardItem[1].Base =4403
+QI756.RewardItem[1].Overlap =1
+QI756.RewardItem[1].Binding =1
+QR756.QuestID =756
+
+# 761
+QI761.QuestID =761
+QI761.NextQuestsId =762,-1
+QI761.RequiredFaction =0
+QI761.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI761.Color =0
+QI761.Repeat =1
+QR761.QuestID =761
+QR761.EXP =100
+
+# 762
+QI762.QuestID =762
+QI762.PrevQuestId =761
+QI762.NextQuestsId =763,-1
+QI762.RequiredFaction =0
+QI762.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI762.Color =0
+QI762.Creature =[1024,-1,-1,-1]
+QI762.CreatureCount =[15,-1,-1,-1]
+QI762.Repeat =1
+QR762.QuestID =762
+QR762.EXP =500
+
+# 763
+QI763.QuestID =763
+QI763.PrevQuestId =762
+QI763.MinLevel =15
+QI763.RequiredFaction =0
+QI763.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI763.Color =0
+QI763.Repeat =1
+QR763.QuestID =763
+QR763.EXP =500
+
+# 764
+QI764.QuestID =764
+QI764.MinLevel =20
+QI764.RequiredFaction =0
+QI764.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST
+QI764.Color =1
+QI764.Item =[521,-1,-1,-1]
+QI764.ItemCount =[1,-1,-1,-1]
+QI764.ItemProbability =[4,-1,-1,-1]
+QI764.Repeat =1
+QR764.QuestID =764
+QR764.EXP =4000
+
+# 765
+QI765.QuestID =765
+QI765.MinLevel =30
+QI765.RequiredFaction =0
+QI765.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI765.Color =1
+QI765.Repeat =1
+QR765.QuestID =765
+QR765.EXP =5000
+
+# 801
+QI801.QuestID =801
+QI801.NextQuestsId =802,-1
+QI801.MinLevel =5
+QI801.RequiredFaction =0
+QI801.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO
+QI801.Color =0
+QI801.Repeat =1
+QR801.QuestID =801
+QR801.EXP =100
+
+# 802
+QI802.QuestID =802
+QI802.PrevQuestId =801
+QI802.MinLevel =15
+QI802.MaxLevel =25
+QI802.RequiredFaction =0
+QI802.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI802.Color =1
+QI802.Creature =[1043,-1,-1,-1]
+QI802.CreatureCount =[20,-1,-1,-1]
+QI802.Repeat =0
+QI802.RewardMoney =200
+QR802.QuestID =802
+QR802.EXP =1600
+
+# 803
+QI803.QuestID =803
+QI803.MinLevel =26
+QI803.MaxLevel =35
+QI803.RequiredFaction =0
+QI803.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI803.Color =0
+QI803.Repeat =0
+QI803.RewardMoney =250
+QR803.QuestID =803
+QR803.EXP =2500
+
+# 804
+QI804.QuestID =804
+QI804.MinLevel =36
+QI804.MaxLevel =49
+QI804.RequiredFaction =0
+QI804.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI804.Color =2
+QI804.Creature =[1076,-1,-1,-1]
+QI804.CreatureCount =[65,-1,-1,-1]
+QI804.Repeat =0
+QI804.RewardMoney =2000
+QR804.QuestID =804
+QR804.EXP =30000
+
+# 805
+QI805.QuestID =805
+QI805.MinLevel =50
+QI805.MaxLevel =59
+QI805.RequiredFaction =0
+QI805.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI805.Color =3
+QI805.Creature =[1091,-1,-1,-1]
+QI805.CreatureCount =[100,-1,-1,-1]
+QI805.Repeat =0
+QI805.RewardMoney =5000
+QR805.QuestID =805
+QR805.EXP =100000
+
+# 831
+QI831.QuestID =831
+QI831.MinLevel =15
+QI831.MaxLevel =20
+QI831.RequiredFaction =0
+QI831.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI831.Color =0
+QI831.Item =[522,-1,-1,-1]
+QI831.ItemCount =[12,-1,-1,-1]
+QI831.ItemProbability =[15,-1,-1,-1]
+QI831.Repeat =0
+QR831.QuestID =831
+QR831.EXP =2500
+
+# 832
+QI832.QuestID =832
+QI832.MinLevel =25
+QI832.MaxLevel =30
+QI832.RequiredFaction =0
+QI832.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI832.Color =1
+QI832.Item =[523,-1,-1,-1]
+QI832.ItemCount =[12,-1,-1,-1]
+QI832.ItemProbability =[15,-1,-1,-1]
+QI832.Repeat =0
+QR832.QuestID =832
+QR832.EXP =5000
+
+# 833
+QI833.QuestID =833
+QI833.MinLevel =35
+QI833.MaxLevel =40
+QI833.RequiredFaction =0
+QI833.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI833.Color =2
+QI833.Item =[524,-1,-1,-1]
+QI833.ItemCount =[12,-1,-1,-1]
+QI833.ItemProbability =[15,-1,-1,-1]
+QI833.Repeat =0
+QR833.QuestID =833
+QR833.EXP =10000
+
+# 834
+QI834.QuestID =834
+QI834.MinLevel =45
+QI834.MaxLevel =50
+QI834.RequiredFaction =0
+QI834.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI834.Color =2
+QI834.Item =[525,-1,-1,-1]
+QI834.ItemCount =[12,-1,-1,-1]
+QI834.ItemProbability =[15,-1,-1,-1]
+QI834.Repeat =0
+QR834.QuestID =834
+QR834.EXP =60000
+
+# 835
+QI835.QuestID =835
+QI835.MinLevel =55
+QI835.MaxLevel =60
+QI835.RequiredFaction =0
+QI835.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI835.Color =3
+QI835.Item =[526,-1,-1,-1]
+QI835.ItemCount =[12,-1,-1,-1]
+QI835.ItemProbability =[15,-1,-1,-1]
+QI835.Repeat =0
+QR835.QuestID =835
+QR835.EXP =120000
+
+# 836
+QI836.QuestID =836
+QI836.MinLevel =5
+QI836.MaxLevel =40
+QI836.RequiredFaction =0
+QI836.SpecialFlags =QUEST_SPECIAL_FLAGS_SPEAKTO+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI836.Color =0
+QI836.Repeat =0
+QR836.QuestID =836
+QR836.EXP =100
+
+# 651
+QI651.QuestID =651
+QI651.MinLevel =1
+QI651.MaxLevel =3
+QI651.RequiredFaction =0
+QI651.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI651.Color =0
+QI651.Item =[527,-1,-1,-1]
+QI651.ItemCount =[10,-1,-1,-1]
+QI651.ItemProbability =[40,-1,-1,-1]
+QI651.Repeat =0
+QR651.QuestID =651
+QR651.EXP =120
+
+# 652
+QI652.QuestID =652
+QI652.MinLevel =2
+QI652.MaxLevel =5
+QI652.RequiredFaction =0
+QI652.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI652.Color =0
+QI652.Item =[528,-1,-1,-1]
+QI652.ItemCount =[8,-1,-1,-1]
+QI652.ItemProbability =[30,-1,-1,-1]
+QI652.Repeat =0
+QR652.QuestID =652
+QR652.EXP =200
+
+# 653
+QI653.QuestID =653
+QI653.MinLevel =4
+QI653.MaxLevel =9
+QI653.RequiredFaction =0
+QI653.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI653.Color =0
+QI653.Item =[529,-1,-1,-1]
+QI653.ItemCount =[5,-1,-1,-1]
+QI653.ItemProbability =[50,-1,-1,-1]
+QI653.Repeat =0
+QR653.QuestID =653
+QR653.EXP =320
+
+# 654
+QI654.QuestID =654
+QI654.MinLevel =6
+QI654.MaxLevel =14
+QI654.RequiredFaction =0
+QI654.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI654.Color =0
+QI654.Creature =[1029,-1,-1,-1]
+QI654.CreatureCount =[16,-1,-1,-1]
+QI654.Repeat =0
+QR654.QuestID =654
+QR654.EXP =500
+
+# 655
+QI655.QuestID =655
+QI655.MinLevel =10
+QI655.MaxLevel =18
+QI655.RequiredFaction =0
+QI655.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI655.Color =0
+QI655.Creature =[1047,-1,-1,-1]
+QI655.CreatureCount =[12,-1,-1,-1]
+QI655.Repeat =0
+QR655.QuestID =655
+QR655.EXP =800
+
+# 656
+QI656.QuestID =656
+QI656.MinLevel =15
+QI656.MaxLevel =22
+QI656.RequiredFaction =0
+QI656.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI656.Color =0
+QI656.Creature =[1046,-1,-1,-1]
+QI656.CreatureCount =[10,-1,-1,-1]
+QI656.Repeat =0
+QR656.QuestID =656
+QR656.EXP =1000
+
+# 657
+QI657.QuestID =657
+QI657.MinLevel =19
+QI657.MaxLevel =26
+QI657.RequiredFaction =0
+QI657.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI657.Color =0
+QI657.Item =[530,-1,-1,-1]
+QI657.ItemCount =[10,-1,-1,-1]
+QI657.ItemProbability =[40,-1,-1,-1]
+QI657.Repeat =0
+QR657.QuestID =657
+QR657.EXP =2000
+
+# 658
+QI658.QuestID =658
+QI658.MinLevel =23
+QI658.MaxLevel =28
+QI658.RequiredFaction =0
+QI658.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI658.Color =0
+QI658.Creature =[1056,-1,-1,-1]
+QI658.CreatureCount =[15,-1,-1,-1]
+QI658.Repeat =0
+QR658.QuestID =658
+QR658.EXP =3000
+
+# 659
+QI659.QuestID =659
+QI659.MinLevel =25
+QI659.MaxLevel =30
+QI659.RequiredFaction =0
+QI659.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI659.Color =0
+QI659.Creature =[1058,-1,-1,-1]
+QI659.CreatureCount =[12,-1,-1,-1]
+QI659.Repeat =0
+QR659.QuestID =659
+QR659.EXP =4000
+
+# 660
+QI660.QuestID =660
+QI660.MinLevel =27
+QI660.MaxLevel =33
+QI660.RequiredFaction =0
+QI660.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI660.Color =0
+QI660.Creature =[1061,-1,-1,-1]
+QI660.CreatureCount =[15,-1,-1,-1]
+QI660.Repeat =0
+QR660.QuestID =660
+QR660.EXP =6000
+
+# 661
+QI661.QuestID =661
+QI661.MinLevel =29
+QI661.MaxLevel =37
+QI661.RequiredFaction =0
+QI661.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI661.Color =0
+QI661.Creature =[1070,-1,-1,-1]
+QI661.CreatureCount =[15,-1,-1,-1]
+QI661.Repeat =0
+QR661.QuestID =661
+QR661.EXP =7500
+
+# 662
+QI662.QuestID =662
+QI662.MinLevel =31
+QI662.MaxLevel =42
+QI662.RequiredFaction =0
+QI662.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI662.Color =0
+QI662.Item =[531,-1,-1,-1]
+QI662.ItemCount =[12,-1,-1,-1]
+QI662.ItemProbability =[40,-1,-1,-1]
+QI662.Repeat =0
+QR662.QuestID =662
+QR662.EXP =10000
+
+# 663
+QI663.QuestID =663
+QI663.MinLevel =34
+QI663.MaxLevel =45
+QI663.RequiredFaction =0
+QI663.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI663.Color =0
+QI663.Creature =[1072,-1,-1,-1]
+QI663.CreatureCount =[15,-1,-1,-1]
+QI663.Repeat =0
+QR663.QuestID =663
+QR663.EXP =12500
+
+# 664
+QI664.QuestID =664
+QI664.MinLevel =38
+QI664.MaxLevel =49
+QI664.RequiredFaction =0
+QI664.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI664.Color =0
+QI664.Creature =[1073,-1,-1,-1]
+QI664.CreatureCount =[12,-1,-1,-1]
+QI664.Repeat =0
+QR664.QuestID =664
+QR664.EXP =18000
+
+# 665
+QI665.QuestID =665
+QI665.MinLevel =43
+QI665.MaxLevel =52
+QI665.RequiredFaction =0
+QI665.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI665.Color =1
+QI665.Creature =[1080,-1,-1,-1]
+QI665.CreatureCount =[15,-1,-1,-1]
+QI665.Repeat =0
+QR665.QuestID =665
+QR665.EXP =45000
+
+# 666
+QI666.QuestID =666
+QI666.MinLevel =45
+QI666.MaxLevel =55
+QI666.RequiredFaction =0
+QI666.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI666.Color =1
+QI666.Creature =[1081,-1,-1,-1]
+QI666.CreatureCount =[12,-1,-1,-1]
+QI666.Repeat =0
+QR666.QuestID =666
+QR666.EXP =60000
+
+# 667
+QI667.QuestID =667
+QI667.MinLevel =47
+QI667.MaxLevel =56
+QI667.RequiredFaction =0
+QI667.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI667.Color =1
+QI667.Creature =[1082,-1,-1,-1]
+QI667.CreatureCount =[15,-1,-1,-1]
+QI667.Repeat =0
+QR667.QuestID =667
+QR667.EXP =75000
+
+# 668
+QI668.QuestID =668
+QI668.MinLevel =50
+QI668.MaxLevel =58
+QI668.RequiredFaction =0
+QI668.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI668.Color =1
+QI668.Creature =[1083,-1,-1,-1]
+QI668.CreatureCount =[12,-1,-1,-1]
+QI668.Repeat =0
+QR668.QuestID =668
+QR668.EXP =100000
+
+# 669
+QI669.QuestID =669
+QI669.MinLevel =53
+QI669.MaxLevel =60
+QI669.RequiredFaction =0
+QI669.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI669.Color =1
+QI669.Creature =[1090,-1,-1,-1]
+QI669.CreatureCount =[15,-1,-1,-1]
+QI669.Repeat =0
+QR669.QuestID =669
+QR669.EXP =125000
+
+# 670
+QI670.QuestID =670
+QI670.MinLevel =55
+QI670.MaxLevel =60
+QI670.RequiredFaction =0
+QI670.SpecialFlags =QUEST_SPECIAL_FLAGS_KILL_OR_CAST+QUEST_SPECIAL_FLAGS_REPEATABLE
+QI670.Color =2
+QI670.Creature =[1106,-1,-1,-1]
+QI670.CreatureCount =[20,-1,-1,-1]
+QI670.Repeat =0
+QR670.QuestID =670
+QR670.EXP =150000
+

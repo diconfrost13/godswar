@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UITemplate>
+  <TestWindow Type="Window" Texture="./UI/Texture/main.gwo"  Modal="0"
+              WinRect= "80" WinPixel="80" WinBody="70,76" WinTop="80,0" WinBottom="240,0" WinLeft="160,0" WinRight="240,0"
+              WinTopLeft="0,0" WinTopRight="80,0" WinBottomLeft="160,0" WinBottomRight="240,0" />
+  <TestButton Type="Button" Texture="./UI/Texture/main.gwo" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <TestText Type="Text" Texture="./UI/Texture/main.gwo" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+  <TestList Type="ListBox" Texture="./UI/Texture/main.gwo" Height="32"/>
+  <TestCheckBox Type="CheckBox" Texture="./UI/Texture/main.gwo" />
+  <TestEdit Type="EditBox" MaxText="32" Texture="./UI/Texture/main.gwo"  Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="4"/>
+
+</UITemplate>

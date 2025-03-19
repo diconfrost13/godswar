@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+  <AutoSeekWayBtnUI Type="Window" ID="245000" Modal="0" Rectangle="843,187,977,217" TexturePos="0,0" Texture="./UI/Texture/main.gwo" Visible="0"  Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR">
+    <AutoSeekWayBtn Type="Button" ID="245001" Rectangle="24,0,105,27" TexturePos="42,540" Texture="./UI/Texture/main.gwo" Text="自动寻路" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" />
+    <AutoSeekWayLeft  Type="Text"  ID="-1"   Texture="./UI/Texture/main.gwo" Rectangle="0,0,24,19" TexturePos="42,650"  Text=""/>
+    <AutoSeekWayRight Type="Text"  ID="-1"   Texture="./UI/Texture/main.gwo" Rectangle="103,0,128,19" TexturePos="68,650"  Text=""/>
+  </AutoSeekWayBtnUI>
+  <AudioSetupListUI Template="T_SimpleWindow" ID="245100" Modal="0" Rectangle="815,214,949,700" Visible="0">
+    <ListBox1 Type="ListBox" ID="245101" Texture="./UI/Texture/main.gwo" Rectangle="14,15,147,565" TexturePos="0,0" ScrollTexture="./UI/Texture/main.gwo"  ScrollRect="116,2,141,202" ScrollPos="0,0" BtnPos="765,0" BtnRect="0,0,32,32" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" Height="20"/>
+  </AudioSetupListUI>
+</UIConfig>

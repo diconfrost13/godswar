@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIConfig>
+  <FirstWin Template="T_NormalWindow" ID="800000" Rectangle="380,112,688,656"  BtnRect="240,13,278,50" BtnPos="0,80" Visible="0">
+   
+    <!--窗口3行描述字-->
+    <FirstWin_Text1 Type="Text" ID="-1" Rectangle="45,100,280,400"  TexturePos="0,228" Text="描述字描述字描述字描述字" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>
+    <FirstWin_Text2 Type="Text" ID="-1" Rectangle="15,100,200,150" TexturePos="0,228" Text="描述字描述字描述字描述字" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"  TextFormat="16"/>
+    <FirstWin_Text3 Type="Text" ID="-1" Rectangle="15,120,200,170" TexturePos="0,228" Text="描述字描述字描述字描述字" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"  TextFormat="16"/>
+ 
+    <!--选项按钮-->
+    <FirstWin_Button1 Template="T_GuildCheckBox" ID="800001" Rectangle="25,98,255,119"/>
+    <FirstWin_Button2 Template="T_GuildCheckBox" ID="800002" Rectangle="25,123,255,144"/>
+    <FirstWin_Button3 Template="T_GuildCheckBox" ID="800003" Rectangle="25,148,255,169"/>
+    <FirstWin_Button4 Template="T_GuildCheckBox" ID="800004" Rectangle="25,173,255,194"/>
+    <FirstWin_Button5 Template="T_GuildCheckBox" ID="800005" Rectangle="25,198,255,219"/>
+    <FirstWin_Button6 Template="T_GuildCheckBox" ID="800006" Rectangle="25,223,255,244"/>
+    <FirstWin_Button7 Template="T_GuildCheckBox" ID="800007" Rectangle="25,248,255,269"/>
+    <FirstWin_Button8 Template="T_GuildCheckBox" ID="800008" Rectangle="25,273,255,294"/>
+    <FirstWin_Button9 Template="T_GuildCheckBox" ID="800009" Rectangle="25,298,255,319"/>
+    <FirstWin_Button10 Template="T_GuildCheckBox" ID="800010" Rectangle="25,323,255,344"/>
+
+    <!--4个CheckBox-->
+    <FirstWin_CheckBox1 Type="CheckBox" Texture="./UI/Texture/main.gwo" ID="800011" Rectangle="45,220,87,262" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"  Text=""/>
+    <FirstWin_CheckBox2 Type="CheckBox" Texture="./UI/Texture/main.gwo" ID="800012" Rectangle="90,220,132,262" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"  Text=""/>
+    <FirstWin_CheckBox3 Type="CheckBox" Texture="./UI/Texture/main.gwo" ID="800013" Rectangle="135,220,177,262" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"  Text=""/>
+    <FirstWin_CheckBox4 Type="CheckBox" Texture="./UI/Texture/main.gwo" ID="800014" Rectangle="180,220,222,262" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="983,983" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR"  Text=""/>
+
+    <!--确定/关闭按钮-->
+    <FirstWin_ButtonA1 Template="T_Button2" ID="800020" Rectangle="145,500,205,527"   Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="确定"/>
+    <FirstWin_ButtonA2 Template="T_Button2" ID="800021" Rectangle="220,500,280,527"  Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5" Text="取消"/>
+
+  </FirstWin>
+  
+  <Script File="./UI/XML/NpcFun.lua" Help=""/>
+</UIConfig>

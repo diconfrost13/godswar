@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UITemplate>
+  <TaviaFont  Texture="./UI/Texture/main.gwo" Font="DEFAULT_TEXTTITLE" FontColor="DEFAULT_TEXTCOLOR"/>
+  <TaviaFont1  Texture="./UI/Texture/main.gwo" Font="SONG12_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+  <TaviaTitle Type="Text" Font="DEFAULT_TEXTTITLE" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <TaviaText Type="Text" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <TaviaList Type="ListBox" Texture="./UI/Texture/ui.bmp" Height="32"/>
+  <TaviaButton Type="Button" Texture="./UI/Texture/ui.bmp" TexturePos="0,77" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+  <TaviaCheckBox Type="CheckBox" Texture="./UI/Texture/ui.bmp" TexturePos="0,13"/>
+  <TaviaWindow Type="Window" CanHovered="1" Texture="./UI/Texture/main.gwo"
+WinRect= "6" WinPixel="6" WinBody="650,200" WinTop="50,100" WinBottom="50,100" WinLeft="50,100" WinRight="50,100"
+WinTopLeft="50,100" WinTopRight="50,100" WinBottomLeft="50,100" WinBottomRight="50,100" />
+</UITemplate>

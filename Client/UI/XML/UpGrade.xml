@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<UIConfig>
+
+  <UpGrade Template="T_SimpleWindow" Rectangle="350,238,662,463" OnLoad="UpGrade_OnLoad();" BtnRect="292,0,312,21" BtnPos="124,540" Visible="0"  OnClose="UpGrade_SetWorldMapVisible()"   MoveRect="0,0,1024,768">
+    <Container Template="T_Container" Rectangle="0,30,300,300"  ScrollRect="301,14,319,415" Font="CONTAIN_UPGRADE_TEXTFONT" Auto="1" >
+      <Text Type="Text" Rectangle="30,30,280,280" Font="CONTAIN_UPGRADE_TEXTFONT" TextFormat="16" Text="111" Auto="1" />
+      <EnterWebsiteBtn Template="T_Button4" Rectangle="10,360,92,387"   SText="UG_X0_1" Font="CONTAIN_UPGRADE_TEXTFONT" OnClick="UpGrade_EnterWebsite()" Auto="1" Visible="0"/>
+      <HelpBtn  Template="T_Button2" Rectangle="230,360,291,387" SText="UG_X0_2" Font="CONTAIN_UPGRADE_TEXTFONT" OnClick="OnClick_Cancel()" Auto="1" Visible="0"/>-->
+    </Container>
+  </UpGrade>
+
+  <Script File="./UI/XML/UpGradeConfig.lua" Help=""/>
+  <Script File="./UI/XML/UpGradeProc.lua" Help=""/>
+
+</UIConfig>

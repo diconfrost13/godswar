@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：StallSellUIConfig.xml
+		摘    要：摆摊UI配置表
+      
+		当前版本：Ver1.00
+		作    者：Tavia
+		完成日期：2008-3-22-->
+<UIConfig>
+
+  <StallSell Template="T_NormalWindow" ID="320000" Rectangle="433,224,672,739" BtnRect="172,13,209,50" BtnPos="0,80" Visible="0">
+
+  <Start Template="T_Button4" ID="320004" Rectangle="59,479,141,506" Text="进行展销"/>
+    <End Template="T_Button4" ID="320005" Rectangle="141,479,223,506" Text="取消展销"/>
+    <DelItem Type="Button" Texture="./UI/Texture/main.gwo" ID="320003" Rectangle="20,449,46,475" TexturePos="221,261" Text=""/>
+    <DelItemText Type="Text" ID="-1" Rectangle="48,460,120,480" TexturePos="0,0" Text="卸下物品" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />
+
+    <BackWin Template="T_BgWindow" ID="-1" Rectangle="21,115,217,445" />
+    
+    <BackWin1 Template="T_BgWindow" ID="-1" Rectangle="26,120,211,167" />
+    <BackWin2 Template="T_BgWindow" ID="-1" Rectangle="26,174,211,221" />
+    <BackWin3 Template="T_BgWindow" ID="-1" Rectangle="26,228,211,275" />
+    <BackWin4 Template="T_BgWindow" ID="-1" Rectangle="26,282,211,329" />
+    <BackWin5 Template="T_BgWindow" ID="-1" Rectangle="26,336,211,383" />
+    <BackWin6 Template="T_BgWindow" ID="-1" Rectangle="26,390,211,437" />
+
+    <ItemList Type="ListBox" ID="320002" Rectangle="26,116,212,443" Texture="./UI/Texture/main.gwo" Height="54">
+      <Item0 Type="ListItem" ID="320010" Texture="./UI/Texture/main.gwo" MaskTexture="./UI/Texture/main.gwo" MaskPos="492,765"/>
+      <Item1 Type="ListItem" ID="320011" Texture="./UI/Texture/main.gwo" MaskTexture="./UI/Texture/main.gwo" MaskPos="492,765"/>
+      <Item2 Type="ListItem" ID="320012" Texture="./UI/Texture/main.gwo" MaskTexture="./UI/Texture/main.gwo" MaskPos="492,765"/>
+      <Item3 Type="ListItem" ID="320013" Texture="./UI/Texture/main.gwo" MaskTexture="./UI/Texture/main.gwo" MaskPos="492,765"/>
+      <Item4 Type="ListItem" ID="320014" Texture="./UI/Texture/main.gwo" MaskTexture="./UI/Texture/main.gwo" MaskPos="492,765"/>
+      <Item5 Type="ListItem" ID="320015" Texture="./UI/Texture/main.gwo" MaskTexture="./UI/Texture/main.gwo" MaskPos="492,765"/>
+    </ItemList>
+    
+    <money0 Type="Text" ID="320020" Texture="./UI/Texture/main.gwo" TexturePos="57,213" Rectangle="193,147,208,161"/>
+    <money1 Type="Text" ID="320021" Texture="./UI/Texture/main.gwo" TexturePos="57,213" Rectangle="193,201,208,216"/>
+    <money2 Type="Text" ID="320022" Texture="./UI/Texture/main.gwo" TexturePos="57,213" Rectangle="193,256,208,271"/>
+    <money3 Type="Text" ID="320023" Texture="./UI/Texture/main.gwo" TexturePos="57,213" Rectangle="193,311,208,326"/>
+    <money4 Type="Text" ID="320024" Texture="./UI/Texture/main.gwo" TexturePos="57,213" Rectangle="193,366,208,381"/>
+    <money5 Type="Text" ID="320025" Texture="./UI/Texture/main.gwo" TexturePos="57,213" Rectangle="193,421,208,436"/>
+
+    <bijou0 Type="Text" ID="320030" Texture="./UI/Texture/main.gwo" TexturePos="241,226" Rectangle="193,147,210,163"/>
+    <bijou1 Type="Text" ID="320031" Texture="./UI/Texture/main.gwo" TexturePos="241,226" Rectangle="193,201,210,218"/>
+    <bijou2 Type="Text" ID="320032" Texture="./UI/Texture/main.gwo" TexturePos="241,226" Rectangle="193,256,210,273"/>
+    <bijou3 Type="Text" ID="320033" Texture="./UI/Texture/main.gwo" TexturePos="241,226" Rectangle="193,311,210,328"/>
+    <bijou4 Type="Text" ID="320034" Texture="./UI/Texture/main.gwo" TexturePos="241,226" Rectangle="193,366,210,383"/>
+    <bijou5 Type="Text" ID="320035" Texture="./UI/Texture/main.gwo" TexturePos="241,226" Rectangle="193,421,210,438"/>
+
+    <Item0Back Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="28,122,70,164" TexturePos="321,962" Text=""/>
+    <Item1Back Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="28,176,70,218" TexturePos="321,962" Text=""/>
+    <Item2Back Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="28,230,70,272" TexturePos="321,962" Text=""/>
+    <Item3Back Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="28,284,70,326" TexturePos="321,962" Text=""/>
+    <Item4Back Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="28,338,70,380" TexturePos="321,962" Text=""/>
+    <Item5Back Type="Text" Texture="./UI/Texture/main.gwo" ID="-1" Rectangle="28,392,70,434" TexturePos="321,962" Text=""/>
+
+    <Item0 Template="T_SkillButton" ID="320040" Rectangle="28,122,70,164" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextOffset="3,3,0,0" TextFormat="10"/>
+    <Item1 Template="T_SkillButton" ID="320041" Rectangle="28,176,70,218" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextOffset="3,3,0,0" TextFormat="10"/>
+    <Item2 Template="T_SkillButton" ID="320042" Rectangle="28,230,70,272" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextOffset="3,3,0,0" TextFormat="10"/>
+    <Item3 Template="T_SkillButton" ID="320043" Rectangle="28,284,70,326" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextOffset="3,3,0,0" TextFormat="10"/>
+    <Item4 Template="T_SkillButton" ID="320044" Rectangle="28,338,70,380" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextOffset="3,3,0,0" TextFormat="10"/>
+    <Item5 Template="T_SkillButton" ID="320045"     Rectangle="28,392,70,434" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextOffset="3,3,0,0" TextFormat="10"/>
+
+    <EditNameMid  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="30,79,31,108" TexturePos="137,173"  Text=""/>
+    <EditNameLeft  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="23,79,30,108" TexturePos="131,173"  Text=""/>
+    <EditNameRight Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="208,79,215,108" TexturePos="138,173"  Text=""/>
+    <Edit     Template="T_ChatEdit" ID="320001"  Texture="./UI/Texture/main.gwo" Rectangle="23,79,215,108" TexturePos="500,500" Text="1" FontColor="DEFAULT_TEXTCOLOR" TextOffset="3,3,0,0" ResponseMouse="1" Number="0" Right="0" MaxText="16"/>
+
+    <count0 Template="T_ChatEdit" ID="320050" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="80,136,180,158" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextOffset="-6,3,0,0" ResponseMouse="0" Number="1" Right="1" MaxText="10" TextFormat="2"/>
+    <count1 Template="T_ChatEdit" ID="320051" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="80,189,180,211" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextOffset="-6,3,0,0" ResponseMouse="0" Number="1" Right="1" MaxText="10" TextFormat="2"/>
+    <count2 Template="T_ChatEdit" ID="320052" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="80,242,180,264" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextOffset="-6,3,0,0" ResponseMouse="0" Number="1" Right="1" MaxText="10" TextFormat="2"/>
+    <count3 Template="T_ChatEdit" ID="320053" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="80,295,180,317" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextOffset="-6,3,0,0" ResponseMouse="0" Number="1" Right="1" MaxText="10" TextFormat="2"/>
+    <count4 Template="T_ChatEdit" ID="320054" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="80,348,180,370" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextOffset="-6,3,0,0" ResponseMouse="0" Number="1" Right="1" MaxText="10" TextFormat="2"/>
+    <count5 Template="T_ChatEdit" ID="320055" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="80,411,180,433" Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" TextOffset="-6,3,0,0" ResponseMouse="0" Number="1" Right="1" MaxText="10" TextFormat="2"/>
+
+  </StallSell>
+
+</UIConfig>

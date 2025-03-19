@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：StallBuyUIConfig.xml
+		摘    要：从摆摊处买进UI配置表
+      
+		当前版本：Ver1.00
+		作    者：Tavia
+		完成日期：2008-3-23-->
+<UIConfig>
+
+  <StallSell Template="TestWindow" ID="340000" Rectangle="433,224,672,739" Visible="0">
+
+    <ClosetBtn Template="TestButton" ID="340006" Rectangle="172,13,209,50" TexturePos="0,80" Text=""/>
+    <Buy Template="TestButton" ID="340004" Rectangle="59,479,141,506" TexturePos="42,540" Text="购买"/>
+    <End Template="TestButton" ID="340005" Rectangle="141,479,223,506" TexturePos="42,540" Text="取消"/>
+
+    <BackWin Template="GeneralWin" ID="-1" Rectangle="21,115,217,445" />
+
+    <BackWin1 Template="GeneralWin" ID="-1" Rectangle="26,120,211,167" />
+    <BackWin2 Template="GeneralWin" ID="-1" Rectangle="26,175,211,222" />
+    <BackWin3 Template="GeneralWin" ID="-1" Rectangle="26,230,211,277" />
+    <BackWin4 Template="GeneralWin" ID="-1" Rectangle="26,285,211,332" />
+    <BackWin5 Template="GeneralWin" ID="-1" Rectangle="26,340,211,387" />
+    <BackWin6 Template="GeneralWin" ID="-1" Rectangle="26,395,211,442" />
+
+    <ItemList Type="ListBox" ID="340002" Rectangle="26,120,212,443" Texture="./UI/Texture/main.gwo" Height="54">
+      <Item0 Type="ListItem" ID="340010" Texture="./UI/Texture/main.gwo" MaskTexture="./UI/Texture/main.gwo" MaskPos="492,765"/>
+      <Item1 Type="ListItem" ID="340011" Texture="./UI/Texture/main.gwo" MaskTexture="./UI/Texture/main.gwo" MaskPos="492,765"/>
+      <Item2 Type="ListItem" ID="340012" Texture="./UI/Texture/main.gwo" MaskTexture="./UI/Texture/main.gwo" MaskPos="492,765"/>
+      <Item3 Type="ListItem" ID="340013" Texture="./UI/Texture/main.gwo" MaskTexture="./UI/Texture/main.gwo" MaskPos="492,765"/>
+      <Item4 Type="ListItem" ID="340014" Texture="./UI/Texture/main.gwo" MaskTexture="./UI/Texture/main.gwo" MaskPos="492,765"/>
+      <Item5 Type="ListItem" ID="-1" Texture="./UI/Texture/main.gwo" MaskTexture="./UI/Texture/main.gwo" MaskPos="492,765"/>
+    </ItemList>
+
+    <money0 Type="Text" ID="340020" Texture="./UI/Texture/main.gwo" TexturePos="57,213" Rectangle="193,147,208,161"/>
+    <money1 Type="Text" ID="340021" Texture="./UI/Texture/main.gwo" TexturePos="57,213" Rectangle="193,201,208,216"/>
+    <money2 Type="Text" ID="340022" Texture="./UI/Texture/main.gwo" TexturePos="57,213" Rectangle="193,256,208,271"/>
+    <money3 Type="Text" ID="340023" Texture="./UI/Texture/main.gwo" TexturePos="57,213" Rectangle="193,311,208,326"/>
+    <money4 Type="Text" ID="340024" Texture="./UI/Texture/main.gwo" TexturePos="57,213" Rectangle="193,366,208,381"/>
+    <money5 Type="Text" ID="340040" Texture="./UI/Texture/main.gwo" TexturePos="57,213" Rectangle="193,421,208,436"/>
+
+    <bijou0 Type="Text" ID="340025" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="193,147,210,163"/>
+    <bijou1 Type="Text" ID="340026" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="193,201,210,218"/>
+    <bijou2 Type="Text" ID="340027" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="193,256,210,273"/>
+    <bijou3 Type="Text" ID="340028" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="193,311,210,328"/>
+    <bijou4 Type="Text" ID="340029" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="193,366,210,383"/>
+    <bijou5 Type="Text" ID="340041" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="193,421,210,438"/>
+
+    <Item0Back Template="TestText" ID="-1" Rectangle="28,122,70,164" TexturePos="321,962" Text=""/>
+    <Item1Back Template="TestText" ID="-1" Rectangle="28,177,70,219" TexturePos="321,962" Text=""/>
+    <Item2Back Template="TestText" ID="-1" Rectangle="28,232,70,274" TexturePos="321,962" Text=""/>
+    <Item3Back Template="TestText" ID="-1" Rectangle="28,287,70,329" TexturePos="321,962" Text=""/>
+    <Item4Back Template="TestText" ID="-1" Rectangle="28,342,70,384" TexturePos="321,962" Text=""/>
+    <Item5Back Template="TestText" ID="-1" Rectangle="28,397,70,439" TexturePos="321,962" Text=""/>
+
+    <Item0 Template="TestButton" ID="340030" Rectangle="28,122,70,164" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextOffset="3,3,0,0"/>
+    <Item1 Template="TestButton" ID="340031" Rectangle="28,177,70,219" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextOffset="3,3,0,0"/>
+    <Item2 Template="TestButton" ID="340032" Rectangle="28,232,70,274" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextOffset="3,3,0,0"/>
+    <Item3 Template="TestButton" ID="340033" Rectangle="28,287,70,329" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextOffset="3,3,0,0"/>
+    <Item4 Template="TestButton" ID="340034" Rectangle="28,342,70,384" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextOffset="3,3,0,0"/>
+    <Item5 Template="TestButton" ID="340042"     Rectangle="28,397,70,439" TexturePos="0,540" BtnTopTexture="./UI/Texture/icon.gwo" BtnTopPos="982,982" BtnTopRect="3,3,39,39" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextOffset="3,3,0,0"/>
+
+    <EditNameMid  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="30,79,31,108" TexturePos="137,173"  Text=""/>
+    <EditNameLeft  Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="23,79,30,108" TexturePos="131,173"  Text=""/>
+    <EditNameRight Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="208,79,215,108" TexturePos="138,173"  Text=""/>
+    <Edit     Template="TestEdit"  ID="340001"  Texture="./UI/Texture/main.gwo" Rectangle="23,79,215,108" TexturePos="500,500" Text="" FontColor="DEFAULT_TEXTCOLOR" TextOffset="3,3,0,0" ResponseMouse="1" Number="0" Right="0" MaxText="50"/>
+
+    <count0 Type="EditBox" ID="340035" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="80,136,180,158" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextOffset="-6,3,0,0" ResponseMouse="0" Number="1" Right="1" MaxText="10"/>
+    <count1 Type="EditBox" ID="340036" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="80,189,180,211" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextOffset="-6,3,0,0" ResponseMouse="0" Number="1" Right="1" MaxText="10"/>
+    <count2 Type="EditBox" ID="340037" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="80,242,180,264" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextOffset="-6,3,0,0" ResponseMouse="0" Number="1" Right="1" MaxText="10"/>
+    <count3 Type="EditBox" ID="340038" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="80,295,180,317" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextOffset="-6,3,0,0" ResponseMouse="0" Number="1" Right="1" MaxText="10"/>
+    <count4 Type="EditBox" ID="340039" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="80,348,180,370" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextOffset="-6,3,0,0" ResponseMouse="0" Number="1" Right="1" MaxText="10"/>
+    <count5 Type="EditBox" ID="340043" Texture="./UI/Texture/main.gwo" TexturePos="39,211" Rectangle="80,411,180,433" Font="DEFAULT_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR" TextOffset="-6,3,0,0" ResponseMouse="0" Number="1" Right="1" MaxText="10"/>
+
+  </StallSell>
+
+</UIConfig>

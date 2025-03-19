@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<!--this is MapViewConfig-->
+<MapViewConfig>
+    <playerD edition="1005" NPCW="1" NPCM="1" SPlayerW="0" SPlayerM="0" DPlayerW="0" DPlayerM="0" SMonsterW="0" SMonsterM="0" DMonsterW="1" DMonsterM="0" MonsterW="1" MonsterM="0" />
+</MapViewConfig>

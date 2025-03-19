@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (c) 2008,欢乐连线工作室
+		All rights reserved
+
+		文件名称：QuestViewUIConfig.xml
+		摘    要：任务信息描述UI配置表
+      
+		当前版本：Ver1.00
+		作    者：Tavia
+		完成日期：2008-3-23-->
+<UIConfig>
+  <ConsortiaWin Template="T_NormalWindow" ID="390100" Rectangle="100,150,685,624" Enable="1" Visible ="1" BtnRect="515,13,552,50" BtnPos="0,80">
+    <ConTabBar Type="TabBar" ID="390101" Rectangle="17,73,570,421" TexturePos="0,0" Texture="./UI/Texture/main.gwo">
+      <Consortia Type="Tab" ID="390102" Rectangle="58,-25,119,-2" Texture="./UI/Texture/main.gwo" TexturePos="244,450" Text="公会" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5">
+        <ConNowNameText Type="Text" ID="390103" Rectangle="20,12,270,40" TexturePos="206,432" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"/>
+        <ConNowInfoText Type="Text" ID="390109" Rectangle="270,12,350,40" TexturePos="206,432" Texture="./UI/Texture/main.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"/>
+
+        <ShowOffLine Template="T_NormalCheckBox" ID="390104"  TexturePos="222,189" Rectangle="405,10,422,28" />
+         <CheckBoxText Template="T_NoBackgroundText"  ID="390105"  Rectangle="430,10,530,28" TexturePos="131,173"   Text="显示离线成员"/>
+         <MemberWin  Template="T_BgWindow" ID="390106" Rectangle="15,30,380,255" Visible ="1" Enable="0" >
+           <!--<Title Type="Text" ID="390107" Rectangle="5,7,330,27" TexturePos="206,432" Texture="./UI/Texture/main.gwo" Text="   名 称          职 业  等 级    贡 献"   Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"/>-->
+           <NameBtn Template="T_Button2_S" ID="390110" Rectangle="2,1,149,27" TexturePos="745,1"   Text="名     称"/>
+           <ProfBtn Template="T_Button2_S" ID="390111" Rectangle="150,1,209,27" TexturePos="893,1"  Text="职 业"/>
+           <LevlBtn Template="T_Button2_S" ID="390112" Rectangle="210,1,269,27" TexturePos="893,1"  Text="等 级"/>
+           <ConBtn Template="T_Button2_S" ID="390113" Rectangle="270,1,340,27" TexturePos="953,1"  Text="贡 献"/>
+
+           <ListBox1Top  Type="Text"  ID="-1" Rectangle="341,0,362,25"   TexturePos="929,940" Texture="./UI/Texture/main.gwo"   Text=""/>
+           <ListBox1Btm  Type="Text"  ID="-1" Rectangle="341,201,362,225" TexturePos="929,970" Texture="./UI/Texture/main.gwo"   Text=""/>
+           <ListBoxScrollMid Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="341,23,362,24" TexturePos="929,967"  Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+
+           <UpBtn Type="Button" ID="-1"   Rectangle="339,0,368,22"    TexturePos="0,228"   Texture="./UI/Texture/main.gwo"   Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text="" OnClick="UpListBoxBtn()"/>
+           <DownBtn Type="Button" ID="-1" Rectangle="339,203,368,225" TexturePos="29,228"  Texture="./UI/Texture/main.gwo"   Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text="" OnClick="DownListBoxBtn()"/>
+
+           <ListBox Type="ListBox" ID="390108" Rectangle="5,30,353,222" TexturePos="144,20"  ScrollTexture="./UI/Texture/main.gwo" ScrollRect="340,-9,356,175" ScrollPos="632,90" BtnPos="133,122" BtnRect="0,0,17,27" Height="20">
+            </ListBox>
+         </MemberWin>
+         <ProclaimText Type="Text" ID="390137" Rectangle="15,260,520,280" TexturePos="206,432" Texture="./UI/Texture/main.gwo" Text="公会宣言:" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"/>
+         <ProclaimContent  Template="T_BgWindow" ID="390138" Rectangle="15,280,380,360" Visible ="1" Enable="0" >
+           <Context Type="Text" ID="390139" Rectangle="5,5,360,70" TexturePos="206,432" Texture="./UI/Texture/main.gwo" Text="这个就是我的公会宣言!" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="16"/>  
+         </ProclaimContent>
+         <ConBaseInfo  Template="T_BgWindow" ID="390140" Rectangle="385,30,545,360" Visible ="1" Enable="0" >
+           <ConLV Type="Text" ID="390141" Rectangle="10,10,200,30"   Text="公会等级：" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"/>
+           <ConMaxNum Type="Text" ID="390142" Rectangle="10,35,200,55"   Text="成员上限：" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"/>
+           <Fund Type="Text" ID="390143" Rectangle="10,60,200,80"   Text="公会银币：" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"/>
+           <Bijou Type="Text" ID="390144" Rectangle="10,85,200,105"  Text="公会金币：" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"/>
+           <Altar Type="Text" ID="390145" Rectangle="10,110,200,130"   Text="公会祭坛：" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"/>
+           <!--<Altar1 Type="Text" ID="390146" Rectangle="20,150,52,182"    Texture="./UI/Texture/main.gwo"  Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+           <Altar1Info Type="Text" ID="390147" Rectangle="20,190,60,240"   Text="雅典娜等级:0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+           <Altar2 Type="Text" ID="390148" Rectangle="100,150,132,182"   Texture="./UI/Texture/main.gwo" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>
+           <Altar2Info Type="Text" ID="390149" Rectangle="100,190,140,240"   Text="雅典娜等级:0" Font="CONTAIN4_TEXTFONT" FontColor="DEFAULT_TEXTCOLOR"/>-->
+           
+           <AltarText1 Type="Text" ID="390150" Rectangle="10,150,46,186" TexturePos="898,705" Texture="./UI/Texture/icon.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />
+           <AltarText2 Type="Text" ID="390151" Rectangle="62,150,98,186" TexturePos="898,705" Texture="./UI/Texture/icon.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />
+           <AltarText3 Type="Text" ID="390152" Rectangle="117,150,152,186" TexturePos="898,705" Texture="./UI/Texture/icon.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />
+           <AltarText4 Type="Text" ID="390153" Rectangle="10,205,46,241" TexturePos="898,705" Texture="./UI/Texture/icon.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />
+           <AltarText5 Type="Text" ID="390154" Rectangle="62,205,98,241" TexturePos="898,705" Texture="./UI/Texture/icon.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />
+           <AltarText6 Type="Text" ID="390155" Rectangle="117,205,152,241" TexturePos="898,705" Texture="./UI/Texture/icon.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />
+           <AltarText7 Type="Text" ID="390156" Rectangle="10,260,46,296" TexturePos="898,705" Texture="./UI/Texture/icon.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />
+           <AltarText8 Type="Text" ID="390157" Rectangle="62,260,98,296" TexturePos="898,705" Texture="./UI/Texture/icon.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />
+           <AltarText9 Type="Text" ID="390158" Rectangle="117,260,152,296" TexturePos="898,705" Texture="./UI/Texture/icon.gwo" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" />    
+         
+         
+         </ConBaseInfo>
+        <MenuWin Template="T_SimpleWindow"  ID="390500"  Rectangle="560,30,730,280"  visible="0" Enable ="0" >
+          <Description Type="Text" ID="390501" Rectangle="15,10,160,150" TexturePos="206,432" Texture="" Text="会员描述" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR"/>
+          <DelBtn Template="T_Button4" ID="390502" Rectangle="10,140,92,167"  Text="删除"/>
+          <Promote Template="T_Button4" ID="390503" Rectangle="10,170,92,197"   Text="晋升"/>
+          <Degrade Template="T_Button4" ID="390504" Rectangle="10,200,92,227"   Text="降级"/>
+        </MenuWin>
+        <PrivateSpeak Template="T_Button4" ID="390162" Rectangle="15,363,97,390"  Text="悄悄话"/>
+        <TeamInvite Template="T_Button4" ID="390163" Rectangle="105,363,187,390"   Text="组队邀请"/>
+        <ConInvite Template="T_Button4" ID="390164" Rectangle="195,363,277,390"   Text="邀请入会"/>
+        <ChangeProclaim Template="T_Button4" ID="390165" Rectangle="285,363,367,390"  Text="修改宣言"/>
+        <ChangeChairman Template="T_Button4" ID="390166" Rectangle="372,363,454,390"   Text="转让会长"/>
+        <ExitCon Template="T_Button4" ID="390167" Rectangle="462,363,544,390"    Text="离开公会"/>
+      </Consortia>
+      <AssociationMall Type="Tab" ID="390168" Rectangle="117,-25,177,-2" Texture="./UI/Texture/main.gwo" TexturePos="244,450" Text="公会商城" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5">
+        <StoneTitle Template="T_NoBackgroundText" ID="-1" Rectangle="7,359,67,381" TexturePos="42,540" Text="持有:"/>
+        <ConfirmBuy Template="T_Button2" ID="290003" Rectangle="483,358,552,385" TexturePos="196,80" Text="确认购买" Font="MainMap" TextFormat="5"/>
+        <Voucher Template="T_Button2" ID="290004" Rectangle="231,358,300,385" TexturePos="196,80" Text="充值金币" Font="MainMap" TextFormat="5" />
+
+        <!--容器滚动条背景-->
+        <!--文本框及背景-->
+        <StoneLeft  Type="Text"  ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="66,356,73,384"  TexturePos="131,173"  Text=""/>
+        <StoneRight Type="Text"  ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="188,356,195,384"  TexturePos="138,173"  Text=""/>
+        <StoneMid   Type="Text"  ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="73,356,74,384"    TexturePos="137,173"  Text=""/>
+        <StoneText  Template="T_NoBackgroundText" ID="-1" Rectangle="72,356,189,384"  TexturePos="367,34"  Text=""/>
+
+        <StoneTexture Template="T_TitleText" ID="-1" Rectangle="207,364,221,378" TexturePos="242,227" Text=""/>
+ 
+        <ListBox1Btm  Type="Text"  ID="-1" Rectangle="527,322,552,346" TexturePos="929,970" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBox1Top  Type="Text"  ID="-1" Rectangle="527,0,552,24"   TexturePos="929,940" Texture="./UI/Texture/main.gwo"   Text=""/>
+        <ListBoxScrollMid Type="Text" ID="-1" Texture="./UI/Texture/main.gwo" Rectangle="527,24,552,25" TexturePos="929,967"  Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text=""/>
+
+        <UpBtn Type="Button" ID="2900055"   Rectangle="525,-2,554,20"    TexturePos="0,228"   Texture="./UI/Texture/main.gwo"   Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text="" OnClick="UpListBoxBtn()"/>
+        <DownBtn Type="Button" ID="290006" Rectangle="525,324,554,346" TexturePos="29,228"  Texture="./UI/Texture/main.gwo"   Font="Mainlogin2" FontColor="DEFAULT_TEXTCOLOR" Text="" OnClick="DownListBoxBtn()"/>
+        <ListBox Type="ListBox" ID="-1" TexturePos="0,0" Rectangle="4,4,526,355" ScrollTexture="./UI/Texture/main.gwo" ScrollPos="0,0" ScrollRect="527,15,544,320" BtnPos="133,122" BtnRect="0,0,17,27" Height="115">
+        </ListBox>
+      </AssociationMall>
+      <Unknow Type="Tab" ID="390169" Rectangle="176,-25,237,-2" Texture="./UI/Texture/main.gwo" TexturePos="244,450" Text="联盟" Font="MainMap" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5">
+      </Unknow>
+    </ConTabBar>
+  </ConsortiaWin>
+<!--3个公会的提示输入窗口-->
+  <!-- 创建公会提示输入窗口-->
+  <InputNameMsgBox Template="T_SimpleWindow" ID="390200" Modal="0" Rectangle="392,319,632,449">
+    <HitText Type="Text" ID="390201" Rectangle="40,23,200,41" TexturePos="785,208" Texture="./UI/Texture/main.gwo" Text="请输入公会名字" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    
+    <InputEdtText  Type="Text"  ID="390202"    Texture="./UI/Texture/main.gwo" Rectangle="48,53,49,82" TexturePos="139,173"  Text=""/>
+    <InputEdt      Type="EditBox" ID="390203"  Texture="./UI/Texture/main.gwo" TexturePos="0,0" Rectangle="48,55,193,84"  Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" MaxText="16" ResponseMouse="1" TextFormat="4" Text=""/>
+    <InputEdtLeft  Type="Text"  ID="390204"      Texture="./UI/Texture/main.gwo" Rectangle="41,53,48,82" TexturePos="131,173"  Text=""/>
+    <InputEdtRight Type="Text"  ID="390205"      Texture="./UI/Texture/main.gwo" Rectangle="192,53,199,82" TexturePos="138,173"  Text=""/>
+    
+    <SureBtn  Template="T_Button3" ID="390206" Rectangle="49,94,118,121" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text="确 定" TextFormat="5"/>
+    <SureBtnLeft  Type="Text" ID="390207"  Texture="./UI/Texture/main.gwo" Rectangle="14,107,48,120" TexturePos="161,99"  Text=""/>
+    <!--<SureBtnRight Type="Text" ID="390208"  Texture="./UI/Texture/main.gwo" Rectangle="155,177,189,190" TexturePos="161,126"  Text=""/>-->
+    
+    <CancelBtn  Template="T_Button3" ID="390209" Rectangle="121,94,190,121" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text="取 消" TextFormat="5"/>
+    <!--<CancelLeft  Type="Text"  ID="390210"  Texture="./UI/Texture/main.gwo" Rectangle="157,177,192,190" TexturePos="161,99"  Text=""/>-->
+    <CancelRight Type="Text"  ID="390211"  Texture="./UI/Texture/main.gwo" Rectangle="191,107,225,120" TexturePos="161,126"  Text=""/>
+  </InputNameMsgBox>
+  
+  <!-- 修改公会宣言提示输入窗口-->
+  <ProclaimMsgBox Template="T_SimpleWindow" ID="390300" Modal="0" Rectangle="392,319,632,449">
+    <HitText Type="Text" ID="390301" Rectangle="40,23,200,41" TexturePos="785,208" Texture="./UI/Texture/main.gwo" Text="请输入公会宣言" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    
+    <InputEdtText  Type="Text"  ID="390302"    Texture="./UI/Texture/main.gwo" Rectangle="48,53,49,82" TexturePos="139,173"  Text=""/>
+    <InputEdt      Type="EditBox" ID="390303"  Texture="./UI/Texture/main.gwo" TexturePos="0,0" Rectangle="48,55,193,84"  Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" MaxText="63" ResponseMouse="1" TextFormat="4" Text=""/>
+    <InputEdtLeft  Type="Text"  ID="390304"      Texture="./UI/Texture/main.gwo" Rectangle="41,53,48,82" TexturePos="131,173"  Text=""/>
+    <InputEdtRight Type="Text"  ID="390305"      Texture="./UI/Texture/main.gwo" Rectangle="192,53,199,82" TexturePos="138,173"  Text=""/>
+    
+    <SureBtn  Template="T_Button3" ID="390306" Rectangle="49,94,118,121" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text="确 定" TextFormat="5"/>
+    <SureBtnLeft  Type="Text" ID="390307"  Texture="./UI/Texture/main.gwo" Rectangle="14,107,48,120" TexturePos="161,99"  Text=""/>
+    <!--<SureBtnRight Type="Text" ID="390308"  Texture="./UI/Texture/main.gwo" Rectangle="155,177,189,190" TexturePos="161,126"  Text=""/>-->
+    
+    <CancelBtn  Template="T_Button3" ID="390309" Rectangle="121,94,190,121" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text="取 消" TextFormat="5"/>
+    <!--<CancelLeft  Type="Text"  ID="390310"  Texture="./UI/Texture/main.gwo" Rectangle="157,177,192,190" TexturePos="161,99"  Text=""/>-->
+    <CancelRight Type="Text"  ID="390311"  Texture="./UI/Texture/main.gwo" Rectangle="191,107,225,120" TexturePos="161,126"  Text=""/>
+  </ProclaimMsgBox>
+  
+  <!--邀请加入公会提示输入窗口-->
+  <IniviteMsgBox Template="T_SimpleWindow" ID="390400" Modal="0" Rectangle="392,319,632,449">
+    <HitText Type="Text" ID="390401" Rectangle="40,23,200,41" TexturePos="785,208" Texture="./UI/Texture/main.gwo" Text="请输你要邀请的玩家名字" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" TextFormat="5"/>
+    
+    <InputEdtText  Type="Text"  ID="390402"    Texture="./UI/Texture/main.gwo" Rectangle="48,53,49,82" TexturePos="139,173"  Text=""/>
+    <InputEdt      Type="EditBox" ID="390403"  Texture="./UI/Texture/main.gwo" TexturePos="0,0" Rectangle="48,55,193,84"  Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" MaxText="16" ResponseMouse="1" TextFormat="4" Text=""/>
+    <InputEdtLeft  Type="Text"  ID="390404"      Texture="./UI/Texture/main.gwo" Rectangle="41,53,48,82" TexturePos="131,173"  Text=""/>
+    <InputEdtRight Type="Text"  ID="390405"      Texture="./UI/Texture/main.gwo" Rectangle="192,53,199,82" TexturePos="138,173"  Text=""/>
+    
+    <SureBtn  Template="T_Button3" ID="390406" Rectangle="49,94,118,121" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text="确 定" TextFormat="5"/>
+    <SureBtnLeft  Type="Text" ID="390407"  Texture="./UI/Texture/main.gwo" Rectangle="14,107,48,120" TexturePos="161,99"  Text=""/>
+    <!--<SureBtnRight Type="Text" ID="390408"  Texture="./UI/Texture/main.gwo" Rectangle="155,177,189,190" TexturePos="161,126"  Text=""/>-->
+    
+    <CancelBtn  Template="T_Button3" ID="390409" Rectangle="121,94,190,121" Font="MainFonts" FontColor="DEFAULT_TEXTCOLOR" Text="取 消" TextFormat="5"/>
+    <!--<CancelLeft  Type="Text"  ID="390410"  Texture="./UI/Texture/main.gwo" Rectangle="157,177,192,190" TexturePos="161,99"  Text=""/>-->
+    <CancelRight Type="Text"  ID="390411"  Texture="./UI/Texture/main.gwo" Rectangle="191,107,225,120" TexturePos="161,126"  Text=""/>
+  </IniviteMsgBox>
+</UIConfig>

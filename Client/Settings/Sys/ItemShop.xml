@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--this is ItemShop config-->
+<ItemShop>
+    <Shop>
+        <MaterialID3 ID="4202" Hot="1" Discount="90"/>
+        <MaterialBase3 ID="4212" Hot="1" Discount="90"/>
+        <MaterialAppend3 ID="4222" Hot="1" Discount="90"/>
+        <MaterialOdds1 ID="4230" New="1"/>
+        <MaterialOdds2 ID="4231" New="1"/>
+        <MaterialOdds3 ID="4232" New="1" Hot="1"/>
+        <MaterialFlee1 ID="4240" New="1"/>
+        <MaterialFlee2 ID="4241" New="1"/>
+        <MaterialFlee3 ID="4242" New="1" Hot="1"/>
+        <HPPotion_x ID="4010"/>
+        <MPPotion_x ID="4040"/>
+        <GuildStone ID="4100" New="1" Hot="1"/>
+        <Chattool1 ID="4101"/>
+        <Storage1 ID="4102"/>
+        <Bag1 ID="4103"/>
+        <AddLevel1 ID="4104"/>
+        <ChatBubble1 ID="4110"/>
+        <ChatBubble2 ID="4111"/>
+        <AstrictPK1 ID="4120"/>
+        <HideCamp1 ID="4130"/>
+        <HideID1 ID="4140"/>
+        <Money1 ID="4150"/>
+        <Money2 ID="4151"/>
+        <Money3 ID="4152"/>
+        <Money4 ID="4153"/>
+        <Stone1 ID="4160"/>
+        <Stone2 ID="4161"/>
+        <Stone3 ID="4162"/>
+        <Stone4 ID="4163"/>
+        <AddEXP1 ID="4170"/>
+        <AddEXP2 ID="4171"/>
+        <AddEXP3 ID="4172"/>
+        <AddEXP4 ID="4173"/>
+        <SkillEXP1 ID="4180"/>
+        <SkillEXP2 ID="4181"/>
+        <SkillEXP3 ID="4182"/>
+        <SkillEXP4 ID="4183"/>
+        <Glory1 ID="4190"/>
+        <Glory2 ID="4191"/>
+        <Glory3 ID="4192"/>
+        <Glory4 ID="4193"/>
+        <GoldBox1 ID="4400"/>
+        <GoldBox2 ID="4401"/>
+        <GoldBox3 ID="4402"/>
+        <GoldBox4 ID="4403"/>
+        <GoldBox5 ID="4404"/>
+        <GoldBox6 ID="4405"/>
+        <GoldBox7 ID="4406"/>
+        <GoldBox8 ID="4407"/>
+        <GoldBox9 ID="4408"/>
+        <GoldBox10 ID="4409"/>
+        <GoldBox11 ID="4410"/>
+        <GoldBox12 ID="4411"/>
+        <GoldBox13 ID="4412"/>
+        <GoldBox14 ID="4413"/>
+        <GoldBox15 ID="4414"/>
+        <GoldKey1 ID="4420" New="1" Hot="1"/>
+        <GoldKey2 ID="4421" New="1" Hot="1"/>
+        <GoldKey3 ID="4422" New="1" Hot="1"/>
+        <EXPGet1 ID="4500"/>
+        <AutoItem1 ID="4510"/>
+        <AutoItem2 ID="4520"/>
+        <FlyBook3 ID="4302"/>
+        <FlyBook4 ID="4303"/>
+        <FlyBook7 ID="4306"/>
+        <FlyBook8 ID="4307"/>
+        <FlyBook9 ID="4308"/>
+        <GuildMoney1 ID="4340"/>
+        <GuildStone1 ID="4350"/>
+        <GuildGlory1 ID="4360"/>
+        <Hairstyle1 ID="4380"/>
+        <Haircolor1 ID="4390"/>
+        <SkillBook2 ID="5001"/>
+        <SkillBook3 ID="5002"/>
+        <SkillBook12 ID="5005"/>
+        <SkillBook13 ID="5006"/>
+        <SkillBook22 ID="5009"/>
+        <SkillBook30 ID="5010"/>
+        <SkillBook33 ID="5013"/>
+        <SkillBook34 ID="5014"/>
+        <SkillBook42 ID="5017"/>
+        <SkillBook43 ID="5018"/>
+        <SkillBook52 ID="5021"/>
+        <SkillBook53 ID="5022"/>
+        <SkillBook62 ID="5025"/>
+        <SkillBook63 ID="5026"/>
+        <SkillBook72 ID="5029"/>
+        <SkillBook73 ID="5030"/>
+        <SkillBook74 ID="5031"/>
+        <SkillBook82 ID="5034"/>
+        <SkillBook83 ID="5035"/>
+        <SkillBook84 ID="5036"/>
+        <SkillBook92 ID="5039"/>
+        <SkillBook93 ID="5040"/>
+        <SkillBook94 ID="5041"/>
+        <SkillBook252 ID="5201"/>
+        <SkillBook253 ID="5202"/>
+        <SkillBook262 ID="5205"/>
+        <SkillBook263 ID="5206"/>
+        <SkillBook272 ID="5209"/>
+        <SkillBook273 ID="5210"/>
+        <SkillBook282 ID="5213"/>
+        <SkillBook283 ID="5214"/>
+        <SkillBook292 ID="5217"/>
+        <SkillBook293 ID="5218"/>
+        <SkillBook302 ID="5221"/>
+        <SkillBook303 ID="5222"/>
+        <SkillBook312 ID="5225"/>
+        <SkillBook313 ID="5226"/>
+        <SkillBook322 ID="5229"/>
+        <SkillBook323 ID="5230"/>
+        <SkillBook332 ID="5233"/>
+        <SkillBook333 ID="5234"/>
+        <SkillBook342 ID="5237"/>
+        <SkillBook343 ID="5238"/>
+        <SkillBook344 ID="5239"/>
+        <SkillBook352 ID="5242"/>
+        <SkillBook353 ID="5243"/>
+        <SkillBook354 ID="5244"/>
+        <SkillBook502 ID="5401"/>
+        <SkillBook503 ID="5402"/>
+        <SkillBook512 ID="5405"/>
+        <SkillBook513 ID="5406"/>
+        <SkillBook522 ID="5409"/>
+        <SkillBook523 ID="5410"/>
+        <SkillBook532 ID="5413"/>
+        <SkillBook533 ID="5414"/>
+        <SkillBook542 ID="5417"/>
+        <SkillBook543 ID="5418"/>
+        <SkillBook552 ID="5421"/>
+        <SkillBook553 ID="5422"/>
+        <SkillBook562 ID="5425"/>
+        <SkillBook563 ID="5426"/>
+        <SkillBook572 ID="5429"/>
+        <SkillBook573 ID="5430"/>
+        <SkillBook574 ID="5431"/>
+        <SkillBook582 ID="5434"/>
+        <SkillBook583 ID="5435"/>
+        <SkillBook584 ID="5436"/>
+        <SkillBook592 ID="5439"/>
+        <SkillBook593 ID="5440"/>
+        <SkillBook594 ID="5441"/>
+        <SkillBook601 ID="5443"/>
+        <SkillBook602 ID="5444"/>
+        <SkillBook752 ID="5602"/>
+        <SkillBook753 ID="5603"/>
+        <SkillBook754 ID="5604"/>
+        <SkillBook762 ID="5607"/>
+        <SkillBook763 ID="5608"/>
+        <SkillBook764 ID="5609"/>
+        <SkillBook772 ID="5612"/>
+        <SkillBook773 ID="5613"/>
+        <SkillBook774 ID="5614"/>
+        <SkillBook782 ID="5617"/>
+        <SkillBook783 ID="5618"/>
+        <SkillBook784 ID="5619"/>
+        <SkillBook791 ID="5621"/>
+        <SkillBook792 ID="5622"/>
+        <SkillBook802 ID="5624"/>
+        <SkillBook803 ID="5625"/>
+        <SkillBook812 ID="5628"/>
+        <SkillBook813 ID="5629"/>
+        <SkillBook822 ID="5632"/>
+        <SkillBook823 ID="5633"/>
+        <SkillBook832 ID="5636"/>
+        <SkillBook833 ID="5637"/>
+        <SkillBook842 ID="5640"/>
+        <SkillBook843 ID="5641"/>
+        <SkillBook852 ID="5644"/>
+        <SkillBook853 ID="5645"/>
+        <SkillBook862 ID="5648"/>
+        <SkillBook863 ID="5649"/>
+    </Shop>
+    <Guild>
+        <Glevel1 Glevel="1" DiscountA="95" DiscountB="95"/>
+        <Glevel2 Glevel="2" DiscountA="90" DiscountB="90"/>
+        <Glevel3 Glevel="3" DiscountA="85" DiscountB="85"/>
+        <Glevel4 Glevel="4" DiscountA="80" DiscountB="80"/>
+        <Glevel5 Glevel="5" DiscountA="75" DiscountB="75"/>
+    </Guild>
+</ItemShop>

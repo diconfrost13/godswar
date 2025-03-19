@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<UIConfig>
+
+  <LifeUI Template="T_NormalWindow" Rectangle="0,138,662,663" OnLoad="LifeUI_OnLoad()" BtnRect="596,13,634,50" BtnPos="0,80" Visible="0">
+
+  </LifeUI>
+
+  <Script File="./UI/XML/LifeUI.lua" Help=""/>
+  
+</UIConfig>
